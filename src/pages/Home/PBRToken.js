@@ -1,7 +1,5 @@
-import { Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { AttachMoney, Cached, Gavel, GroupWork, LocalOffer, Whatshot } from '@material-ui/icons';
-import { Fragment } from 'react';
+import { AttachMoney, Gavel, GroupWork, LocalOffer, Whatshot } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {

@@ -4,17 +4,15 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import dotCircle from '../components/DotCircle';
 import DotCircle from '../components/DotCircle';
-import { Button } from '@material-ui/core';
 import CustomButton from './CustomButton';
+import clsx from 'clsx';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -75,77 +73,86 @@ const useStyles = makeStyles((theme) => ({
   menuIcon: {
     color: '#212121',
   },
+  list: {
+    width: '250px',
+    borderLeft: '5px solid pink',
+    borderColor: theme.palette.pbr.primary,
+    height: '100%',
+    backgroundColor: 'transparent',
+  },
+  fullList: {
+    width: 'auto',
+  },
+  menuTitle: {
+    paddingLeft: 25,
+    fontWeight: 500,
+    verticalAlign: 'baseline',
+    letterSpacing: '-0.8px',
+    textAlign: 'left',
+    fontSize: 16,
+  },
+  menuTitlePink: {
+    paddingLeft: 25,
+    fontWeight: 500,
+    verticalAlign: 'baseline',
+    letterSpacing: '-0.8px',
+    textAlign: 'left',
+    fontSize: 16,
+    color: theme.palette.pbr.primary,
+  },
+  mobileButton: {
+    borderRadius: '50px',
+    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    lineHeight: '24px',
+    verticalAlign: 'baseline',
+    letterSpacing: '-0.8px',
+    margin: 0,
+    color: '#ffffff',
+    padding: '5px 15px 5px 15px',
+    fontWeight: 600,
+  },
 }));
 
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const [state, setState] = React.useState({
+    right: false,
+  });
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const toggleDrawer = (anchor, open) => (event) => {
+    setState({ ...state, [anchor]: open });
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}>
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}>
-      <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit">
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-    </Menu>
+  const list = (anchor) => (
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      })}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}>
+      <List>
+        {['Solution', 'How It Works', 'PBR Token', 'Team', 'Roadmap'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} className={classes.menuTitle} />
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {['Exchange', 'Farming'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} className={classes.menuTitle} />
+          </ListItem>
+        ))}
+        <ListItem button>
+          <a href="https://polkabridge.org/assets/docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
+            <ListItemText primary={'Read Whitepaper'} className={classes.menuTitlePink} />
+          </a>
+        </ListItem>
+      </List>
+    </div>
   );
 
   return (
@@ -176,7 +183,9 @@ export default function PrimarySearchAppBar() {
               Exchange <DotCircle />
             </Typography>
             <div className={classes.sectionDesktop}>
-              <CustomButton title={'Read Whitepaper'}></CustomButton>
+              <CustomButton
+                title={'Read Whitepaper'}
+                link={'https://polkabridge.org/assets/docs/whitepaper.pdf'}></CustomButton>
             </div>
           </div>
           <div className={classes.sectionMobile}>
@@ -184,19 +193,30 @@ export default function PrimarySearchAppBar() {
               <img src="logo.png" alt="logo" height="50px" />
             </div>
 
-            <IconButton
-              aria-label="Menu"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              className={classes.menuIcon}
-              onClick={handleMobileMenuOpen}>
-              <MenuIcon />
-            </IconButton>
+            <div>
+              {['right'].map((anchor) => (
+                <React.Fragment key={anchor}>
+                  <IconButton
+                    aria-label="Menu"
+                    aria-haspopup="true"
+                    className={classes.menuIcon}
+                    onClick={toggleDrawer(anchor, true)}>
+                    <MenuIcon />
+                  </IconButton>
+
+                  <SwipeableDrawer
+                    anchor={anchor}
+                    disableSwipeToOpen={false}
+                    open={state[anchor]}
+                    onClose={toggleDrawer(anchor, false)}>
+                    {list(anchor)}
+                  </SwipeableDrawer>
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
     </div>
   );
 }

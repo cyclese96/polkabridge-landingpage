@@ -1,7 +1,6 @@
-import { Button, Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Cached, Receipt } from '@material-ui/icons';
-import { Fragment } from 'react';
+import { Receipt } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {

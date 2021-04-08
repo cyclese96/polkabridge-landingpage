@@ -16,11 +16,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CustomButton({ title }) {
+export default function CustomButton({ title, link }) {
   const classes = useStyles();
   return (
-    <Button variant="contained" color="primary" className={classes.button}>
-      {title}
-    </Button>
+    <a href={link} style={{ textDecoration: 'none' }}>
+      <Button variant="contained" color="primary" className={classes.button}>
+        {title}
+      </Button>
+    </a>
   );
 }

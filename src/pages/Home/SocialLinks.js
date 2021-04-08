@@ -1,4 +1,4 @@
-import { Button, IconButton, Tooltip, Typography } from '@material-ui/core';
+import { IconButton, Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Twitter, Telegram, GitHub, Email, Reddit } from '@material-ui/icons';
 

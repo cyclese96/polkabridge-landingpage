@@ -1,14 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  AccountTree,
-  CompareArrows,
-  HowToVote,
-  Launch,
-  LocalFlorist,
-  Receipt,
-  Security,
-  ShutterSpeed,
-} from '@material-ui/icons';
+import { AccountTree, CompareArrows, HowToVote, LocalFlorist, Receipt, ShutterSpeed } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {

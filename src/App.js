@@ -4,7 +4,6 @@ import Home from './pages/Home/Home';
 import './App.css';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { theme } from './theme';
-import Home2 from './pages/Home/Home2';
 
 export default function App() {
   return (
@@ -12,7 +11,6 @@ export default function App() {
       <Fragment>
         <Appbar />
         <Home />
-        {/* <Home2 /> */}
       </Fragment>
     </ThemeProvider>
   );

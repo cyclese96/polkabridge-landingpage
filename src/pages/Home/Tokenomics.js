@@ -74,17 +74,13 @@ export default function Tokenomics() {
       <div className="container row flex-column-reverse flex-md-row">
         <div className="col-md-6">
           <div className="mt-1">
-            <img
-              src="https://polkabridge.org/assets/img/tokenomics-transparentbg.png"
-              alt="tokenomics"
-              className={classes.imageContainer}
-            />
+            <img src="tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
           </div>
         </div>
         <div className="col-md-6">
           <div className="mb-5">
             <h4 className={classes.heading}>
-              Tokenomics & <span className={classes.highlight}>Locking</span>
+              <strong className={classes.highlight}>Tokenomics</strong> & Locking
             </h4>
           </div>
           <div className={classes.focusContainer}>
