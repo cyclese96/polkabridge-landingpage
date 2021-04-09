@@ -91,11 +91,11 @@ export default function Tokenomics() {
               <h6 className={classes.title}>Smart Contract</h6>
               <p className={classes.para}>0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695</p>
             </div>
-            <div className={classes.focusContainer}>
+            {/* <div className={classes.focusContainer}>
               <h6 className={classes.title}>NFT Standard</h6>
 
               <p className={classes.para}>The ultimate cross-chain NFT standard based on Substrate coming soon.</p>
-            </div>
+            </div> */}
             <div className={classes.focusContainer}>
               <h6 className={classes.title}>Unlock Schedule</h6>
 

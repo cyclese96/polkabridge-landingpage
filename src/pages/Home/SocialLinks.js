@@ -101,6 +101,15 @@ export default function SocialLinks() {
               </Tooltip>
             </div>
             <div className={classes.iconWrapper}>
+              <Tooltip title="Discord">
+                <a href="https://discord.gg/G3NDrcq6GW">
+                  <IconButton aria-label="Discord">
+                    <Reddit className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+            <div className={classes.iconWrapper}>
               <Tooltip title="Email">
                 <a href="mailto:support@polkabridge.org">
                   <IconButton aria-label="Email">

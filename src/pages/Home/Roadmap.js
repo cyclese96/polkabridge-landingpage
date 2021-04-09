@@ -59,7 +59,7 @@ export default function Roadmap() {
             PolkaBridge <strong className={classes.highlight}>RoadMap</strong>
           </h6>
           <p className={classes.para}>
-            Fundamentally strong and visionary project with strong foundation and supported by PolkaDot team.
+            Fundamentally strong and visionary project with strong foundation.
           </p>
         </div>
         <Fade top>
