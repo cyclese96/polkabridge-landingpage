@@ -13,6 +13,7 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Link } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -40,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: '-0.8px',
     margin: 0,
     padding: '9px 18px 0px',
+    cursor: 'pointer',
   },
   inputRoot: {
     color: 'inherit',
@@ -100,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     color: theme.palette.pbr.primary,
   },
+  mobileLink: {
+    color: theme.palette.pbr.textSecondary,
+    textDecoration: 'none',
+  },
   mobileButton: {
     borderRadius: '50px',
     background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
@@ -133,18 +139,32 @@ export default function PrimarySearchAppBar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}>
       <List>
-        {['Solution', 'How It Works', 'PBR Token', 'Team', 'Roadmap'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} className={classes.menuTitle} />
-          </ListItem>
+        {[
+          { name: 'Solution', id: 'about' },
+          { name: 'How It Works', id: 'how-it-works' },
+          { name: 'PBR Token', id: 'pbt-token' },
+          { name: 'Team', id: 'team' },
+          { name: 'Roadmap', id: 'roadmap' },
+          { name: 'Exchange', id: 'exchange' },
+        ].map((tab, index) => (
+          <Link activeClass="active" to={tab.id} smooth={true} offset={0} duration={500} delay={0}>
+            <ListItem button key={tab.name}>
+              <ListItemText primary={tab.name} className={classes.menuTitle} />
+            </ListItem>
+          </Link>
         ))}
       </List>
       <Divider />
       <List>
-        {['Exchange', 'Farming'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} className={classes.menuTitle} />
-          </ListItem>
+        {[
+          { name: 'Farming', id: 'https://farm.polkabridge.org/' },
+          { name: 'Launchpad', id: 'https://launchpad.polkabridge.org/' },
+        ].map((tab, index) => (
+          <a href={tab.id} className={classes.mobileLink}>
+            <ListItem button key={tab.name}>
+              <ListItemText primary={tab.name} className={classes.menuTitle} />
+            </ListItem>
+          </a>
         ))}
         <ListItem button>
           <a href="https://polkabridge.org/assets/docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
@@ -157,31 +177,48 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
+      <AppBar position="fixed" style={{ background: 'white', boxShadow: 'none' }}>
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
             <img src="logo.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
             <Typography className={classes.tabs} variant="p" noWrap>
-              Migrate
+              Launchpad
               <DotCircle />
             </Typography>
-            <Typography className={classes.tabs} variant="p" noWrap>
-              Solution <DotCircle />
-            </Typography>
-            <Typography className={classes.tabs} variant="p" noWrap>
-              How It Works <DotCircle />
-            </Typography>
-            <Typography className={classes.tabs} variant="p">
-              PBR Token <DotCircle />
-            </Typography>
-            <Typography className={classes.tabs} variant="p">
-              Roadmap <DotCircle />
-            </Typography>
-            <Typography className={classes.tabs} variant="p">
-              Exchange <DotCircle />
-            </Typography>
+
+            <Link activeClass="active" to="about" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p" noWrap>
+                Solution <DotCircle />
+              </Typography>
+            </Link>
+            <Link activeClass="active" to="how-it-works" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p" noWrap>
+                How It Works <DotCircle />
+              </Typography>
+            </Link>
+            <Link activeClass="active" to="team" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p">
+                Team <DotCircle />
+              </Typography>
+            </Link>
+            <Link activeClass="active" to="pbt-token" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p">
+                PBR Token <DotCircle />
+              </Typography>
+            </Link>
+            <Link activeClass="active" to="roadmap" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p">
+                Roadmap <DotCircle />
+              </Typography>
+            </Link>
+            <Link activeClass="active" to="exchange" smooth={true} offset={0} duration={500} delay={0}>
+              <Typography className={classes.tabs} variant="p">
+                Exchange <DotCircle />
+              </Typography>
+            </Link>
+
             <div className={classes.sectionDesktop}>
               <CustomButton
                 title={'Read Whitepaper'}
@@ -208,7 +245,8 @@ export default function PrimarySearchAppBar() {
                     anchor={anchor}
                     disableSwipeToOpen={false}
                     open={state[anchor]}
-                    onClose={toggleDrawer(anchor, false)}>
+                    onClose={toggleDrawer(anchor, false)}
+                    onOpen={toggleDrawer(anchor, true)}>
                     {list(anchor)}
                   </SwipeableDrawer>
                 </React.Fragment>

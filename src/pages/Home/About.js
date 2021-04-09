@@ -1,14 +1,16 @@
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Receipt } from '@material-ui/icons';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 70,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
-      height: '100%',
       padding: 0,
+      paddingBottom: 35,
+      paddingTop: 35,
     },
   },
   heading: {
@@ -101,36 +103,41 @@ export default function About() {
             With PolkaBridge, you can swap tokens on DOT platform to tokens on other chains and vice versa. Users will
             be able to earn by adding liquidity, lending and more other ways simply.
           </p>
-          <div className="d-flex justify-content-center mt-3">
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>Decentralized</h6>
-              <p className={classes.para}>Fully control your own crypto. Tokens trade wallet-to-wallet.</p>
+
+          <Fade left>
+            <div className="d-flex justify-content-center mt-3">
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>Decentralized</h6>
+                <p className={classes.para}>Fully control your own crypto. Tokens trade wallet-to-wallet.</p>
+              </div>
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>Secure</h6>
+                <p className={classes.para}>Your funds are secured by an open-source smart contract.</p>
+              </div>
             </div>
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>Secure</h6>
-              <p className={classes.para}>Your funds are secured by an open-source smart contract.</p>
+            <div className="d-flex justify-content-center">
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>High performance</h6>
+                <p className={classes.para}>UI is simple and fast.</p>
+              </div>
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>Fully Audited</h6>
+                <p className={classes.para}>Will be externally audited soon.</p>
+              </div>
             </div>
-          </div>
-          <div className="d-flex justify-content-center">
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>High performance</h6>
-              <p className={classes.para}>UI is simple and fast.</p>
+            <div className="text-left mt-3">
+              <Button variant="contained" color="primary" className={classes.button}>
+                <Receipt className={classes.icon} /> Learn More
+              </Button>
             </div>
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>Fully Audited</h6>
-              <p className={classes.para}>Will be externally audited soon.</p>
-            </div>
-          </div>
-          <div className="text-left mt-3">
-            <Button variant="contained" color="primary" className={classes.button}>
-              <Receipt className={classes.icon} /> Learn More
-            </Button>
-          </div>
+          </Fade>
         </div>
         <div className="col-md-6">
-          <div>
-            <img src="https://polkabridge.org/assets/img/what.png" alt="explain" className={classes.imageContainer} />
-          </div>
+          <Fade right>
+            <div>
+              <img src="https://polkabridge.org/assets/img/what.png" alt="explain" className={classes.imageContainer} />
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

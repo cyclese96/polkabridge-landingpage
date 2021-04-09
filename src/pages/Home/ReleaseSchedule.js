@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -7,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       height: '100%',
       padding: 0,
-      paddingTop: 25,
-      paddingBottom: 25,
+      paddingBottom: 50,
+      paddingTop: 50,
     },
   },
   heading: {
@@ -43,9 +44,11 @@ export default function ReleaseSchedule() {
           Token <strong className={classes.highlight}>Release Schedule</strong>
         </h4>
       </div>
-      <div className="text-center">
-        <img src="https://polkabridge.org/assets/img/schedule.png" alt="working" className={classes.imageContainer} />
-      </div>
+      <Fade top>
+        <div className="text-center">
+          <img src="https://polkabridge.org/assets/img/schedule.png" alt="working" className={classes.imageContainer} />
+        </div>
+      </Fade>
     </div>
   );
 }

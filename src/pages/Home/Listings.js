@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -37,6 +38,12 @@ const useStyles = makeStyles((theme) => ({
   },
   listingsWrapper: {
     maxWidth: 700,
+    border: '1px solid #e9e9e9',
+    borderRadius: 7,
+    boxShadow: `0 2.8px 2.2px rgba(0, 0, 0, 0.024),
+
+  0 2.8px 3.4px rgba(0, 0, 0, 0.086),
+  0 10px 10px rgba(0, 0, 0, 0.02)`,
   },
 }));
 export default function Listings() {
@@ -46,20 +53,26 @@ export default function Listings() {
       <h6 className={classes.heading}>
         Exchange <span className={classes.highlight}> Listings</span>
       </h6>
+
       <div className={classes.listingsWrapper}>
         <div className="mt-3 row text-center">
-          <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/uniswap.png" alt="logo" className={classes.imageWrapper} />
-          </div>
-          <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/mxc-logo.png" alt="logo" className={classes.imageWrapper} />
-          </div>
-          <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/gate.png" alt="logo" className={classes.imageWrapper} />
-          </div>
-          <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/bilaxy.png" alt="logo" className={classes.imageWrapper} />
-          </div>
+          <Fade left>
+            {' '}
+            <div className="col-6 col-md-3">
+              <img src="https://polkabridge.org/assets/img/uniswap.png" alt="logo" className={classes.imageWrapper} />
+            </div>
+            <div className="col-6 col-md-3">
+              <img src="https://polkabridge.org/assets/img/mxc-logo.png" alt="logo" className={classes.imageWrapper} />
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="col-6 col-md-3">
+              <img src="https://polkabridge.org/assets/img/gate.png" alt="logo" className={classes.imageWrapper} />
+            </div>
+            <div className="col-6 col-md-3">
+              <img src="https://polkabridge.org/assets/img/bilaxy.png" alt="logo" className={classes.imageWrapper} />
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

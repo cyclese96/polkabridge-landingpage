@@ -6,6 +6,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
+      paddingBottom: 35,
+    },
   },
 
   para: {

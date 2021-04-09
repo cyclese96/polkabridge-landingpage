@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { AccountTree, CompareArrows, HowToVote, LocalFlorist, Receipt, ShutterSpeed } from '@material-ui/icons';
+import Pulse from 'react-reveal/Pulse';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -8,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       padding: 5,
-      paddingTop: 25,
-      paddingBottom: 25,
+      paddingBottom: 50,
+      paddingTop: 50,
       textAlign: 'center',
     },
   },
@@ -105,70 +106,72 @@ export default function Features() {
           </p>
         </div>{' '}
       </div>
-      <div className="mt-5">
-        <div className="container row">
-          <div className="col-md-4 col-sm-12 text-center">
-            <div>
-              <CompareArrows className={classes.circle} color="secondary" fontSize="large" />
+      <Pulse>
+        <div className="mt-5">
+          <div className="container row">
+            <div className="col-md-4 col-sm-12 text-center">
+              <div>
+                <CompareArrows className={classes.circle} color="secondary" fontSize="large" />
+              </div>
+
+              <h6 className={classes.featureHeading}>AMM</h6>
+              <p className={classes.featureText}>
+                A cutting-edge AMM, which redistributes earnings to pools and capitalizes on user slippages.
+              </p>
             </div>
 
-            <h6 className={classes.featureHeading}>AMM</h6>
-            <p className={classes.featureText}>
-              A cutting-edge AMM, which redistributes earnings to pools and capitalizes on user slippages.
-            </p>
-          </div>
+            <div className="col-md-4 col-sm-12 text-center">
+              <div className="text-center">
+                <LocalFlorist className={classes.circle} color="secondary" fontSize="large" />
+              </div>
 
-          <div className="col-md-4 col-sm-12 text-center">
-            <div className="text-center">
-              <LocalFlorist className={classes.circle} color="secondary" fontSize="large" />
+              <h6 className={classes.featureHeading}>Farming</h6>
+              <p className={classes.featureText}>
+                Earn 90% of transaction fees by providing liquidity to liquidity pools.
+              </p>
             </div>
 
-            <h6 className={classes.featureHeading}>Farming</h6>
-            <p className={classes.featureText}>
-              Earn 90% of transaction fees by providing liquidity to liquidity pools.
-            </p>
-          </div>
+            <div className="col-md-4 col-sm-12 text-center">
+              <div className="text-center">
+                <ShutterSpeed className={classes.circle} color="secondary" fontSize="large" />
+              </div>
 
-          <div className="col-md-4 col-sm-12 text-center">
-            <div className="text-center">
-              <ShutterSpeed className={classes.circle} color="secondary" fontSize="large" />
+              <h6 className={classes.featureHeading}>Launchpad</h6>
+              <p className={classes.featureText}>Participate in IDOs of good and fundamentally strong projects.</p>
             </div>
-
-            <h6 className={classes.featureHeading}>Launchpad</h6>
-            <p className={classes.featureText}>Participate in IDOs of good and fundamentally strong projects.</p>
-          </div>
-        </div>
-      </div>
-      <div className="mt-5">
-        <div className="container row">
-          <div className="col-md-4 col-sm-12 text-center">
-            <div className="text-center">
-              <Receipt className={classes.circle} color="secondary" fontSize="large" />
-            </div>
-
-            <h6 className={classes.featureHeading}>Lending</h6>
-            <p className={classes.featureText}>Borrowing and depositing funds making easy and smooth.</p>
-          </div>
-
-          <div className="col-md-4 col-sm-12 text-center">
-            <div className="text-center">
-              <AccountTree className={classes.circle} color="secondary" fontSize="large" />
-            </div>
-
-            <h6 className={classes.featureHeading}>Prediction</h6>
-            <p className={classes.featureText}>Participate in prediction market and earn for being right.</p>
-          </div>
-
-          <div className="col-md-4 col-sm-12 text-center">
-            <div className="text-center">
-              <HowToVote className={classes.circle} color="secondary" fontSize="large" />
-            </div>
-
-            <h6 className={classes.featureHeading}>Governance</h6>
-            <p className={classes.featureText}>Reserve tokens and participate in voting for our future projects.</p>
           </div>
         </div>
-      </div>
+        <div className="mt-5">
+          <div className="container row">
+            <div className="col-md-4 col-sm-12 text-center">
+              <div className="text-center">
+                <Receipt className={classes.circle} color="secondary" fontSize="large" />
+              </div>
+
+              <h6 className={classes.featureHeading}>Lending</h6>
+              <p className={classes.featureText}>Borrowing and depositing funds making easy and smooth.</p>
+            </div>
+
+            <div className="col-md-4 col-sm-12 text-center">
+              <div className="text-center">
+                <AccountTree className={classes.circle} color="secondary" fontSize="large" />
+              </div>
+
+              <h6 className={classes.featureHeading}>Prediction</h6>
+              <p className={classes.featureText}>Participate in prediction market and earn for being right.</p>
+            </div>
+
+            <div className="col-md-4 col-sm-12 text-center">
+              <div className="text-center">
+                <HowToVote className={classes.circle} color="secondary" fontSize="large" />
+              </div>
+
+              <h6 className={classes.featureHeading}>Governance</h6>
+              <p className={classes.featureText}>Reserve tokens and participate in voting for our future projects.</p>
+            </div>
+          </div>
+        </div>
+      </Pulse>
     </div>
   );
 }

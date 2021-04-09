@@ -16,23 +16,23 @@ import Header from './Header';
 export default function Home() {
   return (
     <Fragment>
-      <section>
+      <section id="header">
         <Header />
       </section>
-      <section>
+      <section id="partnerships">
         <Partnerships />
       </section>
       <hr style={{ color: '#e9e9e9' }} />
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="features">
         <Features />
       </section>
-      <section>
+      <section id="how-it-works">
         <HowItWorks />
       </section>
-      <section>
+      <section id="pbt-token">
         <PBRToken />
       </section>
       <section>
@@ -42,14 +42,14 @@ export default function Home() {
         <ReleaseSchedule />
       </section>
 
-      <section>
+      <section id="roadmap">
         <Roadmap />
       </section>
 
-      <section>
+      <section id="team">
         <Team />
       </section>
-      <section>
+      <section id="exchange">
         <Listings />
       </section>
       <section>

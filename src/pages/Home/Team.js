@@ -1,6 +1,7 @@
 import { IconButton, Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Telegram } from '@material-ui/icons';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -89,32 +90,36 @@ export default function Team() {
           Our <strong className={classes.highlight}>Team</strong>
         </h4>
         <div className="mt-5 d-flex justify-content-center">
-          <div className={classes.people}>
-            <img src="https://polkabridge.org/assets/img/cyclese.png" alt="Cyclese" className={classes.avatar} />
-            <h6 className={classes.title}>Cyclese</h6>
-            <p className={classes.para}>CEO & Co-Founder </p>
-            <p className={classes.para}>Senior Blockchain Developer</p>
-            <Tooltip title="Telegram">
-              <a href="https://t.me/cyclese_polkabridge">
-                <IconButton aria-label="Telegram">
-                  <Telegram className={classes.icon} />
-                </IconButton>
-              </a>
-            </Tooltip>
-          </div>
-          <div className={classes.people}>
-            <img src="https://polkabridge.org/assets/img/zeph.png" alt="Zeph" className={classes.avatar} />
-            <h6 className={classes.title}>Zeph</h6>
-            <p className={classes.para}>Co-Founder </p>
-            <p className={classes.para}>UX/UI Designer</p>
-            <Tooltip title="Telegram">
-              <a href="https://t.me/zephwilliams">
-                <IconButton aria-label="Telegram">
-                  <Telegram className={classes.icon} />
-                </IconButton>
-              </a>
-            </Tooltip>
-          </div>
+          <Fade left>
+            <div className={classes.people}>
+              <img src="https://polkabridge.org/assets/img/cyclese.png" alt="Cyclese" className={classes.avatar} />
+              <h6 className={classes.title}>Cyclese</h6>
+              <p className={classes.para}>CEO & Co-Founder </p>
+              <p className={classes.para}>Senior Blockchain Developer</p>
+              <Tooltip title="Telegram">
+                <a href="https://t.me/cyclese_polkabridge">
+                  <IconButton aria-label="Telegram">
+                    <Telegram className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>{' '}
+          <Fade right>
+            <div className={classes.people}>
+              <img src="https://polkabridge.org/assets/img/zeph.png" alt="Zeph" className={classes.avatar} />
+              <h6 className={classes.title}>Zeph</h6>
+              <p className={classes.para}>Co-Founder </p>
+              <p className={classes.para}>UX/UI Designer</p>
+              <Tooltip title="Telegram">
+                <a href="https://t.me/zephwilliams">
+                  <IconButton aria-label="Telegram">
+                    <Telegram className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { AttachMoney, Gavel, GroupWork, LocalOffer, Whatshot } from '@material-ui/icons';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -8,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       height: '100%',
       padding: 0,
-      paddingTop: 25,
-      paddingBottom: 25,
+      paddingTop: 50,
+      paddingBottom: 50,
     },
   },
   heading: {
@@ -75,50 +76,58 @@ export default function PBRToken() {
     <div className={classes.background}>
       <div className="container row flex-column-reverse flex-md-row">
         <div className="col-md-6 col-sm-12 col-sm-push-4">
-          <div>
-            <img src="https://polkabridge.org/assets/img/pbrtoken.png" alt="logo" className={classes.imageContainer} />
-          </div>
+          <Fade left>
+            <div>
+              <img
+                src="https://polkabridge.org/assets/img/pbrtoken.png"
+                alt="logo"
+                className={classes.imageContainer}
+              />
+            </div>
+          </Fade>
         </div>
         <div className="col-md-6 col-sm-12 col-sm-pull-4">
-          <h6 className={classes.heading}>
-            <strong className={classes.highlight}>$PBR</strong> Token
-          </h6>
-          <p className={classes.para}>
-            Holding PBR tokens will help you in getting more rewards through liquidity pools, lending, farming etc.
-          </p>
-          <div className={classes.blockSpacing}>
-            <div className={classes.pointer}>
-              <h6 className={classes.title}>
-                <Whatshot className={classes.icon} /> <strong>Token Burn</strong>
-              </h6>
-              <p className={classes.para}>10% of every transaction fees will be burned.</p>
-            </div>
-            <div className={classes.pointer}>
-              <h6 className={classes.title}>
-                <AttachMoney className={classes.icon} /> <strong>Farming Rewards</strong>
-              </h6>
-              <p className={classes.para}>Earn farming rewards from trading fees on PolkaBridge.</p>
-            </div>
+          <Fade right>
+            <h6 className={classes.heading}>
+              <strong className={classes.highlight}>$PBR</strong> Token
+            </h6>
+            <p className={classes.para}>
+              Holding PBR tokens will help you in getting more rewards through liquidity pools, lending, farming etc.
+            </p>
+            <div className={classes.blockSpacing}>
+              <div className={classes.pointer}>
+                <h6 className={classes.title}>
+                  <Whatshot className={classes.icon} /> <strong>Token Burn</strong>
+                </h6>
+                <p className={classes.para}>10% of every transaction fees will be burned.</p>
+              </div>
+              <div className={classes.pointer}>
+                <h6 className={classes.title}>
+                  <AttachMoney className={classes.icon} /> <strong>Farming Rewards</strong>
+                </h6>
+                <p className={classes.para}>Earn farming rewards from trading fees on PolkaBridge.</p>
+              </div>
 
-            <div className={classes.pointer}>
-              <h6 className={classes.title}>
-                <GroupWork className={classes.icon} /> <strong>Lending Fee</strong>
-              </h6>
-              <p className={classes.para}>Pay lending fees in PBR.</p>
+              <div className={classes.pointer}>
+                <h6 className={classes.title}>
+                  <GroupWork className={classes.icon} /> <strong>Lending Fee</strong>
+                </h6>
+                <p className={classes.para}>Pay lending fees in PBR.</p>
+              </div>
+              <div className={classes.pointer}>
+                <h6 className={classes.title}>
+                  <LocalOffer className={classes.icon} /> <strong>Fees Discount</strong>
+                </h6>
+                <p className={classes.para}>Get discount in transaction fees at our DEX.</p>
+              </div>
+              <div className={classes.pointer}>
+                <h6 className={classes.title}>
+                  <Gavel className={classes.icon} /> <strong>Fund Raising</strong>
+                </h6>
+                <p className={classes.para}>Participate in IDOs of projects by holding PBR Tokens.</p>
+              </div>
             </div>
-            <div className={classes.pointer}>
-              <h6 className={classes.title}>
-                <LocalOffer className={classes.icon} /> <strong>Fees Discount</strong>
-              </h6>
-              <p className={classes.para}>Get discount in transaction fees at our DEX.</p>
-            </div>
-            <div className={classes.pointer}>
-              <h6 className={classes.title}>
-                <Gavel className={classes.icon} /> <strong>Fund Raising</strong>
-              </h6>
-              <p className={classes.para}>Participate in IDOs of projects by holding PBR Tokens.</p>
-            </div>
-          </div>
+          </Fade>
         </div>
       </div>
     </div>

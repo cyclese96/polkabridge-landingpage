@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -7,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       height: '100%',
       padding: 0,
-      paddingTop: 25,
-      paddingBottom: 25,
+      paddingBottom: 50,
+      paddingTop: 50,
     },
   },
   heading: {
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   imageContainer: {
-    width: '100%',
+    width: '80%',
     [theme.breakpoints.down('sm')]: {
       marginTop: 30,
       width: '100%',
@@ -61,9 +62,11 @@ export default function Roadmap() {
             Fundamentally strong and visionary project with strong foundation and supported by PolkaDot team.
           </p>
         </div>
-        <div className="mt-5 text-center">
-          <img src="https://pbs.twimg.com/media/EufL806UcAUGQ8D.jpg" alt="roadmap" className={classes.imageContainer} />
-        </div>
+        <Fade top>
+          <div className="mt-5 text-center">
+            <img src="roadmap.png" alt="roadmap" className={classes.imageContainer} />
+          </div>
+        </Fade>
       </div>
     </div>
   );
