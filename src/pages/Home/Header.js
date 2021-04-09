@@ -95,8 +95,8 @@ export default function Header() {
 
             <Pulse>
               <h1 className={classes.heading}>
-                1st Decentralized Bridge Between <br />
-                Polkadot Platform & Other Blockchains
+                Decentralized all-in-one financial<br />
+                application platform
               </h1>
             </Pulse>
 
@@ -111,9 +111,9 @@ export default function Header() {
               </Typography>
             </p>
             <div className="text-center mt-3">
-              <a href="https://launchpad.polkabridge.org/" style={{ textDecoration: 'none' }}>
+              <a href="https://farm.polkabridge.org/" style={{ textDecoration: 'none' }}>
                 <Button variant="contained" color="primary" className={classes.button}>
-                  <ShutterSpeed className={classes.icon} /> Join Launchpad
+                  <ShutterSpeed className={classes.icon} /> Join Farming
                 </Button>
               </a>
             </div>

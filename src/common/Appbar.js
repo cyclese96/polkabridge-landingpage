@@ -183,10 +183,7 @@ export default function PrimarySearchAppBar() {
             <img src="logo.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
-            <Typography className={classes.tabs} variant="p" noWrap>
-              Launchpad
-              <DotCircle />
-            </Typography>
+
 
             <Link activeClass="active" to="about" smooth={true} offset={0} duration={500} delay={0}>
               <Typography className={classes.tabs} variant="p" noWrap>
@@ -223,6 +220,11 @@ export default function PrimarySearchAppBar() {
               <CustomButton
                 title={'Read Whitepaper'}
                 link={'https://polkabridge.org/assets/docs/whitepaper.pdf'}></CustomButton>
+            </div>
+            <div className={classes.sectionDesktop}>
+              <CustomButton
+                title={'LaunchApp'}
+                link={'https://farm.polkabridge.org'}></CustomButton>
             </div>
           </div>
           <div className={classes.sectionMobile}>
