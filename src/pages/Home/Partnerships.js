@@ -46,33 +46,48 @@ export default function Partnerships() {
       <div className={classes.listingsWrapper}>
         <div className="mt-3  row g-0 text-center">
           <div className="col-6 col-md-3">
-            <img src="images/chinapolka.png" alt="logo" className={classes.imageWrapper} />
+            <a href="http://chinapolka.com/">
+              <img src="images/chinapolka.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
           <div className="col-6 col-md-3">
             <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapper} />
           </div>
+
           <div className="col-6 col-md-3">
-            <img src="images/inverse.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://projectinverse.com/">
+              <img src="images/inverse.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
           <div className="col-6 col-md-3">
-            <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://labsgroup.io/">
+              <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
         </div>
       </div>
       <div className={classes.listingsWrapper}>
         <div className="mt-3 row g-0 text-center">
           <div className="col-6 col-md-3">
-            <img src="images/casper.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://casperlabs.io/">
+              <img src="images/casper.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
           <div className="col-6 col-md-3">
-            <img src="images/mint.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://publicmint.com/">
+              <img src="images/mint.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
 
           <div className="col-6 col-md-3">
-            <img src="images/taraxa.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://taraxa.io/">
+              <img src="images/taraxa.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
           <div className="col-6 col-md-3">
-            <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
+            <a href="https://deeper.network/">
+              <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
+            </a>
           </div>
         </div>
       </div>
