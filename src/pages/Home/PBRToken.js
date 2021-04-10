@@ -91,12 +91,7 @@ export default function PBRToken() {
               Holding PBR tokens will help you in getting more rewards through liquidity pools, lending, farming etc.
             </p>
             <div className={classes.blockSpacing}>
-              <div className={classes.pointer}>
-                <h6 className={classes.title}>
-                  <Whatshot className={classes.icon} /> <strong>Token Burn</strong>
-                </h6>
-                <p className={classes.para}>10% of every transaction fees will be burned.</p>
-              </div>
+
               <div className={classes.pointer}>
                 <h6 className={classes.title}>
                   <AttachMoney className={classes.icon} /> <strong>Farming Rewards</strong>
@@ -110,12 +105,7 @@ export default function PBRToken() {
                 </h6>
                 <p className={classes.para}>Pay lending fees in PBR.</p>
               </div>
-              <div className={classes.pointer}>
-                <h6 className={classes.title}>
-                  <LocalOffer className={classes.icon} /> <strong>Fees Discount</strong>
-                </h6>
-                <p className={classes.para}>Get discount in transaction fees at our DEX.</p>
-              </div>
+
               <div className={classes.pointer}>
                 <h6 className={classes.title}>
                   <Gavel className={classes.icon} /> <strong>Fund Raising</strong>

@@ -122,7 +122,7 @@ export default function About() {
               </div>
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Fully Audited</h6>
-                <p className={classes.para}>Will be externally audited soon.</p>
+                <p className={classes.para}>Audited by Certik.</p>
                 <a href="https://certik.org/projects/polkabridge">Check report</a>
               </div>
             </div>

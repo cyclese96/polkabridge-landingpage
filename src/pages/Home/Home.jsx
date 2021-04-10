@@ -4,7 +4,7 @@ import About from './About';
 import Features from './Features';
 import HowItWorks from './HowItWorks';
 import PBRToken from './PBRToken';
-import Team from './Team';
+// import Team from './Team';
 import Roadmap from './Roadmap';
 import SocialLinks from './SocialLinks';
 import Footer from '../../common/Footer';
@@ -46,9 +46,9 @@ export default function Home() {
         <Roadmap />
       </section>
 
-      <section id="team">
+      {/* <section id="team">
         <Team />
-      </section>
+      </section> */}
       <section id="exchange">
         <Listings />
       </section>
