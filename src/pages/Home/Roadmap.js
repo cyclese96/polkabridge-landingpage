@@ -156,7 +156,7 @@ export default function Roadmap(props) {
           <div className="row align-items-center ">
             <div className="col-3 col-md-1">
               {' '}
-              <button className="c--right" onClick={window.width > 900 ? goLeft : goLeftMob}>
+              <button className="c--right" onClick={window.innerWidth > 900 ? goLeft : goLeftMob}>
                 <div className="icon-wrapper">
                   <ChevronLeft className={classes.icon} />
                 </div>
@@ -316,8 +316,7 @@ export default function Roadmap(props) {
             </div>
 
             <div className="col-3 col-md-1  ">
-              {' '}
-              <button className="c--right" onClick={window.width > 900 ? goRight : goRightMob}>
+              <button className="c--right" onClick={window.innerWidth > 900 ? goRight : goRightMob}>
                 <div className="icon-wrapper">
                   <ChevronRight className={classes.icon} />
                 </div>

@@ -176,37 +176,37 @@ export default function PrimarySearchAppBar() {
           </Typography>
           <div className="d-flex justify-content-end">
             <Link activeClass="active" to="about" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p" noWrap>
+              <Typography className={classes.tabs} variant="body1" noWrap>
                 Solution <DotCircle />
               </Typography>
             </Link>
             <Link activeClass="active" to="how-it-works" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p" noWrap>
+              <Typography className={classes.tabs} variant="body1" noWrap>
                 How It Works <DotCircle />
               </Typography>
             </Link>
             <Link activeClass="active" to="team" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p">
+              <Typography className={classes.tabs} variant="body1">
                 Team <DotCircle />
               </Typography>
             </Link>
             <Link activeClass="active" to="pbt-token" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p">
+              <Typography className={classes.tabs} variant="body1">
                 PBR Token <DotCircle />
               </Typography>
             </Link>
             <Link activeClass="active" to="roadmap" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p">
+              <Typography className={classes.tabs} variant="body1">
                 Roadmap <DotCircle />
               </Typography>
             </Link>
             <Link activeClass="active" to="exchange" smooth={true} offset={0} duration={500} delay={0}>
-              <Typography className={classes.tabs} variant="p">
+              <Typography className={classes.tabs} variant="body1">
                 Exchange <DotCircle />
               </Typography>
             </Link>
             <a href="docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
-              <Typography className={classes.tabs} variant="p">
+              <Typography className={classes.tabs} variant="body1">
                 Read Whitepaper <DotCircle />
               </Typography>
             </a>

@@ -100,7 +100,7 @@ export default function Tokenomics() {
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Unlock Schedule</h6>
 
-                <p className={classes.para}>
+                <div className={classes.para}>
                   <ul>
                     <li>
                       <strong>Ecosystem :</strong> 1,000,000 PBR every month.
@@ -112,7 +112,7 @@ export default function Tokenomics() {
                       <strong>Team :</strong> 5,000,000 PBR every 6 months
                     </li>
                   </ul>
-                </p>
+                </div>
               </div>
             </Fade>
           </div>

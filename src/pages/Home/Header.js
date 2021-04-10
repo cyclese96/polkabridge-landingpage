@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { ShutterSpeed } from '@material-ui/icons';
 import Pulse from 'react-reveal/Pulse';
 
@@ -103,13 +103,13 @@ export default function Header() {
 
             <p className={classes.subheading}>
               <strong>Powered by </strong>{' '}
-              <Typography className={classes.title} variant="h6" noWrap>
+              <div className={classes.title} variant="h6" noWrap>
                 <img
                   src="https://polkadot.network/assets/img/logo-polkadot.svg?v=c1f8875403"
                   alt="logo"
                   height="40px"
                 />
-              </Typography>
+              </div>
             </p>
             <div className="text-center mt-3">
               <a href="https://farm.polkabridge.org/" style={{ textDecoration: 'none' }}>
