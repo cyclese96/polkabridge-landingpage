@@ -127,7 +127,7 @@ export default function About() {
               </div>
             </div>
             <div className="text-left mt-3">
-              <Button variant="contained" color="primary" className={classes.button}>
+              <Button href="https://www.youtube.com/watch?v=tsbRzb2S7mU" target="_blank" variant="contained" color="primary" className={classes.button}>
                 <Receipt className={classes.icon} /> Learn More
               </Button>
             </div>
