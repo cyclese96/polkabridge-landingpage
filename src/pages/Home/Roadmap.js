@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
   lineMaker: {
     display: 'flex',
     justifyContent: 'center',
-    width: 250,
+    width: 225,
     marginTop: 15,
   },
   baseline: {
@@ -154,7 +154,7 @@ export default function Roadmap(props) {
       <Fade top>
         <div className="mt-5">
           <div className="row g-0 align-items-center ">
-            <div className="col-3 col-md-1">
+            <div className="col-2 col-md-1">
               {' '}
               <button className="c--right" onClick={window.innerWidth > 900 ? goLeft : goLeftMob}>
                 <div className="icon-wrapper">
@@ -163,7 +163,7 @@ export default function Roadmap(props) {
               </button>
             </div>
 
-            <div className="col-6 col-md-10  ">
+            <div className="col-8 col-md-10">
               <div className="slider">
                 {[
                   <div className={classes.quarterWrapper}>
@@ -307,10 +307,7 @@ export default function Roadmap(props) {
                   </div>,
                 ].map((item, index) => {
                   return (
-                    <div
-                      key={index}
-                      className="slide"
-                      style={{ transform: `translateX(${x}%)`, display: 'flex', justifyContent: 'center' }}>
+                    <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
                       {item}
                     </div>
                   );
@@ -318,7 +315,7 @@ export default function Roadmap(props) {
               </div>
             </div>
 
-            <div className="col-3 col-md-1  ">
+            <div className="col-2 col-md-1  ">
               <button className="c--right" onClick={window.innerWidth > 900 ? goRight : goRightMob}>
                 <div className="icon-wrapper">
                   <ChevronRight className={classes.icon} />

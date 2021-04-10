@@ -35,6 +35,8 @@ a {
 
 @media only screen and (max-width: 950px) {
   .slide {
+    display: flex;
+    justify-content: center;
     position: relative;
     min-width: 100%;
     height: 100%;
