@@ -153,7 +153,7 @@ export default function Roadmap(props) {
       </div>
       <Fade top>
         <div className="mt-5">
-          <div className="row align-items-center ">
+          <div className="row g-0 align-items-center ">
             <div className="col-3 col-md-1">
               {' '}
               <button className="c--right" onClick={window.innerWidth > 900 ? goLeft : goLeftMob}>
