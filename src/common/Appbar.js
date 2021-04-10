@@ -140,7 +140,7 @@ export default function PrimarySearchAppBar() {
           { name: 'Exchange', id: 'exchange' },
         ].map((tab, index) => (
           <Link activeClass="active" to={tab.id} smooth={true} offset={0} duration={500} delay={0}>
-            <ListItem button key={tab.name}>
+            <ListItem button key={tab.name} onClick={toggleDrawer(anchor, false)}>
               <ListItemText primary={tab.name} className={classes.menuTitle} />
             </ListItem>
           </Link>
