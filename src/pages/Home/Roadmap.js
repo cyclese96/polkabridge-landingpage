@@ -127,7 +127,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Roadmap(props) {
   const classes = useStyles();
-  const [x, setX] = useState(0);
+  const [x, setX] = useState(-300);
 
   const goRight = () => {
     x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 5) ? setX(0) : setX(x - 100);
@@ -307,7 +307,10 @@ export default function Roadmap(props) {
                   </div>,
                 ].map((item, index) => {
                   return (
-                    <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
+                    <div
+                      key={index}
+                      className="slide"
+                      style={{ transform: `translateX(${x}%)`, display: 'flex', justifyContent: 'center' }}>
                       {item}
                     </div>
                   );

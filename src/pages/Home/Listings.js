@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapper: {
     padding: 15,
-    height: '64px',
+    height: '55px',
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
