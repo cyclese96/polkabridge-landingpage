@@ -95,7 +95,8 @@ export default function Header() {
 
             <Pulse>
               <h1 className={classes.heading}>
-                Decentralized all-in-one financial<br />
+                Decentralized all-in-one financial
+                <br />
                 application platform
               </h1>
             </Pulse>

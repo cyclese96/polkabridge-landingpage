@@ -24,38 +24,30 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     display: 'none',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       display: 'block',
     },
   },
   tabs: {
     color: theme.palette.pbr.textSecondary,
     display: 'none',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('md')]: {
       display: 'block',
     },
-    paddingRight: 15,
+    paddingRight: 10,
     fontWeight: 400,
     lineHeight: '24px',
     verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    letterSpacing: '-1px',
     margin: 0,
-    padding: '9px 18px 0px',
+    padding: '9px 14px 0px',
     cursor: 'pointer',
+    fontSize: '1.2vw',
   },
   inputRoot: {
     color: 'inherit',
   },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
-    },
-  },
+
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
@@ -183,8 +175,6 @@ export default function PrimarySearchAppBar() {
             <img src="logo.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
-
-
             <Link activeClass="active" to="about" smooth={true} offset={0} duration={500} delay={0}>
               <Typography className={classes.tabs} variant="p" noWrap>
                 Solution <DotCircle />
@@ -215,16 +205,14 @@ export default function PrimarySearchAppBar() {
                 Exchange <DotCircle />
               </Typography>
             </Link>
+            <a href="https://polkabridge.org/assets/docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
+              <Typography className={classes.tabs} variant="p">
+                Read Whitepaper <DotCircle />
+              </Typography>
+            </a>
 
             <div className={classes.sectionDesktop}>
-              <CustomButton
-                title={'Read Whitepaper'}
-                link={'https://polkabridge.org/assets/docs/whitepaper.pdf'}></CustomButton>
-            </div>
-            <div className={classes.sectionDesktop}>
-              <CustomButton
-                title={'LaunchApp'}
-                link={'https://farm.polkabridge.org'}></CustomButton>
+              <CustomButton title={'Launch App'} link={'https://farm.polkabridge.org'}></CustomButton>
             </div>
           </div>
           <div className={classes.sectionMobile}>

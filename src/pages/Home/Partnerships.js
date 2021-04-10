@@ -40,35 +40,35 @@ export default function Partnerships() {
     <div className={classes.background}>
       <p className={classes.para}>Our Proud Partners</p>
       <div className={classes.listingsWrapper}>
-        <div className="mt-3 row text-center">
+        <div className="mt-3  row g-0 text-center">
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/chinapolka.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/chinapolka.png" alt="logo" className={classes.imageWrapper} />
           </div>
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/bmwcapital.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapper} />
           </div>
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/inverse.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/inverse.png" alt="logo" className={classes.imageWrapper} />
           </div>
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/labsgroup.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
           </div>
         </div>
       </div>
       <div className={classes.listingsWrapper}>
-        <div className="mt-3 row text-center">
+        <div className="mt-3 row g-0 text-center">
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/casper.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/casper.png" alt="logo" className={classes.imageWrapper} />
           </div>
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/mint.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/mint.png" alt="logo" className={classes.imageWrapper} />
           </div>
 
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/taraxa.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/taraxa.png" alt="logo" className={classes.imageWrapper} />
           </div>
           <div className="col-6 col-md-3">
-            <img src="https://polkabridge.org/assets/img/deeper.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
           </div>
         </div>
       </div>

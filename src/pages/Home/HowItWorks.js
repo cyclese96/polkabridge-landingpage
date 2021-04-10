@@ -3,11 +3,11 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
-      padding: 0,
+      padding: 10,
       paddingTop: 50,
       paddingBottom: 50,
     },
@@ -69,7 +69,7 @@ export default function HowItWorks() {
 
   return (
     <div className={classes.background}>
-      <div className="container row mt-3">
+      <div className="row g-0 mt-3">
         <div className="col-md-6">
           <Fade left>
             <div className="mb-3">

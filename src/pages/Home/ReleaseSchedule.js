@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
@@ -46,7 +46,7 @@ export default function ReleaseSchedule() {
       </div>
       <Fade top>
         <div className="text-center">
-          <img src="https://polkabridge.org/assets/img/schedule.png" alt="working" className={classes.imageContainer} />
+          <img src="images/schedule.png" alt="working" className={classes.imageContainer} />
         </div>
       </Fade>
     </div>

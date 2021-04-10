@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     backgroundColor: '#F7F8FB',
     height: '100%',
     [theme.breakpoints.down('sm')]: {
@@ -72,48 +72,50 @@ export default function Tokenomics() {
 
   return (
     <div className={classes.background}>
-      <div className="container row flex-column-reverse flex-md-row">
-        <div className="col-md-6">
-          <Fade left>
-            <div className="mt-1">
-              <img src="tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
-            </div>
-          </Fade>
-        </div>
-        <div className="col-md-6">
-          <Fade right>
-            <div className="mb-5">
-              <h4 className={classes.heading}>
-                <strong className={classes.highlight}>Tokenomics</strong> & Locking
-              </h4>
-            </div>
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>Smart Contract</h6>
-              <p className={classes.para}>0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695</p>
-            </div>
-            {/* <div className={classes.focusContainer}>
+      <div className="container-fluid">
+        <div className="row flex-column-reverse flex-md-row">
+          <div className="col-md-6">
+            <Fade left>
+              <div className="mt-1">
+                <img src="tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
+              </div>
+            </Fade>
+          </div>
+          <div className="col-md-6">
+            <Fade right>
+              <div className="mb-5">
+                <h4 className={classes.heading}>
+                  <strong className={classes.highlight}>Tokenomics</strong> & Locking
+                </h4>
+              </div>
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>Smart Contract</h6>
+                <p className={classes.para}>0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695</p>
+              </div>
+              {/* <div className={classes.focusContainer}>
               <h6 className={classes.title}>NFT Standard</h6>
 
               <p className={classes.para}>The ultimate cross-chain NFT standard based on Substrate coming soon.</p>
             </div> */}
-            <div className={classes.focusContainer}>
-              <h6 className={classes.title}>Unlock Schedule</h6>
+              <div className={classes.focusContainer}>
+                <h6 className={classes.title}>Unlock Schedule</h6>
 
-              <p className={classes.para}>
-                <ul>
-                  <li>
-                    <strong>Ecosystem :</strong> 1,000,000 PBR every month.
-                  </li>
-                  <li>
-                    <strong>Marketing :</strong> 1,000,000 PBR every month
-                  </li>
-                  <li>
-                    <strong>Team :</strong> 5,000,000 PBR every 6 months
-                  </li>
-                </ul>
-              </p>
-            </div>
-          </Fade>
+                <p className={classes.para}>
+                  <ul>
+                    <li>
+                      <strong>Ecosystem :</strong> 1,000,000 PBR every month.
+                    </li>
+                    <li>
+                      <strong>Marketing :</strong> 1,000,000 PBR every month
+                    </li>
+                    <li>
+                      <strong>Team :</strong> 5,000,000 PBR every 6 months
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </Fade>
+          </div>
         </div>
       </div>
     </div>

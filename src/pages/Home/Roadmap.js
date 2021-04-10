@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
@@ -53,14 +53,12 @@ export default function Roadmap() {
 
   return (
     <div className={classes.background}>
-      <div className="container">
+      <div>
         <div>
           <h6 className={classes.heading}>
             PolkaBridge <strong className={classes.highlight}>RoadMap</strong>
           </h6>
-          <p className={classes.para}>
-            Fundamentally strong and visionary project with strong foundation.
-          </p>
+          <p className={classes.para}>Fundamentally strong and visionary project with strong foundation.</p>
         </div>
         <Fade top>
           <div className="mt-5 text-center">

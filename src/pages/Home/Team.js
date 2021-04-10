@@ -5,7 +5,7 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
@@ -85,14 +85,14 @@ export default function Team() {
 
   return (
     <div className={classes.background}>
-      <div className="container text-center">
+      <div className="text-center">
         <h4 className={classes.heading}>
           Our <strong className={classes.highlight}>Team</strong>
         </h4>
         <div className="mt-5 d-flex justify-content-center">
           <Fade left>
             <div className={classes.people}>
-              <img src="https://polkabridge.org/assets/img/cyclese.png" alt="Cyclese" className={classes.avatar} />
+              <img src="images/cyclese.png" alt="Cyclese" className={classes.avatar} />
               <h6 className={classes.title}>Cyclese</h6>
               <p className={classes.para}>CEO & Co-Founder </p>
               <p className={classes.para}>Senior Blockchain Developer</p>
@@ -107,7 +107,7 @@ export default function Team() {
           </Fade>{' '}
           <Fade right>
             <div className={classes.people}>
-              <img src="https://polkabridge.org/assets/img/zeph.png" alt="Zeph" className={classes.avatar} />
+              <img src="images/zeph.png" alt="Zeph" className={classes.avatar} />
               <h6 className={classes.title}>Zeph</h6>
               <p className={classes.para}>Co-Founder </p>
               <p className={classes.para}>UX/UI Designer</p>

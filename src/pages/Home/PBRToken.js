@@ -4,11 +4,11 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
-      padding: 0,
+      padding: 10,
       paddingTop: 50,
       paddingBottom: 50,
     },
@@ -74,15 +74,11 @@ export default function PBRToken() {
 
   return (
     <div className={classes.background}>
-      <div className="container row flex-column-reverse flex-md-row">
+      <div className="row g-0 flex-column-reverse flex-md-row">
         <div className="col-md-6 col-sm-12 col-sm-push-4">
           <Fade left>
             <div>
-              <img
-                src="https://polkabridge.org/assets/img/pbrtoken.png"
-                alt="logo"
-                className={classes.imageContainer}
-              />
+              <img src="images/pbrtoken.png" alt="logo" className={classes.imageContainer} />
             </div>
           </Fade>
         </div>

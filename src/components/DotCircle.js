@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   circle: {
     color: theme.palette.pbr.primary,
-    fontSize: 24,
+    fontSize: 20,
   },
 }));
 export default function DotCircle() {

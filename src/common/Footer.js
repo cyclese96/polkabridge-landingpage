@@ -33,7 +33,7 @@ export default function Footer() {
     <div className={classes.background}>
       <div className="container text-center">
         <div>
-          <img src="https://polkabridge.org/assets/img/symbol.png" alt="logo" height="50px" />
+          <img src="images/symbol.png" alt="logo" height="50px" />
         </div>
         <p className={classes.para}>
           Copyright 2021 <span className={classes.highlight}>PolkaBridge</span>. All Rights Reserved.

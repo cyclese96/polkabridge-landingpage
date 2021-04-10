@@ -4,7 +4,7 @@ import { Twitter, Telegram, GitHub, Email, Reddit } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '300px',
     [theme.breakpoints.down('sm')]: {
       height: '100%',
@@ -56,7 +56,7 @@ export default function SocialLinks() {
 
   return (
     <div className={classes.background}>
-      <div className="container text-center">
+      <div className="text-center">
         <div>
           <h6 className={classes.heading}>
             Follow <span className={classes.highlight}>PolkaBridge</span>
@@ -104,7 +104,13 @@ export default function SocialLinks() {
               <Tooltip title="Discord">
                 <a href="https://discord.gg/G3NDrcq6GW">
                   <IconButton aria-label="Discord">
-                    <Reddit className={classes.icon} />
+                    <img
+                      src="https://www.flaticon.com/svg/vstatic/svg/3800/3800029.svg?token=exp=1618025454~hmac=fff285b1415d7d038a403104e305fe66"
+                      height="25px"
+                      width="25px"
+                      style={{ opacity: 0.6, marginTop: 5 }}
+                      alt="discord"
+                    />
                   </IconButton>
                 </a>
               </Tooltip>

@@ -7,12 +7,13 @@ const useStyles = makeStyles((theme) => ({
     background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
     lineHeight: '24px',
     verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    letterSpacing: '-1px',
     margin: 0,
     marginTop: 5,
     color: '#ffffff',
-    padding: '10px 20px 10px 20px',
+    padding: '8px 16px 8px 16px',
     fontWeight: 600,
+    fontSize: '1.02vw',
   },
 }));
 

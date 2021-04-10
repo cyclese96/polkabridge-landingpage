@@ -4,11 +4,11 @@ import Pulse from 'react-reveal/Pulse';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     backgroundColor: '#f7f8fb',
     height: '100%',
     [theme.breakpoints.down('sm')]: {
-      padding: 5,
+      padding: 10,
       paddingBottom: 50,
       paddingTop: 50,
       textAlign: 'center',
@@ -108,7 +108,7 @@ export default function Features() {
       </div>
       <Pulse>
         <div className="mt-5">
-          <div className="container row">
+          <div className="row g-0">
             <div className="col-md-4 col-sm-12 text-center">
               <div>
                 <CompareArrows className={classes.circle} color="secondary" fontSize="large" />
@@ -142,7 +142,7 @@ export default function Features() {
           </div>
         </div>
         <div className="mt-5">
-          <div className="container row">
+          <div className="row g-0">
             <div className="col-md-4 col-sm-12 text-center">
               <div className="text-center">
                 <Receipt className={classes.circle} color="secondary" fontSize="large" />

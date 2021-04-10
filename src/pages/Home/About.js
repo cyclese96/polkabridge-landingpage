@@ -5,10 +5,10 @@ import { Fade } from 'react-reveal';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 70,
+    padding: 80,
     height: '100%',
     [theme.breakpoints.down('sm')]: {
-      padding: 0,
+      padding: 10,
       paddingBottom: 35,
       paddingTop: 35,
     },
@@ -94,7 +94,7 @@ export default function About() {
 
   return (
     <div className={classes.background}>
-      <div className="container row mt-3">
+      <div className="row g-0 mt-3">
         <div className="col-md-6">
           <h6 className={classes.heading}>
             What is <strong className={classes.highlight}>POLKABRIDGE?</strong>
@@ -123,6 +123,7 @@ export default function About() {
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Fully Audited</h6>
                 <p className={classes.para}>Will be externally audited soon.</p>
+                <a href="https://certik.org/projects/polkabridge">Check report</a>
               </div>
             </div>
             <div className="text-left mt-3">
@@ -135,7 +136,7 @@ export default function About() {
         <div className="col-md-6">
           <Fade right>
             <div>
-              <img src="https://polkabridge.org/assets/img/what.png" alt="explain" className={classes.imageContainer} />
+              <img src="images/about.png" alt="explain" className={classes.imageContainer} />
             </div>
           </Fade>
         </div>
