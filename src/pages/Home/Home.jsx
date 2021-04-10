@@ -15,7 +15,7 @@ import Header from './Header';
 
 export default function Home() {
   return (
-    <Fragment>
+    <div style={{ overflowX: 'hidden' }}>
       <section id="header">
         <Header />
       </section>
@@ -58,6 +58,6 @@ export default function Home() {
       <section>
         <Footer />
       </section>
-    </Fragment>
+    </div>
   );
 }

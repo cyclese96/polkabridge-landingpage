@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
   imageWrapper: {
     padding: 15,
     height: '64px',
+    [theme.breakpoints.down('sm')]: {
+      height: '54px',
+      padding: 15,
+    },
   },
   listingsWrapper: {
     maxWidth: 700,

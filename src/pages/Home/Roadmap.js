@@ -75,6 +75,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     width: 225,
     marginTop: 15,
+    [theme.breakpoints.down('sm')]: {
+      width: 180,
+    },
   },
   baseline: {
     display: 'flex',
