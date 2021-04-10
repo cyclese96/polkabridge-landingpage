@@ -60,28 +60,24 @@ export default function Listings() {
             {' '}
             <div className="col-6 col-md-3">
               <a href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                <img src="https://polkabridge.org/assets/img/uniswap.png" alt="logo" className={classes.imageWrapper} />
+                <img src="images/uniswap.png" alt="logo" className={classes.imageWrapper} />
               </a>
             </div>
             <div className="col-6 col-md-3">
               <a href="https://www.mxc.com/trade/easy#PBR_USDT">
-                <img
-                  src="https://polkabridge.org/assets/img/mxc-logo.png"
-                  alt="logo"
-                  className={classes.imageWrapper}
-                />
+                <img src="images/mxc-logo.png" alt="logo" className={classes.imageWrapper} />
               </a>
             </div>
           </Fade>
           <Fade right>
             <div className="col-6 col-md-3">
               <a href="https://www.gate.io/trade/PBR_USDT">
-                <img src="https://polkabridge.org/assets/img/gate.png" alt="logo" className={classes.imageWrapper} />
+                <img src="images/gate.png" alt="logo" className={classes.imageWrapper} />
               </a>
             </div>
             <div className="col-6 col-md-3">
               <a href="https://bilaxy.com/trade/PBR_ETH">
-                <img src="https://polkabridge.org/assets/img/bilaxy.png" alt="logo" className={classes.imageWrapper} />
+                <img src="images/bilaxy.png" alt="logo" className={classes.imageWrapper} />
               </a>
             </div>
           </Fade>

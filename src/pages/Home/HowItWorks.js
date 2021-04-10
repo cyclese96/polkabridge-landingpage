@@ -100,7 +100,7 @@ export default function HowItWorks() {
         <div className="col-md-6">
           <Fade right>
             <div className="mt-3">
-              <img src="HowItWorks.png" alt="working" className={classes.imageContainer} />
+              <img src="images/HowItWorks.png" alt="working" className={classes.imageContainer} />
             </div>
           </Fade>
         </div>

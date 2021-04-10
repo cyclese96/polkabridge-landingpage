@@ -77,7 +77,7 @@ export default function Tokenomics() {
           <div className="col-md-6">
             <Fade left>
               <div className="mt-1">
-                <img src="tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
+                <img src="images/tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
               </div>
             </Fade>
           </div>

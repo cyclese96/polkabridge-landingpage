@@ -159,7 +159,7 @@ export default function PrimarySearchAppBar() {
           </a>
         ))}
         <ListItem button>
-          <a href="https://polkabridge.org/assets/docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
+          <a href="docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
             <ListItemText primary={'Read Whitepaper'} className={classes.menuTitlePink} />
           </a>
         </ListItem>
@@ -205,7 +205,7 @@ export default function PrimarySearchAppBar() {
                 Exchange <DotCircle />
               </Typography>
             </Link>
-            <a href="https://polkabridge.org/assets/docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
+            <a href="docs/whitepaper.pdf" style={{ textDecoration: 'none' }}>
               <Typography className={classes.tabs} variant="p">
                 Read Whitepaper <DotCircle />
               </Typography>
