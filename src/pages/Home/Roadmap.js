@@ -62,7 +62,7 @@ export default function Roadmap() {
         </div>
         <Fade top>
           <div className="mt-5 text-center">
-            <img src="roadmap.png" alt="roadmap" className={classes.imageContainer} />
+            <img src="images/roadmap.png" alt="roadmap" className={classes.imageContainer} />
           </div>
         </Fade>
       </div>

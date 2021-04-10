@@ -105,7 +105,7 @@ export default function SocialLinks() {
                 <a href="https://discord.gg/G3NDrcq6GW">
                   <IconButton aria-label="Discord">
                     <img
-                      src="https://www.flaticon.com/svg/vstatic/svg/3800/3800029.svg?token=exp=1618025454~hmac=fff285b1415d7d038a403104e305fe66"
+                      src="images/discord.png"
                       height="25px"
                       width="25px"
                       style={{ opacity: 0.6, marginTop: 5 }}
