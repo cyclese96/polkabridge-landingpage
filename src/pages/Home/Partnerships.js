@@ -34,6 +34,14 @@ const useStyles = makeStyles((theme) => ({
       padding: 15,
     },
   },
+  imageWrapperBMW: {
+    padding: 10,
+    height: '70px',
+    [theme.breakpoints.down('sm')]: {
+      height: '54px',
+      padding: 15,
+    },
+  },
   listingsWrapper: {
     maxWidth: 700,
   },
@@ -51,7 +59,7 @@ export default function Partnerships() {
             </a>
           </div>
           <div className="col-6 col-md-3">
-            <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapper} />
+            <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapperBMW} />
           </div>
 
           <div className="col-6 col-md-3">
