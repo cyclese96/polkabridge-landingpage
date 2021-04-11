@@ -101,7 +101,7 @@ export default function About() {
           </h6>
           <p className={classes.para}>
             With PolkaBridge, you can swap tokens on DOT platform to tokens on other chains and vice versa. Users will
-            be able to earn by adding liquidity, lending and more other ways simply.
+            be able to earn by adding liquidity, lending, farming and more other ways simply.
           </p>
 
           <Fade left>

@@ -102,7 +102,7 @@ export default function Features() {
         <div className="d-flex justify-content-center ">
           <p className={classes.para}>
             With PolkaBridge, you can swap tokens on DOT platform to tokens on other chains and vice versa. Users will
-            be able to earn by adding liquidity, lending and more other ways simply.
+            be able to earn by adding liquidity, lending, farming and more other ways simply.
           </p>
         </div>{' '}
       </div>
@@ -149,7 +149,7 @@ export default function Features() {
               </div>
 
               <h6 className={classes.featureHeading}>Lending</h6>
-              <p className={classes.featureText}>Borrowing and depositing funds making easy and smooth.</p>
+              <p className={classes.featureText}>Borrowing and depositing funds is made simple and easy</p>
             </div>
 
             <div className="col-md-4 col-sm-12 text-center">
@@ -158,7 +158,7 @@ export default function Features() {
               </div>
 
               <h6 className={classes.featureHeading}>Prediction</h6>
-              <p className={classes.featureText}>Participate in prediction market and earn for being right.</p>
+              <p className={classes.featureText}>Participate in predicting the market and receive rewards for being correct</p>
             </div>
 
             <div className="col-md-4 col-sm-12 text-center">
