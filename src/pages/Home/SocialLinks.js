@@ -1,6 +1,6 @@
 import { IconButton, Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Twitter, Telegram, GitHub, Email, Reddit } from '@material-ui/icons';
+import { Twitter, Telegram, GitHub, Email } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -91,7 +91,7 @@ export default function SocialLinks() {
                 </a>
               </Tooltip>
             </div>
-            <div className={classes.iconWrapper}>
+            {/* <div className={classes.iconWrapper}>
               <Tooltip title="Reddit">
                 <a href="https://www.reddit.com/user/PolkaBridge">
                   <IconButton aria-label="Reddit">
@@ -99,7 +99,7 @@ export default function SocialLinks() {
                   </IconButton>
                 </a>
               </Tooltip>
-            </div>
+            </div> */}
             <div className={classes.iconWrapper}>
               <Tooltip title="Discord">
                 <a href="https://discord.gg/G3NDrcq6GW">
