@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
-import { ShutterSpeed } from '@material-ui/icons';
+import { CallToAction, ShutterSpeed } from '@material-ui/icons';
 import Pulse from 'react-reveal/Pulse';
 
 const useStyles = makeStyles((theme) => ({
@@ -72,6 +72,10 @@ const useStyles = makeStyles((theme) => ({
     padding: '15px 30px 15px 30px',
     fontWeight: 600,
     fontSize: 14,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 13,
+      padding: '10px 20px 10px 20px',
+    },
   },
   icon: {
     fontSize: 16,
@@ -89,10 +93,9 @@ export default function Header() {
         <div className={classes.header}>
           <div className={classes.spacing}>
             <div className="d-flex flex-row justify-content-center mt-5">
-              <div className={classes.circle} />
-              <p className={classes.notice}>PBR Launchpad starting soon.</p>
+              {/* <div className={classes.circle} />
+              <p className={classes.notice}>PBR Launchpad starting soon.</p> */}
             </div>
-
             <Pulse>
               <h1 className={classes.heading}>
                 Decentralized all-in-one financial
@@ -100,7 +103,6 @@ export default function Header() {
                 application platform
               </h1>
             </Pulse>
-
             <p className={classes.subheading}>
               <strong>Powered by </strong>{' '}
               <div className={classes.title} variant="h6" noWrap>
@@ -112,9 +114,16 @@ export default function Header() {
               </div>
             </p>
             <div className="text-center mt-3">
-              <a href="https://farm.polkabridge.org/" style={{ textDecoration: 'none' }}>
+              <a href="https://farm.polkabridge.org/" style={{ textDecoration: 'none', padding: 5 }}>
                 <Button variant="contained" color="primary" className={classes.button}>
                   <ShutterSpeed className={classes.icon} /> Join Farming
+                </Button>
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0"
+                style={{ textDecoration: 'none', padding: 5 }}>
+                <Button variant="contained" color="primary" className={classes.button}>
+                  <CallToAction className={classes.icon} /> Apply for IDO
                 </Button>
               </a>
             </div>
