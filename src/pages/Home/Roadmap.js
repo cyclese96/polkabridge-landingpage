@@ -220,7 +220,7 @@ export default function Roadmap(props) {
                         <li>PBR Token IDO</li>
                         <li>Listing PBR on Uniswap</li>
                         <li>Listing PolkaBridge on PolkaProject</li>
-                        <li>Farming</li>
+                        <li>Deflationary Farming</li>
                         <li>Listing on tier-2 CEXs</li>
                       </ul>
                     </div>
@@ -238,6 +238,7 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>Launchpad </li>
+                        <li>Staking PBR</li>
                         <li>Migration PBR to Polkadot parachain testnet</li>
                       </ul>
                     </div>
@@ -255,6 +256,8 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>Launching Multichain DEX (Ethereum, Binance Smart Chain) </li>
+                        <li>NFT Gaming & Marketplace</li>
+                        <li>Listing on tier-1 CEXs</li>
                       </ul>
                     </div>
                   </div>,
@@ -270,7 +273,7 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>Integration</h6>
 
                       <ul className={classes.list}>
-                        <li>Migrating PBR to POlkadot parachain mainnet </li>
+                        <li>Migrating PBR to Polkadot parachain mainnet </li>
                         <li>Integrating Polkadot parachain to Multichain DEX</li>
                       </ul>
                     </div>

@@ -212,7 +212,7 @@ export default function PrimarySearchAppBar() {
             </a>
 
             <div className={classes.sectionDesktop}>
-              <CustomButton title={'Launch App'} link={'https://farm.polkabridge.org'}></CustomButton>
+              <CustomButton title={'LaunchPad'} link={'https://launchpad.polkabridge.org'}></CustomButton>
             </div>
           </div>
           <div className={classes.sectionMobile}>
