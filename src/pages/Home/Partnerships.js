@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
   listingsWrapper: {
     maxWidth: 700,
   },
+  listingsWrappe2: {
+    maxWidth: 900,
+  },
 }));
 export default function Partnerships() {
   const classes = useStyles();
@@ -74,29 +77,36 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
-      <div className={classes.listingsWrapper}>
-        <div className="mt-3 row g-0 text-center">
-          <div className="col-6 col-md-3">
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  text-center">
+          <div class="col-md-1"></div>
+          <div className="col-6 col-md-2">
             <a href="https://casperlabs.io/">
               <img src="images/casper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://publicmint.com/">
               <img src="images/mint.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
 
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://taraxa.io/">
               <img src="images/taraxa.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://deeper.network/">
               <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
+          <div className="col-12 col-md-2">
+            <a href="https://deeper.network/">
+              <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </div>
+          <div class="col-md-1"></div>
         </div>
       </div>
     </div>
