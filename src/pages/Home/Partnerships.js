@@ -54,27 +54,34 @@ export default function Partnerships() {
   return (
     <div className={classes.background}>
       <p className={classes.para}>Our Proud Partners</p>
-      <div className={classes.listingsWrapper}>
-        <div className="mt-3  row g-0 text-center">
-          <div className="col-6 col-md-3">
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  text-center">
+          <div class="col-md-1"></div>
+          <div className="col-6 col-md-2">
             <a href="http://chinapolka.com/">
               <img src="images/chinapolka.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapperBMW} />
           </div>
 
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://projectinverse.com/">
               <img src="images/inverse.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://labsgroup.io/">
               <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
+          <div className="col-12 col-md-2 d-none d-lg-block">
+            <a href="https://unifarm.co/">
+              <img src="images/unifarm.png" alt="logo" className={classes.imageWrapper} style={{ borderRadius: 25 }} />
+            </a>
+          </div>
+          <div class="col-md-1"></div>
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
@@ -101,14 +108,28 @@ export default function Partnerships() {
               <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-12 col-md-2">
-            <a href="https://deeper.network/">
+          <div className="col-12 col-md-2 d-none d-lg-block">
+            <a href="https://unilend.finance/">
               <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
           <div class="col-md-1"></div>
         </div>
       </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="row  d-lg-none d-xl-block">
+          <div className="col-6">
+            <a href="https://unilend.finance/">
+              <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </div>
+          <div className="col-6">
+            <a href="https://unifarm.co/">
+              <img src="images/unifarm.png" alt="logo" className={classes.imageWrapper} style={{ borderRadius: 25 }} />
+            </a>
+          </div>
+        </div>
+      </div>{' '}
     </div>
   );
 }
