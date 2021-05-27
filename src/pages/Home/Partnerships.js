@@ -116,20 +116,7 @@ export default function Partnerships() {
           <div class="col-md-1"></div>
         </div>
       </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="row  d-lg-none d-xl-block">
-          <div className="col-6">
-            <a href="https://unilend.finance/">
-              <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
-            </a>
-          </div>
-          <div className="col-6">
-            <a href="https://unifarm.co/">
-              <img src="images/unifarm.png" alt="logo" className={classes.imageWrapper} style={{ borderRadius: 25 }} />
-            </a>
-          </div>
-        </div>
-      </div>{' '}
+      {' '}
     </div>
   );
 }
