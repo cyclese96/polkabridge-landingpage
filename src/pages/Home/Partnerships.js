@@ -76,7 +76,7 @@ export default function Partnerships() {
               <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-12 col-md-2 d-none d-lg-block">
+          <div className="col-12 col-md-2 d-none d-md-block">
             <a href="https://unifarm.co/">
               <img src="images/unifarm.png" alt="logo" className={classes.imageWrapper} style={{ borderRadius: 25 }} />
             </a>
@@ -108,7 +108,7 @@ export default function Partnerships() {
               <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-12 col-md-2 d-none d-lg-block">
+          <div className="col-12 col-md-2 d-none d-md-block">
             <a href="https://unilend.finance/">
               <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
             </a>
@@ -117,7 +117,7 @@ export default function Partnerships() {
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
-        <div className="row  d-lg-none d-xl-block">
+        <div className="row  d-md-none d-lg-none d-xl-none d-xxl-none">
           <div className="col-6">
             <a href="https://unilend.finance/">
               <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
