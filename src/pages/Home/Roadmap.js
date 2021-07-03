@@ -234,12 +234,12 @@ export default function Roadmap(props) {
                       <div className={classes.circle}></div> <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Launchpad</h6>
+                      <h6 className={classes.title}>Staking & Launchpad</h6>
 
                       <ul className={classes.list}>
-                        <li>Launchpad </li>
-                        <li>Staking PBR</li>
-                        <li>Migration PBR to Polkadot parachain testnet</li>
+                        <li>Multichain Launchpad </li>
+                        <li>Multichain Staking</li>
+
                       </ul>
                     </div>
                   </div>,
@@ -252,11 +252,12 @@ export default function Roadmap(props) {
                       <div className={classes.circle}></div> <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Multichain Dex</h6>
+                      <h6 className={classes.title}>DEX</h6>
 
                       <ul className={classes.list}>
-                        <li>Launching Multichain DEX (Ethereum, Binance Smart Chain) </li>
-                        <li>NFT Gaming & Marketplace</li>
+                        <li>Multichain DEX (Ethereum, Binance Smart Chain, Polygon) </li>
+                        <li>Develop testnet on MoonBeam </li>
+                        <li>NFT Marketplace (CORGIB)</li>
                         <li>Listing on tier-1 CEXs</li>
                       </ul>
                     </div>
