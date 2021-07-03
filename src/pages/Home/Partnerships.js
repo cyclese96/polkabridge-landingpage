@@ -56,7 +56,6 @@ export default function Partnerships() {
       <p className={classes.para}>Our Proud Partners</p>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  text-center">
-          <div class="col-md-1"></div>
           <div className="col-6 col-md-2">
             <a href="http://chinapolka.com/">
               <img src="images/chinapolka.png" alt="logo" className={classes.imageWrapper} />
@@ -65,7 +64,6 @@ export default function Partnerships() {
           <div className="col-6 col-md-2">
             <img src="images/bmwcapital.png" alt="logo" className={classes.imageWrapperBMW} />
           </div>
-
           <div className="col-6 col-md-2">
             <a href="https://projectinverse.com/">
               <img src="images/inverse.png" alt="logo" className={classes.imageWrapper} />
@@ -76,22 +74,20 @@ export default function Partnerships() {
               <img src="images/labsgroup.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-12 col-md-2 d-none d-md-block">
+          <div className="col-6 col-md-2 ">
             <a href="https://unifarm.co/">
               <img src="images/unifarm.png" alt="logo" className={classes.imageWrapper} style={{ borderRadius: 25 }} />
             </a>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  text-center">
-          <div class="col-md-1"></div>
+          </div>{' '}
           <div className="col-6 col-md-2">
             <a href="https://casperlabs.io/">
               <img src="images/casper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  text-center">
           <div className="col-6 col-md-2">
             <a href="https://publicmint.com/">
               <img src="images/mint.png" alt="logo" className={classes.imageWrapper} />
@@ -108,12 +104,23 @@ export default function Partnerships() {
               <img src="images/deeper.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div className="col-12 col-md-2 d-none d-md-block">
+          <div className="col-6 col-md-2">
             <a href="https://unilend.finance/">
               <img src="images/unilend.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </div>
-          <div class="col-md-1"></div>
+
+          <div className="col-6 col-md-2">
+            <a href="https://polkawar.com/">
+              <img src="images/polkawar.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://corgib.polkabridge.org/">
+              <img src="images/corgi.png" alt="logo" className={classes.imageWrapper} />
+              <strong style={{ paddingTop: 5 }}>CORGIB</strong>
+            </a>
+          </div>
         </div>
       </div>{' '}
     </div>
