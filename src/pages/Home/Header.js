@@ -116,7 +116,12 @@ export default function Header() {
             <div className="text-center mt-3">
               <a href="https://farm.polkabridge.org/" style={{ textDecoration: 'none', padding: 5 }}>
                 <Button variant="contained" color="primary" className={classes.button}>
-                  <ShutterSpeed className={classes.icon} /> Join Farming
+                  <ShutterSpeed className={classes.icon} /> Farming
+                </Button>
+              </a>
+              <a href="https://stake.polkabridge.org/" style={{ textDecoration: 'none', padding: 5 }}>
+                <Button variant="contained" color="primary" className={classes.button}>
+                  <ShutterSpeed className={classes.icon} /> Staking
                 </Button>
               </a>
               <a
