@@ -252,10 +252,10 @@ export default function Roadmap(props) {
                       <div className={classes.circle}></div> <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>DEX</h6>
+                      <h6 className={classes.title}>AMM</h6>
 
                       <ul className={classes.list}>
-                        <li>Multichain DEX (Ethereum, Binance Smart Chain, Polygon) </li>
+                        <li>Multichain AMM (Ethereum, Binance Smart Chain, Polygon) </li>
                         <li>Develop testnet on MoonBeam </li>
                         <li>NFT Marketplace (CORGIB)</li>
                         <li>Listing on tier-1 CEXs</li>
@@ -271,11 +271,11 @@ export default function Roadmap(props) {
                       <div className={classes.circle}></div> <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Integration</h6>
+                      <h6 className={classes.title}>PolkaDot Integration</h6>
 
                       <ul className={classes.list}>
-                        <li>Migrating PBR to Polkadot parachain mainnet </li>
-                        <li>Integrating Polkadot parachain to Multichain DEX</li>
+                        <li>Migrate PBR to MoonBeam parachain</li>
+                        <li>Integrate PolkaDot into PolkaBridge DEFI application (AMM, Staking, Farming, LaunchPad)</li>
                       </ul>
                     </div>
                   </div>,
@@ -288,10 +288,10 @@ export default function Roadmap(props) {
                       <div className={classes.circle}></div> <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Crosschain DEX</h6>
+                      <h6 className={classes.title}>Crosschain AMM</h6>
 
                       <ul className={classes.list}>
-                        <li>Launching Crosschain Dex </li>
+                        <li>Launching Crosschain AMM</li>
                       </ul>
                     </div>
                   </div>,
