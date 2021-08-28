@@ -257,7 +257,7 @@ export default function Roadmap(props) {
                       <ul className={classes.list}>
                         <li>Multichain AMM (Ethereum, Binance Smart Chain, Polygon) </li>
                         <li>Develop testnet on MoonBeam </li>
-                        <li>NFT Marketplace (CORGIB)</li>
+                        <li>Expand to Polygon Ecosystem</li>
                         <li>Listing on tier-1 CEXs</li>
                       </ul>
                     </div>
