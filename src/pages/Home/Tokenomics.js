@@ -1,13 +1,13 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { Fade } from 'react-reveal';
+import { makeStyles } from "@material-ui/core/styles";
+import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    backgroundColor: '#F7F8FB',
-    height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      height: '100%',
+    backgroundColor: "#F7F8FB",
+    height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
       padding: 0,
       paddingBottom: 50,
       paddingTop: 50,
@@ -15,24 +15,24 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    [theme.breakpoints.down('sm')]: {
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
   para: {
     fontWeight: 400,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
-    textAlign: 'left',
-    [theme.breakpoints.down('sm')]: {
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
   },
@@ -42,28 +42,40 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: 500,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 16,
   },
   icon: {
     fontSize: 16,
     marginRight: 7,
-    color: '#ffffff',
+    color: "#ffffff",
   },
   focusContainer: {
-    border: '1px solid #888888',
+    border: "1px solid #888888",
     padding: 10,
-    borderRadius: '7px',
+    borderRadius: "7px",
     marginBottom: 10,
   },
   imageContainer: {
-    width: '100%',
-    [theme.breakpoints.down('sm')]: {
+    width: "100%",
+    [theme.breakpoints.down("sm")]: {
       marginTop: 30,
-      width: '100%',
+      width: "100%",
+    },
+  },
+  ethLogo: {
+    width: 70,
+    [theme.breakpoints.down("sm")]: {
+      width: 60,
+    },
+  },
+  polygonLogo: {
+    width: 90,
+    [theme.breakpoints.down("sm")]: {
+      width: 70,
     },
   },
 }));
@@ -77,7 +89,11 @@ export default function Tokenomics() {
           <div className="col-md-6">
             <Fade left>
               <div className="mt-1">
-                <img src="images/tokenomics.png" alt="tokenomics" className={classes.imageContainer} />
+                <img
+                  src="images/token.png"
+                  alt="tokenomics"
+                  className={classes.imageContainer}
+                />
               </div>
             </Fade>
           </div>
@@ -85,12 +101,15 @@ export default function Tokenomics() {
             <Fade right>
               <div className="mb-5">
                 <h4 className={classes.heading}>
-                  <strong className={classes.highlight}>Tokenomics</strong> & Locking
+                  <strong className={classes.highlight}>Tokenomics</strong> &
+                  Locking
                 </h4>
               </div>
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Smart Contract</h6>
-                <p className={classes.para}>0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695</p>
+                <p className={classes.para}>
+                  0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695
+                </p>
               </div>
               {/* <div className={classes.focusContainer}>
               <h6 className={classes.title}>NFT Standard</h6>
@@ -113,6 +132,17 @@ export default function Tokenomics() {
                     </li>
                   </ul>
                 </div>
+              </div>
+              <div>
+                <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
+                  <img src="images/ethereum.png" className={classes.ethLogo} />
+                </a>
+                <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
+                  <img
+                    src="images/polygon-logo.svg"
+                    className={classes.polygonLogo}
+                  />
+                </a>
               </div>
             </Fade>
           </div>

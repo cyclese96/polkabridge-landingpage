@@ -42,9 +42,9 @@ export default function Home() {
       <section>
         <Tokenomics />
       </section>
-      <section>
+      {/* <section>
         <ReleaseSchedule />
-      </section>
+      </section> */}
 
       <section id="roadmap">
         <Roadmap />
