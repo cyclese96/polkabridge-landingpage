@@ -1,12 +1,12 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { Fade } from 'react-reveal';
+import { makeStyles } from "@material-ui/core/styles";
+import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      height: '100%',
+    height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
       padding: 0,
       paddingBottom: 50,
       paddingTop: 50,
@@ -14,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    [theme.breakpoints.down('sm')]: {
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
@@ -27,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.pbr.primary,
   },
   imageContainer: {
-    width: '80%',
-    [theme.breakpoints.down('sm')]: {
+    width: "80%",
+    [theme.breakpoints.down("sm")]: {
       marginTop: 30,
-      width: '100%',
+      width: "100%",
     },
   },
 }));
@@ -46,7 +46,11 @@ export default function ReleaseSchedule() {
       </div>
       <Fade top>
         <div className="text-center">
-          <img src="images/schedule.png" alt="working" className={classes.imageContainer} />
+          <img
+            src="images/release.png"
+            alt="working"
+            className={classes.imageContainer}
+          />
         </div>
       </Fade>
     </div>
