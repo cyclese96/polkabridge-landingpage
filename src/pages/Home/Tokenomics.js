@@ -120,9 +120,23 @@ export default function Tokenomics() {
               </div>
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Smart Contract</h6>
-                <p className={classes.para}>
-                  0x298d492e8c1 d909d3f63bc4a36c66c64acb3d695
-                </p>
+
+                <div className="mt-1">
+                  <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
+                    <img src="images/ethlogo.png" className={classes.ethLogo} />
+                    0x298d492e8c1d909d3f63bc4a36c66c64acb3d695
+                  </a>
+                </div>
+
+                <div className="mt-2">
+                  <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
+                    <img
+                      src="images/polygon.png"
+                      className={classes.polygonLogo}
+                    />
+                    0x0d6ae2a429df13e44a07cd2969e085e4833f64a0
+                  </a>
+                </div>
               </div>
               {/* <div className={classes.focusContainer}>
               <h6 className={classes.title}>NFT Standard</h6>
@@ -144,35 +158,6 @@ export default function Tokenomics() {
                       <strong>Team :</strong> 5,000,000 PBR every 6 months
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div className="d-flex justify-content-start">
-                <div className={classes.ethLogoWrapper}>
-                  <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                    <img src="images/ethlogo.png" className={classes.ethLogo} />
-                  </a>
-                </div>
-
-                <div className={classes.iconLogoWrapper}>
-                  <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
-                    <img
-                      src="images/polygon.png"
-                      className={classes.polygonLogo}
-                    />
-                  </a>
-                </div>
-                <div className={classes.iconLogoWrapper}>
-                  <a href="https://coinmarketcap.com/currencies/polkabridge/">
-                    <img src="images/cmc.png" className={classes.polygonLogo} />
-                  </a>
-                </div>
-                <div className={classes.iconLogoWrapper}>
-                  <a href="https://www.coingecko.com/en/coins/polkabridge">
-                    <img
-                      src="images/coingecko.webp"
-                      className={classes.polygonLogo}
-                    />
-                  </a>
                 </div>
               </div>
             </Fade>

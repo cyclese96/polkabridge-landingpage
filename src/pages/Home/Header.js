@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { CallToAction, ShutterSpeed } from "@material-ui/icons";
+import { CallToAction, MonetizationOn, ShutterSpeed } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
@@ -136,6 +136,18 @@ export default function Header() {
                   className={classes.button}
                 >
                   <ShutterSpeed className={classes.icon} /> Staking
+                </Button>
+              </a>
+              <a
+                href="https://launchpad.polkabridge.org/"
+                style={{ textDecoration: "none", padding: 5 }}
+              >
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className={classes.button}
+                >
+                  <MonetizationOn className={classes.icon} /> Launchpad
                 </Button>
               </a>
             </div>
