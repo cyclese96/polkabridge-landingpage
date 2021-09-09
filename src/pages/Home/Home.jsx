@@ -93,7 +93,7 @@ export default function Home() {
       </section>
       <Dialog
         className={classes.modal}
-        open={!claimPopup}
+        open={claimPopup}
         TransitionComponent={Transition}
         keepMounted={false}
         onClose={() => setClaimPopup(false)}

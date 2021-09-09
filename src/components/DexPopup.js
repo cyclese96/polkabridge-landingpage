@@ -8,15 +8,16 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     width: 600,
     height: 700,
-    overflowY: "scroll",
     overflowX: "hidden",
+    overflowY: "scroll",
+
     marginBottom: 30,
     background: `url("http://jolttx.com/wp-content/uploads/2019/05/istockphoto-601370366-612x612.jpg") padding-box,linear-gradient(to right, #00EBF9, #C42195) border-box`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     border: `5px solid transparent`,
     borderRadius: 40,
-    display: "inline-block",
+
     padding: 10,
     [theme.breakpoints.down("md")]: {
       width: "100%",
