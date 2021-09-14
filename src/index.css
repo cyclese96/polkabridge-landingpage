@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: #c80c81;
 }
+*::-webkit-scrollbar {
+  width: 0px;
+}
 
 .slider {
   width: 100%;

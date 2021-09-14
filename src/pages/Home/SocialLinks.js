@@ -1,13 +1,20 @@
-import { IconButton, Tooltip } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import { Twitter, Telegram, GitHub, Email } from '@material-ui/icons';
+import { IconButton, Tooltip } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Twitter,
+  Telegram,
+  GitHub,
+  Email,
+  Reddit,
+  Instagram,
+} from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    height: '300px',
-    [theme.breakpoints.down('sm')]: {
-      height: '100%',
+    height: "300px",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
       padding: 0,
       paddingTop: 25,
       paddingBottom: 25,
@@ -15,24 +22,24 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    [theme.breakpoints.down('sm')]: {
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
   para: {
     fontWeight: 400,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
-    textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
   },
@@ -41,14 +48,22 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.pbr.primary,
   },
   icon: {
-    fontSize: 32,
-    color: '#616161',
-    '&:hover': {
+    fontSize: 28,
+    height: 28,
+    color: "#616161",
+    "&:hover": {
       color: theme.palette.pbr.primary,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 20,
+      height: 20,
     },
   },
   iconWrapper: {
     marginRight: 5,
+    [theme.breakpoints.down("sm")]: {
+      marginRight: 2,
+    },
   },
 }));
 export default function SocialLinks() {
@@ -61,7 +76,9 @@ export default function SocialLinks() {
           <h6 className={classes.heading}>
             Follow <span className={classes.highlight}>PolkaBridge</span>
           </h6>
-          <p className={classes.para}>To Get latest updates on PolkaBridge join!</p>
+          <p className={classes.para}>
+            To Get latest updates on PolkaBridge join!
+          </p>
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
@@ -91,7 +108,16 @@ export default function SocialLinks() {
                 </a>
               </Tooltip>
             </div>
-            {/* <div className={classes.iconWrapper}>
+            <div className={classes.iconWrapper}>
+              <Tooltip title="Medium">
+                <a href="https://polkabridge.medium.com/">
+                  <IconButton aria-label="Reddit">
+                    <img src="./images/medium.png" className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+            <div className={classes.iconWrapper}>
               <Tooltip title="Reddit">
                 <a href="https://www.reddit.com/user/PolkaBridge">
                   <IconButton aria-label="Reddit">
@@ -99,16 +125,23 @@ export default function SocialLinks() {
                   </IconButton>
                 </a>
               </Tooltip>
-            </div> */}
+            </div>
+            <div className={classes.iconWrapper}>
+              <Tooltip title="Reddit">
+                <a href="https://www.instagram.com/polkabridgeofficial/">
+                  <IconButton aria-label="Reddit">
+                    <Instagram className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Discord">
                 <a href="https://discord.gg/G3NDrcq6GW">
                   <IconButton aria-label="Discord">
                     <img
                       src="images/discord.png"
-                      height="25px"
-                      width="25px"
-                      style={{ opacity: 0.6, marginTop: 5 }}
+                      className={classes.icon}
                       alt="discord"
                     />
                   </IconButton>
