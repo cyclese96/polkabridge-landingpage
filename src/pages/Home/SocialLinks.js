@@ -119,7 +119,7 @@ export default function SocialLinks() {
             </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Reddit">
-                <a href="https://www.reddit.com/user/PolkaBridge">
+                <a href="https://www.reddit.com/r/polkabridge_official/">
                   <IconButton aria-label="Reddit">
                     <Reddit className={classes.icon} />
                   </IconButton>
