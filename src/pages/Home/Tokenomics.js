@@ -67,28 +67,39 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  ethLogo: {
+  logoWrapper: {
     backgroundColor: "white",
-    borderRadius: 10,
+    width: 45,
     height: 45,
     marginRight: 15,
-    padding: 10,
-    paddingRight: 15,
-    paddingLeft: 15,
+    borderRadius: 10,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     border: "1px solid #bdbdbd",
     [theme.breakpoints.down("sm")]: {
-      width: 30,
+      width: 40,
+      height: 40,
+      marginRight: 5,
+    },
+  },
+  ethLogo: {
+    height: 25,
+    [theme.breakpoints.down("sm")]: {
+      height: 20,
     },
   },
   polygonLogo: {
-    backgroundColor: "white",
-    borderRadius: 10,
-    height: 45,
-    marginRight: 15,
-    padding: 10,
-    border: "1px solid #bdbdbd",
+    height: 25,
     [theme.breakpoints.down("sm")]: {
-      width: 25,
+      height: 20,
+    },
+  },
+  contractAddress: {
+    fontSize: 16,
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 10,
     },
   },
 }));
@@ -121,20 +132,38 @@ export default function Tokenomics() {
               <div className={classes.focusContainer}>
                 <h6 className={classes.title}>Smart Contract</h6>
 
-                <div className="mt-1">
+                <div className="mt-2">
                   <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                    <img src="images/ethlogo.png" className={classes.ethLogo} />
-                    0x298d492e8c1d909d3f63bc4a36c66c64acb3d695
+                    <div className="d-flex justify-content-start align-items-center">
+                      <div className={classes.logoWrapper}>
+                        {" "}
+                        <img
+                          src="images/ethlogo.png"
+                          className={classes.ethLogo}
+                        />{" "}
+                      </div>
+                      <span className={classes.contractAddress}>
+                        0x298d492e8c1d909d3f63bc4a36c66c64acb3d695
+                      </span>
+                    </div>
                   </a>
                 </div>
 
                 <div className="mt-2">
                   <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
-                    <img
-                      src="images/polygon.png"
-                      className={classes.polygonLogo}
-                    />
-                    0x0d6ae2a429df13e44a07cd2969e085e4833f64a0
+                    <div className="d-flex justify-content-start align-items-center">
+                      <div className={classes.logoWrapper}>
+                        {" "}
+                        <img
+                          src="images/polygon.png"
+                          className={classes.polygonLogo}
+                        />{" "}
+                      </div>
+                      <div className={classes.contractAddress}>
+                        {" "}
+                        0x0d6ae2a429df13e44a07cd2969e085e4833f64a0
+                      </div>
+                    </div>
                   </a>
                 </div>
               </div>
