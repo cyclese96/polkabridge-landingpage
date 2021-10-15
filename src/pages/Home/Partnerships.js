@@ -190,7 +190,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-12 col-md-4">
+          <div className="col-6 col-md-4">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"
@@ -199,7 +199,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-12 col-md-3">
             <a href="https://quickswap.exchange/">
               <img
                 src="images/quickswap.png"
