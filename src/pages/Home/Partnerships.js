@@ -150,18 +150,18 @@ export default function Partnerships() {
             </a>
           </div>
           <div className="col-6 col-md-2">
-            <a href="https://deeper.network/">
+            <a href="https://dfyn.network/">
               <img
-                src="images/deeper.png"
+                src="images/dfyn.png"
                 alt="logo"
                 className={classes.imageWrapper}
               />
             </a>
           </div>
           <div className="col-6 col-md-2">
-            <a href="https://unilend.finance/">
+            <a href="https://quickswap.exchange/">
               <img
-                src="images/unilend.png"
+                src="images/quickswap.png"
                 alt="logo"
                 className={classes.imageWrapper}
               />
@@ -172,15 +172,6 @@ export default function Partnerships() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  text-center">
           <div className="col-6 col-md-2">
-            <a href="https://dfyn.network/">
-              <img
-                src="images/dfyn.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-3">
             <a href="https://oddiyana.ventures/">
               <img
                 src="images/oddiyana.jpeg"
@@ -198,16 +189,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-3">
-            <a href="https://quickswap.exchange/">
-              <img
-                src="images/quickswap.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
+          <div className="col-12 col-md-4">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"
