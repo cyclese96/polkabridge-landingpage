@@ -272,9 +272,9 @@ export default function Roadmap(props) {
                           Multichain AMM (Ethereum, Binance Smart Chain,
                           Polygon){" "}
                         </li>
-                        <li>Develop testnet on MoonBeam </li>
+
                         <li>Expand to Polygon Ecosystem</li>
-                        <li>Listing on tier-1 CEXs</li>
+
                       </ul>
                     </div>
                   </div>,
