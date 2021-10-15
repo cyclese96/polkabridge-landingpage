@@ -100,9 +100,8 @@ export default function About() {
             What is <strong className={classes.highlight}>POLKABRIDGE?</strong>
           </h6>
           <p className={classes.para}>
-            With PolkaBridge, you can swap tokens on DOT platform to tokens on
-            other chains and vice versa. Users will be able to earn by adding
-            liquidity, lending, farming and more other ways simply.
+            A Multichain & Cross-Chain Decentralized All-In-One PLatform To
+            Include AMM, Farming, Lending,Launchpad, Prediction, NFT, and More.
           </p>
 
           <Fade left>
@@ -115,7 +114,7 @@ export default function About() {
                   </span>
                 </h6>
                 <p className={classes.para}>
-                  Supported Ethereum, BSC, Harmony, Polygon, Solana.
+                  Supported Ethereum, BSC, PolkaDot, Harmony, Polygon, Solana.
                 </p>
               </div>
               <div className={classes.focusContainer}>

@@ -131,11 +131,31 @@ export default function Partnerships() {
             </a>
           </div>
           <div className="col-6 col-md-2">
+            <a href="https://oddiyana.ventures/">
+              <img
+                src="images/oddiyana.jpeg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+                style={{ borderRadius: 20 }}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
             <a href="https://taraxa.io/">
               <img
                 src="images/taraxa.png"
                 alt="logo"
                 className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://pinknode.io/">
+              <img
+                src="images/pinknode.jpeg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+                style={{ borderRadius: 20 }}
               />
             </a>
           </div>
@@ -157,41 +177,14 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://dfyn.network/">
-              <img
-                src="images/dfyn.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://quickswap.exchange/">
-              <img
-                src="images/quickswap.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  text-center">
-          <div className="col-6 col-md-2">
-            <a href="https://oddiyana.ventures/">
+          <div className="col-6 col-md-3">
+            <a href="https://dfyn.network/">
               <img
-                src="images/oddiyana.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://pinknode.io/">
-              <img
-                src="images/pinknode.jpeg"
+                src="images/dfyn.png"
                 alt="logo"
                 className={classes.imageWrapperNew}
               />
@@ -203,6 +196,15 @@ export default function Partnerships() {
                 src="images/polygon.svg"
                 alt="logo"
                 className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-3">
+            <a href="https://quickswap.exchange/">
+              <img
+                src="images/quickswap.png"
+                alt="logo"
+                className={classes.imageWrapperNew}
               />
             </a>
           </div>
