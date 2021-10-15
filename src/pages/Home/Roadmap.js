@@ -256,9 +256,9 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>Multichain AMM (Ethereum, Binance Smart Chain, Polygon) </li>
-                        <li>Develop testnet on MoonBeam </li>
+
                         <li>Expand to Polygon Ecosystem</li>
-                        <li>Listing on tier-1 CEXs</li>
+
                       </ul>
                     </div>
                   </div>,
@@ -274,8 +274,12 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>PolkaDot Integration</h6>
 
                       <ul className={classes.list}>
-                        <li>Migrate PBR to MoonBeam parachain</li>
-                        <li>Integrate PolkaDot into PolkaBridge DEFI application (AMM, Staking, Farming, LaunchPad)</li>
+                        <li>Listing on tier-1 CEX (Kucoin, Huobi, Okex, FTX)</li>
+                        <li>Mainnet Multichain AMM</li>
+                        <li>Integrate Harmony Blockchain into PolkaBridge DEFI application(AMM, Staking, LaunchPad)</li>
+                        <li>Develop testnet on MoonBeam </li>
+                        <li>Run PBR to MoonBeam parachain</li>
+                        <li>Integrate PolkaDot into PolkaBridge DEFI application (AMM, Staking, LaunchPad)</li>
                       </ul>
                     </div>
                   </div>,
