@@ -102,7 +102,7 @@ export default function Listings() {
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-2">
+            <div className="col-12 col-md-2">
               <a href="https://coinmarketcap.com/currencies/polkabridge/">
                 <img src="images/cmc.png" className={classes.cmcLogo} />
               </a>
