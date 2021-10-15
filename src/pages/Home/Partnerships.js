@@ -42,6 +42,14 @@ const useStyles = makeStyles((theme) => ({
       padding: 15,
     },
   },
+  imageWrapperNew: {
+    padding: 10,
+    height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      height: "64px",
+      padding: 10,
+    },
+  },
   listingsWrapper: {
     maxWidth: 700,
   },
@@ -154,7 +162,7 @@ export default function Partnerships() {
               <img
                 src="images/dfyn.png"
                 alt="logo"
-                className={classes.imageWrapper}
+                className={classes.imageWrapperNew}
               />
             </a>
           </div>
@@ -163,7 +171,7 @@ export default function Partnerships() {
               <img
                 src="images/quickswap.png"
                 alt="logo"
-                className={classes.imageWrapper}
+                className={classes.imageWrapperNew}
               />
             </a>
           </div>
@@ -176,7 +184,7 @@ export default function Partnerships() {
               <img
                 src="images/oddiyana.jpeg"
                 alt="logo"
-                className={classes.imageWrapper}
+                className={classes.imageWrapperNew}
               />
             </a>
           </div>
@@ -185,7 +193,7 @@ export default function Partnerships() {
               <img
                 src="images/pinknode.jpeg"
                 alt="logo"
-                className={classes.imageWrapperBMW}
+                className={classes.imageWrapperNew}
               />
             </a>
           </div>
