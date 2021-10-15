@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     height: "80vh",
     width: "auto",
-    background: `linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(233, 233, 233, 0.99) ),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAl2T6kWLUzalYEALVytfVGJPuyw9eQ_wYHrvHv1r5xQrn8qebMgwudwpZNsQyXrtJM_M&usqp=CAU")`,
+    background: `linear-gradient(0deg, rgba(255, 255, 255, 0.99), rgba(233, 233, 233, 0.19) ),url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-particles-background-with-connection-concept-vector-illustration-image_416083.jpg")`,
     backgroundSize: "contain",
     [theme.breakpoints.up("sm")]: {
       height: "85vh",

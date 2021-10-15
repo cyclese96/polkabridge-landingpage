@@ -113,7 +113,7 @@ export default function Partnerships() {
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  text-center">
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://publicmint.com/">
               <img
                 src="images/mint.png"
@@ -122,8 +122,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://taraxa.io/">
               <img
                 src="images/taraxa.png"
@@ -132,7 +131,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://deeper.network/">
               <img
                 src="images/deeper.png"
@@ -141,7 +140,25 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
+            <a href="https://unilend.finance/">
+              <img
+                src="images/unilend.png"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://deeper.network/">
+              <img
+                src="images/deeper.png"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
             <a href="https://unilend.finance/">
               <img
                 src="images/unilend.png"
@@ -151,7 +168,56 @@ export default function Partnerships() {
             </a>
           </div>
         </div>
-      </div>{" "}
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  text-center">
+          <div className="col-6 col-md-2">
+            <a href="https://dfyn.network/">
+              <img
+                src="images/dfyn.png"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-3">
+            <a href="https://oddiyana.ventures/">
+              <img
+                src="images/oddiyana.jpeg"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://pinknode.io/">
+              <img
+                src="images/pinknode.jpeg"
+                alt="logo"
+                className={classes.imageWrapperBMW}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-3">
+            <a href="https://quickswap.exchange/">
+              <img
+                src="images/quickswap.png"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://polygon.technology/">
+              <img
+                src="images/polygon.svg"
+                alt="logo"
+                className={classes.imageWrapper}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
