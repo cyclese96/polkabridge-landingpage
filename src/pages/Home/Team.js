@@ -170,6 +170,13 @@ export default function Team() {
                   </IconButton>
                 </a>
               </Tooltip>
+              <Tooltip title="Twitter">
+                <a href="https://twitter.com/tahirahmadin">
+                  <IconButton aria-label="Twitter">
+                    <Twitter className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
             </div>
           </Fade>
           <Fade right>
@@ -243,6 +250,25 @@ export default function Team() {
                 <a href="https://www.linkedin.com/in/mr-swaroop-234633213">
                   <IconButton aria-label="LinkedIn">
                     <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="./images/team/dhruv.jpg"
+                alt="Swas"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Dhruv Sharma </h6>
+              <p className={classes.para}>Game Developer</p>
+
+              <Tooltip title="GitHub">
+                <a href="https://github.com/dhruvs8167">
+                  <IconButton aria-label="GitHub">
+                    <GitHub className={classes.icon} />
                   </IconButton>
                 </a>
               </Tooltip>
