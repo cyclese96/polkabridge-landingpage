@@ -32,8 +32,9 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     paddingBottom: 5,
     textAlign: "center",
+    fontSize: 16,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: 14,
     },
   },
   title: {
@@ -47,7 +48,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: theme.palette.pbr.primary,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 20,
+      fontSize: 16,
+
+      paddingBottom: 3,
     },
   },
 
@@ -61,12 +64,15 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       color: theme.palette.pbr.primary,
     },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 18,
+    },
   },
 
   people: {
     width: 250,
     [theme.breakpoints.down("sm")]: {
-      width: 200,
+      width: 180,
     },
   },
   avatar: {
@@ -75,8 +81,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50%",
     boxShadow: "5px 5px 4px 5px #888888",
     [theme.breakpoints.down("sm")]: {
-      width: "80px",
-      height: "80px",
+      width: "70px",
+      height: "70px",
     },
   },
 }));
