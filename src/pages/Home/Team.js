@@ -113,6 +113,13 @@ export default function Team() {
                   </IconButton>
                 </a>
               </Tooltip>
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/cyclese-mohr-8bb396225/">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
             </div>
           </Fade>{" "}
           <Fade right>
@@ -174,9 +181,9 @@ export default function Team() {
               />
               <h6 className={classes.title}>Amir Siddiqui</h6>
               <p className={classes.para}>Developer</p>
-              <Tooltip title="Telegram">
+              <Tooltip title="Github">
                 <a href="https://github.com/amirsiddiquiin">
-                  <IconButton aria-label="Telegram">
+                  <IconButton aria-label="Github">
                     <GitHub className={classes.icon} />
                   </IconButton>
                 </a>
@@ -231,10 +238,11 @@ export default function Team() {
               />
               <h6 className={classes.title}>Swas </h6>
               <p className={classes.para}>Design Lead</p>
-              <Tooltip title="Telegram">
-                <a href="https://t.me/polkabridgegroup">
-                  <IconButton aria-label="Telegram">
-                    <Telegram className={classes.icon} />
+
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/mr-swaroop-234633213">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
                   </IconButton>
                 </a>
               </Tooltip>
