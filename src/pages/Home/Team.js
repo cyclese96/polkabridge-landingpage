@@ -99,7 +99,7 @@ export default function Team() {
           <Fade left>
             <div className={classes.people}>
               <img
-                src="images/cyclese.png"
+                src="./images/cyclese.png"
                 alt="Cyclese"
                 className={classes.avatar}
               />
@@ -118,7 +118,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/tahir.jpg"
+                src="./images/team/tahir.jpg"
                 alt="Tahir"
                 className={classes.avatar}
               />
@@ -143,7 +143,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/aamir.png"
+                src="./images/team/aamir.jpg"
                 alt="Aamir"
                 className={classes.avatar}
               />
@@ -168,7 +168,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/amir.jpg"
+                src="./images/team/amir.jpg"
                 alt="Amir"
                 className={classes.avatar}
               />
@@ -189,7 +189,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/javier.jpg"
+                src="./images/team/javier.jpg"
                 alt="Javier"
                 className={classes.avatar}
               />
@@ -207,7 +207,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/Angie.png"
+                src="./images/team/angie.jpg"
                 alt="Angie"
                 className={classes.avatar}
               />
@@ -225,7 +225,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/swas.png"
+                src="./images/team/swas.jpg"
                 alt="Swas"
                 className={classes.avatar}
               />
