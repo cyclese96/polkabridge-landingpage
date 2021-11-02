@@ -118,31 +118,6 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="./images/team/tahir.jpg"
-                alt="Tahir"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Tahir Ahmad</h6>
-              <p className={classes.para}>Developer</p>
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/tahirahmadin/">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="Github">
-                <a href="https://github.com/tahirahmadin">
-                  <IconButton aria-label="Github">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.people}>
-              <img
                 src="./images/team/aamir.jpg"
                 alt="Aamir"
                 className={classes.avatar}
@@ -159,6 +134,31 @@ export default function Team() {
               <Tooltip title="GitHub">
                 <a href="https://github.com/AamirAlam">
                   <IconButton aria-label="GitHub">
+                    <GitHub className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="./images/team/tahir.jpg"
+                alt="Tahir"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Tahir Ahmad</h6>
+              <p className={classes.para}>Developer</p>
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/tahirahmadin/">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+              <Tooltip title="Github">
+                <a href="https://github.com/tahirahmadin">
+                  <IconButton aria-label="Github">
                     <GitHub className={classes.icon} />
                   </IconButton>
                 </a>
