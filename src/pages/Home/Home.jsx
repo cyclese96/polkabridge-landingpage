@@ -17,6 +17,7 @@ import { readCache, addDataIntoCache } from "./../../actions/cacheActions";
 import { Dialog, Slide, Backdrop } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import DexPopupContent from "../../components/DexPopup";
+import Team from "./Team";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -79,9 +80,9 @@ export default function Home() {
       <section id="roadmap">
         <Roadmap />
       </section>
-      {/* <section id="team">
+      <section id="team">
         <Team />
-      </section> */}
+      </section>
       <section id="exchange">
         <Listings />
       </section>

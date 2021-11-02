@@ -1,14 +1,14 @@
-import { IconButton, Tooltip } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import { Telegram } from '@material-ui/icons';
-import { Fade } from 'react-reveal';
+import { IconButton, Tooltip } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { GitHub, LinkedIn, Telegram, Twitter } from "@material-ui/icons";
+import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      height: '100%',
+    height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
       padding: 0,
       paddingTop: 25,
       paddingBottom: 25,
@@ -16,37 +16,37 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    [theme.breakpoints.down('sm')]: {
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
   para: {
     fontWeight: 400,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
     paddingBottom: 5,
-    textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
   },
   title: {
     fontWeight: 600,
     fontSize: 22,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
     paddingTop: 15,
     paddingBottom: 10,
-    textAlign: 'center',
+    textAlign: "center",
     color: theme.palette.pbr.primary,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 20,
     },
   },
@@ -57,26 +57,26 @@ const useStyles = makeStyles((theme) => ({
 
   icon: {
     fontSize: 24,
-    color: '#616161',
-    '&:hover': {
+    color: "#616161",
+    "&:hover": {
       color: theme.palette.pbr.primary,
     },
   },
 
   people: {
     width: 250,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       width: 200,
     },
   },
   avatar: {
-    width: '150px',
-    height: '150px',
-    borderRadius: '50%',
-    boxShadow: '5px 5px 4px 5px #888888',
-    [theme.breakpoints.down('sm')]: {
-      width: '100px',
-      height: '100px',
+    width: "120px",
+    height: "120px",
+    borderRadius: "50%",
+    boxShadow: "5px 5px 4px 5px #888888",
+    [theme.breakpoints.down("sm")]: {
+      width: "80px",
+      height: "80px",
     },
   },
 }));
@@ -92,10 +92,14 @@ export default function Team() {
         <div className="mt-5 d-flex justify-content-center">
           <Fade left>
             <div className={classes.people}>
-              <img src="images/cyclese.png" alt="Cyclese" className={classes.avatar} />
+              <img
+                src="images/cyclese.png"
+                alt="Cyclese"
+                className={classes.avatar}
+              />
               <h6 className={classes.title}>Cyclese</h6>
-              <p className={classes.para}>CEO & Co-Founder </p>
-              <p className={classes.para}>Senior Blockchain Developer</p>
+              <p className={classes.para}>CEO & Founder</p>
+
               <Tooltip title="Telegram">
                 <a href="https://t.me/cyclese_polkabridge">
                   <IconButton aria-label="Telegram">
@@ -104,15 +108,125 @@ export default function Team() {
                 </a>
               </Tooltip>
             </div>
-          </Fade>{' '}
+          </Fade>{" "}
           <Fade right>
             <div className={classes.people}>
-              <img src="images/zeph.png" alt="Zeph" className={classes.avatar} />
-              <h6 className={classes.title}>Zeph</h6>
-              <p className={classes.para}>Co-Founder </p>
-              <p className={classes.para}>UX/UI Designer</p>
+              <img
+                src="images/team/tahir.jpeg"
+                alt="Tahir"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Tahir Ahmad</h6>
+              <p className={classes.para}>Developer</p>
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/tahirahmadin/">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+              <Tooltip title="Github">
+                <a href="https://github.com/tahirahmadin">
+                  <IconButton aria-label="Github">
+                    <GitHub className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="images/team/aamir.png"
+                alt="Aamir"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Aamir Alam</h6>
+              <p className={classes.para}>Developer</p>
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/aamir-alam/">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+              <Tooltip title="GitHub">
+                <a href="https://github.com/AamirAlam">
+                  <IconButton aria-label="GitHub">
+                    <GitHub className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="images/team/amir.jpg"
+                alt="Amir"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Amir Siddiqui</h6>
+              <p className={classes.para}>Developer</p>
               <Tooltip title="Telegram">
-                <a href="https://t.me/zephwilliams">
+                <a href="https://github.com/amirsiddiquiin">
+                  <IconButton aria-label="Telegram">
+                    <GitHub className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+        </div>
+
+        <div className="mt-5 d-flex justify-content-center">
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="images/team/javier.jpg"
+                alt="Javier"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Javier </h6>
+              <p className={classes.para}>Marketing Head</p>
+              <Tooltip title="LinkedIn">
+                <a href="https://www.linkedin.com/in/javier-delgado-b057b7166">
+                  <IconButton aria-label="LinkedIn">
+                    <LinkedIn className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="images/team/Angie.png"
+                alt="Angie"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Angie </h6>
+              <p className={classes.para}>Marketing Manager</p>
+              <Tooltip title="Twitter">
+                <a href="https://twitter.com/InfinityTimesMe">
+                  <IconButton aria-label="Twitter">
+                    <Twitter className={classes.icon} />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className={classes.people}>
+              <img
+                src="images/team/swas.png"
+                alt="Swas"
+                className={classes.avatar}
+              />
+              <h6 className={classes.title}>Swas </h6>
+              <p className={classes.para}>Design Lead</p>
+              <Tooltip title="Telegram">
+                <a href="https://t.me/polkabridgegroup">
                   <IconButton aria-label="Telegram">
                     <Telegram className={classes.icon} />
                   </IconButton>
