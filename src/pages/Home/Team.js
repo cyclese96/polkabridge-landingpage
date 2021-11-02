@@ -118,7 +118,7 @@ export default function Team() {
           <Fade right>
             <div className={classes.people}>
               <img
-                src="images/team/tahir.jpeg"
+                src="images/team/tahir.jpg"
                 alt="Tahir"
                 className={classes.avatar}
               />

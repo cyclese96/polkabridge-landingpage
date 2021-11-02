@@ -136,7 +136,7 @@ export default function PrimarySearchAppBar() {
           { name: "Solution", id: "about" },
           { name: "How It Works", id: "how-it-works" },
           { name: "PBR Token", id: "pbt-token" },
-          // { name: 'Team', id: 'team' },
+          { name: "Team", id: "team" },
           { name: "Roadmap", id: "roadmap" },
           { name: "Exchange", id: "exchange" },
         ].map((tab, index) => (
@@ -220,11 +220,18 @@ export default function PrimarySearchAppBar() {
                 How It Works <DotCircle />
               </Typography>
             </Link>
-            {/* <Link activeClass="active" to="team" smooth={true} offset={0} duration={500} delay={0}>
+            <Link
+              activeClass="active"
+              to="team"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
               <Typography className={classes.tabs} variant="body1">
                 Team <DotCircle />
               </Typography>
-            </Link> */}
+            </Link>
             <Link
               activeClass="active"
               to="pbt-token"
