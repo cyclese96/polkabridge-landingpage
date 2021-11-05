@@ -70,12 +70,14 @@ const useStyles = makeStyles((theme) => ({
   },
 
   people: {
+    paddingTop: 30,
     width: 220,
     [theme.breakpoints.down("sm")]: {
       width: 160,
     },
   },
   peopleSmall: {
+    paddingTop: 40,
     width: 200,
     [theme.breakpoints.down("sm")]: {
       width: 150,
@@ -85,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     width: "120px",
     height: "120px",
     borderRadius: "50%",
-    boxShadow: "5px 5px 4px 5px #888888",
+    boxShadow: "5px 5px 4px 5px #bdbdbd",
     [theme.breakpoints.down("sm")]: {
       width: "70px",
       height: "70px",
@@ -111,230 +113,253 @@ export default function Team() {
         <h4 className={classes.heading}>
           Our <strong className={classes.highlight}>Team</strong>
         </h4>
-        <div className="mt-5 d-flex justify-content-center">
-          <Fade left>
-            <div className={classes.people}>
-              <img
-                src="./images/cyclese.png"
-                alt="Cyclese"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Cyclese</h6>
-              <p className={classes.para}>CEO & Founder</p>
 
-              <Tooltip title="Telegram">
-                <a href="https://t.me/cyclese_polkabridge">
-                  <IconButton aria-label="Telegram">
-                    <Telegram className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/cyclese-mohr-8bb396225/">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>{" "}
-          <Fade right>
-            <div className={classes.people}>
-              <img
-                src="./images/team/aamir.jpg"
-                alt="Aamir"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Aamir Alam</h6>
-              <p className={classes.para}>Developer</p>
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/aamir-alam/">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="GitHub">
-                <a href="https://github.com/AamirAlam">
-                  <IconButton aria-label="GitHub">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.people}>
-              <img
-                src="./images/team/tahir.jpg"
-                alt="Tahir"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Tahir Ahmad</h6>
-              <p className={classes.para}>Developer</p>
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/tahirahmadin/">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="Github">
-                <a href="https://github.com/tahirahmadin">
-                  <IconButton aria-label="Github">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="Twitter">
-                <a href="https://twitter.com/tahirahmadin">
-                  <IconButton aria-label="Twitter">
-                    <Twitter className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.people}>
-              <img
-                src="./images/team/amir.jpg"
-                alt="Amir"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Amir Siddiqui</h6>
-              <p className={classes.para}>Developer</p>
-              <Tooltip title="Github">
-                <a href="https://github.com/amirsiddiquiin">
-                  <IconButton aria-label="Github">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.people}>
-              <img
-                src="./images/team/javier.jpg"
-                alt="Javier"
-                className={classes.avatar}
-              />
-              <h6 className={classes.title}>Javier Delgado </h6>
-              <p className={classes.para}>Marketing Head</p>
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/javier-delgado-b057b7166">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-              <Tooltip title="Twitter">
-                <a href="https://twitter.com/psychonautrip2">
-                  <IconButton aria-label="Twitter">
-                    <Twitter className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-        </div>
+        <div className="container">
+          <div className="row justify-content-end">
+            <div className="col-6 col-md-2">
+              <Fade left>
+                <div className={classes.people}>
+                  <img
+                    src="./images/cyclese.png"
+                    alt="Cyclese"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Cyclese</h6>
+                  <p className={classes.para}>CEO & Founder</p>
 
-        <div className="mt-5 d-flex justify-content-center">
-          <Fade right>
-            <div className={classes.peopleSmall}>
-              <img
-                src="./images/team/angie.jpg"
-                alt="Angie"
-                className={classes.avatarSmall}
-              />
-              <h6 className={classes.title}>Angie </h6>
-              <p className={classes.para}>Marketing Manager</p>
-              <Tooltip title="Twitter">
-                <a href="https://twitter.com/InfinityTimesMe">
-                  <IconButton aria-label="Twitter">
-                    <Twitter className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+                  <Tooltip title="Telegram">
+                    <a href="https://t.me/cyclese_polkabridge">
+                      <IconButton aria-label="Telegram">
+                        <Telegram className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/cyclese-mohr-8bb396225/">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>{" "}
             </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.peopleSmall}>
-              <img
-                src="./images/team/swas.jpg"
-                alt="Swas"
-                className={classes.avatarSmall}
-              />
-              <h6 className={classes.title}>Swas </h6>
-              <p className={classes.para}>Design Lead</p>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.people}>
+                  <img
+                    src="./images/team/tahir.jpg"
+                    alt="Tahir"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Tahir Ahmad</h6>
+                  <p className={classes.para}>Developer</p>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/tahirahmadin/">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                  <Tooltip title="Github">
+                    <a href="https://github.com/tahirahmadin">
+                      <IconButton aria-label="Github">
+                        <GitHub className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                  <Tooltip title="Twitter">
+                    <a href="https://twitter.com/tahirahmadin">
+                      <IconButton aria-label="Twitter">
+                        <Twitter className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+            <div className="col-6  col-md-2">
+              <Fade right>
+                <div className={classes.people}>
+                  <img
+                    src="./images/team/aamir.jpg"
+                    alt="Aamir"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Aamir Alam</h6>
+                  <p className={classes.para}>Developer</p>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/aamir-alam/">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                  <Tooltip title="GitHub">
+                    <a href="https://github.com/AamirAlam">
+                      <IconButton aria-label="GitHub">
+                        <GitHub className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.people}>
+                  <img
+                    src="./images/team/amir.jpg"
+                    alt="Amir"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Amir Siddiqui</h6>
+                  <p className={classes.para}>Developer</p>
+                  <Tooltip title="Github">
+                    <a href="https://github.com/amirsiddiquiin">
+                      <IconButton aria-label="Github">
+                        <GitHub className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.people}>
+                  <img
+                    src="./images/team/javier.jpg"
+                    alt="Javier"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Javier Delgado </h6>
+                  <p className={classes.para}>Marketing Head</p>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/javier-delgado-b057b7166">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                  <Tooltip title="Twitter">
+                    <a href="https://twitter.com/psychonautrip2">
+                      <IconButton aria-label="Twitter">
+                        <Twitter className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.people}>
+                  <img
+                    src="./images/team/angie.jpg"
+                    alt="Angie"
+                    className={classes.avatar}
+                  />
+                  <h6 className={classes.title}>Angie </h6>
+                  <p className={classes.para}>Marketing Manager</p>
+                  <Tooltip title="Twitter">
+                    <a href="https://twitter.com/InfinityTimesMe">
+                      <IconButton aria-label="Twitter">
+                        <Twitter className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+          </div>
 
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/mr-swaroop-234633213">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.peopleSmall}>
-              <img
-                src="./images/team/dhruv.jpg"
-                alt="Swas"
-                className={classes.avatarSmall}
-              />
-              <h6 className={classes.title}>Dhruv Sharma </h6>
-              <p className={classes.para}>Developer</p>
+          <div className="mt-3 row justify-content-center">
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.peopleSmall}>
+                  <img
+                    src="./images/team/swas.jpg"
+                    alt="Swas"
+                    className={classes.avatarSmall}
+                  />
+                  <h6 className={classes.title}>Swas </h6>
+                  <p className={classes.para}>Design Lead</p>
 
-              <Tooltip title="GitHub">
-                <a href="https://github.com/dhruvs8167">
-                  <IconButton aria-label="GitHub">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mr-swaroop-234633213">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
             </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.peopleSmall}>
-              <img
-                src="./images/team/taha.jpg"
-                alt="Swas"
-                className={classes.avatarSmall}
-              />
-              <h6 className={classes.title}>Taha Zafar </h6>
-              <p className={classes.para}>Content Manager</p>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.peopleSmall}>
+                  <img
+                    src="./images/team/dhruv.jpg"
+                    alt="Swas"
+                    className={classes.avatarSmall}
+                  />
+                  <h6 className={classes.title}>Dhruv Sharma </h6>
+                  <p className={classes.para}>Developer</p>
 
-              <Tooltip title="LinkedIn">
-                <a href="https://www.linkedin.com/in/taha-zafar-aa983bb6">
-                  <IconButton aria-label="LinkedIn">
-                    <LinkedIn className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+                  <Tooltip title="GitHub">
+                    <a href="https://github.com/dhruvs8167">
+                      <IconButton aria-label="GitHub">
+                        <GitHub className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
             </div>
-          </Fade>
-          <Fade right>
-            <div className={classes.peopleSmall}>
-              <img
-                src="./images/team/sonali.jpg"
-                alt="Swas"
-                className={classes.avatarSmall}
-              />
-              <h6 className={classes.title}>Sonali Rawat</h6>
-              <p className={classes.para}>Social Media Manager</p>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.peopleSmall}>
+                  <img
+                    src="./images/team/taha.jpg"
+                    alt="Swas"
+                    className={classes.avatarSmall}
+                  />
+                  <h6 className={classes.title}>Taha Zafar </h6>
+                  <p className={classes.para}>Content Manager</p>
 
-              <Tooltip title="Twitter">
-                <a href="https://twitter.com/sonali_rawat12?s=21">
-                  <IconButton aria-label="Twitter">
-                    <Twitter className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+                  <Tooltip title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/taha-zafar-aa983bb6">
+                      <IconButton aria-label="LinkedIn">
+                        <LinkedIn className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
             </div>
-          </Fade>
+            <div className="col-6 col-md-2">
+              <Fade right>
+                <div className={classes.peopleSmall}>
+                  <img
+                    src="./images/team/sonali.jpg"
+                    alt="Swas"
+                    className={classes.avatarSmall}
+                  />
+                  <h6 className={classes.title}>Sonali Rawat</h6>
+                  <p className={classes.para}>Social Media Manager</p>
+
+                  <Tooltip title="Twitter">
+                    <a href="https://twitter.com/sonali_rawat12?s=21">
+                      <IconButton aria-label="Twitter">
+                        <Twitter className={classes.icon} />
+                      </IconButton>
+                    </a>
+                  </Tooltip>
+                </div>
+              </Fade>
+            </div>
+          </div>
         </div>
       </div>
     </div>
