@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.pbr.primary,
   },
   listingsWrapper: {
-    width: 700,
+    width: 800,
     border: "1px solid #e9e9e9",
     borderRadius: 7,
     boxShadow: `0 2.8px 2.2px rgba(0, 0, 0, 0.024),
@@ -66,7 +66,6 @@ export default function Listings() {
       <div className={classes.listingsWrapper}>
         <div className="mt-3 row g-0 text-center">
           <Fade left>
-            {" "}
             <div className="col-6 col-md-3">
               <a href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
                 <img
@@ -76,17 +75,11 @@ export default function Listings() {
                 />
               </a>
             </div>
-            <div className="col-6 col-md-2">
-              <a href="https://www.mxc.com/trade/easy#PBR_USDT">
-                <img
-                  src="images/mxc-logo.png"
-                  alt="logo"
-                  className={classes.imageWrapper}
-                />
+            <div className="col-6 col-md-3">
+              <a href="https://www.coingecko.com/en/coins/polkabridge">
+                <img src="images/quickswap.png" className={classes.cmcLogo} />
               </a>
             </div>
-          </Fade>
-          <Fade right>
             <div className="col-6 col-md-3">
               <a href="https://www.gate.io/trade/PBR_USDT">
                 <img
@@ -96,13 +89,33 @@ export default function Listings() {
                 />
               </a>
             </div>
-
-            <div className="col-6 col-md-2">
+            <div className="col-6 col-md-3">
+              <a href="https://www.mxc.com/trade/easy#PBR_USDT">
+                <img
+                  src="images/mxc-logo.png"
+                  alt="logo"
+                  className={classes.imageWrapper}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-3">
+              <a href="https://coinmarketcap.com/currencies/polkabridge/">
+                <img src="images/bkex.png" className={classes.cmcLogo} />
+              </a>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="col-6 col-md-3">
+              <a href="https://coinmarketcap.com/currencies/polkabridge/">
+                <img src="images/bibox.webp" className={classes.cmcLogo} />
+              </a>
+            </div>
+            <div className="col-6 col-md-3">
               <a href="https://www.coingecko.com/en/coins/polkabridge">
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-12 col-md-2">
+            <div className="col-6 col-md-3">
               <a href="https://coinmarketcap.com/currencies/polkabridge/">
                 <img src="images/cmc.png" className={classes.cmcLogo} />
               </a>
