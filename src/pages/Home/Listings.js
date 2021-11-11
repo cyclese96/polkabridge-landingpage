@@ -76,7 +76,7 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-3">
-              <a href="https://www.coingecko.com/en/coins/polkabridge">
+              <a href="https://quickswap.exchange/#/swap?inputCurrency=0x0d6ae2a429df13e44a07cd2969e085e4833f64a0&outputCurrency=0xc2132d05d31c914a87c6611c10748aeb04b58e8f">
                 <img src="images/quickswap.png" className={classes.cmcLogo} />
               </a>
             </div>
@@ -90,7 +90,7 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-3">
-              <a href="https://www.mxc.com/trade/easy#PBR_USDT">
+              <a href="https://www.mexc.com/exchange/PBR_USDT">
                 <img
                   src="images/mxc-logo.png"
                   alt="logo"
@@ -99,14 +99,14 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-3">
-              <a href="https://coinmarketcap.com/currencies/polkabridge/">
+              <a href="https://www.bkex.com/#/trade/PBR_USDT">
                 <img src="images/bkex.png" className={classes.cmcLogo} />
               </a>
             </div>
           </Fade>
           <Fade right>
             <div className="col-6 col-md-3">
-              <a href="https://coinmarketcap.com/currencies/polkabridge/">
+              <a href="https://www.bibox.com/en/exchange/basic/PBR_USDT">
                 <img src="images/bibox.webp" className={classes.cmcLogo} />
               </a>
             </div>
