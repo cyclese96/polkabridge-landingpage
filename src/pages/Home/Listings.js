@@ -98,7 +98,7 @@ export default function Listings() {
                 />
               </a>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-2">
               <a href="https://coinmarketcap.com/currencies/polkabridge/">
                 <img src="images/bkex.png" className={classes.cmcLogo} />
               </a>
@@ -111,11 +111,16 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-3">
+              <a href="https://www.bitmart.com/trade/en?symbol=PBR_USDT&layout=pro">
+                <img src="images/bitmart.svg" className={classes.cmcLogo} />
+              </a>
+            </div>
+            <div className="col-6 col-md-2">
               <a href="https://www.coingecko.com/en/coins/polkabridge">
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-3">
+            <div className="col-6 col-md-2">
               <a href="https://coinmarketcap.com/currencies/polkabridge/">
                 <img src="images/cmc.png" className={classes.cmcLogo} />
               </a>
