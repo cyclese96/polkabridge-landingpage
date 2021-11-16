@@ -162,6 +162,7 @@ export default function PrimarySearchAppBar() {
       <List>
         {[
           { name: "Farming", id: "https://farm.polkabridge.org/" },
+          { name: "Swap", id: "https://swap.polkabridge.org/" },
           {
             name: "Apply For IDO",
             id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
