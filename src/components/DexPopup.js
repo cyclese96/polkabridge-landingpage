@@ -1,13 +1,13 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Close } from "@material-ui/icons";
-import { IconButton } from "@material-ui/core";
+import { Close, ShutterSpeed } from "@material-ui/icons";
+import { Button, IconButton } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   card: {
     position: "relative",
     width: 600,
-    height: 700,
+    height: 600,
     overflowX: "hidden",
     overflowY: "scroll",
 
@@ -63,6 +63,23 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: "#f9f9f9",
   },
+  button: {
+    borderRadius: "50px",
+    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    lineHeight: "24px",
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    marginTop: 15,
+    color: "#ffffff",
+    padding: "15px 30px 15px 30px",
+    fontWeight: 600,
+    fontSize: 14,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+      padding: "10px 20px 10px 20px",
+    },
+  },
 }));
 export default function DexPopupContent({ closePopup }) {
   const classes = useStyles();
@@ -79,18 +96,31 @@ export default function DexPopupContent({ closePopup }) {
       </div>
       <div className="row mt-3">
         <div className="col-md-12">
-          <div className={classes.card3}>
+          <div className={classes.card2}>
             <a
               href="https://swap.polkabridge.org/"
               style={{ textDecoration: "none", padding: 5 }}
             >
-              ]
               <img
-                src="images/swap.png"
+                src="images/swap.jpg"
                 height="100%"
                 width="100%"
                 style={{ borderRadius: 40 }}
               />
+            </a>
+          </div>
+          <div className="text-center mt-3">
+            <a
+              href="https://swap.polkabridge.org/"
+              style={{ textDecoration: "none", padding: 5 }}
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                className={classes.button}
+              >
+                <ShutterSpeed className={classes.icon} /> Launch APP
+              </Button>
             </a>
           </div>
         </div>
