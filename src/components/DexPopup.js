@@ -75,39 +75,23 @@ export default function DexPopupContent({ closePopup }) {
         </IconButton>
       </div>
       <div>
-        <h4 className={classes.title}>Multichain AMM coming soon</h4>
-      </div>
-      <div className="row g-1">
-        <div className="col-md-6">
-          <div className={classes.card1}>
-            <img
-              src="images/1.png"
-              height="100%"
-              width="100%"
-              style={{ borderRadius: 40 }}
-            />
-          </div>
-        </div>
-        <div className="col-md-6">
-          <div className={classes.card2}>
-            <img
-              src="images/1.png"
-              height="100%"
-              width="100%"
-              style={{ borderRadius: 40 }}
-            />
-          </div>
-        </div>
+        <h4 className={classes.title}>Multichain AMM launched</h4>
       </div>
       <div className="row mt-3">
         <div className="col-md-12">
           <div className={classes.card3}>
-            <img
-              src="images/3.png"
-              height="100%"
-              width="100%"
-              style={{ borderRadius: 40 }}
-            />
+            <a
+              href="https://swap.polkabridge.org/"
+              style={{ textDecoration: "none", padding: 5 }}
+            >
+              ]
+              <img
+                src="images/swap.png"
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 40 }}
+              />
+            </a>
           </div>
         </div>
       </div>

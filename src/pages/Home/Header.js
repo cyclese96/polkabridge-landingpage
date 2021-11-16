@@ -115,7 +115,7 @@ export default function Header() {
             </p>
             <div className="text-center mt-3">
               <a
-                href="https://farm.polkabridge.org/"
+                href="https://swap.polkabridge.org/"
                 style={{ textDecoration: "none", padding: 5 }}
               >
                 <Button
@@ -123,31 +123,7 @@ export default function Header() {
                   color="primary"
                   className={classes.button}
                 >
-                  <ShutterSpeed className={classes.icon} /> Farming
-                </Button>
-              </a>
-              <a
-                href="https://stake.polkabridge.org/"
-                style={{ textDecoration: "none", padding: 5 }}
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.button}
-                >
-                  <ShutterSpeed className={classes.icon} /> Staking
-                </Button>
-              </a>
-              <a
-                href="https://launchpad.polkabridge.org/"
-                style={{ textDecoration: "none", padding: 5 }}
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.button}
-                >
-                  <MonetizationOn className={classes.icon} /> Launchpad
+                  <ShutterSpeed className={classes.icon} /> Launch APP
                 </Button>
               </a>
             </div>
