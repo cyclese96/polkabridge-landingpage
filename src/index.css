@@ -16,8 +16,23 @@ a {
   text-decoration: none;
   color: #c80c81;
 }
-*::-webkit-scrollbar {
-  width: 0px;
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c80c81;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .slider {
@@ -55,8 +70,4 @@ a {
   width: 50px;
   background: none;
   border: 0;
-}
-
-.scrollcard::-webkit-scrollbar {
-  display: none;
 }
