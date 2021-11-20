@@ -252,26 +252,7 @@ export default function Team() {
                 </div>
               </Fade>
             </div>
-            <div className="col-6 col-md-2">
-              <Fade right>
-                <div className={classes.people}>
-                  <img
-                    src="./images/team/angie.jpg"
-                    alt="Angie"
-                    className={classes.avatar}
-                  />
-                  <h6 className={classes.title}>Angie </h6>
-                  <p className={classes.para}>Marketing Manager</p>
-                  <Tooltip title="Twitter">
-                    <a href="https://twitter.com/InfinityTimesMe">
-                      <IconButton aria-label="Twitter">
-                        <Twitter className={classes.icon} />
-                      </IconButton>
-                    </a>
-                  </Tooltip>
-                </div>
-              </Fade>
-            </div>
+
           </div>
 
           <div className="mt-3 row justify-content-center">
