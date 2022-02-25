@@ -153,7 +153,7 @@ export default function Team() {
                     className={classes.avatar}
                   />
                   <h6 className={classes.title}>Tahir Ahmad</h6>
-                  <p className={classes.para}>Developer</p>
+                  <p className={classes.para}>Product Engineer</p>
                   <Tooltip title="LinkedIn">
                     <a href="https://www.linkedin.com/in/tahirahmadin/">
                       <IconButton aria-label="LinkedIn">
@@ -187,7 +187,7 @@ export default function Team() {
                     className={classes.avatar}
                   />
                   <h6 className={classes.title}>Aamir Alam</h6>
-                  <p className={classes.para}>Developer</p>
+                  <p className={classes.para}>Software Engineer</p>
                   <Tooltip title="LinkedIn">
                     <a href="https://www.linkedin.com/in/aamir-alam/">
                       <IconButton aria-label="LinkedIn">
@@ -209,16 +209,16 @@ export default function Team() {
               <Fade right>
                 <div className={classes.people}>
                   <img
-                    src="./images/team/amir.jpg"
-                    alt="Amir"
+                    src="./images/team/henry.jpg"
+                    alt="Henri"
                     className={classes.avatar}
                   />
-                  <h6 className={classes.title}>Amir Siddiqui</h6>
-                  <p className={classes.para}>Developer</p>
+                  <h6 className={classes.title}>Stephane Henri</h6>
+                  <p className={classes.para}>Smart Contract Engineer</p>
                   <Tooltip title="Github">
-                    <a href="https://github.com/amirsiddiquiin">
+                    <a href="https://www.linkedin.com/in/stephanehenri/">
                       <IconButton aria-label="Github">
-                        <GitHub className={classes.icon} />
+                        <LinkedIn className={classes.icon} />
                       </IconButton>
                     </a>
                   </Tooltip>
@@ -252,6 +252,8 @@ export default function Team() {
                 </div>
               </Fade>
             </div>
+          </div>
+          <div className="row justify-content-center">
             <div className="col-6 col-md-2">
               <Fade right>
                 <div className={classes.peopleSmall}>
@@ -273,27 +275,7 @@ export default function Team() {
                 </div>
               </Fade>
             </div>
-            <div className="col-6 col-md-2">
-              <Fade right>
-                <div className={classes.peopleSmall}>
-                  <img
-                    src="./images/team/dhruv.jpg"
-                    alt="Swas"
-                    className={classes.avatarSmall}
-                  />
-                  <h6 className={classes.title}>Dhruv Sharma </h6>
-                  <p className={classes.para}>Developer</p>
 
-                  <Tooltip title="GitHub">
-                    <a href="https://github.com/dhruvs8167">
-                      <IconButton aria-label="GitHub">
-                        <GitHub className={classes.icon} />
-                      </IconButton>
-                    </a>
-                  </Tooltip>
-                </div>
-              </Fade>
-            </div>
             <div className="col-6 col-md-2">
               <Fade right>
                 <div className={classes.peopleSmall}>
