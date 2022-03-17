@@ -192,10 +192,12 @@ export default function Features() {
                 />
               </div>
 
-              <h6 className={classes.featureHeading}>Prediction</h6>
+              <h6 className={classes.featureHeading}>
+                Initial NFT Offering (INO)
+              </h6>
               <p className={classes.featureText}>
-                Participate in predicting the market and receive rewards for
-                being correct
+                Access early NFTs through INOs of good companies & great
+                artists.
               </p>
             </div>
 
@@ -208,10 +210,9 @@ export default function Features() {
                 />
               </div>
 
-              <h6 className={classes.featureHeading}>Governance</h6>
+              <h6 className={classes.featureHeading}>Decentralised P2P</h6>
               <p className={classes.featureText}>
-                Reserve tokens and participate in voting for our future
-                projects.
+                Experience P2P Trading experience of top tokens with Fiat.
               </p>
             </div>
           </div>

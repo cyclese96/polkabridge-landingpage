@@ -181,7 +181,7 @@ export default function Partnerships() {
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  text-center">
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://dfyn.network/">
               <img
                 src="images/dfyn.png"
@@ -190,7 +190,26 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-4">
+          <div className="col-6 col-md-2">
+            <a href="https://www.lunapad.co/">
+              <img
+                src="images/lunapad.png"
+                alt="lunapad"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-3">
+            <a href="https://www.ankr.com/">
+              <img
+                src="images/ankr.png"
+                alt="ankr"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+
+          <div className="col-6 col-md-3">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"
@@ -199,7 +218,7 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-2">
             <a href="https://quickswap.exchange/">
               <img
                 src="images/quickswap.png"
