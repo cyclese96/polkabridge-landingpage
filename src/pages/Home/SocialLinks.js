@@ -137,7 +137,7 @@ export default function SocialLinks() {
             </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Discord">
-                <a href="https://discord.gg/G3NDrcq6GW">
+                <a href="https://discord.gg/tzemFksyZB">
                   <IconButton aria-label="Discord">
                     <img
                       src="images/discord.png"

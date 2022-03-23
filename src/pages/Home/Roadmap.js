@@ -291,7 +291,7 @@ export default function Roadmap(props) {
 
                       <ul className={classes.list}>
                         <li>
-                          Listing on tier-1 CEX (Kucoin, Huobi, Okex, FTX)
+                          Listing on tier-1 CEX (Kucoin)
                         </li>
                         <li>Mainnet Multichain AMM</li>
                         <li>
@@ -300,10 +300,7 @@ export default function Roadmap(props) {
                         </li>
                         <li>Develop testnet on MoonBeam</li>
                         <li>Run PBR to MoonBeam parachain</li>
-                        <li>
-                          Integrate PolkaDot into PolkaBridge DEFI application
-                          (AMM, Staking, LaunchPad)
-                        </li>
+
                       </ul>
                     </div>
                   </div>,
@@ -317,17 +314,20 @@ export default function Roadmap(props) {
                       <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Crosschain AMM</h6>
+                      <h6 className={classes.title}>Defi 2.0</h6>
 
                       <ul className={classes.list}>
-                        <li>Launching Crosschain AMM</li>
+                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam)</li>
+                        <li>Launching INO - Initial NFT Offering Platform</li>
+                        <li>Top exchange listing</li>
+                        <li>Defi 2.0 - New area</li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
                       <AccountBalance className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                      <h4 className={classes.quarterText}>Q2-Q3, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
@@ -337,8 +337,8 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>New Features</h6>
 
                       <ul className={classes.list}>
-                        <li>Lending </li>
-                        <li>Prediction </li>
+                        <li>Multichain Lending </li>
+                        <li>Cross-chain AMM</li>
                       </ul>
                     </div>
                   </div>,
