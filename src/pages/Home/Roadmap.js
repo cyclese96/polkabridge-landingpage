@@ -100,14 +100,16 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.pbr.primary,
     },
   },
-  details: {},
+  details: {
+    width: "80%",
+  },
   title: {
     fontWeight: 600,
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
     margin: 0,
     textAlign: "left",
-    fontSize: 16,
+    fontSize: 15,
     marginTop: 15,
     marginBottom: 15,
   },
@@ -130,21 +132,19 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Roadmap(props) {
   const classes = useStyles();
-  const [x, setX] = useState(window.innerWidth > 400 ? -300 : -500);
+  const [x, setX] = useState(window.innerWidth > 400 ? -400 : -600);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 5)
+    x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 4)
       ? setX(0)
       : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 5) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 4) ? setX(x + 100) : setX(0);
   };
 
   const goRightMob = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 1)
-      ? setX(0)
-      : setX(x - 100);
+    x === -100 * [1, 2, 3, 4, 5, 6, 7, 8].length ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
     x === 100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 1) ? setX(x + 100) : setX(0);
@@ -290,9 +290,7 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>PolkaDot Integration</h6>
 
                       <ul className={classes.list}>
-                        <li>
-                          Listing on tier-1 CEX (Kucoin)
-                        </li>
+                        <li>Listing on tier-1 CEX (Kucoin)</li>
                         <li>Mainnet Multichain AMM</li>
                         <li>
                           Integrate Harmony Blockchain into PolkaBridge DEFI
@@ -300,7 +298,6 @@ export default function Roadmap(props) {
                         </li>
                         <li>Develop testnet on MoonBeam</li>
                         <li>Run PBR to MoonBeam parachain</li>
-
                       </ul>
                     </div>
                   </div>,
@@ -317,7 +314,10 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>Defi 2.0</h6>
 
                       <ul className={classes.list}>
-                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam...)</li>
+                        <li>
+                          Integrate more chains into Multichain AMM (BSC,
+                          Polygon, MoonBeam...)
+                        </li>
                         <li>Launching INO - Initial NFT Offering Platform</li>
                         <li>Defi 2.0 - New area</li>
                       </ul>
@@ -333,12 +333,20 @@ export default function Roadmap(props) {
                       <div className={classes.baseline}></div>
                     </div>
                     <div className={classes.details}>
-                      <h6 className={classes.title}>Deeper into Multichain Dapps and Top Exchanges Listing</h6>
+                      <h6 className={classes.title}>
+                        Deeper into Multichain Dapps and Top Exchanges Listing
+                      </h6>
 
                       <ul className={classes.list}>
                         <li>Launch new product: Decentralized P2P Exchange</li>
-                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam...)</li>
-                        <li>Integrate more chains into INO platform  (BSC, Polygon, MoonBeam...)</li>
+                        <li>
+                          Integrate more chains into Multichain AMM (BSC,
+                          Polygon, MoonBeam...)
+                        </li>
+                        <li>
+                          Integrate more chains into INO platform (BSC, Polygon,
+                          MoonBeam...)
+                        </li>
                         <li>Top exchange listing (Huobi, Binance...)</li>
                         <li>Metaverse - New Approach</li>
                       </ul>
