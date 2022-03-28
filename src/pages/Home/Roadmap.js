@@ -132,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Roadmap(props) {
   const classes = useStyles();
-  const [x, setX] = useState(window.innerWidth > 400 ? -400 : -600);
+  const [x, setX] = useState(window.innerWidth > 400 ? -400 : -700);
 
   const goRight = () => {
     x === -100 * ([1, 2, 3, 4, 5, 6, 7, 8].length - 4)
