@@ -317,17 +317,37 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>Defi 2.0</h6>
 
                       <ul className={classes.list}>
-                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam)</li>
+                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam...)</li>
                         <li>Launching INO - Initial NFT Offering Platform</li>
-                        <li>Top exchange listing</li>
                         <li>Defi 2.0 - New area</li>
                       </ul>
                     </div>
                   </div>,
                   <div className={classes.quarterWrapper}>
                     <div>
+                      <SettingsEthernet className={classes.icon} />
+                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                    </div>
+                    <div className={classes.lineMaker}>
+                      <div className={classes.circle}></div>{" "}
+                      <div className={classes.baseline}></div>
+                    </div>
+                    <div className={classes.details}>
+                      <h6 className={classes.title}>Deeper into Multichain Dapps and Top Exchanges Listing</h6>
+
+                      <ul className={classes.list}>
+                        <li>Launch new product: Decentralized P2P Exchange</li>
+                        <li>Integrate more chains into Multichain AMM  (BSC, Polygon, MoonBeam...)</li>
+                        <li>Integrate more chains into INO platform  (BSC, Polygon, MoonBeam...)</li>
+                        <li>Top exchange listing (Huobi, Binance...)</li>
+                        <li>Metaverse - New Approach</li>
+                      </ul>
+                    </div>
+                  </div>,
+                  <div className={classes.quarterWrapper}>
+                    <div>
                       <AccountBalance className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2-Q3, 2022</h4>
+                      <h4 className={classes.quarterText}>Q3-Q4, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
@@ -337,7 +357,7 @@ export default function Roadmap(props) {
                       <h6 className={classes.title}>New Features</h6>
 
                       <ul className={classes.list}>
-                        <li>Multichain Lending </li>
+                        <li>Lending Platform</li>
                         <li>Cross-chain AMM</li>
                       </ul>
                     </div>
