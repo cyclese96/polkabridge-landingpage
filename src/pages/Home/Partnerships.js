@@ -56,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
   listingsWrappe2: {
     maxWidth: 900,
   },
+  listingsWrapper3: {
+    maxWidth: 900,
+  },
 }));
 export default function Partnerships() {
   const classes = useStyles();
@@ -179,8 +182,17 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  text-center">
+      <div className={classes.listingsWrapper3}>
+        <div className="mt-3 row text-center ">
+          <div className="col-6 col-md-2" align="center">
+            <a href="https://www.ankr.com/">
+              <img
+                src="images/ankr.png"
+                alt="ankr"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
           <div className="col-6 col-md-2">
             <a href="https://dfyn.network/">
               <img
@@ -199,17 +211,8 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-3">
-            <a href="https://www.ankr.com/">
-              <img
-                src="images/ankr.png"
-                alt="ankr"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
 
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-2">
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.svg"
@@ -218,7 +221,16 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-12 col-md-2">
+          <div className="col-6 col-md-2">
+            <a href="https://harmonylauncher.io/">
+              <img
+                src="images/harmony-launcher.jpg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
             <a href="https://quickswap.exchange/">
               <img
                 src="images/quickswap.png"
