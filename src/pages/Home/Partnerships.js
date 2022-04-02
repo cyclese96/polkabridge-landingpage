@@ -184,7 +184,7 @@ export default function Partnerships() {
       </div>
       <div className={classes.listingsWrapper3}>
         <div className="mt-3 row text-center ">
-          <div className="col-6 col-md-2" align="center">
+          <div className="col-6 col-md-3" align="center">
             <a href="https://www.ankr.com/">
               <img
                 src="images/ankr.png"
@@ -193,16 +193,8 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://dfyn.network/">
-              <img
-                src="images/dfyn.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2">
+
+          <div className="col-6 col-md-3">
             <a href="https://www.lunapad.co/">
               <img
                 src="images/lunapad.png"
@@ -212,15 +204,6 @@ export default function Partnerships() {
             </a>
           </div>
 
-          <div className="col-6 col-md-2">
-            <a href="https://polygon.technology/">
-              <img
-                src="images/polygon.svg"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </div>
           <div className="col-6 col-md-2">
             <a href="https://harmonylauncher.io/">
               <img
@@ -236,6 +219,38 @@ export default function Partnerships() {
                 src="images/quickswap.png"
                 alt="logo"
                 className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper3}>
+        <div className="mt-3 row text-center ">
+          <div className="col-6 col-md-3" align="center">
+            <a href="https://unitycapitalvc.com/">
+              <img
+                src="images/uniticapitial.png"
+                alt="uniticapital"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-3">
+            <a href="https://dfyn.network/">
+              <img
+                src="images/dfyn.png"
+                alt="logo"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+
+          <div className="col-6 col-md-3">
+            <a href="https://polygon.technology/">
+              <img
+                src="images/polygon.svg"
+                alt="logo"
+                className={classes.imageWrapper}
               />
             </a>
           </div>
