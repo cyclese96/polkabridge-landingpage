@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   tabs: {
-    color: theme.palette.pbr.textSecondary,
+    color: "white",
     display: "none",
     [theme.breakpoints.up("md")]: {
       display: "block",
@@ -190,11 +190,15 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar
         position="fixed"
-        style={{ background: "white", boxShadow: "none" }}
+        style={{ background: "black", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
-            <img src="logo.png" alt="logo" height="60px" />
+            <img
+              src="https://launchpad.polkabridge.org/img/logo-white.png"
+              alt="logo"
+              height="40px"
+            />
           </Typography>
           <div className="d-flex justify-content-end">
             <Link

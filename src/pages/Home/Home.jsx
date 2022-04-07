@@ -52,7 +52,7 @@ export default function Home() {
       <section id="header">
         <Header />
       </section>
-      <section id="partnerships">
+      {/* <section id="partnerships">
         <Partnerships />
       </section>
       <section id="ecosystem">
@@ -111,7 +111,7 @@ export default function Home() {
         }}
       >
         <DexPopupContent closePopup={() => setClaimPopup(false)} />
-      </Dialog>{" "}
+      </Dialog>{" "} */}
     </div>
   );
 }
