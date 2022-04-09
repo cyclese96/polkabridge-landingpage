@@ -52,9 +52,17 @@ export default function Home() {
       <section id="header">
         <Header />
       </section>
-      {/* <section id="partnerships">
+      <section id="features">
+        <Features />
+      </section>
+      <section id="team">
+        <Team />
+      </section>
+
+      <section id="partnerships">
         <Partnerships />
       </section>
+      {/* 
       <section id="ecosystem">
         <Ecosystem />
       </section>
@@ -62,9 +70,7 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
-      <section id="features">
-        <Features />
-      </section>
+      
       <section id="how-it-works">
         <HowItWorks />
       </section>
@@ -80,9 +86,7 @@ export default function Home() {
       <section id="roadmap">
         <Roadmap />
       </section>
-      <section id="team">
-        <Team />
-      </section>
+     
       <section id="exchange">
         <Listings />
       </section>

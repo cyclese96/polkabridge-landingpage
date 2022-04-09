@@ -298,7 +298,7 @@ export default function Header() {
             </Card>
           </div>
         </div>
-        <div
+        {/* <div
           className="row d-flex flex-row"
           style={{
             paddingLeft: "5%",
@@ -364,7 +364,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </Fragment>
   );
