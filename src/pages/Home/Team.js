@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     width: "140px",
     height: "140px",
     borderRadius: 7,
-
+    objectFit: "cover",
     [theme.breakpoints.down("sm")]: {
       width: "70px",
       height: "70px",
@@ -172,7 +172,7 @@ export default function Team() {
             <Fade right>
               <div className={classes.people}>
                 <img
-                  src="./images/team/aamir.jpg"
+                  src="./images/team/aamir.png"
                   alt="Aamir"
                   className={classes.avatar}
                 />
@@ -199,7 +199,7 @@ export default function Team() {
             <Fade right>
               <div className={classes.people}>
                 <img
-                  src="./images/team/henry.jpg"
+                  src="./images/team/henri.jpg"
                   alt="Henri"
                   className={classes.avatar}
                 />

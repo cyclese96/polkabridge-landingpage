@@ -48,12 +48,27 @@ export default function Home() {
   }, []);
 
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <div
+      style={{
+        overflowX: "hidden",
+        //     background: `linear-gradient(180deg,
+        //   rgba(0, 0, 0, 0.99),
+        //   rgba(6, 21, 33, 0.99)
+        // ),
+        // url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-particles-background-with-connection-concept-vector-illustration-image_416083.jpg") no-repeat center center
+        //   cover`,
+        //     height: "100vh",
+        //     width: "100vw",
+      }}
+    >
       <section id="header">
         <Header />
       </section>
       <section id="features">
         <Features />
+      </section>
+      <section>
+        <Tokenomics />
       </section>
       <section id="team">
         <Team />

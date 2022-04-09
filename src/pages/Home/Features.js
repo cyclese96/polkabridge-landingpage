@@ -125,6 +125,27 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 7,
     color: "#ffffff",
   },
+  featureTitle: {
+    fontWeight: 600,
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    fontSize: 36,
+    color: "white",
+    textAlign: "left",
+  },
+  featurePara: {
+    paddingTop: 7,
+    fontWeight: 400,
+    width: "85%",
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    fontSize: 15,
+    color: "white",
+    textAlign: "left",
+  },
+
   cardTitle: {
     fontWeight: 600,
     verticalAlign: "baseline",
@@ -144,6 +165,22 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
     color: "white",
     textAlign: "center",
+  },
+  featureCardFull: {
+    width: 620,
+    height: 450,
+
+    // borderRadius: 30,
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    // border: "3px solid #bdbdbd",
+    // filter: "drop-shadow(0 0 0.5rem #212121)",
+
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: 0,
+      paddingRight: 0,
+      width: "100%",
+      height: "100%",
+    },
   },
   featureCard: {
     width: 200,
@@ -197,6 +234,71 @@ export default function Features() {
         </div>
       </Pulse>
       <div className="container d-flex align-items-center justify-content-evenly mt-5">
+        <div className="col-md-4">
+          <div
+            className="d-flex justify-content-start align-items-center"
+            style={{ height: 140 }}
+          >
+            <img
+              src="http://localhost:3000/images/multichain.png"
+              height="100px"
+            />
+          </div>
+          <h5 className={classes.featureTitle}>MultiChain AMM</h5>
+          <p className={classes.featurePara}>
+            Experience multichain and cross-chain AMM with lowest fees ever and
+            trade with more 100+ token pairs. Available on Ethereum, Polygon,
+            BSC and Monnriver.
+          </p>
+          <div className="mt-5">
+            <ChevronLeft
+              className={classes.icon}
+              style={{
+                backgroundColor: "#333333",
+                height: 40,
+                width: 40,
+                padding: 6,
+                borderRadius: "50%",
+                fontSize: 12,
+              }}
+            />
+            <ChevronRight
+              className={classes.icon}
+              style={{
+                backgroundColor: "#333333",
+                height: 40,
+                width: 40,
+                padding: 6,
+                borderRadius: "50%",
+                fontSize: 12,
+              }}
+            />
+          </div>
+        </div>
+        <div className="col-md-8 d-flex justify-content-center">
+          <Card className={classes.featureCardFull}>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{
+                height: 358,
+                borderRadius: 30,
+
+                // backgroundImage: 'url("images/launchpad.jpg")',
+                backgroundPosition: "center center",
+                backgroundSize: "cover",
+                background: "url(images/launchpad.jpg)",
+                backgroundColor: "rgba(0, 0, 0, 0.3)",
+                border: "3px solid #bdbdbd",
+                filter: "drop-shadow(0 0 0.5rem #212121)",
+              }}
+            ></div>
+            <div className="text-center">
+              <Button className={classes.button}>Visit Now</Button>
+            </div>
+          </Card>
+        </div>
+      </div>
+      {/* <div className="container d-flex align-items-center justify-content-evenly mt-5">
         <div style={{ width: "5%" }}>
           {" "}
           <button className="c--right">
@@ -323,7 +425,7 @@ export default function Features() {
             </div>
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

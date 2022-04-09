@@ -3,104 +3,60 @@ import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 80,
-    backgroundColor: "#F7F8FB",
+    paddingTop: 80,
+    paddingBottom: 80,
+    paddingLeft: "7%",
+    paddingRight: "7%",
+    backgroundColor: "black",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
-      height: "100%",
-      padding: 0,
-      paddingBottom: 50,
-      paddingTop: 50,
+      textAlign: "center",
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: "white",
     textAlign: "left",
-    fontSize: 36,
-    fontWeight: 600,
+    fontSize: 54,
+    fontWeight: 700,
     verticalAlign: "middle",
     wordSpacing: "0px",
     [theme.breakpoints.down("sm")]: {
-      fontSize: 28,
-    },
-  },
-  para: {
-    fontWeight: 400,
-    verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
-    margin: 0,
-    paddingTop: 10,
-    paddingBottom: 10,
-    textAlign: "left",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: "32px",
     },
   },
 
-  highlight: {
-    color: theme.palette.pbr.primary,
+  usecaseWrapper: {
+    borderRadius: 1,
   },
-  title: {
-    fontWeight: 500,
+  usecaseCard: {
+    borderRadius: 1,
+    display: "flex",
+    justifyContent: "flex-start",
+  },
+  usecaseTitle: {
+    fontWeight: 700,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    letterSpacing: "-0.2px",
+    lineHeight: "36px",
     margin: 0,
+    fontSize: 22,
+    color: "white",
     textAlign: "left",
-    fontSize: 16,
   },
-  icon: {
-    fontSize: 16,
-    marginRight: 7,
-    color: "#ffffff",
-  },
-  focusContainer: {
-    border: "1px solid #888888",
-    padding: 10,
-    borderRadius: "7px",
-    marginBottom: 10,
+  usecasePara: {
+    paddingTop: 10,
+    fontWeight: 400,
+    width: "85%",
+    verticalAlign: "baseline",
+    letterSpacing: "-0.2px",
+    margin: 0,
+    fontSize: 15,
+    lineHeight: "26px",
+    color: "white",
+    textAlign: "left",
   },
   imageContainer: {
-    width: "100%",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: 30,
-      width: "100%",
-    },
-  },
-
-  logoWrapper: {
-    backgroundColor: "white",
-    width: 45,
-    height: 45,
-    marginRight: 15,
-    borderRadius: 10,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    border: "1px solid #bdbdbd",
-    [theme.breakpoints.down("sm")]: {
-      width: 40,
-      height: 40,
-      marginRight: 5,
-    },
-  },
-  ethLogo: {
-    height: 25,
-    [theme.breakpoints.down("sm")]: {
-      height: 20,
-    },
-  },
-  polygonLogo: {
-    height: 25,
-    [theme.breakpoints.down("sm")]: {
-      height: 20,
-    },
-  },
-  contractAddress: {
-    fontSize: 16,
-
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 10,
-    },
+    width: "90%",
   },
 }));
 export default function Tokenomics() {
@@ -110,83 +66,107 @@ export default function Tokenomics() {
     <div className={classes.background}>
       <div className="container-fluid">
         <div className="row flex-column-reverse flex-md-row">
-          <div className="col-md-6">
+          <div className="col-md-4 d-flex align-items-center">
             <Fade left>
-              <div className="mt-1">
+              <div className="text-center mt-1">
                 <img
-                  src="images/token.png"
+                  src="images/pbr-3d.png"
                   alt="tokenomics"
                   className={classes.imageContainer}
                 />
+                {/* <p style={{ color: "white", textAlign: "center" }}>
+                  Total 100M supply
+                </p> */}
               </div>
             </Fade>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-8">
             <Fade right>
               <div className="mb-5">
-                <h4 className={classes.heading}>
-                  <strong className={classes.highlight}>Tokenomics</strong> &
-                  Locking
-                </h4>
+                <h4 className={classes.heading}>$PBR Token</h4>
               </div>
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Smart Contract</h6>
-
-                <div className="mt-2">
-                  <a href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                    <div className="d-flex justify-content-start align-items-center">
-                      <div className={classes.logoWrapper}>
-                        {" "}
-                        <img
-                          src="images/ethlogo.png"
-                          className={classes.ethLogo}
-                        />{" "}
+              <div className={classes.usecaseWrapper}>
+                <div className="row g-5">
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>
+                          Get Whitelisted for launchpads
+                        </h5>
+                        <p className={classes.usecasePara}>
+                          Hold atleast 10,000+ PBR Tokens and get guaranteed
+                          allocation in private pools.
+                        </p>
                       </div>
-                      <span className={classes.contractAddress}>
-                        0x298d492e8c1d909d3f63bc4a36c66c64acb3d695
-                      </span>
-                    </div>
-                  </a>
-                </div>
-
-                <div className="mt-2">
-                  <a href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0">
-                    <div className="d-flex justify-content-start align-items-center">
-                      <div className={classes.logoWrapper}>
-                        {" "}
+                      <div>
                         <img
-                          src="images/polygon.png"
-                          className={classes.polygonLogo}
-                        />{" "}
-                      </div>
-                      <div className={classes.contractAddress}>
-                        {" "}
-                        0x0d6ae2a429df13e44a07cd2969e085e4833f64a0
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-coin-4416139-3664000.png"
+                          alt="tokenomics"
+                          style={{ height: 100 }}
+                        />
                       </div>
                     </div>
-                  </a>
+                  </div>
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>
+                          Staking and Farming Rewards
+                        </h5>
+                        <p className={classes.usecasePara}>
+                          Stake or Farm into pools at PolkaBridge and earn juicy
+                          rewards.
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-trader-5129913-4288062.png"
+                          alt="tokenomics"
+                          style={{ height: 100 }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              {/* <div className={classes.focusContainer}>
-              <h6 className={classes.title}>NFT Standard</h6>
-
-              <p className={classes.para}>The ultimate cross-chain NFT standard based on Substrate coming soon.</p>
-            </div> */}
-              <div className={classes.focusContainer}>
-                <h6 className={classes.title}>Unlock Schedule</h6>
-
-                <div className={classes.para}>
-                  <ul>
-                    <li>
-                      <strong>Ecosystem :</strong> 1,000,000 PBR every month.
-                    </li>
-                    <li>
-                      <strong>Marketing :</strong> 1,000,000 PBR every month
-                    </li>
-                    <li>
-                      <strong>Team :</strong> 5,000,000 PBR every 6 months
-                    </li>
-                  </ul>
+                <div className="row g-5 mt-4">
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>
+                          Early access for INO
+                        </h5>
+                        <p className={classes.usecasePara}>
+                          Get early access for INO projects.
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-networking-4416129-3663990.png"
+                          alt="tokenomics"
+                          style={{ height: 100 }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>
+                          Free Airdrops for HODLERs
+                        </h5>
+                        <p className={classes.usecasePara}>
+                          Long term hodlers recieve bounties and airdrops.
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-digital-assets-4416125-3663986.png"
+                          alt="tokenomics"
+                          style={{ height: 100 }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Fade>
