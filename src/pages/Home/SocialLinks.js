@@ -11,8 +11,14 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 80,
-    height: "300px",
+    paddingTop: 80,
+    paddingBottom: 80,
+    paddingLeft: "7%",
+    paddingRight: "7%",
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "center",
+
     [theme.breakpoints.down("sm")]: {
       height: "100%",
       padding: 0,
@@ -20,8 +26,25 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: 25,
     },
   },
+  newsletterCard: {
+    width: 800,
+    height: "100%",
+    padding: 20,
+    borderRadius: 30,
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    border: "1px solid #454545",
+    filter: "drop-shadow(0 0 0.5rem #212121)",
+
+    paddingBottom: 15,
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: 0,
+      paddingRight: 0,
+      width: "100%",
+      height: "100%",
+    },
+  },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: "white",
     textAlign: "center",
     fontSize: 36,
     fontWeight: 600,
@@ -39,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: "center",
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -71,14 +95,23 @@ export default function SocialLinks() {
 
   return (
     <div className={classes.background}>
-      <div className="text-center">
-        <div>
-          <h6 className={classes.heading}>
-            Follow <span className={classes.highlight}>PolkaBridge</span>
-          </h6>
-          <p className={classes.para}>
-            To Get latest updates on PolkaBridge join!
-          </p>
+      <div className={classes.newsletterCard}>
+        <div className="text-center">
+          <div>
+            <h6 className={classes.heading}>Follow Us</h6>
+            <p className={classes.para}>
+              Join our newsletter for more updates!
+            </p>
+          </div>
+        </div>
+        <div className="container text-center mt-5" style={{ paddingTop: 70 }}>
+          <div>
+            <img
+              src="https://launchpad.polkabridge.org/img/logo-white.png"
+              alt="logo"
+              height="40px"
+            />
+          </div>
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
@@ -140,8 +173,9 @@ export default function SocialLinks() {
                 <a href="https://discord.gg/tzemFksyZB">
                   <IconButton aria-label="Discord">
                     <img
-                      src="images/discord.png"
+                      src="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png"
                       className={classes.icon}
+                      style={{ height: 23 }}
                       alt="discord"
                     />
                   </IconButton>
@@ -158,6 +192,11 @@ export default function SocialLinks() {
               </Tooltip>
             </div>
           </div>
+          <p className={classes.para}>
+            Copyright 2022{" "}
+            <span className={classes.highlight}>PolkaBridge</span>. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </div>

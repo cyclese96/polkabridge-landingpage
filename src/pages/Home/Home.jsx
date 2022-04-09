@@ -62,6 +62,10 @@ export default function Home() {
       <section id="partnerships">
         <Partnerships />
       </section>
+      <section>
+        <SocialLinks />
+      </section>
+
       {/* 
       <section id="ecosystem">
         <Ecosystem />
@@ -90,12 +94,7 @@ export default function Home() {
       <section id="exchange">
         <Listings />
       </section>
-      <section>
-        <SocialLinks />
-      </section>
-      <section>
-        <Footer />
-      </section>
+      
       <Dialog
         className={classes.modal}
         open={claimPopup}
