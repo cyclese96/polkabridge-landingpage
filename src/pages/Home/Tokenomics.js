@@ -31,15 +31,15 @@ const useStyles = makeStyles((theme) => ({
   usecaseCard: {
     borderRadius: 1,
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
   },
   usecaseTitle: {
     fontWeight: 700,
     verticalAlign: "baseline",
     letterSpacing: "-0.2px",
-    lineHeight: "36px",
+    lineHeight: "32px",
     margin: 0,
-    fontSize: 22,
+    fontSize: 20,
     color: "white",
     textAlign: "left",
   },
@@ -50,13 +50,13 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "baseline",
     letterSpacing: "-0.2px",
     margin: 0,
-    fontSize: 15,
-    lineHeight: "26px",
+    fontSize: 14,
+    lineHeight: "24px",
     color: "white",
     textAlign: "left",
   },
   imageContainer: {
-    width: "90%",
+    width: "100%",
   },
 }));
 export default function Tokenomics() {
@@ -70,13 +70,10 @@ export default function Tokenomics() {
             <Fade left>
               <div className="text-center mt-1">
                 <img
-                  src="images/pbr-3d.png"
+                  src="images/PBR_TOKEN.png"
                   alt="tokenomics"
                   className={classes.imageContainer}
                 />
-                {/* <p style={{ color: "white", textAlign: "center" }}>
-                  Total 100M supply
-                </p> */}
               </div>
             </Fade>
           </div>
@@ -102,7 +99,7 @@ export default function Tokenomics() {
                         <img
                           src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-coin-4416139-3664000.png"
                           alt="tokenomics"
-                          style={{ height: 100 }}
+                          style={{ height: 80 }}
                         />
                       </div>
                     </div>
@@ -122,7 +119,7 @@ export default function Tokenomics() {
                         <img
                           src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-trader-5129913-4288062.png"
                           alt="tokenomics"
-                          style={{ height: 100 }}
+                          style={{ height: 80 }}
                         />
                       </div>
                     </div>
@@ -143,7 +140,7 @@ export default function Tokenomics() {
                         <img
                           src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-networking-4416129-3663990.png"
                           alt="tokenomics"
-                          style={{ height: 100 }}
+                          style={{ height: 80 }}
                         />
                       </div>
                     </div>
@@ -162,7 +159,46 @@ export default function Tokenomics() {
                         <img
                           src="https://cdn3d.iconscout.com/3d/premium/thumb/cryptocurrency-digital-assets-4416125-3663986.png"
                           alt="tokenomics"
-                          style={{ height: 100 }}
+                          style={{ height: 80 }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row g-5 mt-4">
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>Monthly Burn</h5>
+                        <p className={classes.usecasePara}>
+                          We burn 1M $PBR tokens with Buyback and burn strategy.
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-burn-5152772-4312541.png  "
+                          alt="tokenomics"
+                          style={{ height: 80 }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className={classes.usecaseCard}>
+                      <div>
+                        <h5 className={classes.usecaseTitle}>
+                          Deflationary Farming
+                        </h5>
+                        <p className={classes.usecasePara}>
+                          On every Dex trade 0.5% of the total value will be
+                          burnt.
+                        </p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-transaction-fee-4658209-3900722.png"
+                          alt="tokenomics"
+                          style={{ height: 80 }}
                         />
                       </div>
                     </div>

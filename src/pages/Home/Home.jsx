@@ -18,6 +18,7 @@ import { Dialog, Slide, Backdrop } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import DexPopupContent from "../../components/DexPopup";
 import Team from "./Team";
+import Achievements from "./Achievements";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -67,8 +68,15 @@ export default function Home() {
       <section id="features">
         <Features />
       </section>
+      <section id="achievements">
+        <Achievements />
+      </section>
+
       <section>
         <Tokenomics />
+      </section>
+      <section id="roadmap">
+        <Roadmap />
       </section>
       <section id="team">
         <Team />
@@ -76,6 +84,9 @@ export default function Home() {
 
       <section id="partnerships">
         <Partnerships />
+      </section>
+      <section id="exchange">
+        <Listings />
       </section>
       <section>
         <SocialLinks />

@@ -1,4 +1,4 @@
-import { IconButton, Tooltip } from "@material-ui/core";
+import { Button, IconButton, Input, Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Twitter,
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 20,
     borderRadius: 30,
     backgroundColor: "rgba(0, 0, 0, 0.3)",
-    border: "1px solid #454545",
+    // border: "1px solid #454545",
     filter: "drop-shadow(0 0 0.5rem #212121)",
 
     paddingBottom: 15,
@@ -67,7 +67,20 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
   },
-
+  subheading: {
+    fontWeight: 600,
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    paddingTop: 10,
+    paddingBottom: 10,
+    textAlign: "center",
+    color: "white",
+    fontSize: 22,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
+  },
   highlight: {
     color: theme.palette.pbr.primary,
   },
@@ -89,6 +102,32 @@ const useStyles = makeStyles((theme) => ({
       marginRight: 2,
     },
   },
+  subscribeCard: {
+    backgroundColor: "#D9047C",
+    width: "90%",
+    height: "100%",
+    borderRadius: 20,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+  button: {
+    borderRadius: 10,
+    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
+    margin: 0,
+    marginRight: 5,
+    color: "#ffffff",
+    padding: "7px 30px 7px 30px",
+    fontWeight: 600,
+    fontSize: 13,
+    textTransform: "capitalize",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 13,
+      padding: "10px 20px 10px 20px",
+    },
+  },
 }));
 export default function SocialLinks() {
   const classes = useStyles();
@@ -97,10 +136,37 @@ export default function SocialLinks() {
     <div className={classes.background}>
       <div className={classes.newsletterCard}>
         <div className="text-center">
-          <div>
-            <h6 className={classes.heading}>Follow Us</h6>
+          <h6 className={classes.heading}>Get in touch Now!</h6>
+        </div>
+        <div className="d-flex justify-content-center">
+          <div className={classes.subscribeCard}>
+            <p className={classes.subheading}>Need more updates?</p>
+            <div className="px-5 py-3">
+              <div
+                className="d-flex justify-content-between align-items-center"
+                style={{
+                  backgroundColor: "white",
+                  borderRadius: 10,
+                  height: 45,
+                  paddingLeft: 10,
+                }}
+              >
+                {" "}
+                <Input
+                  placeholder="Type your email here"
+                  style={{
+                    backgroundColor: "white",
+                    borderRadius: 10,
+                    height: 45,
+                    paddingLeft: 10,
+                  }}
+                  fullWidth
+                />
+                <Button className={classes.button}>Subscribe</Button>
+              </div>
+            </div>
             <p className={classes.para}>
-              Join our newsletter for more updates!
+              We will send you development updates right into your inbox!
             </p>
           </div>
         </div>

@@ -16,7 +16,11 @@ import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 40,
+    paddingTop: 80,
+    paddingBottom: 80,
+    paddingLeft: "7%",
+    paddingRight: "7%",
+    backgroundColor: "black",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
@@ -26,12 +30,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: "white",
     textAlign: "center",
-    fontSize: 36,
-    fontWeight: 600,
+    fontSize: 54,
+    fontWeight: 700,
     verticalAlign: "middle",
-    wordSpacing: "0px",
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
@@ -44,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: "center",
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -95,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: 48,
-    color: "#616161",
+    color: "#e5e5e5",
     "&:hover": {
       color: theme.palette.pbr.primary,
     },
@@ -112,6 +116,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     marginTop: 15,
     marginBottom: 15,
+    color: "white",
   },
   quarterText: {
     fontWeight: 600,
@@ -128,6 +133,7 @@ const useStyles = makeStyles((theme) => ({
     width: 200,
     paddingLeft: 15,
     fontSize: 14,
+    color: "white",
   },
 }));
 export default function Roadmap(props) {
@@ -153,9 +159,7 @@ export default function Roadmap(props) {
   return (
     <div className={classes.background}>
       <div>
-        <h6 className={classes.heading}>
-          PolkaBridge <strong className={classes.highlight}>RoadMap</strong>
-        </h6>
+        <h6 className={classes.heading}>Our RoadMap</h6>
         <p className={classes.para}>
           Fundamentally strong and visionary project with strong foundation.
         </p>

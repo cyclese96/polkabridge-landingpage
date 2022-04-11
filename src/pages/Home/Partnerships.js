@@ -74,9 +74,17 @@ const useStyles = makeStyles((theme) => ({
       flex: " 50%",
     },
   },
+  imageWrapperChina: {
+    padding: 15,
+    height: "60px",
+    [theme.breakpoints.down("sm")]: {
+      height: "54px",
+      padding: 15,
+    },
+  },
   imageWrapper: {
     padding: 15,
-    height: "67px",
+    height: "64px",
     [theme.breakpoints.down("sm")]: {
       height: "54px",
       padding: 15,
@@ -92,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperNew: {
     padding: 10,
-    height: "70px",
+    height: "68px",
     [theme.breakpoints.down("sm")]: {
       height: "64px",
       padding: 10,
@@ -163,7 +171,7 @@ export default function Partnerships() {
               <img
                 src="images/chinapolka.png"
                 alt="logo"
-                className={classes.imageWrapper}
+                className={classes.imageWrapperChina}
               />
             </a>
           </div>
