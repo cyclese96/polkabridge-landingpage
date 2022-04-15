@@ -14,7 +14,8 @@ import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    paddingTop: 130,
+    paddingTop: 160,
+    paddingBottom: 100,
     paddingLeft: "5%",
     paddingRight: "5%",
     backgroundColor: "black",
