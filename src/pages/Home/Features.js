@@ -15,60 +15,20 @@ import Pulse from "react-reveal/Pulse";
 const useStyles = makeStyles((theme) => ({
   background: {
     paddingTop: 130,
-    paddingBottom: 130,
-    paddingLeft: "2%",
-    paddingRight: "2%",
+    paddingLeft: "5%",
+    paddingRight: "5%",
     backgroundColor: "black",
     height: "100%",
+
+    // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
     },
   },
+  container: {
+    marginTop: 0,
+  },
 
-  circle: {
-    width: 7,
-    height: 7,
-    padding: 5,
-    margin: 6,
-    borderRadius: "50%",
-    backgroundColor: theme.palette.pbr.primary,
-  },
-  header: {
-    minHeight: "90vh",
-    width: "auto",
-
-    background: `linear-gradient(180deg,
-      rgba(0, 0, 0, 0.99),
-      rgba(6, 21, 33, 0.60)
-    ),
-    url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-particles-background-with-connection-concept-vector-illustration-image_416083.jpg") no-repeat center center
-      fixed`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    [theme.breakpoints.down("sm")]: {
-      height: "85vh",
-    },
-  },
-  notice: {
-    fontWeight: 400,
-    verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
-    margin: 0,
-    paddingBottom: 15,
-  },
-  heading: {
-    color: "white",
-    textAlign: "center",
-    fontSize: 54,
-    fontWeight: 700,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    margin: "0px 0px 12px",
-
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "32px",
-    },
-  },
   para: {
     textAlign: "center",
     width: "70%",
@@ -90,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
     lineHeight: "24px",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+
     margin: 0,
     marginTop: 15,
     color: "#ffffff",
@@ -103,18 +63,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   buttonOutlined: {
-    borderRadius: "50px",
+    borderRadius: 10,
     background: `transparent`,
-    lineHeight: "24px",
-    border: "1px solid #BF1088",
+    border: "1px solid #E0077D",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
     margin: 0,
-    marginTop: 15,
-    color: "#BF1088",
-    padding: "15px 30px 15px 30px",
+    marginTop: 20,
+    color: "#E0077D",
+    padding: "7px 30px 7px 30px",
     fontWeight: 600,
     fontSize: 14,
+
     [theme.breakpoints.down("sm")]: {
       fontSize: 13,
       padding: "10px 20px 10px 20px",
@@ -126,20 +85,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
   },
   featureTitle: {
-    fontWeight: 600,
+    fontWeight: 700,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
     margin: 0,
-    fontSize: 36,
+    fontSize: 42,
     color: "white",
     textAlign: "left",
   },
   featurePara: {
     paddingTop: 7,
     fontWeight: 400,
-    width: "85%",
+    width: "90%",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
     margin: 0,
     fontSize: 15,
     color: "white",
@@ -149,32 +106,31 @@ const useStyles = makeStyles((theme) => ({
   cardTitle: {
     fontWeight: 600,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
     margin: 0,
-    fontSize: 20,
+    fontSize: 22,
     color: "white",
     textAlign: "center",
   },
   cardValue: {
-    paddingTop: 7,
+    paddingTop: 10,
     fontWeight: 400,
-    width: "85%",
+    paddingLeft: "5%",
+    paddingRight: "5%",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+
     margin: 0,
     fontSize: 13,
     color: "white",
     textAlign: "center",
   },
   featureCardFull: {
-    width: 620,
-    height: 450,
-
-    // borderRadius: 30,
-    backgroundColor: "rgba(0, 0, 0, 0.3)",
-    // border: "3px solid #bdbdbd",
-    // filter: "drop-shadow(0 0 0.5rem #212121)",
-
+    width: 280,
+    height: "100%",
+    paddingBottom: 20,
+    borderRadius: 30,
+    backgroundColor: "#161F30",
+    border: "2px solid #2F3A4D",
+    boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
@@ -182,15 +138,13 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
     },
   },
-  featureCard: {
-    width: 200,
-    height: 300,
-
+  card: {
+    width: 900,
+    height: 120,
     borderRadius: 30,
     backgroundColor: "rgba(0, 0, 0, 0.3)",
-    border: "3px solid #bdbdbd",
+    border: "1px solid #616161",
     filter: "drop-shadow(0 0 0.5rem #212121)",
-
     paddingBottom: 15,
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
@@ -199,230 +153,147 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
     },
   },
-  button: {
-    borderRadius: "50px",
-    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
-
-    verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
-    margin: 0,
-    marginTop: 15,
-    color: "#ffffff",
-    padding: "7px 40px 7px 40px",
-    fontWeight: 600,
-    fontSize: 13,
-    textTransform: "capitalize",
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 13,
-      padding: "10px 20px 10px 20px",
-    },
-  },
 }));
 
 export default function Features() {
   const classes = useStyles();
   return (
-    <div className={classes.background}>
-      <Pulse>
-        <h1 className={classes.heading}>Products</h1>
-      </Pulse>
-      <Pulse>
-        <div className="d-flex justify-content-center">
-          <p className={classes.para}>
-            All your DeFi needs at one place and many more are coming
-          </p>
-        </div>
-      </Pulse>
-      <div className="container d-flex align-items-center justify-content-evenly mt-5">
-        <div className="col-md-4">
-          <div
-            className="d-flex justify-content-start align-items-center"
-            style={{ height: 140 }}
-          >
-            <img src="images/multichain.png" height="100px" />
-          </div>
-          <h5 className={classes.featureTitle}>MultiChain AMM</h5>
-          <p className={classes.featurePara}>
-            Experience multichain and cross-chain AMM with lowest fees ever and
-            trade with more 100+ token pairs. Available on Ethereum, Polygon,
-            BSC and Monnriver.
-          </p>
-          <div className="mt-5">
-            <ChevronLeft
-              className={classes.icon}
-              style={{
-                backgroundColor: "#333333",
-                height: 40,
-                width: 40,
-                padding: 6,
-                borderRadius: "50%",
-                fontSize: 12,
-              }}
-            />
-            <ChevronRight
-              className={classes.icon}
-              style={{
-                backgroundColor: "#333333",
-                height: 40,
-                width: 40,
-                padding: 6,
-                borderRadius: "50%",
-                fontSize: 12,
-              }}
-            />
-          </div>
-        </div>
-        <div className="col-md-8 d-flex justify-content-center">
-          <Card className={classes.featureCardFull}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{
-                height: 358,
-                borderRadius: 30,
-
-                // backgroundImage: 'url("images/launchpad.jpg")',
-                backgroundPosition: "center center",
-                backgroundSize: "cover",
-                background: "url(images/launchpad.jpg)",
-                backgroundColor: "rgba(0, 0, 0, 0.3)",
-                border: "3px solid #bdbdbd",
-                filter: "drop-shadow(0 0 0.5rem #212121)",
-              }}
-            ></div>
-            <div className="text-center">
-              <Button className={classes.button}>Visit Now</Button>
+    <div style={{}}>
+      <div
+        style={{
+          backgroundColor: "transaparent",
+          height: 60,
+          display: "flex",
+          justifyContent: "center",
+          marginTop: -60,
+        }}
+      >
+        <Card className={classes.card}>
+          <div className="d-flex justify-content-evenly align-items-center h-100">
+            <div>
+              <div style={{ color: "#bdbdbd" }}>Total Value Locked($)</div>
+              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                $21,45,324
+              </div>
             </div>
-          </Card>
+            <div
+              style={{ borderLeft: "1px solid #616161", height: "60%" }}
+            ></div>
+            <div>
+              <div style={{ color: "#bdbdbd" }}>Total Volume($)</div>
+              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                $168,99,324
+              </div>
+            </div>
+            <div
+              style={{ borderLeft: "1px solid #616161", height: "60%" }}
+            ></div>
+            <div>
+              <div style={{ color: "#bdbdbd" }}>Supported Pairs</div>
+              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                32
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+      <div className={classes.background}>
+        <div className={classes.container}>
+          <div className="container d-flex align-items-center justify-content-evenly mt-5">
+            <div className="col-md-3">
+              <h5 className={classes.featureTitle}>
+                Our <br />
+                Products
+              </h5>
+              <p className={classes.featurePara}>
+                All your DeFi needs at one place and many more are coming
+              </p>
+              <div className="mt-5">
+                <ChevronLeft
+                  className={classes.icon}
+                  style={{
+                    backgroundColor: "#333333",
+                    height: 40,
+                    width: 40,
+                    padding: 6,
+                    borderRadius: "50%",
+                    fontSize: 12,
+                  }}
+                />
+                <ChevronRight
+                  className={classes.icon}
+                  style={{
+                    backgroundColor: "#333333",
+                    height: 40,
+                    width: 40,
+                    padding: 6,
+                    borderRadius: "50%",
+                    fontSize: 12,
+                  }}
+                />
+              </div>
+            </div>
+            <div className="col-md-9 ">
+              <div className="d-flex justify-content-between">
+                <Card className={classes.featureCardFull}>
+                  <div
+                    className="d-flex justify-content-center align-items-center"
+                    style={{ height: 200 }}
+                  >
+                    <img src="images/multi.png" height="120px" />
+                  </div>
+                  <h5 className={classes.cardTitle}>Multichain AMM</h5>
+                  <p className={classes.cardValue}>
+                    Experience multichain and cross-chain AMM with lowest fees
+                    ever and trade with more 100+ token pairs.
+                  </p>
+                  <div className="text-center">
+                    <Button className={classes.buttonOutlined}>
+                      Visit Now
+                    </Button>
+                  </div>
+                </Card>
+                <Card className={classes.featureCardFull}>
+                  <div
+                    className="d-flex justify-content-center align-items-center"
+                    style={{ height: 200 }}
+                  >
+                    <img src="images/launchpad.png" height="120px" />
+                  </div>
+                  <h5 className={classes.cardTitle}>Launchpad</h5>
+                  <p className={classes.cardValue}>
+                    Experience multichain and cross-chain AMM with lowest fees
+                    ever and trade with more 100+ token pairs.
+                  </p>
+                  <div className="text-center">
+                    <Button className={classes.buttonOutlined}>
+                      Visit Now
+                    </Button>
+                  </div>
+                </Card>{" "}
+                <Card className={classes.featureCardFull}>
+                  <div
+                    className="d-flex justify-content-center align-items-center"
+                    style={{ height: 200 }}
+                  >
+                    <img src="images/staking.png" height="120px" />
+                  </div>
+                  <h5 className={classes.cardTitle}>Staking</h5>
+                  <p className={classes.cardValue}>
+                    Experience multichain and cross-chain AMM with lowest fees
+                    ever and trade with more 100+ token pairs.
+                  </p>
+                  <div className="text-center">
+                    <Button className={classes.buttonOutlined}>
+                      Visit Now
+                    </Button>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {/* <div className="container d-flex align-items-center justify-content-evenly mt-5">
-        <div style={{ width: "5%" }}>
-          {" "}
-          <button className="c--right">
-            <div className="icon-wrapper">
-              <ChevronLeft
-                className={classes.icon}
-                style={{
-                  backgroundColor: "#333333",
-                  height: 40,
-                  width: 40,
-                  padding: 6,
-                  borderRadius: "50%",
-                  fontSize: 12,
-                }}
-              />
-            </div>
-          </button>
-        </div>
-        <div className="col-md-2">
-          <Card className={classes.featureCard}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 140 }}
-            >
-              <img
-                src="https://polkastarter.com/packs/media/images/hero/visual-atf-optimized-3d58fb22c924a0145d3a82bfbbd8af95.png"
-                height="60px"
-              />
-            </div>
-            <h5 className={classes.cardTitle}>MultiChain AMM</h5>
-
-            <div className="d-flex justify-content-center">
-              <p className={classes.cardValue}>
-                Experience multichain and cross-chain AMM with lowest fees.
-              </p>
-            </div>
-            <div className="text-center">
-              <Button className={classes.button}>Visit </Button>
-            </div>
-          </Card>
-        </div>
-        <div className="col-md-2">
-          <Card className={classes.featureCard}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 140 }}
-            >
-              <img
-                src="https://academy.moralis.io/wp-content/uploads/2021/06/stakingpool-1024x900.png"
-                height="60px"
-              />
-            </div>
-            <h5 className={classes.cardTitle}>Launchpad</h5>
-            <div className="d-flex justify-content-center">
-              <p className={classes.cardValue}>
-                Experience multichain and cross-chain AMM with lowest fees.
-              </p>
-            </div>
-            <div className="text-center">
-              <Button className={classes.button}>Visit </Button>
-            </div>
-          </Card>
-        </div>
-        <div className="col-md-2">
-          <Card className={classes.featureCard}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 140 }}
-            >
-              <img
-                src="https://thefinancialanalyst.net/wp-content/uploads/2021/06/staking-pool.png"
-                height="60px"
-              />
-            </div>
-            <h5 className={classes.cardTitle}>Staking</h5>
-
-            <div className="d-flex justify-content-center">
-              <p className={classes.cardValue}>
-                Experience multichain and cross-chain AMM with lowest fees.
-              </p>
-            </div>
-            <div className="text-center">
-              <Button className={classes.button}>Visit </Button>
-            </div>
-          </Card>
-        </div>
-        <div className="col-md-2">
-          <Card className={classes.featureCard}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 140 }}
-            >
-              <img
-                src="https://ztake.org/_nuxt/img/9d0f77c.svg"
-                height="60px"
-              />
-            </div>
-            <h5 className={classes.cardTitle}>Farming</h5>
-            <div className="d-flex justify-content-center">
-              <p className={classes.cardValue}>
-                Experience multichain and cross-chain AMM with lowest fees.
-              </p>
-            </div>
-            <div className="text-center">
-              <Button className={classes.button}>Visit </Button>
-            </div>
-          </Card>
-        </div>
-        <div style={{ width: "5%" }}>
-          {" "}
-          <button className="c--right">
-            <div className="icon-wrapper">
-              <ChevronRight
-                className={classes.icon}
-                style={{
-                  backgroundColor: "#333333",
-                  height: 40,
-                  width: 40,
-                  padding: 6,
-                  borderRadius: "50%",
-                  fontSize: 12,
-                }}
-              />
-            </div>
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 }

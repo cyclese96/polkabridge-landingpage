@@ -19,6 +19,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import DexPopupContent from "../../components/DexPopup";
 import Team from "./Team";
 import Achievements from "./Achievements";
+import RoadmapNew from "./RoadmapNew";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -68,6 +69,9 @@ export default function Home() {
       <section id="features">
         <Features />
       </section>
+      <section id="ecosystem">
+        <Ecosystem />
+      </section>
       <section id="achievements">
         <Achievements />
       </section>
@@ -75,8 +79,11 @@ export default function Home() {
       <section>
         <Tokenomics />
       </section>
-      <section id="roadmap">
+      {/* <section id="roadmap">
         <Roadmap />
+      </section> */}
+      <section id="roadmap">
+        <RoadmapNew />
       </section>
       <section id="team">
         <Team />
@@ -93,9 +100,7 @@ export default function Home() {
       </section>
 
       {/* 
-      <section id="ecosystem">
-        <Ecosystem />
-      </section>
+    
       <hr style={{ color: "#e9e9e9" }} />
       <section id="about">
         <About />

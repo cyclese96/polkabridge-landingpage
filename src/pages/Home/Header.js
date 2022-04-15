@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   spacing: {
     paddingTop: 130,
     paddingLeft: "5%",
+
     [theme.breakpoints.down("sm")]: {
       paddingTop: 50,
       textAlign: "center",
@@ -28,17 +29,19 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.pbr.primary,
   },
   header: {
-    minHeight: "90vh",
+    minHeight: "95vh",
     width: "auto",
-
     background: `linear-gradient(180deg,
       rgba(0, 0, 0, 0.99),
       rgba(6, 21, 33, 0.60)
     ),
     url("https://png.pngtree.com/thumb_back/fh260/background/20201014/pngtree-abstract-particles-background-with-connection-concept-vector-illustration-image_416083.jpg") no-repeat center center
       fixed`,
+
     backgroundSize: "cover",
     backgroundPosition: "center",
+    paddingBottom: 80,
+
     [theme.breakpoints.down("sm")]: {
       height: "85vh",
     },
@@ -251,51 +254,6 @@ export default function Header() {
                 <img src="/images/multichain.png" height="550px" />
               </div>
             </div>
-          </div>
-          <div
-            style={{
-              backgroundColor: "transparent",
-              height: "100%",
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: 20,
-              paddingBottom: 20,
-            }}
-          >
-            <Card className={classes.card}>
-              <div className="d-flex justify-content-evenly align-items-center h-100">
-                <div>
-                  <div style={{ color: "#bdbdbd" }}>Total Value Locked($)</div>
-                  <div
-                    style={{ color: "white", fontSize: 36, fontWeight: 700 }}
-                  >
-                    $21,45,324
-                  </div>
-                </div>
-                <div
-                  style={{ borderLeft: "1px solid #616161", height: "60%" }}
-                ></div>
-                <div>
-                  <div style={{ color: "#bdbdbd" }}>Total Volume($)</div>
-                  <div
-                    style={{ color: "white", fontSize: 36, fontWeight: 700 }}
-                  >
-                    $168,99,324
-                  </div>
-                </div>
-                <div
-                  style={{ borderLeft: "1px solid #616161", height: "60%" }}
-                ></div>
-                <div>
-                  <div style={{ color: "#bdbdbd" }}>Supported Pairs</div>
-                  <div
-                    style={{ color: "white", fontSize: 36, fontWeight: 700 }}
-                  >
-                    32
-                  </div>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
         {/* <div
