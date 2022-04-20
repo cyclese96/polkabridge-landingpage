@@ -241,8 +241,8 @@ export default function Achievements() {
           </p>
         </div>
       </Pulse>
-      <div className="container d-flex align-items-center justify-content-evenly mt-5">
-        <div className="col-md-2">
+      <div className="container d-sm-flex align-items-center justify-content-evenly mt-5">
+        <div className="col-md-2 mt-3">
           <Card className={classes.featureCard}>
             <div
               className="d-flex justify-content-center align-items-center"
@@ -257,31 +257,12 @@ export default function Achievements() {
 
             <div className="d-flex justify-content-center">
               <p className={classes.cardValue}>
-                Experience multichain and cross-chain AMM with lowest fees.
-              </p>
-            </div>
-          </Card>
-        </div>
-        <div className="col-md-2">
-          <Card className={classes.featureCard}>
-            <div
-              className="d-flex justify-content-center align-items-center"
-              style={{ height: 80 }}
-            >
-              <h5 className={classes.valueText}>
-                {" "}
-                150<span style={{ fontSize: 44 }}>X</span>
-              </h5>
-            </div>
-            <h5 className={classes.cardTitle}>Launchpad</h5>
-            <div className="d-flex justify-content-center">
-              <p className={classes.cardValue}>
                 Our launchpad projects gives 150x return on IDO price.
               </p>
             </div>
           </Card>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-2 mt-3">
           <Card className={classes.featureCard}>
             <div
               className="d-flex justify-content-center align-items-center"
@@ -289,11 +270,10 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                32<span style={{ fontSize: 44 }}>+</span>
+                43<span style={{ fontSize: 44 }}>+</span>
               </h5>
             </div>
-            <h5 className={classes.cardTitle}>ATH MCap</h5>
-
+            <h5 className={classes.cardTitle}>Projects</h5>
             <div className="d-flex justify-content-center">
               <p className={classes.cardValue}>
                 We have launched more than 32 projects on multiple chains
@@ -301,7 +281,27 @@ export default function Achievements() {
             </div>
           </Card>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-2 mt-3">
+          <Card className={classes.featureCard}>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: 80 }}
+            >
+              <h5 className={classes.valueText}>
+                {" "}
+                170M<span style={{ fontSize: 44 }}>+</span>
+              </h5>
+            </div>
+            <h5 className={classes.cardTitle}>ATH MCap</h5>
+
+            <div className="d-flex justify-content-center">
+              <p className={classes.cardValue}>
+                Our all time high market cap crossed $150 Million+ valuation.
+              </p>
+            </div>
+          </Card>
+        </div>
+        <div className="col-md-2 mt-3">
           <Card className={classes.featureCard}>
             <div
               className="d-flex justify-content-center align-items-center"

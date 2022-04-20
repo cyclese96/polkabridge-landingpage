@@ -79,3 +79,37 @@ a {
   background: none;
   border: 0;
 }
+
+.sliderNew {
+  width: 100%;
+  height: 100%;
+  border-radius: 21px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  overflow: hidden;
+}
+.slideNew {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 34%;
+  max-width: 34%;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+  .slideNew {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+}

@@ -1,4 +1,4 @@
-import { Button, Card } from "@material-ui/core";
+import { Button, Card, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AccountTree,
@@ -169,34 +169,36 @@ export default function Features() {
           marginTop: -60,
         }}
       >
-        <Card className={classes.card}>
-          <div className="d-flex justify-content-evenly align-items-center h-100">
-            <div>
-              <div style={{ color: "#bdbdbd" }}>Total Value Locked($)</div>
-              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                $21,45,324
+        <Hidden smDown>
+          <Card className={classes.card}>
+            <div className="d-flex justify-content-evenly align-items-center h-100">
+              <div>
+                <div style={{ color: "#bdbdbd" }}>Total Value Locked($)</div>
+                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                  $21,45,324
+                </div>
+              </div>
+              <div
+                style={{ borderLeft: "1px solid #616161", height: "60%" }}
+              ></div>
+              <div>
+                <div style={{ color: "#bdbdbd" }}>Total Volume($)</div>
+                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                  $168,99,324
+                </div>
+              </div>
+              <div
+                style={{ borderLeft: "1px solid #616161", height: "60%" }}
+              ></div>
+              <div>
+                <div style={{ color: "#bdbdbd" }}>Supported Pairs</div>
+                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
+                  32
+                </div>
               </div>
             </div>
-            <div
-              style={{ borderLeft: "1px solid #616161", height: "60%" }}
-            ></div>
-            <div>
-              <div style={{ color: "#bdbdbd" }}>Total Volume($)</div>
-              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                $168,99,324
-              </div>
-            </div>
-            <div
-              style={{ borderLeft: "1px solid #616161", height: "60%" }}
-            ></div>
-            <div>
-              <div style={{ color: "#bdbdbd" }}>Supported Pairs</div>
-              <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                32
-              </div>
-            </div>
-          </div>
-        </Card>
+          </Card>
+        </Hidden>
       </div>
       <div className={classes.background}>
         <div className={classes.container}>
@@ -207,7 +209,9 @@ export default function Features() {
                 Products
               </h5>
               <p className={classes.featurePara}>
-                All your DeFi needs at one place and many more are coming
+                All your DeFi needs at one place and many more are coming.{" "}
+                <br />
+                Swap, Stake, participate and much more.
               </p>
               <div className="mt-5">
                 <ChevronLeft
@@ -249,9 +253,11 @@ export default function Features() {
                     ever and trade with more 100+ token pairs.
                   </p>
                   <div className="text-center">
-                    <Button className={classes.buttonOutlined}>
-                      Visit Now
-                    </Button>
+                    <a href="https://swap.polkabridge.org">
+                      <Button className={classes.buttonOutlined}>
+                        Visit Now
+                      </Button>
+                    </a>
                   </div>
                 </Card>
                 <Card className={classes.featureCardFull}>
@@ -263,13 +269,15 @@ export default function Features() {
                   </div>
                   <h5 className={classes.cardTitle}>Launchpad</h5>
                   <p className={classes.cardValue}>
-                    Experience multichain and cross-chain AMM with lowest fees
-                    ever and trade with more 100+ token pairs.
+                    Particiate in initial dex offering of fundamentally strong
+                    projects selected by PolkaBridge team.
                   </p>
                   <div className="text-center">
-                    <Button className={classes.buttonOutlined}>
-                      Visit Now
-                    </Button>
+                    <a href="https://launchpad.polkabridge.org">
+                      <Button className={classes.buttonOutlined}>
+                        Visit Now
+                      </Button>
+                    </a>
                   </div>
                 </Card>{" "}
                 <Card className={classes.featureCardFull}>
@@ -281,13 +289,15 @@ export default function Features() {
                   </div>
                   <h5 className={classes.cardTitle}>Staking</h5>
                   <p className={classes.cardValue}>
-                    Experience multichain and cross-chain AMM with lowest fees
-                    ever and trade with more 100+ token pairs.
+                    Don't just hold tokens, participate in staking and earn more
+                    rewards with PolkaBridge.
                   </p>
                   <div className="text-center">
-                    <Button className={classes.buttonOutlined}>
-                      Visit Now
-                    </Button>
+                    <a href="https://stake.polkabridge.org">
+                      <Button className={classes.buttonOutlined}>
+                        Visit Now
+                      </Button>
+                    </a>
                   </div>
                 </Card>
               </div>

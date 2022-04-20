@@ -1,4 +1,4 @@
-import { IconButton, Tooltip } from "@material-ui/core";
+import { Hidden, IconButton, Tooltip } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { GitHub, LinkedIn, Telegram, Twitter } from "@material-ui/icons";
 import { Fade } from "react-reveal";
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: 14,
     fontWeight: 400,
-
+    marginBottom: -5,
     color: "#bdbdbd",
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
@@ -89,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 7,
     objectFit: "cover",
     [theme.breakpoints.down("sm")]: {
-      width: "70px",
-      height: "70px",
+      width: "75px",
+      height: "75px",
     },
   },
   avatarSmall: {
@@ -113,7 +113,10 @@ export default function Team() {
         <h4 className={classes.heading}>Team</h4>
 
         <div className="container row justify-content-center">
-          <div className="col-6 col-md-2">
+          <Hidden smDown>
+            <div className="d-block d-md-block d-sm-none d-xs-none col-md-1"></div>
+          </Hidden>
+          <div className="col-6   col-md-2">
             <Fade left>
               <div className={classes.people}>
                 <img
@@ -204,7 +207,7 @@ export default function Team() {
                   className={classes.avatar}
                 />
                 <h6 className={classes.title}>Stephane Henri</h6>
-                <p className={classes.para}>Smart Contract Engineer</p>
+                <p className={classes.para}>Smart Contract Dev</p>
                 <Tooltip title="Github">
                   <a href="https://www.linkedin.com/in/stephanehenri/">
                     <IconButton aria-label="Github">
@@ -242,11 +245,12 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-        </div>
-        <div className="container row justify-content-center">
+          <Hidden smDown>
+            <div className="d-block d-md-block d-sm-none d-xs-none col-md-1"></div>
+          </Hidden>
           <div className="col-6 col-md-2">
             <Fade right>
-              <div className={classes.peopleSmall}>
+              <div className={classes.people}>
                 <img
                   src="./images/team/swas.jpg"
                   alt="Swas"
@@ -268,7 +272,7 @@ export default function Team() {
 
           <div className="col-6 col-md-2">
             <Fade right>
-              <div className={classes.peopleSmall}>
+              <div className={classes.people}>
                 <img
                   src="./images/team/taha.jpg"
                   alt="Swas"
@@ -289,7 +293,7 @@ export default function Team() {
           </div>
           <div className="col-6 col-md-2">
             <Fade right>
-              <div className={classes.peopleSmall}>
+              <div className={classes.people}>
                 <img
                   src="./images/team/sonali.jpg"
                   alt="Swas"
@@ -317,7 +321,7 @@ export default function Team() {
           </div>
           <div className="col-6 col-md-2">
             <Fade right>
-              <div className={classes.peopleSmall}>
+              <div className={classes.people}>
                 <img
                   src="images/team/rashid.jpg"
                   alt="Rashid"

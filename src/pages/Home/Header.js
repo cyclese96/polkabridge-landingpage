@@ -82,7 +82,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     fontWeight: 400,
     color: "#f9f9f9",
-
     marginTop: 25,
   },
   button: {
@@ -213,13 +212,13 @@ export default function Header() {
                   <strong style={{ fontSize: 14 }}>Powered by </strong>{" "}
                   <div className="mt-2" variant="h6" noWrap>
                     <img
-                      src="https://lh3.googleusercontent.com/w64w-5fGtwppQA6dNry2Z-tvOIs-7vknk1l-GyIZY77aPgXCUWYJCw9IpBgTZOuzFYf_Z9i0FdMJDdouTLUPqBo0Lec54UnSaB5S1g=w600"
+                      src="https://cdn3d.iconscout.com/3d/premium/thumb/polkadot-4897427-4081372.png"
                       alt="logo"
-                      height="35px"
+                      height="45px"
                     />
                   </div>
                 </p>
-                <div className="mt-3 d-flex ">
+                <div className="d-flex ">
                   <a
                     href="https://swap.polkabridge.org/"
                     style={{ textDecoration: "none", padding: 5 }}
@@ -233,7 +232,7 @@ export default function Header() {
                     </Button>
                   </a>
                   <a
-                    href="https://swap.polkabridge.org/"
+                    href="https://swap.polkabridge.org/charts"
                     style={{ textDecoration: "none", padding: 5 }}
                   >
                     <Button

@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
   imageWrapper: {
     padding: 15,
     height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 5,
+      height: "50px",
+    },
   },
 
   highlight: {
@@ -63,6 +67,10 @@ const useStyles = makeStyles((theme) => ({
     height: 55,
     padding: 10,
     backgroundColor: "#e5e5e5",
+    [theme.breakpoints.down("sm")]: {
+      height: 40,
+      padding: 10,
+    },
   },
   kucoinLogo: {
     height: 55,

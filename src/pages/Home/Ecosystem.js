@@ -84,12 +84,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   featurePara: {
-    paddingLeft: 5,
+    paddingLeft: 8,
     fontWeight: 400,
     width: "90%",
     verticalAlign: "baseline",
     margin: 0,
-    fontSize: 15,
+    fontSize: 16,
     color: "white",
     textAlign: "left",
   },
@@ -154,11 +154,11 @@ export default function Ecosystem() {
           </div>
           <div className="col-md-4">
             <h5 className={classes.featureTitle}>
-              PolkaBridge <br />
+              PolkaBridge's <br />
               Ecosystem
             </h5>
             <div className="mt-3">
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
@@ -169,7 +169,7 @@ export default function Ecosystem() {
                 ></div>
                 <div className={classes.featurePara}>P2P Exchange</div>
               </div>
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
@@ -180,7 +180,7 @@ export default function Ecosystem() {
                 ></div>
                 <div className={classes.featurePara}>Deflationary Farming</div>
               </div>
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
@@ -191,7 +191,7 @@ export default function Ecosystem() {
                 ></div>
                 <div className={classes.featurePara}>Stake and Earn</div>
               </div>
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
@@ -205,7 +205,7 @@ export default function Ecosystem() {
                 </div>
               </div>
 
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
@@ -217,7 +217,7 @@ export default function Ecosystem() {
                 <div className={classes.featurePara}>Metaverse approach</div>
               </div>
 
-              <div className=" d-flex align-items-center justify-content-start mt-1">
+              <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div
                   style={{
                     backgroundColor: "green",
