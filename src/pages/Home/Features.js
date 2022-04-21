@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   featureCardFull: {
-    width: 400,
+    width: 280,
     height: "100%",
     paddingBottom: 20,
     borderRadius: 30,
