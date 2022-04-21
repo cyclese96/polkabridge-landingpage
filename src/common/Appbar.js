@@ -65,14 +65,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "transparent",
   },
   menuIcon: {
-    color: "#212121",
+    color: "#f9f9f9",
   },
   list: {
     width: "250px",
     borderLeft: "5px solid pink",
     borderColor: theme.palette.pbr.primary,
     height: "100%",
-    backgroundColor: "transparent",
+    backgroundColor: "#000000",
   },
   fullList: {
     width: "auto",
@@ -84,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "-0.8px",
     textAlign: "left",
     fontSize: 16,
+    color: "white",
   },
   menuTitlePink: {
     paddingLeft: 25,
@@ -134,10 +135,12 @@ export default function PrimarySearchAppBar() {
       <List>
         {[
           { name: "Solution", id: "about" },
-          { name: "How It Works", id: "how-it-works" },
-          { name: "PBR Token", id: "pbt-token" },
-          { name: "Team", id: "team" },
+          { name: "Our Products", id: "products" },
+          { name: "Ecosystem", id: "ecosystem" },
+          { name: "Achievements", id: "achievements" },
+          { name: "Token", id: "token" },
           { name: "Roadmap", id: "roadmap" },
+          { name: "Team", id: "team" },
           { name: "Exchange", id: "exchange" },
         ].map((tab, index) => (
           <Link
@@ -215,38 +218,39 @@ export default function PrimarySearchAppBar() {
             </Link>
             <Link
               activeClass="active"
-              to="how-it-works"
+              to="products"
               smooth={true}
               offset={0}
               duration={500}
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1" noWrap>
-                How It Works <DotCircle />
+                Our Products <DotCircle />
               </Typography>
             </Link>
             <Link
               activeClass="active"
-              to="team"
+              to="ecosystem"
               smooth={true}
               offset={0}
               duration={500}
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1">
-                Team <DotCircle />
+                Ecosystem
+                <DotCircle />
               </Typography>
             </Link>
             <Link
               activeClass="active"
-              to="pbt-token"
+              to="token"
               smooth={true}
               offset={0}
               duration={500}
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1">
-                PBR Token <DotCircle />
+                $PBR Token <DotCircle />
               </Typography>
             </Link>
             <Link
@@ -263,6 +267,18 @@ export default function PrimarySearchAppBar() {
             </Link>
             <Link
               activeClass="active"
+              to="team"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
+              <Typography className={classes.tabs} variant="body1">
+                Team <DotCircle />
+              </Typography>
+            </Link>
+            <Link
+              activeClass="active"
               to="exchange"
               smooth={true}
               offset={0}
@@ -273,11 +289,6 @@ export default function PrimarySearchAppBar() {
                 Exchange <DotCircle />
               </Typography>
             </Link>
-            <a href="docs/whitepaper.pdf" style={{ textDecoration: "none" }}>
-              <Typography className={classes.tabs} variant="body1">
-                Read Whitepaper <DotCircle />
-              </Typography>
-            </a>
 
             <div className={classes.sectionDesktop}>
               <CustomButton
@@ -289,8 +300,12 @@ export default function PrimarySearchAppBar() {
             </div>
           </div>
           <div className={classes.sectionMobile}>
-            <div>
-              <img src="logo.png" alt="logo" height="50px" />
+            <div className="d-flex align-items-center">
+              <img
+                src="https://launchpad.polkabridge.org/img/logo-white.png"
+                alt="logo"
+                height="30px"
+              />
             </div>
 
             <div>

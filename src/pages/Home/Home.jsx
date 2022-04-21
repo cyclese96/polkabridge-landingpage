@@ -10,7 +10,7 @@ import SocialLinks from "./SocialLinks";
 import Footer from "../../common/Footer";
 import Listings from "./Listings";
 import Tokenomics from "./Tokenomics";
-import ReleaseSchedule from "./ReleaseSchedule";
+import ReleaseSchedule from "./UpcomingProduct";
 import Ecosystem from "./Ecosystem";
 import Header from "./Header";
 import { readCache, addDataIntoCache } from "./../../actions/cacheActions";
@@ -20,6 +20,7 @@ import DexPopupContent from "../../components/DexPopup";
 import Team from "./Team";
 import Achievements from "./Achievements";
 import RoadmapNew from "./RoadmapNew";
+import UpcomingProduct from "./UpcomingProduct";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -66,7 +67,7 @@ export default function Home() {
       <section id="header">
         <Header />
       </section>
-      <section id="features">
+      <section id="products">
         <Features />
       </section>
       <section id="ecosystem">
@@ -76,12 +77,14 @@ export default function Home() {
         <Achievements />
       </section>
 
-      <section>
+      <section id="achievements">
+        <UpcomingProduct />
+      </section>
+
+      <section id="token">
         <Tokenomics />
       </section>
-      {/* <section id="roadmap">
-        <Roadmap />
-      </section> */}
+
       <section id="roadmap">
         <RoadmapNew />
       </section>

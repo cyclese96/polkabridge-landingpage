@@ -1,4 +1,4 @@
-import { Button, Card } from "@material-ui/core";
+import { Button, Card, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { AccountTree, ChevronLeft, ChevronRight } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
@@ -82,6 +82,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 42,
     color: "white",
     textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: 20,
+      fontSize: "32px",
+    },
   },
   featurePara: {
     paddingLeft: 8,
@@ -136,20 +140,35 @@ export default function Ecosystem() {
   return (
     <div className={classes.background}>
       <div className={classes.container}>
-        <div className="container d-flex align-items-center justify-content-evenly mt-5">
+        <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
           <div className="col-md-8">
             <div className="d-flex justify-content-between">
-              <Card className={classes.featureCardFull}>
-                <iframe
-                  width="640"
-                  height="360"
-                  src="https://www.youtube.com/embed/tsbRzb2S7mU?start=38"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </Card>
+              <Hidden smDown>
+                <Card className={classes.featureCardFull}>
+                  <iframe
+                    width="640"
+                    height="360"
+                    src="https://www.youtube.com/embed/tsbRzb2S7mU?start=38"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </Card>
+              </Hidden>
+              <Hidden mdUp>
+                <Card className={classes.featureCardFull}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/tsbRzb2S7mU?start=38"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </Card>
+              </Hidden>
             </div>
           </div>
           <div className="col-md-4">

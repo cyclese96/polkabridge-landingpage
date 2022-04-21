@@ -10,6 +10,7 @@ import {
   Receipt,
   ShutterSpeed,
 } from "@material-ui/icons";
+import { useState } from "react";
 import Pulse from "react-reveal/Pulse";
 
 const useStyles = makeStyles((theme) => ({
@@ -125,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   featureCardFull: {
-    width: 280,
+    width: 400,
     height: "100%",
     paddingBottom: 20,
     borderRadius: 30,
@@ -158,6 +159,21 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Features() {
   const classes = useStyles();
+  const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
+
+  const goRight = () => {
+    x === -100 * ([1, 2, 3].length - 3) ? setX(0) : setX(x - 100);
+  };
+  const goLeft = () => {
+    x === 100 * ([1, 2, 3].length - 3) ? setX(x + 100) : setX(0);
+  };
+
+  const goRightMob = () => {
+    x === -100 * [1, 2, 3].length ? setX(0) : setX(x - 100);
+  };
+  const goLeftMob = () => {
+    x === 100 * ([1, 2, 3].length - 3) ? setX(x + 100) : setX(0);
+  };
   return (
     <div style={{}}>
       <div
@@ -202,7 +218,7 @@ export default function Features() {
       </div>
       <div className={classes.background}>
         <div className={classes.container}>
-          <div className="container d-flex align-items-center justify-content-evenly mt-5">
+          <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
             <div className="col-md-3">
               <h5 className={classes.featureTitle}>
                 Our <br />
@@ -213,94 +229,146 @@ export default function Features() {
                 <br />
                 Swap, Stake, participate and much more.
               </p>
-              <div className="mt-5">
-                <ChevronLeft
-                  className={classes.icon}
-                  style={{
-                    backgroundColor: "#333333",
-                    height: 40,
-                    width: 40,
-                    padding: 6,
-                    borderRadius: "50%",
-                    fontSize: 12,
-                  }}
-                />
-                <ChevronRight
-                  className={classes.icon}
-                  style={{
-                    backgroundColor: "#333333",
-                    height: 40,
-                    width: 40,
-                    padding: 6,
-                    borderRadius: "50%",
-                    fontSize: 12,
-                  }}
-                />
-              </div>
+              <Hidden smDown>
+                {" "}
+                <div className="mt-5">
+                  <ChevronLeft
+                    className={classes.icon}
+                    onClick={window.innerWidth > 900 ? goLeft : goLeftMob}
+                    style={{
+                      backgroundColor: "#333333",
+                      height: 40,
+                      width: 40,
+                      padding: 6,
+                      borderRadius: "50%",
+                      fontSize: 12,
+                    }}
+                  />
+                  <ChevronRight
+                    className={classes.icon}
+                    onClick={window.innerWidth > 900 ? goRight : goRightMob}
+                    style={{
+                      backgroundColor: "#333333",
+                      height: 40,
+                      width: 40,
+                      padding: 6,
+                      borderRadius: "50%",
+                      fontSize: 12,
+                    }}
+                  />
+                </div>
+              </Hidden>
             </div>
             <div className="col-md-9 ">
-              <div className="d-flex justify-content-between">
-                <Card className={classes.featureCardFull}>
-                  <div
-                    className="d-flex justify-content-center align-items-center"
-                    style={{ height: 200 }}
-                  >
-                    <img src="images/multi.png" height="120px" />
-                  </div>
-                  <h5 className={classes.cardTitle}>Multichain AMM</h5>
-                  <p className={classes.cardValue}>
-                    Experience multichain and cross-chain AMM with lowest fees
-                    ever and trade with more 100+ token pairs.
-                  </p>
-                  <div className="text-center">
-                    <a href="https://swap.polkabridge.org">
-                      <Button className={classes.buttonOutlined}>
-                        Visit Now
-                      </Button>
-                    </a>
-                  </div>
-                </Card>
-                <Card className={classes.featureCardFull}>
-                  <div
-                    className="d-flex justify-content-center align-items-center"
-                    style={{ height: 200 }}
-                  >
-                    <img src="images/launchpad.png" height="120px" />
-                  </div>
-                  <h5 className={classes.cardTitle}>Launchpad</h5>
-                  <p className={classes.cardValue}>
-                    Particiate in initial dex offering of fundamentally strong
-                    projects selected by PolkaBridge team.
-                  </p>
-                  <div className="text-center">
-                    <a href="https://launchpad.polkabridge.org">
-                      <Button className={classes.buttonOutlined}>
-                        Visit Now
-                      </Button>
-                    </a>
-                  </div>
-                </Card>{" "}
-                <Card className={classes.featureCardFull}>
-                  <div
-                    className="d-flex justify-content-center align-items-center"
-                    style={{ height: 200 }}
-                  >
-                    <img src="images/staking.png" height="120px" />
-                  </div>
-                  <h5 className={classes.cardTitle}>Staking</h5>
-                  <p className={classes.cardValue}>
-                    Don't just hold tokens, participate in staking and earn more
-                    rewards with PolkaBridge.
-                  </p>
-                  <div className="text-center">
-                    <a href="https://stake.polkabridge.org">
-                      <Button className={classes.buttonOutlined}>
-                        Visit Now
-                      </Button>
-                    </a>
-                  </div>
-                </Card>
+              <div className="sliderFeature">
+                {[
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img src="images/multi.png" height="120px" />
+                      </div>
+                      <h5 className={classes.cardTitle}>Multichain AMM</h5>
+                      <p className={classes.cardValue}>
+                        Experience multichain and cross-chain AMM with lowest
+                        fees ever and trade with more 100+ token pairs.
+                      </p>
+                      <div className="text-center">
+                        <a href="https://swap.polkabridge.org">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img src="images/launchpad.png" height="120px" />
+                      </div>
+                      <h5 className={classes.cardTitle}>Launchpad</h5>
+                      <p className={classes.cardValue}>
+                        Particiate in initial dex offering of fundamentally
+                        strong projects selected by PolkaBridge team.
+                      </p>
+                      <div className="text-center">
+                        <a href="https://launchpad.polkabridge.org">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img src="images/staking.png" height="120px" />
+                      </div>
+                      <h5 className={classes.cardTitle}>Staking</h5>
+                      <p className={classes.cardValue}>
+                        Don't just hold tokens, participate in staking and earn
+                        more rewards with PolkaBridge.
+                      </p>
+                      <div className="text-center">
+                        <a href="https://stake.polkabridge.org">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                ].map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="slideNew"
+                      style={{ transform: `translateX(${x}%)` }}
+                    >
+                      {item}
+                    </div>
+                  );
+                })}
               </div>
+              <Hidden mdUp>
+                {" "}
+                <div className="mt-5">
+                  <ChevronLeft
+                    className={classes.icon}
+                    onClick={window.innerWidth > 900 ? goLeft : goLeftMob}
+                    style={{
+                      backgroundColor: "#333333",
+                      height: 40,
+                      width: 40,
+                      padding: 6,
+                      borderRadius: "50%",
+                      fontSize: 12,
+                    }}
+                  />
+                  <ChevronRight
+                    className={classes.icon}
+                    onClick={window.innerWidth > 900 ? goRight : goRightMob}
+                    style={{
+                      backgroundColor: "#333333",
+                      height: 40,
+                      width: 40,
+                      padding: 6,
+                      borderRadius: "50%",
+                      fontSize: 12,
+                    }}
+                  />
+                </div>
+              </Hidden>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Card, IconButton } from "@material-ui/core";
+import { Button, Card, Hidden, IconButton } from "@material-ui/core";
 import {
   CallToAction,
   Group,
@@ -250,7 +250,10 @@ export default function Header() {
                 </div>
               </div>
               <div className="col-md-6">
-                <img src="/images/multichain.png" height="550px" />
+                <Hidden smDown>
+                  {" "}
+                  <img src="/images/multichain.png" height="550px" />
+                </Hidden>
               </div>
             </div>
           </div>
