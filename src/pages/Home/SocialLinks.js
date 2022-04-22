@@ -174,7 +174,7 @@ export default function SocialLinks() {
             </p>
           </div>
         </div> */}
-        <div className="container text-center mt-5" style={{ paddingTop: 30 }}>
+        <div className="container text-center" style={{ paddingTop: 30 }}>
           <div>
             <img
               src="https://launchpad.polkabridge.org/img/logo-white.png"
