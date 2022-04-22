@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 80,
     paddingLeft: "10%",
     paddingRight: "10%",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",

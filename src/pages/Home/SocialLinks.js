@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "7%",
     paddingRight: "7%",
     backgroundColor: "black",
+    backgroundColor: "transparent",
     display: "flex",
     justifyContent: "center",
 
@@ -30,11 +31,12 @@ const useStyles = makeStyles((theme) => ({
     width: 800,
     height: "100%",
     padding: 20,
+    paddingTop: 30,
     borderRadius: 30,
     backgroundColor: "rgba(0, 0, 0, 0.3)",
     // border: "1px solid #454545",
     filter: "drop-shadow(0 0 0.5rem #212121)",
-
+    boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
     paddingBottom: 15,
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
@@ -50,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     verticalAlign: "middle",
     wordSpacing: "0px",
+    paddingBottom: 10,
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
@@ -87,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     fontSize: 28,
     height: 28,
-    color: "#616161",
+    color: "#e4e5ee",
     "&:hover": {
       color: theme.palette.pbr.primary,
     },
@@ -135,7 +138,7 @@ export default function SocialLinks() {
   return (
     <div className={classes.background}>
       <div className={classes.newsletterCard}>
-        <div className="text-center">
+        {/* <div className="text-center">
           <h6 className={classes.heading}>Get in touch Now!</h6>
         </div>
         <div className="d-flex justify-content-center">
@@ -153,6 +156,7 @@ export default function SocialLinks() {
               >
                 {" "}
                 <Input
+                  disableUnderline={true}
                   placeholder="Type your email here"
                   style={{
                     backgroundColor: "white",
@@ -169,8 +173,8 @@ export default function SocialLinks() {
               We will send you development updates right into your inbox!
             </p>
           </div>
-        </div>
-        <div className="container text-center mt-5" style={{ paddingTop: 70 }}>
+        </div> */}
+        <div className="container text-center mt-5" style={{ paddingTop: 30 }}>
           <div>
             <img
               src="https://launchpad.polkabridge.org/img/logo-white.png"

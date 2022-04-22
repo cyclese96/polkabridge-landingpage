@@ -8,9 +8,9 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 80,
     paddingLeft: "12%",
     paddingRight: "12%",
-    backgroundColor: "#000005",
-    height: "100%",
 
+    height: "100%",
+    backgroundColor: "transparent",
     [theme.breakpoints.down("sm")]: {
       paddingTop: 40,
       paddingBottom: 40,

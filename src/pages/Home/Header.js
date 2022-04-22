@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Card, Hidden, IconButton } from "@material-ui/core";
 import {
@@ -9,6 +9,7 @@ import {
   TrendingUp,
 } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
+import { getPbrStats } from "./../../actions/apiActions";
 
 const useStyles = makeStyles((theme) => ({
   spacing: {
@@ -163,6 +164,33 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
+  let [stats, setStats] = useState({
+    usd: 0.0,
+    usd_24h_change: 0,
+    usd_market_cap: 0,
+  });
+
+  useEffect(() => {
+    async function asyncFn() {
+      let data = await getPbrStats();
+      if (data.polkabridge) {
+        console.log(data.polkabridge);
+        setStats(data.polkabridge);
+      }
+      callFn();
+    }
+    asyncFn();
+  }, []);
+  const callFn = async () => {
+    setTimeout(async () => {
+      let data = await getPbrStats();
+      if (data.polkabridge) {
+        console.log(data.polkabridge);
+        setStats(data.polkabridge);
+      }
+      return 0;
+    }, 6000);
+  };
   return (
     <Fragment>
       <section>
@@ -170,31 +198,81 @@ export default function Header() {
           <div className={classes.spacing}>
             <div className="row">
               <div className="col-md-6">
-                <div className="d-flex flex-row justify-content-start mt-5 mb-4">
-                  {/* <div className={classes.circle} /> */}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/41/Red_circle.gif?20210202002436"
-                    height="20px"
-                    style={{ marginRight: 5 }}
-                  />
-                  {/* <TrendingUp style={{ color: "#D9047C", marginRight: 5 }} /> */}
-                  <div className="d-flex flex-row justify-content-start ">
-                    <div className={classes.tagTitle}>Price:</div>
-                    <div className={classes.tagValue}>$0.29</div>
-                  </div>
-                  <div className="d-flex flex-row justify-content-start ">
-                    <div className={classes.tagTitle}>Change:</div>
-                    <div className={classes.tagValue}>+17.2%</div>
-                  </div>
-                  <div className="d-flex flex-row justify-content-start ">
-                    <div className={classes.tagTitle}>Market Cap:</div>
-                    <div className={classes.tagValue}>$ 86,400,347</div>
-                  </div>
-                  <div className="d-flex flex-row justify-content-start ">
-                    <div className={classes.tagTitle}>Circulating Supply:</div>
-                    <div className={classes.tagValue}>36,000,000 Tokens</div>
-                  </div>
-                </div>
+                <Hidden smDown>
+                  {stats && (
+                    <div className="d-flex flex-row justify-content-start mt-5 mb-4">
+                      {/* <div className={classes.circle} /> */}
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/41/Red_circle.gif?20210202002436"
+                        height="20px"
+                        style={{ marginRight: 5 }}
+                      />
+                      {/* <TrendingUp style={{ color: "#D9047C", marginRight: 5 }} /> */}
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>Price:</div>
+                        <div className={classes.tagValue}>
+                          ${stats.usd.toFixed(2)}
+                        </div>
+                      </div>
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>Change:</div>
+                        <div className={classes.tagValue}>
+                          {parseFloat(stats.usd_24h_change).toFixed(2)}%
+                        </div>
+                      </div>
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>Market Cap:</div>
+                        <div className={classes.tagValue}>
+                          {parseFloat(stats.usd_market_cap / 1000000).toFixed(
+                            2
+                          )}
+                          M
+                        </div>
+                      </div>
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>
+                          Circulating Supply:
+                        </div>
+                        <div className={classes.tagValue}>36M Tokens</div>
+                      </div>
+                    </div>
+                  )}
+                </Hidden>
+
+                <Hidden mdUp>
+                  {stats && (
+                    <div className="d-flex flex-row justify-content-start mt-5 mb-4">
+                      {/* <div className={classes.circle} /> */}
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/41/Red_circle.gif?20210202002436"
+                        height="20px"
+                        style={{ marginRight: 5 }}
+                      />
+                      {/* <TrendingUp style={{ color: "#D9047C", marginRight: 5 }} /> */}
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>Price:</div>
+                        <div className={classes.tagValue}>
+                          ${stats.usd.toFixed(2)}
+                        </div>
+                      </div>
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>Change:</div>
+                        <div className={classes.tagValue}>
+                          {parseFloat(stats.usd_24h_change).toFixed(2)}%
+                        </div>
+                      </div>
+                      <div className="d-flex flex-row justify-content-start ">
+                        <div className={classes.tagTitle}>MCap:</div>
+                        <div className={classes.tagValue}>
+                          {parseFloat(stats.usd_market_cap / 1000000).toFixed(
+                            2
+                          )}
+                          M
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </Hidden>
                 <Pulse>
                   <h1 className={classes.heading}>
                     First Cross-Chain &

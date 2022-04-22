@@ -1,13 +1,20 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { AttachMoney, Gavel, GroupWork, LocalOffer, Whatshot } from '@material-ui/icons';
-import { Fade } from 'react-reveal';
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  AttachMoney,
+  Gavel,
+  GroupWork,
+  LocalOffer,
+  Whatshot,
+} from "@material-ui/icons";
+import { Fade } from "react-reveal";
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      height: '100%',
+    height: "100%",
+    backgroundColor: "transparent",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
       padding: 10,
       paddingTop: 50,
       paddingBottom: 50,
@@ -15,12 +22,12 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    [theme.breakpoints.down('sm')]: {
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
@@ -30,13 +37,13 @@ const useStyles = makeStyles((theme) => ({
   },
   para: {
     fontWeight: 400,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
-    textAlign: 'left',
-    [theme.breakpoints.down('sm')]: {
+    textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
   },
@@ -50,10 +57,10 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     fontWeight: 500,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 16,
   },
   blockSpacing: {
@@ -61,10 +68,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 15,
   },
   imageContainer: {
-    width: '100%',
-    [theme.breakpoints.down('sm')]: {
+    width: "100%",
+    [theme.breakpoints.down("sm")]: {
       marginTop: 30,
-      width: '100%',
+      width: "100%",
     },
   },
   pointer: { paddingBottom: 10 },
@@ -78,7 +85,11 @@ export default function PBRToken() {
         <div className="col-md-6 col-sm-12 col-sm-push-4">
           <Fade left>
             <div>
-              <img src="images/pbrtoken.png" alt="logo" className={classes.imageContainer} />
+              <img
+                src="images/pbrtoken.png"
+                alt="logo"
+                className={classes.imageContainer}
+              />
             </div>
           </Fade>
         </div>
@@ -88,29 +99,36 @@ export default function PBRToken() {
               <strong className={classes.highlight}>$PBR</strong> Token
             </h6>
             <p className={classes.para}>
-              Holding PBR tokens will help you in getting more rewards through liquidity pools, lending, farming etc.
+              Holding PBR tokens will help you in getting more rewards through
+              liquidity pools, lending, farming etc.
             </p>
             <div className={classes.blockSpacing}>
-
               <div className={classes.pointer}>
                 <h6 className={classes.title}>
-                  <AttachMoney className={classes.icon} /> <strong>Farming Rewards</strong>
+                  <AttachMoney className={classes.icon} />{" "}
+                  <strong>Farming Rewards</strong>
                 </h6>
-                <p className={classes.para}>Earn farming rewards from trading fees on PolkaBridge.</p>
+                <p className={classes.para}>
+                  Earn farming rewards from trading fees on PolkaBridge.
+                </p>
               </div>
 
               <div className={classes.pointer}>
                 <h6 className={classes.title}>
-                  <GroupWork className={classes.icon} /> <strong>Lending Fee</strong>
+                  <GroupWork className={classes.icon} />{" "}
+                  <strong>Lending Fee</strong>
                 </h6>
                 <p className={classes.para}>Pay lending fees in PBR.</p>
               </div>
 
               <div className={classes.pointer}>
                 <h6 className={classes.title}>
-                  <Gavel className={classes.icon} /> <strong>Fund Raising</strong>
+                  <Gavel className={classes.icon} />{" "}
+                  <strong>Fund Raising</strong>
                 </h6>
-                <p className={classes.para}>Participate in IDOs of projects by holding PBR Tokens.</p>
+                <p className={classes.para}>
+                  Participate in IDOs of projects by holding PBR Tokens.
+                </p>
               </div>
             </div>
           </Fade>

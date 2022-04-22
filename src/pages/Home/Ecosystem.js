@@ -9,11 +9,13 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 130,
     paddingLeft: "5%",
     paddingRight: "5%",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     height: "100%",
     // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
+      paddingTop: 30,
+      paddingBottom: 30,
     },
   },
   container: {
@@ -83,8 +85,9 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textAlign: "left",
     [theme.breakpoints.down("sm")]: {
-      paddingTop: 20,
       fontSize: "32px",
+      textAlign: "center",
+      lineHeight: 1.2,
     },
   },
   featurePara: {
@@ -93,9 +96,12 @@ const useStyles = makeStyles((theme) => ({
     width: "90%",
     verticalAlign: "baseline",
     margin: 0,
-    fontSize: 16,
+    fontSize: 15,
     color: "white",
     textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 14,
+    },
   },
 
   cardTitle: {
@@ -140,6 +146,12 @@ export default function Ecosystem() {
   return (
     <div className={classes.background}>
       <div className={classes.container}>
+        <Hidden mdUp>
+          <h5 className={classes.featureTitle}>
+            PolkaBridge's <br />
+            Ecosystem
+          </h5>
+        </Hidden>
         <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
           <div className="col-md-8">
             <div className="d-flex justify-content-between">
@@ -172,10 +184,12 @@ export default function Ecosystem() {
             </div>
           </div>
           <div className="col-md-4">
-            <h5 className={classes.featureTitle}>
-              PolkaBridge's <br />
-              Ecosystem
-            </h5>
+            <Hidden smDown>
+              <h5 className={classes.featureTitle}>
+                PolkaBridge's <br />
+                Ecosystem
+              </h5>
+            </Hidden>
             <div className="mt-3">
               <div className=" d-flex align-items-center justify-content-start mt-2">
                 <div

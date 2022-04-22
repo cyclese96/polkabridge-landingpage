@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 130,
     paddingLeft: "2%",
     paddingRight: "2%",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
@@ -125,24 +125,33 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffffff",
   },
   featureTitle: {
-    fontWeight: 600,
+    fontWeight: 700,
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
     margin: 0,
-    fontSize: 36,
+    fontSize: 42,
     color: "white",
-    textAlign: "left",
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "32px",
+      textAlign: "center",
+      lineHeight: 1.2,
+    },
   },
   featurePara: {
     paddingTop: 7,
     fontWeight: 400,
     width: "85%",
     verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+
     margin: 0,
     fontSize: 15,
     color: "white",
-    textAlign: "left",
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
+      textAlign: "center",
+      fontSize: 14,
+    },
   },
 
   cardTitle: {
@@ -183,14 +192,16 @@ const useStyles = makeStyles((theme) => ({
   },
   featureCard: {
     width: 200,
-    height: 300,
-
+    height: "100%",
+    paddingTop: 10,
+    paddingBottom: 30,
     borderRadius: 30,
-    backgroundColor: "rgba(0, 0, 0, 0.3)",
-    // border: "3px solid #bdbdbd",
-    filter: "drop-shadow(0 0 0.5rem #212121)",
+    backgroundColor: "rgba(22, 31, 48, 0.9)",
 
-    paddingBottom: 15,
+    boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
+    // border: "3px solid #bdbdbd",
+    filter: "drop-shadow(0 0 0.2rem #151515)",
+
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
@@ -232,11 +243,11 @@ export default function Achievements() {
   return (
     <div className={classes.background}>
       <Pulse>
-        <h1 className={classes.heading}>Achievements</h1>
+        <h5 className={classes.featureTitle}>Our Achievements</h5>
       </Pulse>
       <Pulse>
         <div className="d-flex justify-content-center">
-          <p className={classes.para}>
+          <p className={classes.featurePara}>
             Since first day of our inception, we have achieved many milestones
           </p>
         </div>

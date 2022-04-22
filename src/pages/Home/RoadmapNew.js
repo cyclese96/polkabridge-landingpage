@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 130,
     paddingLeft: "5%",
     paddingRight: "5%",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     height: "100%",
 
     // borderBottom: "200px solid green",

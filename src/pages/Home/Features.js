@@ -19,12 +19,14 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 100,
     paddingLeft: "5%",
     paddingRight: "5%",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     height: "100%",
 
     // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
+      paddingTop: 30,
+      paddingBottom: 30,
     },
   },
   container: {
@@ -66,16 +68,17 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonOutlined: {
     borderRadius: 10,
-    background: `transparent`,
-    border: "1px solid #E0077D",
+    background: `rgba(224, 7, 125,0.8)`,
+
     verticalAlign: "baseline",
+    boxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
     margin: 0,
     marginTop: 20,
-    color: "#E0077D",
+    color: "white",
     padding: "7px 30px 7px 30px",
     fontWeight: 600,
     fontSize: 14,
-
+    textTransform: "none",
     [theme.breakpoints.down("sm")]: {
       fontSize: 13,
       padding: "10px 20px 10px 20px",
@@ -93,6 +96,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 42,
     color: "white",
     textAlign: "left",
+    paddingBottom: 10,
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+      lineHeight: 1.2,
+      fontSize: "32px",
+    },
   },
   featurePara: {
     paddingTop: 7,
@@ -103,6 +112,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     color: "white",
     textAlign: "left",
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: 30,
+      width: "100%",
+      textAlign: "center",
+      fontSize: 14,
+    },
   },
 
   cardTitle: {
@@ -130,9 +145,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     paddingBottom: 20,
     borderRadius: 30,
-    backgroundColor: "#161F30",
-    border: "2px solid #2F3A4D",
-    boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
+    backgroundColor: "rgba(22, 31, 48, 0.6)",
+    border: "6px solid #2F3A4D",
+
+    boxShadow: "rgba(255, 255, 255, 0.24) 0px 3px 8px",
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
@@ -225,9 +241,8 @@ export default function Features() {
                 Products
               </h5>
               <p className={classes.featurePara}>
-                All your DeFi needs at one place and many more are coming.{" "}
-                <br />
-                Swap, Stake, participate and much more.
+                All your DeFi needs at one place and many more are coming. Swap,
+                Stake, participate and much more.
               </p>
               <Hidden smDown>
                 {" "}
