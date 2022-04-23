@@ -4,7 +4,8 @@ With PolkaBridge, you can swap tokens on DOT platform to tokens on other chains 
 
 ![Website Screenshot](polkabridge.png)
 ![Roadmap](Roadmap.png)
-![Footer Screenshot](Footer.png)
+![Products Screenshot](products.png)
+![Upcoming Screenshot](upcoming.png)
 
 Following sections are developed:
 
@@ -15,33 +16,6 @@ Following sections are developed:
 5. Product MVP
 6. Investors
 7. Features
-8. Working
+8. Upcoming Products
 9. Partners
 10. Social Links
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn install`
-
-This will install all the required dependencies in the app in the development mode.\
-After installing all the dependencies you can run:
-
-### `yarn start`
-
-This will run the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn build`
-
-This will build the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
