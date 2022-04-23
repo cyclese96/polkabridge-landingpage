@@ -134,11 +134,10 @@ export default function PrimarySearchAppBar() {
     >
       <List>
         {[
-          { name: "Solution", id: "about" },
           { name: "Our Products", id: "products" },
           { name: "Ecosystem", id: "ecosystem" },
           { name: "Achievements", id: "achievements" },
-          { name: "Token", id: "token" },
+          { name: "$PBR Token", id: "token" },
           { name: "Roadmap", id: "roadmap" },
           { name: "Team", id: "team" },
           { name: "Exchange", id: "exchange" },
@@ -164,7 +163,6 @@ export default function PrimarySearchAppBar() {
       <Divider />
       <List>
         {[
-          { name: "Farming", id: "https://farm.polkabridge.org/" },
           { name: "Swap", id: "https://swap.polkabridge.org/" },
           {
             name: "Apply For IDO",
@@ -206,18 +204,6 @@ export default function PrimarySearchAppBar() {
           <div className="d-flex justify-content-end">
             <Link
               activeClass="active"
-              to="about"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
-              <Typography className={classes.tabs} variant="body1" noWrap>
-                Solution <DotCircle />
-              </Typography>
-            </Link>
-            <Link
-              activeClass="active"
               to="products"
               smooth={true}
               offset={0}
@@ -239,6 +225,18 @@ export default function PrimarySearchAppBar() {
               <Typography className={classes.tabs} variant="body1">
                 Ecosystem
                 <DotCircle />
+              </Typography>
+            </Link>
+            <Link
+              activeClass="active"
+              to="achievements"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
+              <Typography className={classes.tabs} variant="body1" noWrap>
+                Achievements <DotCircle />
               </Typography>
             </Link>
             <Link
@@ -277,7 +275,7 @@ export default function PrimarySearchAppBar() {
                 Team <DotCircle />
               </Typography>
             </Link>
-            <Link
+            {/* <Link
               activeClass="active"
               to="exchange"
               smooth={true}
@@ -288,7 +286,7 @@ export default function PrimarySearchAppBar() {
               <Typography className={classes.tabs} variant="body1">
                 Exchange <DotCircle />
               </Typography>
-            </Link>
+            </Link> */}
 
             <div className={classes.sectionDesktop}>
               <CustomButton
