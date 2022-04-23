@@ -94,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
   },
   featureTitle: {
     fontWeight: 500,
-    paddingLeft: 6,
+    paddingLeft: 3,
     verticalAlign: "baseline",
     margin: 0,
     fontSize: 15,
@@ -243,7 +243,7 @@ export default function UpcomingProducts() {
                       height="50px"
                     />
                   </div>
-                  <h5 className={classes.featureHeading}>Less Fees</h5>
+                  <h5 className={classes.featureHeading}>Very Low Fees</h5>
 
                   <p className={classes.description}>
                     Only 0.25% of trading amount will go to PolkaBridge's
@@ -267,7 +267,7 @@ export default function UpcomingProducts() {
                   <h5 className={classes.featureHeading}>Fully Secure</h5>
 
                   <p className={classes.description}>
-                    Our platform is fully secure and automated.
+                    Our platform is fully secure and automated trade enabled.
                   </p>
                 </Card>
               </div>

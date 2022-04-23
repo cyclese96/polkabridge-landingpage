@@ -5,14 +5,14 @@ const useStyles = makeStyles((theme) => ({
   background: {
     paddingTop: 80,
     paddingBottom: 80,
-    paddingLeft: "10%",
-    paddingRight: "10%",
+    paddingLeft: "8%",
+    paddingRight: "8%",
     backgroundColor: "transparent",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
-      paddingLeft: "5%",
-      paddingRight: "5%",
+      paddingLeft: "1%",
+      paddingRight: "1%",
     },
   },
 
@@ -143,6 +143,36 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "64px",
       padding: 10,
+    },
+  },
+  imageWrapperCardUnilend: {
+    borderRadius: 10,
+    padding: 10,
+    height: "60px",
+
+    backgroundColor: "#f9f9f9",
+    border: "3px solid #121212",
+    filter: "drop-shadow(0 0 0.5rem #111111)",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 6,
+      height: "52px",
+      width: "100%",
+      padding: 5,
+    },
+  },
+  imageWrapperCardDfyn: {
+    borderRadius: 10,
+    padding: 10,
+    height: "60px",
+
+    backgroundColor: "#f9f9f9",
+    border: "3px solid #121212",
+    filter: "drop-shadow(0 0 0.5rem #111111)",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 6,
+      height: "52px",
+      width: "fit-content",
+      padding: 5,
     },
   },
   imageWrapperCardBlack: {
@@ -317,7 +347,7 @@ export default function Partnerships() {
               <img
                 src="images/unilend.png"
                 alt="logo"
-                className={classes.imageWrapperCard}
+                className={classes.imageWrapperCardUnilend}
               />
             </a>
           </div>
@@ -327,8 +357,7 @@ export default function Partnerships() {
                 <img
                   src="images/dfyn.png"
                   alt="logo"
-                  className={classes.imageWrapperCard}
-                  style={{ width: "120px" }}
+                  className={classes.imageWrapperCardDfyn}
                 />
               </a>
             </div>

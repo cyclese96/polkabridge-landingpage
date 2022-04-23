@@ -180,6 +180,13 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       height: "100%",
     },
+    [theme.breakpoints.between("md", "lg")]: {
+      paddingLeft: 5,
+      paddingRight: 5,
+      width: "100%",
+      height: "100%",
+      maxWidth: 200,
+    },
   },
   cardActive: {
     padding: 10,
@@ -196,6 +203,13 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       height: "100%",
     },
+    [theme.breakpoints.between("md", "lg")]: {
+      paddingLeft: 5,
+      paddingRight: 5,
+      width: "100%",
+      height: "100%",
+      maxWidth: 250,
+    },
   },
   cardWrapper: {
     width: 280,
@@ -203,7 +217,15 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 20,
     borderRadius: 30,
 
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.between("md", "lg")]: {
+      paddingLeft: 5,
+      paddingRight: 5,
+      width: "100%",
+      height: "100%",
+      maxWidth: 200,
+    },
+
+    [theme.breakpoints.down("xs")]: {
       paddingLeft: 5,
       paddingRight: 5,
       width: "100%",
@@ -216,11 +238,18 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 20,
     borderRadius: 30,
 
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       paddingLeft: 5,
       paddingRight: 5,
       width: "100%",
       height: "100%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      paddingLeft: 5,
+      paddingRight: 5,
+      width: "100%",
+      height: "100%",
+      maxWidth: 250,
     },
   },
 }));
@@ -250,7 +279,13 @@ export default function RoadmapNew() {
         Fundamentally strong and visionary project with strong foundation.
       </p>
       <div className="container d-flex justify-content-around mt-5">
-        <div style={{ height: "500px", display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            height: window.innerWidth > 900 ? 500 : 400,
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <ChevronLeft
             className={classes.icon}
             onClick={window.innerWidth > 900 ? goLeft : goLeftMob}
@@ -514,7 +549,13 @@ export default function RoadmapNew() {
             );
           })}
         </div>
-        <div style={{ height: "500px", display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            height: window.innerWidth > 900 ? 500 : 400,
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <ChevronRight
             className={classes.icon}
             onClick={window.innerWidth > 900 ? goRight : goRightMob}

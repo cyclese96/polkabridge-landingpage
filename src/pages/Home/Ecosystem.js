@@ -135,6 +135,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
+      maxWidth: 400,
       width: "100%",
       height: "100%",
     },
@@ -152,7 +153,7 @@ export default function Ecosystem() {
             Ecosystem
           </h5>
         </Hidden>
-        <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
+        <div className="container row d-md-flex align-items-center justify-content-evenly mt-5">
           <div className="col-md-8">
             <div className="d-flex justify-content-between">
               <Hidden smDown>

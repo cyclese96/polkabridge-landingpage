@@ -235,6 +235,16 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 36,
     color: "#BF1088",
     textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 24,
+    },
+  },
+  valueBig: {
+    fontSize: 40,
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 28,
+    },
   },
 }));
 
@@ -261,7 +271,7 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                150<span style={{ fontSize: 44 }}>X</span>
+                150<span className={classes.valueBig}>X</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>IDO Return</h5>
@@ -281,7 +291,7 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                43<span style={{ fontSize: 44 }}>+</span>
+                43<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>Projects</h5>
@@ -300,7 +310,7 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                170M<span style={{ fontSize: 44 }}>+</span>
+                170M<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>ATH MCap</h5>
@@ -320,7 +330,7 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                $20M<span style={{ fontSize: 44 }}>+</span>
+                $20M<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>TVL</h5>

@@ -7,8 +7,8 @@ const useStyles = makeStyles((theme) => ({
   background: {
     paddingTop: 80,
     paddingBottom: 80,
-    paddingLeft: "7%",
-    paddingRight: "7%",
+    paddingLeft: "3%",
+    paddingRight: "3%",
     backgroundColor: "transparent",
     height: "100%",
     [theme.breakpoints.down("sm")]: {
@@ -112,10 +112,7 @@ export default function Team() {
       <div className="text-center">
         <h4 className={classes.heading}>Team</h4>
 
-        <div className="container row justify-content-center">
-          <Hidden smDown>
-            <div className="d-block d-md-block d-sm-none d-xs-none col-md-1"></div>
-          </Hidden>
+        <div className="row justify-content-center">
           <div className="col-6   col-md-2">
             <Fade left>
               <div className={classes.people}>
@@ -218,36 +215,9 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="./images/team/javier.jpg"
-                  alt="Javier"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Javier Delgado </h6>
-                <p className={classes.para}>Marketing Head</p>
-                <Tooltip title="LinkedIn">
-                  <a href="https://www.linkedin.com/in/javier-delgado-b057b7166">
-                    <IconButton aria-label="LinkedIn">
-                      <LinkedIn className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-                <Tooltip title="Twitter">
-                  <a href="https://twitter.com/psychonautrip2">
-                    <IconButton aria-label="Twitter">
-                      <Twitter className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
-          <Hidden smDown>
-            <div className="d-block d-md-block d-sm-none d-xs-none col-md-1"></div>
-          </Hidden>
+        </div>
+        <div className="row justify-content-center">
+          {" "}
           <div className="col-6 col-md-2">
             <Fade right>
               <div className={classes.people}>
@@ -269,7 +239,6 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-
           <div className="col-6 col-md-2">
             <Fade right>
               <div className={classes.people}>

@@ -1,15 +1,6 @@
 import { Button, Card, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  AccountTree,
-  ChevronLeft,
-  ChevronRight,
-  CompareArrows,
-  HowToVote,
-  LocalFlorist,
-  Receipt,
-  ShutterSpeed,
-} from "@material-ui/icons";
+import { ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { useState } from "react";
 import Pulse from "react-reveal/Pulse";
 
@@ -149,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     border: "6px solid #2F3A4D",
 
     boxShadow: "rgba(255, 255, 255, 0.24) 0px 3px 8px",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       paddingLeft: 0,
       paddingRight: 0,
       width: "100%",
@@ -178,17 +169,17 @@ export default function Features() {
   const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3].length - 3) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5].length - 3) ? setX(x + 100) : setX(0);
   };
 
   const goRightMob = () => {
-    x === -100 * [1, 2, 3].length ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5].length - 1) ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
-    x === 100 * ([1, 2, 3].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5].length - 3) ? setX(x + 100) : setX(0);
   };
   return (
     <div style={{}}>
@@ -336,6 +327,56 @@ export default function Features() {
                       </p>
                       <div className="text-center">
                         <a href="https://stake.polkabridge.org">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-to-dollar-swap-5152761-4312550.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>P2P Exchange</h5>
+                      <p className={classes.cardValue}>
+                        Trade tokens with your non-custodial wallet with our
+                        decentralised P2P Exchange.
+                      </p>
+                      <div className="text-center">
+                        <a>
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-staking-5112599-4269010.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>INO</h5>
+                      <p className={classes.cardValue}>
+                        Enroll and participate in hottest NFT projects initial
+                        offering with PolkaBridge.
+                      </p>
+                      <div className="text-center">
+                        <a>
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>

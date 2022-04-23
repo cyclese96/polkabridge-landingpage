@@ -30,7 +30,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.pbr.primary,
   },
   header: {
-    minHeight: "95vh",
+    // minHeight: "95vh",
+    minHeight: 500,
+    height: "100%",
     width: "auto",
     background: `linear-gradient(180deg,
       rgba(0, 0, 0, 0.99),
@@ -44,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 80,
 
     [theme.breakpoints.down("sm")]: {
-      height: "85vh",
+      height: "100%",
     },
   },
   notice: {
@@ -158,6 +160,13 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 0,
       width: "100%",
       height: "100%",
+    },
+  },
+  demoImage: {
+    height: "550px",
+    [theme.breakpoints.down("md")]: {
+      width: "90%",
+      height: "fit-content",
     },
   },
 }));
@@ -327,10 +336,13 @@ export default function Header() {
                   </a>
                 </div>
               </div>
-              <div className="col-md-6">
-                <Hidden smDown>
+              <div className="col-md-6 d-flex align-items-center">
+                <Hidden xsDown>
                   {" "}
-                  <img src="/images/multichain.png" height="550px" />
+                  <img
+                    src="/images/multichain.png"
+                    className={classes.demoImage}
+                  />
                 </Hidden>
               </div>
             </div>
