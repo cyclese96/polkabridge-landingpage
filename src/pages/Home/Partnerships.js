@@ -153,10 +153,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#f9f9f9",
     border: "3px solid #121212",
     filter: "drop-shadow(0 0 0.5rem #111111)",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       marginTop: 6,
       height: "52px",
-      width: "100%",
+      maxWidth: 120,
       padding: 5,
     },
   },

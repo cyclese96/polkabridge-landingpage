@@ -112,8 +112,8 @@ export default function Team() {
       <div className="text-center">
         <h4 className={classes.heading}>Team</h4>
 
-        <div className="row justify-content-center">
-          <div className="col-6   col-md-2">
+        <div className="row flex-row justify-content-center">
+          <div className="col-6  col-md-2 " align="center">
             <Fade left>
               <div className={classes.people}>
                 <img
@@ -141,7 +141,7 @@ export default function Team() {
               </div>
             </Fade>{" "}
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -168,7 +168,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -195,7 +195,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -216,9 +216,9 @@ export default function Team() {
             </Fade>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row  justify-content-center">
           {" "}
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -239,7 +239,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -260,7 +260,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img
@@ -288,7 +288,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2">
+          <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
                 <img

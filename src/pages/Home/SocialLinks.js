@@ -25,6 +25,8 @@ const useStyles = makeStyles((theme) => ({
       padding: 0,
       paddingTop: 25,
       paddingBottom: 25,
+      paddingLeft: 0,
+      paddingRight: 0,
     },
   },
   newsletterCard: {
@@ -182,84 +184,102 @@ export default function SocialLinks() {
               height="40px"
             />
           </div>
-          <div className="d-flex justify-content-center mt-4">
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Twitter" aria-label="add1">
-                <a href="https://twitter.com/realpolkabridge">
-                  <IconButton aria-label="Twitter">
-                    <Twitter className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+          <div className="row flex-row justify-content-center mt-4">
+            <div className="col-3 col-md-1 col-sm-3">
+              {" "}
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Twitter" aria-label="add1">
+                  <a href="https://twitter.com/realpolkabridge">
+                    <IconButton aria-label="Twitter">
+                      <Twitter className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Telegram">
-                <a href="https://t.me/polkabridgegroup">
-                  <IconButton aria-label="Telegram">
-                    <Telegram className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Telegram">
+                  <a href="https://t.me/polkabridgegroup">
+                    <IconButton aria-label="Telegram">
+                      <Telegram className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Github">
-                <a href="https://github.com/cyclese96">
-                  <IconButton aria-label="Github">
-                    <GitHub className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              {" "}
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Github">
+                  <a href="https://github.com/cyclese96">
+                    <IconButton aria-label="Github">
+                      <GitHub className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Medium">
-                <a href="https://polkabridge.medium.com/">
-                  <IconButton aria-label="Reddit">
-                    <img src="./images/medium.png" className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              {" "}
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Medium">
+                  <a href="https://polkabridge.medium.com/">
+                    <IconButton aria-label="Reddit">
+                      <img src="./images/medium.png" className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Reddit">
-                <a href="https://www.reddit.com/r/polkabridge_official/">
-                  <IconButton aria-label="Reddit">
-                    <Reddit className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Reddit">
+                  <a href="https://www.reddit.com/r/polkabridge_official/">
+                    <IconButton aria-label="Reddit">
+                      <Reddit className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Instagram">
-                <a href="https://www.instagram.com/polkabridgeofficial/">
-                  <IconButton aria-label="Reddit">
-                    <Instagram className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Instagram">
+                  <a href="https://www.instagram.com/polkabridgeofficial/">
+                    <IconButton aria-label="Reddit">
+                      <Instagram className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Discord">
-                <a href="https://discord.gg/tzemFksyZB">
-                  <IconButton aria-label="Discord">
-                    <img
-                      src="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png"
-                      className={classes.icon}
-                      style={{ height: 23 }}
-                      alt="discord"
-                    />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Discord">
+                  <a href="https://discord.gg/tzemFksyZB">
+                    <IconButton aria-label="Discord">
+                      <img
+                        src="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Logo-White-1024x780.png"
+                        className={classes.icon}
+                        style={{ height: 23 }}
+                        alt="discord"
+                      />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
-            <div className={classes.iconWrapper}>
-              <Tooltip title="Email">
-                <a href="mailto:support@polkabridge.org">
-                  <IconButton aria-label="Email">
-                    <Email className={classes.icon} />
-                  </IconButton>
-                </a>
-              </Tooltip>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Email">
+                  <a href="mailto:support@polkabridge.org">
+                    <IconButton aria-label="Email">
+                      <Email className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
             </div>
           </div>
           <p className={classes.para}>

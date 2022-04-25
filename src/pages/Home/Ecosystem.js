@@ -153,9 +153,9 @@ export default function Ecosystem() {
             Ecosystem
           </h5>
         </Hidden>
-        <div className="container row d-md-flex align-items-center justify-content-evenly mt-5">
+        <div className="row d-md-flex align-items-center justify-content-evenly mt-5">
           <div className="col-md-8">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-center">
               <Hidden smDown>
                 <Card className={classes.featureCardFull}>
                   <iframe

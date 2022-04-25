@@ -54,7 +54,7 @@ export default function Home() {
     <div
       style={{
         overflowX: "hidden",
-        background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("https://img.freepik.com/free-photo/blockchain-technology-background-gradient-blue_53876-124648.jpg?t=st=1650598867~exp=1650599467~hmac=28ce6fe0cbcd937b603c289c355119446a7fb4f5e414df07cabe7f785052466c&w=1800") no-repeat center center fixed`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
       }}
     >
       <section id="header">

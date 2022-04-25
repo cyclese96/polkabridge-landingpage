@@ -222,7 +222,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 5,
       width: "100%",
       height: "100%",
-      maxWidth: 200,
+      maxWidth: 230,
     },
 
     [theme.breakpoints.down("xs")]: {
@@ -256,7 +256,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function RoadmapNew() {
   const classes = useStyles();
-  const [x, setX] = useState(window.innerWidth > 400 ? -300 : -400);
+  const [x, setX] = useState(window.innerWidth > 950 ? -300 : -400);
 
   const goRight = () => {
     x === -100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(0) : setX(x - 100);

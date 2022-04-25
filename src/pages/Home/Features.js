@@ -149,17 +149,52 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     width: 900,
-    height: 120,
+    minHeight: 120,
+    height: "100%",
     borderRadius: 30,
     backgroundColor: "rgba(0, 0, 0, 0.3)",
     border: "1px solid #616161",
     filter: "drop-shadow(0 0 0.5rem #212121)",
     paddingBottom: 15,
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       paddingLeft: 0,
       paddingRight: 0,
-      width: "100%",
+      width: "90%",
+      padding: 5,
       height: "100%",
+    },
+  },
+  analyticsHeading: {
+    color: "#bdbdbd",
+    textAlign: "left",
+
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 15,
+      paddingTop: 10,
+      textAlign: "center",
+    },
+  },
+  analyticsPara: {
+    color: "white",
+    fontSize: 36,
+    fontWeight: 700,
+    textAlign: "left",
+
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 18,
+      textAlign: "center",
+    },
+  },
+  cardWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    height: "100%",
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+      justifyContent: "space-around",
+      alignItems: "center",
     },
   },
 }));
@@ -186,42 +221,37 @@ export default function Features() {
       <div
         style={{
           backgroundColor: "transaparent",
-          height: 60,
+          minHeight: window.innerWidth > 400 ? 60 : 120,
+          height: "100%",
           display: "flex",
           justifyContent: "center",
           marginTop: -60,
         }}
       >
-        <Hidden smDown>
-          <Card className={classes.card}>
-            <div className="d-flex justify-content-evenly align-items-center h-100">
-              <div>
-                <div style={{ color: "#bdbdbd" }}>Total Value Locked($)</div>
-                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                  $21,45,324
-                </div>
+        <Card className={classes.card}>
+          <div className={classes.cardWrapper}>
+            <div>
+              <div className={classes.analyticsHeading}>
+                Total Value Locked($)
               </div>
-              <div
-                style={{ borderLeft: "1px solid #616161", height: "60%" }}
-              ></div>
-              <div>
-                <div style={{ color: "#bdbdbd" }}>Total Volume($)</div>
-                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                  $168,99,324
-                </div>
-              </div>
-              <div
-                style={{ borderLeft: "1px solid #616161", height: "60%" }}
-              ></div>
-              <div>
-                <div style={{ color: "#bdbdbd" }}>Supported Pairs</div>
-                <div style={{ color: "white", fontSize: 36, fontWeight: 700 }}>
-                  32
-                </div>
-              </div>
+              <div className={classes.analyticsPara}>$21,45,324</div>
             </div>
-          </Card>
-        </Hidden>
+            <div
+              style={{ borderLeft: "1px solid #616161", height: "60%" }}
+            ></div>
+            <div>
+              <div className={classes.analyticsHeading}>Total Volume($)</div>
+              <div className={classes.analyticsPara}>$168,99,324</div>
+            </div>
+            <div
+              style={{ borderLeft: "1px solid #616161", height: "60%" }}
+            ></div>
+            <div>
+              <div className={classes.analyticsHeading}>Supported Pairs</div>
+              <div className={classes.analyticsPara}>32</div>
+            </div>
+          </div>
+        </Card>
       </div>
       <div className={classes.background}>
         <div className={classes.container}>
