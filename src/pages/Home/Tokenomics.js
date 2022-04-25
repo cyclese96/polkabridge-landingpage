@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "550px",
     backgroundRepeat: "no-repeat",
     [theme.breakpoints.down("sm")]: {
-      backgroundSize: "100px",
+      backgroundSize: "90%",
       padding: 20,
     },
   },

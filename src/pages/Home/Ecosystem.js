@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       paddingTop: 30,
       paddingBottom: 30,
+      paddingLeft: "15%",
+      paddingRight: "15%",
     },
   },
   container: {
@@ -126,7 +128,7 @@ const useStyles = makeStyles((theme) => ({
   },
   featureCardFull: {
     width: 640,
-    height: "360px",
+    height: "100%",
 
     borderRadius: 30,
     backgroundColor: "#161F30",
@@ -135,9 +137,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
-      maxWidth: 400,
       width: "100%",
-      height: "100%",
+
+      height: 300,
     },
   },
 }));

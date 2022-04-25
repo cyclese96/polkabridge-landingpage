@@ -55,6 +55,7 @@ export default function Home() {
       style={{
         overflowX: "hidden",
         background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
+        backgroundSize: "100% auto",
       }}
     >
       <section id="header">
