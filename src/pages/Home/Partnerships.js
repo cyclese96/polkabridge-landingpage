@@ -160,6 +160,14 @@ const useStyles = makeStyles((theme) => ({
       padding: 5,
     },
   },
+  imageWrapperNewSafle: {
+    padding: 10,
+    height: "62px",
+    [theme.breakpoints.down("sm")]: {
+      height: "60px",
+      padding: 10,
+    },
+  },
   imageWrapperCardDfyn: {
     borderRadius: 10,
     padding: 10,
@@ -379,6 +387,37 @@ export default function Partnerships() {
             <a href="https://polygon.technology/">
               <img
                 src="images/polygon.png"
+                alt="logo"
+                className={classes.imageWrapperNew}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://getsafle.com/">
+              <img
+                src="images/safle.svg"
+                alt="logo"
+                className={classes.imageWrapperNewSafle}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://kommunitas.net/">
+              <img
+                src="images/kommunitas.png"
+                alt="logo"
+                className={classes.imageWrapperCardUnilend}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row flex-row justify-content-center text-center ">
+          <div className="col-6 col-md-6">
+            <a href="https://tomochain.com/">
+              <img
+                src="images/tmochain.svg"
                 alt="logo"
                 className={classes.imageWrapperNew}
               />
