@@ -208,17 +208,17 @@ export default function Features() {
   const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4, 5].length - 3) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4, 5].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
   };
 
   const goRightMob = () => {
-    x === -100 * ([1, 2, 3, 4, 5].length - 1) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6].length - 1) ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
-    x === 100 * ([1, 2, 3, 4, 5].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
   };
   return (
     <div style={{}}>
@@ -344,10 +344,7 @@ export default function Features() {
                         burnt.
                       </p>
                       <div className="text-center">
-                        <a
-                          href="https://launchpad.polkabridge.org"
-                          target="_blank"
-                        >
+                        <a href="https://farm.polkabridge.org" target="_blank">
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>

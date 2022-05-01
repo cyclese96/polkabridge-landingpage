@@ -163,7 +163,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   demoImage: {
-    height: "550px",
+    maxHeight: "550px",
+    height: "100%",
     [theme.breakpoints.down("md")]: {
       width: "90%",
       height: "fit-content",

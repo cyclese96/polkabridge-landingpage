@@ -142,11 +142,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageWrapperNewTomo: {
-    padding: 10,
-    width: "100%",
+    height: "40px",
     [theme.breakpoints.down("sm")]: {
-      height: "60px",
-      padding: 10,
+      height: "35px",
     },
   },
   listingsWrapper: {
