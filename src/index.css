@@ -7,16 +7,26 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
+  /* background: linear-gradient(
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.01)
+    ),
+    url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?t=st=1650872874~exp=1650873474~hmac=89b08c4f5f22d24b34533f2572ae31abd2970d86b30919551f5d60bdb5cfa6ff&w=1800")
+      no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh; */
+
   color: "white";
   /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.99),
     rgba(6, 21, 33, 0.9)
   ); */
+
   /* background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.51)),
-    url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?t=st=1650872874~exp=1650873474~hmac=89b08c4f5f22d24b34533f2572ae31abd2970d86b30919551f5d60bdb5cfa6ff&w=1800")
-      no-repeat center center fixed; */
+    url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?t=st=1650872874~exp=1650873474~hmac=89b08c4f5f22d24b34533f2572ae31abd2970d86b30919551f5d60bdb5cfa6ff&w=1800");
+  background-size: cover;
+  background-position: center center; */
 }
 
 code {

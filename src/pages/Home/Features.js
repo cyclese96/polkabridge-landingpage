@@ -176,7 +176,7 @@ const useStyles = makeStyles((theme) => ({
   },
   analyticsPara: {
     color: "white",
-    fontSize: 36,
+    fontSize: "1.8rem",
     fontWeight: 700,
     textAlign: "left",
 
@@ -186,12 +186,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   cardWrapper: {
+    position: "relative",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
-    height: "100%",
+    height: 120,
+
     [theme.breakpoints.down("xs")]: {
+      height: "100%",
+
       flexDirection: "column",
       justifyContent: "space-around",
       alignItems: "center",
@@ -326,6 +330,37 @@ export default function Features() {
                         className="d-flex justify-content-center align-items-center"
                         style={{ height: 200 }}
                       >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/money-sack-4024957-3337577.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>
+                        Deflationary Farming
+                      </h5>
+                      <p className={classes.cardValue}>
+                        0.5% of every transaction is used to dirtibute among
+                        liquidity providers as a reward and some amount is
+                        burnt.
+                      </p>
+                      <div className="text-center">
+                        <a
+                          href="https://launchpad.polkabridge.org"
+                          target="_blank"
+                        >
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
                         <img src="images/launchpad.png" height="120px" />
                       </div>
                       <h5 className={classes.cardTitle}>Launchpad</h5>
@@ -334,7 +369,10 @@ export default function Features() {
                         strong projects selected by PolkaBridge team.
                       </p>
                       <div className="text-center">
-                        <a href="https://launchpad.polkabridge.org" target="_blank">
+                        <a
+                          href="https://launchpad.polkabridge.org"
+                          target="_blank"
+                        >
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>

@@ -74,6 +74,41 @@ const useStyles = makeStyles((theme) => ({
       flex: " 50%",
     },
   },
+  logoWrapperCard: {
+    width: "100%",
+    maxWidth: 100,
+    backgroundColor: "#f9f9f9",
+    border: "3px solid #121212",
+    filter: "drop-shadow(0 0 0.5rem #111111)",
+    borderRadius: 7,
+    height: 50,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 100,
+      marginTop: 20,
+    },
+  },
+  logoWrapper: {
+    width: "100%",
+    maxWidth: 100,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 100,
+      marginTop: 20,
+    },
+  },
+  logoMain: {
+    width: "100%",
+    maxWidth: 90,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 80,
+    },
+  },
   imageWrapperChina: {
     padding: 15,
     height: "60px",
@@ -103,6 +138,14 @@ const useStyles = makeStyles((theme) => ({
     height: "68px",
     [theme.breakpoints.down("sm")]: {
       height: "64px",
+      padding: 10,
+    },
+  },
+  imageWrapperNewTomo: {
+    padding: 10,
+    width: "100%",
+    [theme.breakpoints.down("sm")]: {
+      height: "60px",
       padding: 10,
     },
   },
@@ -148,37 +191,38 @@ const useStyles = makeStyles((theme) => ({
   imageWrapperCardUnilend: {
     borderRadius: 10,
     padding: 10,
-    height: "60px",
+    height: "50px",
 
     backgroundColor: "#f9f9f9",
     border: "3px solid #121212",
     filter: "drop-shadow(0 0 0.5rem #111111)",
     [theme.breakpoints.down("md")]: {
       marginTop: 6,
-      height: "52px",
+      height: "50px",
       maxWidth: 120,
       padding: 5,
     },
   },
   imageWrapperNewSafle: {
     padding: 10,
-    height: "62px",
+    height: "50px",
+
     [theme.breakpoints.down("sm")]: {
-      height: "60px",
+      height: "50px",
       padding: 10,
     },
   },
   imageWrapperCardDfyn: {
     borderRadius: 10,
     padding: 10,
-    height: "60px",
+    height: "50px",
 
     backgroundColor: "#f9f9f9",
     border: "3px solid #121212",
     filter: "drop-shadow(0 0 0.5rem #111111)",
     [theme.breakpoints.down("sm")]: {
       marginTop: 6,
-      height: "52px",
+      height: "50px",
       width: "fit-content",
       padding: 5,
     },
@@ -186,13 +230,13 @@ const useStyles = makeStyles((theme) => ({
   imageWrapperCardBlack: {
     borderRadius: 10,
     padding: 10,
-    height: "60px",
+    height: "50px",
 
     backgroundColor: "#121212",
     border: "3px solid #121212",
     filter: "drop-shadow(0 0 0.5rem #111111)",
     [theme.breakpoints.down("sm")]: {
-      height: "64px",
+      height: "50px",
       padding: 10,
     },
   },
@@ -203,84 +247,102 @@ export default function Partnerships() {
     <div className={classes.background}>
       <p className={classes.heading}> Partners</p>
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  flex-row justify-content-center  text-center">
-          <div className="col-6 col-md-2">
-            <a href="http://chinapolka.com/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.imageWrapperChina}
-              />
-            </a>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="http://chinapolka.com/">
+                <img
+                  src="images/chinapolka.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <img
-              src="images/bmwcapital.png"
-              alt="logo"
-              className={classes.imageWrapperBMW}
-            />
-          </div>
-          <div className="col-6 col-md-2">
-            <a href="https://projectinverse.com/">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
               <img
-                src="images/inverse.png"
+                src="images/bmwcapital.png"
                 alt="logo"
-                className={classes.imageWrapper}
+                className={classes.logoMain}
               />
-            </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://projectinverse.com/">
+                <img
+                  src="images/inverse.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
 
-          <div className="col-6 col-md-2">
-            <a href="https://casperlabs.io/">
-              <img
-                src="images/casper.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://casperlabs.io/">
+                <img
+                  src="images/casper.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  flex-row justify-content-center text-center">
-          <div className="col-6 col-md-2">
-            <a href="https://taraxa.io/">
-              <img
-                src="images/taraxa.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://taraxa.io/">
+                <img
+                  src="images/taraxa.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://deeper.network/">
-              <img
-                src="images/deeper.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://deeper.network/">
+                <img
+                  src="images/deeper.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://quickswap.exchange/">
-              <img
-                src="images/quickswap.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://labsgroup.io/">
+                <img
+                  src="images/labsgroup.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://labsgroup.io/">
-              <img
-                src="images/labsgroup.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://quickswap.exchange/">
+                <img
+                  src="images/quickswap.png"
+                  alt="logo"
+                  className={classes.imageWrapper}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row flex-row justify-content-center text-center ">
           <div className="col-6 col-md-2">
@@ -325,103 +387,120 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
+
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row flex-row justify-content-center text-center ">
-          <div className="col-6 col-md-2">
-            <div className="text-center">
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
               <a href="https://unifarm.co/">
                 <img
                   src="images/unifarm.jpg"
                   alt="logo"
-                  className={classes.imageWrapperNew}
-                  style={{ borderRadius: 20, height: "70px" }}
+                  className={classes.logoMain}
+                  style={{ borderRadius: 5 }}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://www.ankr.com/">
+                <img
+                  src="images/ankr.png"
+                  alt="ankr"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://unilend.finance/">
+                <img
+                  src="images/unilend.png"
+                  alt="logo"
+                  className={classes.logoMain}
                 />
               </a>
             </div>
           </div>
 
           <div className="col-6 col-md-2" align="center">
-            <a href="https://www.ankr.com/">
-              <img
-                src="images/ankr.png"
-                alt="ankr"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
-
-          <div className="col-6 col-md-2">
-            <a href="https://unilend.finance/">
-              <img
-                src="images/unilend.png"
-                alt="logo"
-                className={classes.imageWrapperCardUnilend}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className="text-center">
+            <div className={classes.logoWrapperCard}>
               <a href="https://dfyn.network/">
                 <img
                   src="images/dfyn.png"
                   alt="logo"
-                  className={classes.imageWrapperCardDfyn}
+                  className={classes.logoMain}
                 />
               </a>
             </div>
           </div>
         </div>
       </div>
+
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row flex-row justify-content-center text-center ">
-          <div className="col-6 col-md-2">
-            <a href="https://publicmint.com/">
-              <img
-                src="images/mint.png"
-                alt="logo"
-                className={classes.imageWrapperCardBlack}
-              />
-            </a>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://publicmint.com/">
+                <img
+                  src="images/mint.png"
+                  alt="logo"
+                  className={classes.imageWrapperCardBlack}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://polygon.technology/">
-              <img
-                src="images/polygon.png"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://polygon.technology/">
+                <img
+                  src="images/polygon.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://getsafle.com/">
-              <img
-                src="images/safle.svg"
-                alt="logo"
-                className={classes.imageWrapperNewSafle}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://getsafle.com/">
+                <img
+                  src="images/safle.svg"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://kommunitas.net/">
-              <img
-                src="images/kommunitas.png"
-                alt="logo"
-                className={classes.imageWrapperCardUnilend}
-              />
-            </a>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://kommunitas.net/">
+                <img
+                  src="images/kommunitas.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row flex-row justify-content-center text-center ">
-          <div className="col-6 col-md-6">
-            <a href="https://tomochain.com/">
-              <img
-                src="images/tmochain.svg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-              />
-            </a>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.imageWrapper}>
+              <a href="https://tomochain.com/">
+                <img
+                  src="images/tmochain.svg"
+                  alt="logo"
+                  className={classes.imageWrapperNewTomo}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

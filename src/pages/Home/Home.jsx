@@ -26,7 +26,22 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  background: {
+    overflowX: "hidden",
+    background: `linear-gradient(
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.51)
+    ),
+    url("images/bg.webp")
+      no-repeat center center fixed`,
+    backgroundSize: "cover",
+    minHeight: "100vh",
+    // background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
+    // height: "100vh 100vw",
+    // [theme.breakpoints.down("sm")]: {},
+  },
+}));
 
 export default function Home() {
   const classes = useStyles();
@@ -51,13 +66,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      style={{
-        overflowX: "hidden",
-        background: `linear-gradient(rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.51)),url("images/bg.webp") no-repeat center center fixed`,
-        backgroundSize: "100% auto",
-      }}
-    >
+    <div className={classes.background}>
       <section id="header">
         <Header />
       </section>
