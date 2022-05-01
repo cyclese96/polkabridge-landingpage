@@ -103,10 +103,17 @@ const useStyles = makeStyles((theme) => ({
   },
   logoMain: {
     width: "100%",
-    maxWidth: 90,
+    maxWidth: 95,
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       maxWidth: 80,
+    },
+  },
+  imageWrapperNewTomo: {
+    width: "90%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 90,
     },
   },
   imageWrapperChina: {
@@ -141,12 +148,7 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
     },
   },
-  imageWrapperNewTomo: {
-    height: "40px",
-    [theme.breakpoints.down("sm")]: {
-      height: "35px",
-    },
-  },
+
   listingsWrapper: {
     maxWidth: 700,
   },
@@ -259,20 +261,23 @@ export default function Partnerships() {
           </div>
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
-              <img
-                src="images/bmwcapital.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </div>
-          </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://projectinverse.com/">
+              <a href="https://polygon.technology/">
                 <img
-                  src="images/inverse.png"
+                  src="images/polygon.png"
                   alt="logo"
                   className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://quickswap.exchange/">
+                <img
+                  src="images/quickswap.png"
+                  alt="logo"
+                  className={classes.imageWrapper}
                 />
               </a>
             </div>
@@ -294,14 +299,23 @@ export default function Partnerships() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://taraxa.io/">
+            <div className={classes.imageWrapper}>
+              <a href="https://tomochain.com/">
                 <img
-                  src="images/taraxa.png"
+                  src="images/tmochain.svg"
                   alt="logo"
-                  className={classes.logoMain}
+                  className={classes.imageWrapperNewTomo}
                 />
               </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <img
+                src="images/bmwcapital.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
             </div>
           </div>
           <div className="col-6 col-md-2" align="center">
@@ -322,18 +336,6 @@ export default function Partnerships() {
                   src="images/labsgroup.png"
                   alt="logo"
                   className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://quickswap.exchange/">
-                <img
-                  src="images/quickswap.png"
-                  alt="logo"
-                  className={classes.imageWrapper}
                 />
               </a>
             </div>
@@ -438,8 +440,8 @@ export default function Partnerships() {
       </div>
 
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2" align="center">
+        <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-3" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://publicmint.com/">
                 <img
@@ -450,18 +452,8 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://polygon.technology/">
-                <img
-                  src="images/polygon.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-2" align="center">
+
+          <div className="col-6 col-md-3" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://getsafle.com/">
                 <img
@@ -473,29 +465,13 @@ export default function Partnerships() {
             </div>
           </div>
 
-          <div className="col-6 col-md-2" align="center">
+          <div className="col-6 col-md-3" align="center">
             <div className={classes.logoWrapperCard}>
               <a href="https://kommunitas.net/">
                 <img
                   src="images/kommunitas.png"
                   alt="logo"
                   className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.imageWrapper}>
-              <a href="https://tomochain.com/">
-                <img
-                  src="images/tmochain.svg"
-                  alt="logo"
-                  className={classes.imageWrapperNewTomo}
                 />
               </a>
             </div>

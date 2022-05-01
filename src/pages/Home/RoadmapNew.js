@@ -262,7 +262,7 @@ export default function RoadmapNew() {
     x === -100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
+    x === 0 ? setX(0) : setX(x + 100);
   };
 
   const goRightMob = () => {
@@ -490,14 +490,22 @@ export default function RoadmapNew() {
                   Deeper into Multichain Dapps and Top Exchanges Listing
                 </h5>
                 <div className="mt-3">
-                  <li className={classes.liActive}>P2P Exchange</li>
-                  <li className={classes.liActive}>Deflationary Farming</li>
-                  <li className={classes.liActive}>Stake and Earn</li>
-                  <li className={classes.liActive}>Metaverse approach</li>
-                  <li className={classes.liActive}>P2P Exchange</li>
                   <li className={classes.liActive}>
-                    Lowest liquidity provider fees.
+                    Launch new product: Decentralized P2P Exchange
                   </li>
+                  <li className={classes.liActive}>
+                    Integrate more chains into Multichain AMM (BSC, Polygon,
+                    MoonBeam...)
+                  </li>
+                  <li className={classes.liActive}>
+                    Integrate more chains into INO platform (BSC, Polygon,
+                    MoonBeam...)
+                  </li>
+                  <li className={classes.liActive}>Metaverse approach</li>
+                  <li className={classes.liActive}>
+                    Top exchange listing (Huobi, Binance...)
+                  </li>
+                  <li className={classes.liActive}>Metaverse - New Approach</li>
                 </div>
               </Card>{" "}
             </div>,

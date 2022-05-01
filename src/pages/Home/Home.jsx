@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     background: `linear-gradient(
       rgba(0, 0, 0, 0.95),
-      rgba(0, 0, 0, 0.51)
+      rgba(0, 0, 0, 0.71)
     ),
     url("images/bg.webp")
       no-repeat center center fixed`,

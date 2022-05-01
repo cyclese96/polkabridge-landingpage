@@ -64,7 +64,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cmcLogo: {
     borderRadius: 10,
-    height: 55,
+
+    height: 48,
     padding: 10,
     backgroundColor: "#e5e5e5",
     [theme.breakpoints.down("sm")]: {
@@ -130,6 +131,7 @@ export default function Listings() {
                 <img
                   src="images/mxc-logo.png"
                   alt="logo"
+                  style={{ padding: 12 }}
                   className={classes.cmcLogo}
                 />
               </a>
@@ -149,9 +151,25 @@ export default function Listings() {
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-2 my-2">
+            <div className="col-6 col-md-2 my-2 d-flex align-items-center justify-content-center">
               <a href="https://coinmarketcap.com/currencies/polkabridge/">
-                <img src="images/cmc.png" className={classes.cmcLogo} />
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    borderRadius: 10,
+                    height: 48,
+                    padding: 10,
+                    backgroundColor: "#e5e5e5",
+                    color: "#212121",
+                    fontWeight: 600,
+                    marginLeft: 10,
+                    fontSize: 13,
+                  }}
+                >
+                  <img src="images/cmc.png" height="30px" />{" "}
+                  <span style={{ paddingLeft: 5 }}>CoinMarketCap</span>
+                </div>
               </a>
             </div>
           </Fade>
