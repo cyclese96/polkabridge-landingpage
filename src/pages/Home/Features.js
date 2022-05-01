@@ -234,21 +234,21 @@ export default function Features() {
               <div className={classes.analyticsHeading}>
                 Total Value Locked($)
               </div>
-              <div className={classes.analyticsPara}>$21,45,324</div>
+              <div className={classes.analyticsPara}>$10,000,000</div>
             </div>
             <div
               style={{ borderLeft: "1px solid #616161", height: "60%" }}
             ></div>
             <div>
               <div className={classes.analyticsHeading}>Total Volume($)</div>
-              <div className={classes.analyticsPara}>$168,99,324</div>
+              <div className={classes.analyticsPara}>$100,000,000</div>
             </div>
             <div
               style={{ borderLeft: "1px solid #616161", height: "60%" }}
             ></div>
             <div>
               <div className={classes.analyticsHeading}>Supported Pairs</div>
-              <div className={classes.analyticsPara}>32</div>
+              <div className={classes.analyticsPara}>7</div>
             </div>
           </div>
         </Card>
@@ -312,7 +312,7 @@ export default function Features() {
                         fees ever and trade with more 100+ token pairs.
                       </p>
                       <div className="text-center">
-                        <a href="https://swap.polkabridge.org">
+                        <a href="https://swap.polkabridge.org" target="_blank">
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>
@@ -334,7 +334,7 @@ export default function Features() {
                         strong projects selected by PolkaBridge team.
                       </p>
                       <div className="text-center">
-                        <a href="https://launchpad.polkabridge.org">
+                        <a href="https://launchpad.polkabridge.org" target="_blank">
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>
@@ -356,7 +356,7 @@ export default function Features() {
                         more rewards with PolkaBridge.
                       </p>
                       <div className="text-center">
-                        <a href="https://stake.polkabridge.org">
+                        <a href="https://stake.polkabridge.org" target="_blank">
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>
@@ -406,7 +406,7 @@ export default function Features() {
                         offering with PolkaBridge.
                       </p>
                       <div className="text-center">
-                        <a>
+                        <a href="http://ino.polkabridge.org/" target="_blank">
                           <Button className={classes.buttonOutlined}>
                             Visit Now
                           </Button>
