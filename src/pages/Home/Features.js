@@ -406,31 +406,6 @@ export default function Features() {
                         style={{ height: 200 }}
                       >
                         <img
-                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-to-dollar-swap-5152761-4312550.png"
-                          height="120px"
-                        />
-                      </div>
-                      <h5 className={classes.cardTitle}>P2P Exchange</h5>
-                      <p className={classes.cardValue}>
-                        Trade tokens with your non-custodial wallet with our
-                        decentralised P2P Exchange.
-                      </p>
-                      <div className="text-center">
-                        <a>
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
-                      </div>
-                    </Card>
-                  </div>,
-                  <div className="slideFeature">
-                    <Card className={classes.featureCardFull}>
-                      <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
-                      >
-                        <img
                           src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-staking-5112599-4269010.png"
                           height="120px"
                         />
@@ -449,6 +424,32 @@ export default function Features() {
                       </div>
                     </Card>
                   </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-to-dollar-swap-5152761-4312550.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>P2P Exchange</h5>
+                      <p className={classes.cardValue}>
+                        Trade tokens with your non-custodial wallet with our
+                        decentralised P2P Exchange.
+                      </p>
+                      <div className="text-center">
+                        <a>
+                          <Button className={classes.buttonOutlined}>
+                            Coming soon
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+
                 ].map((item, index) => {
                   return (
                     <div

@@ -204,7 +204,7 @@ export default function UpcomingProducts() {
                 className={classes.imageContainer}
               />
             </div>
-            <h5 className={classes.featureTitle}>Progress (60%)</h5>
+            <h5 className={classes.featureTitle}>Progress (30%)</h5>
             <div class="containered">
               <div class="progress2 progress-moved">
                 <div class="progress-bar2"></div>
