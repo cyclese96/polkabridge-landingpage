@@ -324,6 +324,57 @@ export default function Features() {
                       </div>
                     </Card>
                   </div>,
+
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img src="images/launchpad.png" height="120px" />
+                      </div>
+                      <h5 className={classes.cardTitle}>Launchpad</h5>
+                      <p className={classes.cardValue}>
+                        Particiate in initial dex offering of fundamentally
+                        strong projects selected by PolkaBridge team.
+                      </p>
+                      <div className="text-center">
+                        <a
+                          href="https://launchpad.polkabridge.org"
+                          target="_blank"
+                        >
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-staking-5112599-4269010.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>INO</h5>
+                      <p className={classes.cardValue}>
+                        Enroll and participate in hottest NFT projects initial
+                        offering with PolkaBridge.
+                      </p>
+                      <div className="text-center">
+                        <a href="http://ino.polkabridge.org/" target="_blank">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
                   <div className="slideFeature">
                     <Card className={classes.featureCardFull}>
                       <div
@@ -358,31 +409,6 @@ export default function Features() {
                         className="d-flex justify-content-center align-items-center"
                         style={{ height: 200 }}
                       >
-                        <img src="images/launchpad.png" height="120px" />
-                      </div>
-                      <h5 className={classes.cardTitle}>Launchpad</h5>
-                      <p className={classes.cardValue}>
-                        Particiate in initial dex offering of fundamentally
-                        strong projects selected by PolkaBridge team.
-                      </p>
-                      <div className="text-center">
-                        <a
-                          href="https://launchpad.polkabridge.org"
-                          target="_blank"
-                        >
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
-                      </div>
-                    </Card>
-                  </div>,
-                  <div className="slideFeature">
-                    <Card className={classes.featureCardFull}>
-                      <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
-                      >
                         <img src="images/staking.png" height="120px" />
                       </div>
                       <h5 className={classes.cardTitle}>Staking</h5>
@@ -399,31 +425,7 @@ export default function Features() {
                       </div>
                     </Card>
                   </div>,
-                  <div className="slideFeature">
-                    <Card className={classes.featureCardFull}>
-                      <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
-                      >
-                        <img
-                          src="https://cdn3d.iconscout.com/3d/premium/thumb/nft-staking-5112599-4269010.png"
-                          height="120px"
-                        />
-                      </div>
-                      <h5 className={classes.cardTitle}>INO</h5>
-                      <p className={classes.cardValue}>
-                        Enroll and participate in hottest NFT projects initial
-                        offering with PolkaBridge.
-                      </p>
-                      <div className="text-center">
-                        <a href="http://ino.polkabridge.org/" target="_blank">
-                          <Button className={classes.buttonOutlined}>
-                            Visit Now
-                          </Button>
-                        </a>
-                      </div>
-                    </Card>
-                  </div>,
+
                   <div className="slideFeature">
                     <Card className={classes.featureCardFull}>
                       <div
