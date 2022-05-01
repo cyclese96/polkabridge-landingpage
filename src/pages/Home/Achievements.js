@@ -291,13 +291,13 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                43<span className={classes.valueBig}>+</span>
+                50<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>Projects</h5>
             <div className="d-flex justify-content-center">
               <p className={classes.cardValue}>
-                We have launched more than 32 projects on multiple chains
+                We have launched more than 50 projects on multiple chains
               </p>
             </div>
           </Card>
@@ -310,7 +310,7 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                170M<span className={classes.valueBig}>+</span>
+                150M<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>ATH MCap</h5>
@@ -330,13 +330,13 @@ export default function Achievements() {
             >
               <h5 className={classes.valueText}>
                 {" "}
-                $20M<span className={classes.valueBig}>+</span>
+                $10M<span className={classes.valueBig}>+</span>
               </h5>
             </div>
             <h5 className={classes.cardTitle}>TVL</h5>
             <div className="d-flex justify-content-center">
               <p className={classes.cardValue}>
-                More than $20M funds are locked into our staking pools.
+                More than $10M funds are locked into our staking pools.
               </p>
             </div>
           </Card>
