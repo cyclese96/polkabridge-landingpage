@@ -126,7 +126,7 @@ export default function Listings() {
         </div>
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade right>
-            <div className="col-6 col-md-3 my-2">
+            <div className="col-6 col-md-2 my-2">
               <a href="https://www.mexc.com/exchange/PBR_USDT">
                 <img
                   src="images/mxc-logo.png"
@@ -151,25 +151,12 @@ export default function Listings() {
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-2 my-2 d-flex align-items-center justify-content-center">
-              <a href="https://coinmarketcap.com/currencies/polkabridge/">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    borderRadius: 10,
-                    height: 48,
-                    padding: 10,
-                    backgroundColor: "#e5e5e5",
-                    color: "#212121",
-                    fontWeight: 600,
-                    marginLeft: 10,
-                    fontSize: 13,
-                  }}
-                >
-                  <img src="images/cmc.png" height="30px" />{" "}
-                  <span style={{ paddingLeft: 5 }}>CoinMarketCap</span>
-                </div>
+            <div className="col-6 col-md-3 my-2">
+              <a href="https://www.coingecko.com/en/coins/polkabridge">
+                <img
+                  src="https://www.usebraintrust.com/hubfs/CoinMarketCap%20logo.png"
+                  className={classes.cmcLogo}
+                />
               </a>
             </div>
           </Fade>

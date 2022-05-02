@@ -168,6 +168,7 @@ export default function Ecosystem() {
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
+                    style={{ borderRadius: 30 }}
                   ></iframe>
                 </Card>
               </Hidden>
@@ -181,6 +182,7 @@ export default function Ecosystem() {
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
+                    style={{ borderRadius: 30 }}
                   ></iframe>
                 </Card>
               </Hidden>

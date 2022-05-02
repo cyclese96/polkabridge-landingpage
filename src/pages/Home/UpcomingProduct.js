@@ -14,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     // borderBottom: "200px solid green",
     [theme.breakpoints.down("sm")]: {
+      paddingTop: 0,
+      paddingBottom: 70,
       textAlign: "center",
     },
   },

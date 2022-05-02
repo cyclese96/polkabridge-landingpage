@@ -60,6 +60,16 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "32px",
     },
   },
+  subheading: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 18,
+    fontWeight: 500,
+    marginTop: 50,
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    margin: "0px 0px 12px",
+  },
   para: {
     textAlign: "center",
     width: "70%",
@@ -108,6 +118,10 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       maxWidth: 80,
     },
+  },
+  ecologoMain: {
+    width: "100%",
+    maxWidth: 65,
   },
   imageWrapperNewTomo: {
     width: "90%",
@@ -472,6 +486,35 @@ export default function Partnerships() {
                   src="images/kommunitas.png"
                   alt="logo"
                   className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p className={classes.subheading}> Ecosystem partners</p>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2">
+            <div className={classes.logoWrapper}>
+              <a href="https://polygon.technology/">
+                <img
+                  src="images/polkawar.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-1">
+            <div className={classes.logoWrapper}>
+              <a href="https://corgib.polkabridge.org/">
+                <img
+                  src="images/corgi.png"
+                  alt="logo"
+                  className={classes.ecologoMain}
                 />
               </a>
             </div>

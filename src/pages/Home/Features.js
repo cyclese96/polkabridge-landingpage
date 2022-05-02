@@ -437,8 +437,8 @@ export default function Features() {
                       </div>
                       <h5 className={classes.cardTitle}>INO</h5>
                       <p className={classes.cardValue}>
-                        Enroll and participate in hottest NFT projects initial
-                        offering with PolkaBridge.
+                        Enroll and participate in hottest NFT project's initial
+                        offering with PolkaBridge INO.
                       </p>
                       <div className="text-center">
                         <a href="http://ino.polkabridge.org/" target="_blank">
