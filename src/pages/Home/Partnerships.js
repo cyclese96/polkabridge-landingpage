@@ -493,7 +493,7 @@ export default function Partnerships() {
         </div>
       </div>
 
-      <p className={classes.subheading}> Ecosystem partners</p>
+      <p className={classes.subheading}>PolkaBridge Ecosystem</p>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2">
