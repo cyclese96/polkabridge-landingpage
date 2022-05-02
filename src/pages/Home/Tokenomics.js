@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     textAlign: "left",
     [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: 18,
       lineHeight: "22px",
       fontWeight: 600,
     },
@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     height: 80,
 
     [theme.breakpoints.down("sm")]: {
-      height: 50,
+      height: 55,
     },
   },
 }));

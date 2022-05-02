@@ -495,29 +495,24 @@ export default function Partnerships() {
 
       <p className={classes.subheading}>PolkaBridge Ecosystem</p>
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2">
-            <div className={classes.logoWrapper}>
-              <a href="https://polygon.technology/">
-                <img
-                  src="images/polkawar.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
+        <div className="mt-3 d-flex justify-content-center align-items-center ">
+          <div className={classes.logoWrapper}>
+            <a href="https://polygon.technology/">
+              <img
+                src="images/polkawar.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
           </div>
-
-          <div className="col-6 col-md-1">
-            <div className={classes.logoWrapper}>
-              <a href="https://corgib.polkabridge.org/">
-                <img
-                  src="images/corgi.png"
-                  alt="logo"
-                  className={classes.ecologoMain}
-                />
-              </a>
-            </div>
+          <div className={classes.logoWrapper}>
+            <a href="https://corgib.polkabridge.org/">
+              <img
+                src="images/corgi.png"
+                alt="logo"
+                className={classes.ecologoMain}
+              />
+            </a>
           </div>
         </div>
       </div>

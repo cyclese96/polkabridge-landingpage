@@ -133,6 +133,7 @@ a {
 .containered {
   width: 500px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 950px) {

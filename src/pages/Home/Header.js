@@ -243,7 +243,7 @@ export default function Header() {
                         <div className={classes.tagTitle}>
                           Circulating Supply:
                         </div>
-                        <div className={classes.tagValue}>36M Tokens</div>
+                        <div className={classes.tagValue}>46.83M Tokens</div>
                       </div>
                     </div>
                   )}
