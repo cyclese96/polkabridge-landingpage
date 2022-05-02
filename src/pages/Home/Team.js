@@ -34,12 +34,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: -5,
     color: "#bdbdbd",
     [theme.breakpoints.down("sm")]: {
-      fontSize: 14,
+      fontSize: "0.6rem",
     },
   },
   title: {
     fontWeight: 600,
-    fontSize: 22,
+    fontSize: 21,
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
     margin: 0,
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "white",
     [theme.breakpoints.down("sm")]: {
-      fontSize: 16,
+      fontSize: 15,
 
       paddingBottom: 3,
     },
@@ -71,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
 
   people: {
     paddingTop: 30,
-    width: 220,
+    midth: "100%",
+    maxWidth: 220,
     [theme.breakpoints.down("sm")]: {
       width: 160,
     },
