@@ -461,7 +461,7 @@ export default function RoadmapNew() {
               </Card>{" "}
             </div>,
             <div className={classes.ActiveCardWrapper}>
-              <h5 className={classes.quarterTitle}>Q2 - 2022</h5>
+              <h5 className={classes.quarterTitle}>Q2, Q3 - 2022</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
                 style={{ color: "#454545" }}
@@ -510,7 +510,7 @@ export default function RoadmapNew() {
               </Card>{" "}
             </div>,
             <div className={classes.cardWrapper}>
-              <h5 className={classes.quarterTitle}>Q3 - 2022</h5>
+              <h5 className={classes.quarterTitle}>Q4 - 2022</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
                 style={{ color: "#454545" }}
