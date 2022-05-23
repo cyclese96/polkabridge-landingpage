@@ -136,13 +136,13 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   tagValue: {
-    paddingLeft: 6,
-    paddingRight: 20,
+    paddingLeft: 5,
+    paddingRight: 10,
     fontWeight: 600,
     verticalAlign: "baseline",
     letterSpacing: "-0.8px",
     margin: 0,
-    fontSize: 14,
+    fontSize: 13,
     color: "#D9047C",
   },
   card: {
@@ -207,7 +207,7 @@ export default function Header() {
         <div className={classes.header}>
           <div className={classes.spacing}>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <Hidden smDown>
                   {stats && (
                     <div className="d-flex flex-row justify-content-start mt-5 mb-4">
@@ -231,7 +231,7 @@ export default function Header() {
                         </div>
                       </div>
                       <div className="d-flex flex-row justify-content-start ">
-                        <div className={classes.tagTitle}>Market Cap:</div>
+                        <div className={classes.tagTitle}>MCap:</div>
                         <div className={classes.tagValue}>
                           {parseFloat(stats.usd_market_cap / 1000000).toFixed(
                             2
@@ -240,9 +240,7 @@ export default function Header() {
                         </div>
                       </div>
                       <div className="d-flex flex-row justify-content-start ">
-                        <div className={classes.tagTitle}>
-                          Circulating Supply:
-                        </div>
+                        <div className={classes.tagTitle}>Current Supply:</div>
                         <div className={classes.tagValue}>46.83M Tokens</div>
                       </div>
                     </div>
@@ -337,7 +335,7 @@ export default function Header() {
                   </a>
                 </div>
               </div>
-              <div className="col-md-6 d-flex align-items-center">
+              <div className="col-md-5 d-flex align-items-center">
                 <Hidden xsDown>
                   {" "}
                   <img
