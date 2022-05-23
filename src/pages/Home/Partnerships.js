@@ -497,7 +497,7 @@ export default function Partnerships() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 d-flex justify-content-center align-items-center ">
           <div className={classes.logoWrapper}>
-            <a href="https://polygon.technology/">
+            <a href="https://polkawar.com/">
               <img
                 src="images/polkawar.png"
                 alt="logo"
