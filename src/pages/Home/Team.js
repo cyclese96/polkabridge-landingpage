@@ -154,7 +154,7 @@ export default function Team() {
                   className={classes.avatar}
                 />
                 <h6 className={classes.title}>Tahir Ahmad</h6>
-                <p className={classes.para}>Product Engineer</p>
+                <p className={classes.para}>Tech Lead</p>
                 <Tooltip title="Twitter">
                   <a href="https://twitter.com/tahirahmadin">
                     <IconButton aria-label="Twitter">
@@ -181,7 +181,7 @@ export default function Team() {
                   className={classes.avatar}
                 />
                 <h6 className={classes.title}>Aamir Alam</h6>
-                <p className={classes.para}>Software Engineer</p>
+                <p className={classes.para}>Core Developer</p>
                 <Tooltip title="LinkedIn">
                   <a href="https://www.linkedin.com/in/aamir-alam/">
                     <IconButton aria-label="LinkedIn">
@@ -228,7 +228,7 @@ export default function Team() {
                   className={classes.avatar}
                 />
                 <h6 className={classes.title}>Tanishq Dhawan</h6>
-                <p className={classes.para}>Marketing Manager</p>
+                <p className={classes.para}>Business Development Manager</p>
 
                 <Tooltip title="LinkedIn">
                   <a href="https://twitter.com/ace_tanishq">
@@ -250,6 +250,34 @@ export default function Team() {
           <Hidden smDown>
             <div className="col-md-1"></div>
           </Hidden>
+          <div className="col-6 col-md-2" align="center">
+            <Fade right>
+              <div className={classes.people}>
+                <img
+                  src="./images/team/sonali.jpg"
+                  alt="Swas"
+                  className={classes.avatar}
+                />
+                <h6 className={classes.title}>Sonali Rawat</h6>
+                <p className={classes.para}>Marketing Manager</p>
+
+                <Tooltip title="Twitter">
+                  <a href="https://twitter.com/sonali_rawat12?s=21">
+                    <IconButton aria-label="Twitter">
+                      <Twitter className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+                <Tooltip title="LinkedIn">
+                  <a href="https://www.linkedin.com/in/sonali-rawat-4567811ab/">
+                    <IconButton aria-label="LinkedIn">
+                      <LinkedIn className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
+            </Fade>
+          </div>
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
@@ -292,34 +320,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="./images/team/sonali.jpg"
-                  alt="Swas"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Sonali Rawat</h6>
-                <p className={classes.para}>Social Media Manager</p>
 
-                <Tooltip title="Twitter">
-                  <a href="https://twitter.com/sonali_rawat12?s=21">
-                    <IconButton aria-label="Twitter">
-                      <Twitter className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-                <Tooltip title="LinkedIn">
-                  <a href="https://www.linkedin.com/in/sonali-rawat-4567811ab/">
-                    <IconButton aria-label="LinkedIn">
-                      <LinkedIn className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
