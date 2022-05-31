@@ -164,6 +164,7 @@ export default function PrimarySearchAppBar() {
       <List>
         {[
           { name: "Swap", id: "https://swap.polkabridge.org/" },
+
           {
             name: "Apply For IDO",
             id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
@@ -176,7 +177,11 @@ export default function PrimarySearchAppBar() {
           </a>
         ))}
         <ListItem button>
-          <a href="docs/whitepaper.pdf" style={{ textDecoration: "none" }}>
+          <a
+            href="docs/whitepaper.pdf"
+            style={{ textDecoration: "none" }}
+            target="_blank"
+          >
             <ListItemText
               primary={"Read Whitepaper"}
               className={classes.menuTitlePink}
@@ -275,18 +280,14 @@ export default function PrimarySearchAppBar() {
                 Team <DotCircle />
               </Typography>
             </Link>
-            {/* <Link
-              activeClass="active"
-              to="exchange"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
+            <a
+              href="https://polkabridge.org/docs/whitepaper.pdf"
+              target="_blank"
             >
               <Typography className={classes.tabs} variant="body1">
-                Exchange <DotCircle />
+                Whitepaper <DotCircle />
               </Typography>
-            </Link> */}
+            </a>
 
             <div className={classes.sectionDesktop}>
               <CustomButton
