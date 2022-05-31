@@ -269,7 +269,7 @@ export default function RoadmapNew() {
     x === -100 * [1, 2, 3, 4, 5].length ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
+    x === 0 ? setX(0) : setX(x + 100);
   };
 
   return (
