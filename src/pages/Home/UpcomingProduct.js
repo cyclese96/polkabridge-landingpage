@@ -202,11 +202,11 @@ export default function UpcomingProducts() {
           <div className="col-md-6">
             <div className="d-flex justify-content-between mb-3">
               <img
-                src="images/sitting.png"
+                src="images/p2p-image.png"
                 className={classes.imageContainer}
               />
             </div>
-            <h5 className={classes.featureTitle}>Progress (30%)</h5>
+            <h5 className={classes.featureTitle}>Progress (60%)</h5>
             <div class="containered">
               <div class="progress2 progress-moved">
                 <div class="progress-bar2"></div>

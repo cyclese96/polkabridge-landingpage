@@ -2,6 +2,7 @@ import { Button, Card, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { AccountTree, ChevronLeft, ChevronRight } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
+import CustomButton from "../../common/CustomButton";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -268,6 +269,12 @@ export default function Ecosystem() {
                   Lowest liquidity provider fees.
                 </div>
               </div>
+            </div>
+            <div className="mt-3">
+              <CustomButton
+                title={"Check On Certik"}
+                link={"https://www.certik.com/projects/polkabridge"}
+              ></CustomButton>
             </div>
           </div>
         </div>

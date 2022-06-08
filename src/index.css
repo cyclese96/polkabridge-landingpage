@@ -179,7 +179,7 @@ a {
 }
 
 .progress-moved .progress-bar2 {
-  width: 30%;
+  width: 60%;
   background-color: #8954c9;
   animation: progressAnimation 6s;
 }

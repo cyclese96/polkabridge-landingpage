@@ -455,7 +455,7 @@ export default function Partnerships() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-3" align="center">
+          <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://publicmint.com/">
                 <img
@@ -467,7 +467,7 @@ export default function Partnerships() {
             </div>
           </div>
 
-          <div className="col-6 col-md-3" align="center">
+          <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://getsafle.com/">
                 <img
@@ -478,8 +478,18 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-
-          <div className="col-6 col-md-3" align="center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://bitkeep.com/">
+                <img
+                  src="images/bitkeep.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapperCard}>
               <a href="https://kommunitas.net/">
                 <img
