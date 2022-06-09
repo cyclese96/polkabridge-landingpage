@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     padding: "8px 16px 8px 16px",
     fontWeight: 600,
     fontSize: "1.02vw",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+    },
   },
 }));
 
