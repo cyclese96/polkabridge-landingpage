@@ -330,7 +330,7 @@ export default function Roadmap(props) {
                   <div className={classes.quarterWrapper}>
                     <div>
                       <SettingsEthernet className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q2, 2022</h4>
+                      <h4 className={classes.quarterText}>Q2-Q3-Q4, 2022</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
@@ -342,7 +342,8 @@ export default function Roadmap(props) {
                       </h6>
 
                       <ul className={classes.list}>
-                        <li>Launch new product: Decentralized P2P Exchange</li>
+                        <li>Launch new product: <a href="https://t.me/polkabridge/1221" target="_blank">Decentralized P2P Exchange</a>. Testnet expected in August, 2022</li>
+                        <li>Launch new product: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a> . Testnet expected in September, 2022</li>
                         <li>
                           Integrate more chains into Multichain AMM (BSC,
                           Polygon, MoonBeam...)
@@ -359,7 +360,7 @@ export default function Roadmap(props) {
                   <div className={classes.quarterWrapper}>
                     <div>
                       <AccountBalance className={classes.icon} />
-                      <h4 className={classes.quarterText}>Q3-Q4, 2022</h4>
+                      <h4 className={classes.quarterText}>2023</h4>
                     </div>
                     <div className={classes.lineMaker}>
                       <div className={classes.circle}></div>{" "}
