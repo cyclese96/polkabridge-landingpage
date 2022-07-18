@@ -111,6 +111,24 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 20,
     },
   },
+  celerWrapper: {
+    width: "100%",
+    maxWidth: 150,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 100,
+      marginTop: 20,
+    },
+  },
+  celer: {
+    maxWidth: 140,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 80,
+    },
+  },
   logoMain: {
     width: "100%",
     maxWidth: 95,
@@ -260,6 +278,21 @@ export default function Partnerships() {
   return (
     <div className={classes.background}>
       <p className={classes.heading}> Partners</p>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.celerWrapper}>
+              <a href="http://chinapolka.com/">
+                <img
+                  src="images/celer.png"
+                  alt="logo"
+                  className={classes.celer}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2" align="center">
