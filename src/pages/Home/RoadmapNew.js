@@ -461,7 +461,7 @@ export default function RoadmapNew() {
               </Card>{" "}
             </div>,
             <div className={classes.ActiveCardWrapper}>
-              <h5 className={classes.quarterTitle}>Q2, Q3 - 2022</h5>
+              <h5 className={classes.quarterTitle}>Q2, Q3, Q4 - 2022</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
                 style={{ color: "#454545" }}
@@ -490,9 +490,10 @@ export default function RoadmapNew() {
                   Deeper into Multichain Dapps and Top Exchanges Listing
                 </h5>
                 <div className="mt-3">
-                  <li className={classes.liActive}>
-                    Launch new product: Decentralized P2P Exchange
-                  </li>
+                  <li className={classes.liActive}>Launch new product: <a href="https://t.me/polkabridge/1221" target="_blank">Decentralized P2P Exchange</a>. Testnet expected in August, 2022</li>
+                  <li className={classes.liActive}>Launch new product: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a> . Testnet expected in September, 2022</li>
+
+
                   <li className={classes.liActive}>
                     Integrate more chains into Multichain AMM (BSC, Polygon,
                     MoonBeam...)
@@ -506,11 +507,12 @@ export default function RoadmapNew() {
                     Top exchange listing (Huobi, Binance...)
                   </li>
                   <li className={classes.liActive}>Metaverse - New Approach</li>
+                  <li className={classes.liActive}>Launch PBR token on Binance Smart Chain and bridge</li>
                 </div>
               </Card>{" "}
             </div>,
             <div className={classes.cardWrapper}>
-              <h5 className={classes.quarterTitle}>Q4 - 2022</h5>
+              <h5 className={classes.quarterTitle}>2023</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
                 style={{ color: "#454545" }}
