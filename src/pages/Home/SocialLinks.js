@@ -95,15 +95,7 @@ export default function SocialLinks() {
               <a href="https://polkabridge.medium.com/" target="_blank">
                 <h5 className={classes.link}>Blog</h5>
               </a>
-              <a href="https://t.me/polkabridge/1221" target="_blank">
-                <h5 className={classes.link}>P2P</h5>
-              </a>
-              <a
-                href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Insights</h5>
-              </a>
+
               <a href="mailto:support@polkabridge.org" target="_blank">
                 <h5 className={classes.link}>Contact Us</h5>
               </a>
@@ -125,6 +117,15 @@ export default function SocialLinks() {
               </a>
               <a href="https://swap.polkabridge.org" target="_blank">
                 <h5 className={classes.link}>Swap</h5>
+              </a>
+              <a href="https://t.me/polkabridge/1221" target="_blank">
+                <h5 className={classes.link}>P2P</h5>
+              </a>
+              <a
+                href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c"
+                target="_blank"
+              >
+                <h5 className={classes.link}>Insights</h5>
               </a>
             </div>
           </div>
@@ -149,7 +150,7 @@ export default function SocialLinks() {
                 <h5 className={classes.link}>Polygon Contract</h5>
               </a>
               <a
-                href="https://wallet-dev.polygon.technology/bridge/"
+                href="https://wallet.polygon.technology/bridge"
                 target="_blank"
               >
                 <h5 className={classes.link}>Polygon Bridge</h5>
