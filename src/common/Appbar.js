@@ -132,7 +132,7 @@ export default function PrimarySearchAppBar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List style={{ paddingTop: 30 }}>
         {[
           { name: "Our Products", id: "products" },
           { name: "Ecosystem", id: "ecosystem" },
@@ -140,7 +140,6 @@ export default function PrimarySearchAppBar() {
           { name: "$PBR Token", id: "token" },
           { name: "Roadmap", id: "roadmap" },
           { name: "Team", id: "team" },
-          { name: "Exchange", id: "exchange" },
         ].map((tab, index) => (
           <Link
             activeClass="active"
@@ -158,37 +157,22 @@ export default function PrimarySearchAppBar() {
               <ListItemText primary={tab.name} className={classes.menuTitle} />
             </ListItem>
           </Link>
-        ))}
+        ))}{" "}
+        {[{ name: "Swap", id: "https://swap.polkabridge.org/" }].map(
+          (tab, index) => (
+            <a href={tab.id} className={classes.mobileLink}>
+              <ListItem button key={tab.name}>
+                <ListItemText
+                  primary={tab.name}
+                  className={classes.menuTitle}
+                />
+              </ListItem>
+            </a>
+          )
+        )}
       </List>
-      <Divider />
-      <List>
-        {[
-          { name: "Swap", id: "https://swap.polkabridge.org/" },
 
-          {
-            name: "Apply For IDO",
-            id: "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0",
-          },
-        ].map((tab, index) => (
-          <a href={tab.id} className={classes.mobileLink}>
-            <ListItem button key={tab.name}>
-              <ListItemText primary={tab.name} className={classes.menuTitle} />
-            </ListItem>
-          </a>
-        ))}
-        <ListItem button>
-          <a
-            href="docs/whitepaper.pdf"
-            style={{ textDecoration: "none" }}
-            target="_blank"
-          >
-            <ListItemText
-              primary={"Read Whitepaper"}
-              className={classes.menuTitlePink}
-            />
-          </a>
-        </ListItem>
-      </List>
+      <List></List>
     </div>
   );
 
@@ -200,11 +184,7 @@ export default function PrimarySearchAppBar() {
       >
         <Toolbar className="d-flex justify-content-evenly">
           <Typography className={classes.title} variant="h6" noWrap>
-            <img
-              src="https://launchpad.polkabridge.org/img/logo-white.png"
-              alt="logo"
-              height="40px"
-            />
+            <img src="./polkabridge.png" alt="logo" height="60px" />
           </Typography>
           <div className="d-flex justify-content-end">
             <Link
@@ -280,31 +260,16 @@ export default function PrimarySearchAppBar() {
                 Team <DotCircle />
               </Typography>
             </Link>
-            <a
-              href="https://polkabridge.org/docs/whitepaper.pdf"
-              target="_blank"
-            >
-              <Typography className={classes.tabs} variant="body1">
-                Whitepaper <DotCircle />
-              </Typography>
-            </a>
-
             <div className={classes.sectionDesktop}>
               <CustomButton
-                title={"Apply For IDO"}
-                link={
-                  "https://docs.google.com/forms/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0"
-                }
+                title={"Launch App"}
+                link={"https://swap.polkabridge.org"}
               ></CustomButton>
             </div>
           </div>
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
-              <img
-                src="https://launchpad.polkabridge.org/img/logo-white.png"
-                alt="logo"
-                height="30px"
-              />
+              <img src="./polkabridge.png" alt="logo" height="50px" />
             </div>
 
             <div>
