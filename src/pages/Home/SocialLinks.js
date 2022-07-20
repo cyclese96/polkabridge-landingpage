@@ -95,7 +95,7 @@ export default function SocialLinks() {
               <a href="https://polkabridge.medium.com/" target="_blank">
                 <h5 className={classes.link}>Blog</h5>
               </a>
-              <a href="https://polkabridge.medium.com/" target="_blank">
+              <a href="https://t.me/polkabridge/1221" target="_blank">
                 <h5 className={classes.link}>P2P</h5>
               </a>
               <a
