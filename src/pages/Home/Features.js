@@ -208,17 +208,17 @@ export default function Features() {
   const [x, setX] = useState(window.innerWidth > 400 ? 0 : 0);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6, 7].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6, 7].length - 3) ? setX(x + 100) : setX(0);
   };
 
   const goRightMob = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6].length - 1) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6, 7].length - 1) ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
-    x === 100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(x + 100) : setX(0);
+    x === 100 * ([1, 2, 3, 4, 5, 6, 7].length - 3) ? setX(x + 100) : setX(0);
   };
   return (
     <div style={{}}>
@@ -441,6 +441,31 @@ export default function Features() {
                       <p className={classes.cardValue}>
                         Trade tokens with your non-custodial wallet with our
                         decentralised P2P Exchange.
+                      </p>
+                      <div className="text-center">
+                        <a>
+                          <Button className={classes.buttonOutlined}>
+                            Coming soon
+                          </Button>
+                        </a>
+                      </div>
+                    </Card>
+                  </div>,
+                  <div className="slideFeature">
+                    <Card className={classes.featureCardFull}>
+                      <div
+                        className="d-flex justify-content-center align-items-center"
+                        style={{ height: 200 }}
+                      >
+                        <img
+                          src="https://cdn3d.iconscout.com/3d/premium/thumb/content-management-5617624-4674335.png"
+                          height="120px"
+                        />
+                      </div>
+                      <h5 className={classes.cardTitle}>Insights</h5>
+                      <p className={classes.cardValue}>
+                        Learn about crypto and get top buzz around crypto
+                        industry at your fingertips.
                       </p>
                       <div className="text-center">
                         <a>
