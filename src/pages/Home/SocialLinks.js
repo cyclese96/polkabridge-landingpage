@@ -234,7 +234,7 @@ export default function SocialLinks() {
                 <h5 className={classes.link}>Polygon Contract</h5>
               </a>
               <a
-                href="https://wallet-dev.polygon.technology/bridge/"
+                href="https://wallet.polygon.technology/bridge"
                 target="_blank"
               >
                 <h5 className={classes.link}>Polygon Bridge</h5>
