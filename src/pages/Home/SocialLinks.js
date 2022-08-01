@@ -7,6 +7,7 @@ import {
   Email,
   Reddit,
   Instagram,
+  YouTube,
 } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
@@ -280,6 +281,7 @@ export default function SocialLinks() {
               </a>
             </div>
           </div>
+          https://www.youtube.com/channel/UCQC74p4WK9nsW3Rmxou-IrA
         </div>
       </div>
       <div className={classes.socialContainer}>
@@ -379,6 +381,17 @@ export default function SocialLinks() {
                   <a href="mailto:support@polkabridge.org">
                     <IconButton aria-label="Email">
                       <Email className={classes.icon} />
+                    </IconButton>
+                  </a>
+                </Tooltip>
+              </div>
+            </div>
+            <div className="col-3 col-md-1 col-sm-3">
+              <div className={classes.iconWrapper}>
+                <Tooltip title="Youtube">
+                  <a href="https://www.youtube.com/channel/UCQC74p4WK9nsW3Rmxou-IrA">
+                    <IconButton aria-label="Email">
+                      <YouTube className={classes.icon} />
                     </IconButton>
                   </a>
                 </Tooltip>

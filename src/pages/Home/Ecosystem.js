@@ -164,7 +164,7 @@ export default function Ecosystem() {
                   <iframe
                     width="640"
                     height="360"
-                    src="https://www.youtube.com/embed/tsbRzb2S7mU?start=38"
+                    src="https://www.youtube.com/watch?v=nDTgKrdUCFU"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
