@@ -201,6 +201,27 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
     },
   },
+  videoCard: {
+    width: "100%",
+    height: "100%",
+    maxWidth: 900,
+    minHeight: 400,
+    [theme.breakpoints.down("md")]: {
+      minHeight: 180,
+    },
+  },
+  videoFrame: {
+    width: "100%",
+    height: "100%",
+    maxWidth: 900,
+    minHeight: 506,
+    borderRadius: 30,
+    [theme.breakpoints.down("md")]: {
+      minHeight: 200,
+      height: "100%",
+      padding: 10,
+    },
+  },
 }));
 
 export default function Features() {
@@ -256,6 +277,20 @@ export default function Features() {
             </div>
           </div>
         </Card>
+      </div>
+      <div className="d-flex justify-content-center mt-5">
+        <div className={classes.videoCard}>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/nDTgKrdUCFU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            className={classes.videoFrame}
+          ></iframe>
+        </div>
       </div>
       <div className={classes.background}>
         <div className={classes.container}>
