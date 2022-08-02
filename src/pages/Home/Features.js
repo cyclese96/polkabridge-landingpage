@@ -266,7 +266,7 @@ export default function Features() {
             ></div>
             <div>
               <div className={classes.analyticsHeading}>Total Volume($)</div>
-              <div className={classes.analyticsPara}>$100,000,000</div>
+              <div className={classes.analyticsPara}>{">"}$100,000,000</div>
             </div>
             <div
               style={{ borderLeft: "1px solid #616161", height: "60%" }}
