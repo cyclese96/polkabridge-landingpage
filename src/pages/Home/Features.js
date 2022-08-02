@@ -212,12 +212,13 @@ const useStyles = makeStyles((theme) => ({
   },
   videoFrame: {
     width: "100%",
-    height: "100%",
+    height: "30%",
     maxWidth: 900,
     minHeight: 506,
     borderRadius: 30,
-    [theme.breakpoints.down("md")]: {
-      minHeight: 200,
+
+    [theme.breakpoints.down("sm")]: {
+      minHeight: 300,
       height: "100%",
       padding: 10,
     },
