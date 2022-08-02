@@ -238,7 +238,7 @@ export default function Features() {
               <div className={classes.analyticsHeading}>
                 Total Value Locked($)
               </div>
-              <div className={classes.analyticsPara}>$10,000,000</div>
+              <div className={classes.analyticsPara}>{">"}$10,000,000</div>
             </div>
             <div
               style={{ borderLeft: "1px solid #616161", height: "60%" }}

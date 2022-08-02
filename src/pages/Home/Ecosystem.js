@@ -130,11 +130,9 @@ const useStyles = makeStyles((theme) => ({
   featureCardFull: {
     width: 640,
     height: "100%",
-
+    backgroundColor: "transparent",
     borderRadius: 30,
-    backgroundColor: "#161F30",
-    border: "2px solid #2F3A4D",
-    boxShadow: "0px 50px 200px rgba(0, 0, 0, 0.5)",
+
     [theme.breakpoints.down("sm")]: {
       paddingLeft: 0,
       paddingRight: 0,
@@ -160,7 +158,7 @@ export default function Ecosystem() {
           <div className="col-md-8">
             <div className="d-flex justify-content-center">
               <Hidden smDown>
-                <Card className={classes.featureCardFull}>
+                <div className={classes.featureCardFull}>
                   <iframe
                     width="640"
                     height="360"
@@ -171,21 +169,21 @@ export default function Ecosystem() {
                     allowfullscreen
                     style={{ borderRadius: 30 }}
                   ></iframe>
-                </Card>
+                </div>
               </Hidden>
               <Hidden mdUp>
-                <Card className={classes.featureCardFull}>
+                <div className={classes.featureCardFull}>
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/tsbRzb2S7mU?start=38"
+                    src="https://www.youtube.com/embed/nDTgKrdUCFU"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     style={{ borderRadius: 30 }}
                   ></iframe>
-                </Card>
+                </div>
               </Hidden>
             </div>
           </div>

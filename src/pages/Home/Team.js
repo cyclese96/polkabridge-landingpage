@@ -203,15 +203,15 @@ export default function Team() {
             <Fade right>
               <div className={classes.people}>
                 <img
-                  src="./images/team/henri.jpg"
+                  src="./images/team/amir.jpg"
                   alt="Henri"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Stephane Henri</h6>
-                <p className={classes.para}>Smart Contract Dev</p>
+                <h6 className={classes.title}>Amir Siddiqui</h6>
+                <p className={classes.para}>Frontend Engineer</p>
                 <Tooltip title="Github">
-                  <a href="https://www.linkedin.com/in/stephanehenri/">
-                    <IconButton aria-label="Github">
+                  <a href="https://www.linkedin.com/in/amirsiddiquiin/">
+                    <IconButton aria-label="Linkedin">
                       <LinkedIn className={classes.icon} />
                     </IconButton>
                   </a>

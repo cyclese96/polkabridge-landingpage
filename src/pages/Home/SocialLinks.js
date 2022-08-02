@@ -281,7 +281,6 @@ export default function SocialLinks() {
               </a>
             </div>
           </div>
-          https://www.youtube.com/channel/UCQC74p4WK9nsW3Rmxou-IrA
         </div>
       </div>
       <div className={classes.socialContainer}>
@@ -337,7 +336,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-            <div className="col-3 col-md-1 col-sm-3">
+            <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Reddit">
                   <a href="https://www.reddit.com/r/polkabridge_official/">
@@ -348,7 +347,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-            <div className="col-3 col-md-1 col-sm-3">
+            <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Instagram">
                   <a href="https://www.instagram.com/polkabridgeofficial/">
@@ -359,7 +358,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-            <div className="col-3 col-md-1 col-sm-3">
+            <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Discord">
                   <a href="https://discord.gg/tzemFksyZB">
@@ -375,7 +374,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-            <div className="col-3 col-md-1 col-sm-3">
+            <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Email">
                   <a href="mailto:support@polkabridge.org">
@@ -386,7 +385,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </div>
             </div>
-            <div className="col-3 col-md-1 col-sm-3">
+            <div className="col-2 col-md-1 col-sm-3">
               <div className={classes.iconWrapper}>
                 <Tooltip title="Youtube">
                   <a href="https://www.youtube.com/channel/UCQC74p4WK9nsW3Rmxou-IrA">
