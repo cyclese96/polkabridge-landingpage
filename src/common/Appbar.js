@@ -158,7 +158,7 @@ export default function PrimarySearchAppBar() {
             </ListItem>
           </Link>
         ))}{" "}
-        {[{ name: "Swap", id: "https://swap.polkabridge.org/" }].map(
+        {[{ name: "Launch App", id: "https://swap.polkabridge.org/" }].map(
           (tab, index) => (
             <a href={tab.id} className={classes.mobileLink}>
               <ListItem button key={tab.name}>

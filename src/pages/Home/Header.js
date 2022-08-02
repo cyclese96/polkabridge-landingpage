@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     width: "auto",
     textAlign: "left",
-    fontSize: "54px",
+    fontSize: "52px",
     lineHeight: "70px",
     fontWeight: 600,
     verticalAlign: "middle",
@@ -283,9 +283,9 @@ export default function Header() {
                 </Hidden>
                 <Pulse>
                   <h1 className={classes.heading}>
-                    First Cross-Chain &
+                    Decentralized All-in-one
                     <br />
-                    <span style={{}}>MultiChain AMM</span>
+                    <span style={{}}>Financial Application Platform</span>
                   </h1>
                 </Pulse>
                 <Pulse>
