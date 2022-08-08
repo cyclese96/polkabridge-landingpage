@@ -284,7 +284,7 @@ export default function Features() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/nDTgKrdUCFU"
+            src="https://www.youtube.com/embed/Mpm_qUEpKn0"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

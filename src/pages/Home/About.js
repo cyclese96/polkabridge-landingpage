@@ -139,7 +139,7 @@ export default function About() {
             </div>
             <div className="text-left mt-3">
               <Button
-                href="https://www.youtube.com/watch?v=tsbRzb2S7mU"
+                href="https://www.youtube.com/embed/nDTgKrdUCFU"
                 target="_blank"
                 variant="contained"
                 color="primary"
