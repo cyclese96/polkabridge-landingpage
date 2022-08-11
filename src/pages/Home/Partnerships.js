@@ -535,7 +535,55 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.certik.com/">
+                <img
+                  src="https://movenetwork.io/wp-content/uploads/2021/11/Certik-logo-300x300-01.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
 
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://unitycapitalvc.com/">
+                <img
+                  src="https://unitycapitalvc.com/assets/theme-assets/images-3d-animation/uniticapitial.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.v2blabs.com/">
+                <img
+                  src="https://www.v2blabs.com/_nuxt/img/Logo.6837bc2.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://www.koistarter.io/">
+                <img
+                  src="https://www.koistarter.io/images/logo.svg"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <p className={classes.subheading}>PolkaBridge Ecosystem</p>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 d-flex justify-content-center align-items-center ">
