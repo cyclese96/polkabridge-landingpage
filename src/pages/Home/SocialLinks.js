@@ -274,11 +274,7 @@ export default function SocialLinks() {
               >
                 <h5 className={classes.link}>Team & Partners</h5>
               </Link>
-              <a href="https://polkawar.com" target="_blank">
-                <h5 className={classes.link} style={{ color: "#D4047E" }}>
-                  PolkaWar
-                </h5>
-              </a>
+
             </div>
           </div>
         </div>
