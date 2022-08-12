@@ -502,7 +502,7 @@ export default function RoadmapNew() {
                     Integrate more chains into INO platform (BSC, Polygon,
                     MoonBeam...)
                   </li>
-                  <li className={classes.liActive}>Metaverse approach</li>
+
                   <li className={classes.liActive}>
                     Top exchange listing (Huobi, Binance...)
                   </li>
