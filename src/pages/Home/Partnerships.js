@@ -1,5 +1,6 @@
 import { Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import LaunchpadATH from "./LaunchpadATH";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -584,7 +585,7 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
-
+      <LaunchpadATH />
     </div>
   );
 }
