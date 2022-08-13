@@ -2,6 +2,32 @@ import { Card } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  background: {
+    paddingTop: 80,
+    paddingBottom: 80,
+    paddingLeft: "8%",
+    paddingRight: "8%",
+    backgroundColor: "transparent",
+    height: "100%",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+      paddingLeft: "1%",
+      paddingRight: "1%",
+    },
+  },
+  heading: {
+    color: "white",
+    textAlign: "center",
+    fontSize: 54,
+    fontWeight: 700,
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    margin: "0px 0px 12px",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "32px",
+    },
+  },
   itemWrapper: {
     marginLeft: 10,
     paddingLeft: 10,
@@ -37,399 +63,402 @@ const useStyles = makeStyles((theme) => ({
 export default function LaunchpadATH() {
   const classes = useStyles();
   return (
-    <div>
-      <div class="marquee-wrapper ">
-        <div class="marquee-block">
-          <div class="marquee-inner to-left">
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/alphadex.jpg"
-                      className={classes.logo}
-                    />
+    <div className={classes.background}>
+      <p className={classes.heading}> Funding raised projects</p>
+      <div>
+        <div class="marquee-wrapper ">
+          <div class="marquee-block">
+            <div class="marquee-inner to-left">
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/alphadex.jpg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>AlphaDex</div>
+                    <div className={classes.growth}>500X</div>
                   </div>
-                  <div className={classes.title}>AlphaDex</div>
-                  <div className={classes.growth}>500X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/pixelverse.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/pixelverse.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PixelVerse</div>
+                    <div className={classes.growth}>86X</div>
                   </div>
-                  <div className={classes.title}>PixelVerse</div>
-                  <div className={classes.growth}>86X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/peoplez.svg"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/peoplez.svg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PeopleZ</div>
+                    <div className={classes.growth}>50X</div>
                   </div>
-                  <div className={classes.title}>PeopleZ</div>
-                  <div className={classes.growth}>50X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/defactor.svg"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/defactor.svg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Defactor</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>Defactor</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PlayerMon</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>PlayerMon</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-            </span>
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/alphadex.jpg"
-                      className={classes.logo}
-                    />
+              </span>
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/alphadex.jpg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>AlphaDex</div>
+                    <div className={classes.growth}>500X</div>
                   </div>
-                  <div className={classes.title}>AlphaDex</div>
-                  <div className={classes.growth}>500X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/pixelverse.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/pixelverse.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PixelVerse</div>
+                    <div className={classes.growth}>86X</div>
                   </div>
-                  <div className={classes.title}>PixelVerse</div>
-                  <div className={classes.growth}>86X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/peoplez.svg"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/peoplez.svg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PeopleZ</div>
+                    <div className={classes.growth}>50X</div>
                   </div>
-                  <div className={classes.title}>PeopleZ</div>
-                  <div className={classes.growth}>50X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/defactor.svg"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/defactor.svg"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Defactor</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>Defactor</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PlayerMon</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>PlayerMon</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-            </span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="marquee-wrapper ">
-        <div class="marquee-block">
-          <div class="marquee-inner to-right">
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+        <div class="marquee-wrapper ">
+          <div class="marquee-block">
+            <div class="marquee-inner to-right">
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title} style={{ fontSize: 12 }}>
+                      Animal Concerts
+                    </div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title} style={{ fontSize: 12 }}>
-                    Animal Concerts
-                  </div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/widiland.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/widiland.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>WidiLand</div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title}>WidiLand</div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/tryhards.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/tryhards.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Try Hards</div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title}>Try Hards</div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PlayerMon</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>PlayerMon</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/shoefy.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/shoefy.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Shoefy</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Shoefy</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-            </span>
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+              </span>
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title} style={{ fontSize: 12 }}>
+                      Animal Concerts
+                    </div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title} style={{ fontSize: 12 }}>
-                    Animal Concerts
-                  </div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/widiland.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/widiland.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>WidiLand</div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title}>WidiLand</div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/tryhards.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/tryhards.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Try Hards</div>
+                    <div className={classes.growth}>20X</div>
                   </div>
-                  <div className={classes.title}>Try Hards</div>
-                  <div className={classes.growth}>20X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/playmon.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/playmon.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>PlayerMon</div>
+                    <div className={classes.growth}>30X</div>
                   </div>
-                  <div className={classes.title}>PlayerMon</div>
-                  <div className={classes.growth}>30X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/shoefy.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/shoefy.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Shoefy</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Shoefy</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-            </span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="marquee-wrapper ">
-        <div class="marquee-block">
-          <div class="marquee-inner to-left">
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/byn.png"
-                      className={classes.logo}
-                    />
+        <div class="marquee-wrapper ">
+          <div class="marquee-block">
+            <div class="marquee-inner to-left">
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/byn.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Beyond Finance</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Beyond Finance</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/grv.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/grv.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Graviton Zero</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Graviton Zero</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/polkawar.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/polkawar.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Polkawar</div>
+                    <div className={classes.growth}>6X</div>
                   </div>
-                  <div className={classes.title}>Polkawar</div>
-                  <div className={classes.growth}>6X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/calo.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/calo.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Calo</div>
+                    <div className={classes.growth}>5X</div>
                   </div>
-                  <div className={classes.title}>Calo</div>
-                  <div className={classes.growth}>5X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/torekko.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/torekko.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Torekko</div>
+                    <div className={classes.growth}>5X</div>
                   </div>
-                  <div className={classes.title}>Torekko</div>
-                  <div className={classes.growth}>5X</div>
                 </div>
-              </div>
-            </span>
-            <span>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/byn.png"
-                      className={classes.logo}
-                    />
+              </span>
+              <span>
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/byn.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Beyond Finance</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Beyond Finance</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/grv.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/grv.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Graviton Zero</div>
+                    <div className={classes.growth}>10X</div>
                   </div>
-                  <div className={classes.title}>Graviton Zero</div>
-                  <div className={classes.growth}>10X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/polkawar.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/polkawar.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Polkawar</div>
+                    <div className={classes.growth}>6X</div>
                   </div>
-                  <div className={classes.title}>Polkawar</div>
-                  <div className={classes.growth}>6X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/calo.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/calo.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Calo</div>
+                    <div className={classes.growth}>5X</div>
                   </div>
-                  <div className={classes.title}>Calo</div>
-                  <div className={classes.growth}>5X</div>
                 </div>
-              </div>
-              <div class="marquee-item">
-                <div className={classes.itemWrapper}>
-                  <div>
-                    <img
-                      src="/images/tokens/torekko.png"
-                      className={classes.logo}
-                    />
+                <div class="marquee-item">
+                  <div className={classes.itemWrapper}>
+                    <div>
+                      <img
+                        src="/images/tokens/torekko.png"
+                        className={classes.logo}
+                      />
+                    </div>
+                    <div className={classes.title}>Torekko</div>
+                    <div className={classes.growth}>5X</div>
                   </div>
-                  <div className={classes.title}>Torekko</div>
-                  <div className={classes.growth}>5X</div>
                 </div>
-              </div>
-            </span>
+              </span>
+            </div>
           </div>
         </div>
       </div>

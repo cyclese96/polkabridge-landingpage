@@ -138,6 +138,14 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 80,
     },
   },
+  logoMainHacken: {
+    width: "100%",
+    maxWidth: 55,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 45,
+    },
+  },
   ecologoMain: {
     width: "100%",
     maxWidth: 65,
@@ -585,6 +593,34 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.unicornventures.co.in/">
+                <img
+                  src="./images/unicornvent.jpeg"
+                  alt="logo"
+                  className={classes.logoMainHacken}
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://hacken.io/">
+                <img
+                  src="https://s2.coinmarketcap.com/static/img/coins/200x200/5583.png"
+                  alt="logo"
+                  className={classes.logoMainHacken}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <LaunchpadATH />
     </div>
   );
