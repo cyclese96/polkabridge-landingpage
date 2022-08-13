@@ -46,7 +46,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/alphadex.jpg"
+                      src="/images/tokens/alphadex.jpg"
                       className={classes.logo}
                     />
                   </div>
@@ -58,7 +58,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/pixelverse.png"
+                      src="/images/tokens/pixelverse.png"
                       className={classes.logo}
                     />
                   </div>
@@ -70,7 +70,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/peoplez.svg"
+                      src="/images/tokens/peoplez.svg"
                       className={classes.logo}
                     />
                   </div>
@@ -82,7 +82,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/defactor.svg"
+                      src="/images/tokens/defactor.svg"
                       className={classes.logo}
                     />
                   </div>
@@ -94,7 +94,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/alphadex.jpg"
+                      src="/images/tokens/alphadex.jpg"
                       className={classes.logo}
                     />
                   </div>
@@ -120,7 +120,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/pixelverse.png"
+                      src="/images/tokens/pixelverse.png"
                       className={classes.logo}
                     />
                   </div>
@@ -132,7 +132,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/peoplez.svg"
+                      src="/images/tokens/peoplez.svg"
                       className={classes.logo}
                     />
                   </div>
@@ -144,7 +144,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/defactor.svg"
+                      src="/images/tokens/defactor.svg"
                       className={classes.logo}
                     />
                   </div>
@@ -156,7 +156,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -176,7 +176,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -190,7 +190,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/widiland.png"
+                      src="/images/tokens/widiland.png"
                       className={classes.logo}
                     />
                   </div>
@@ -202,7 +202,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/tryhards.png"
+                      src="/images/tokens/tryhards.png"
                       className={classes.logo}
                     />
                   </div>
@@ -214,7 +214,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -226,7 +226,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/shoefy.png"
+                      src="/images/tokens/shoefy.png"
                       className={classes.logo}
                     />
                   </div>
@@ -240,7 +240,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -254,7 +254,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/widiland.png"
+                      src="/images/tokens/widiland.png"
                       className={classes.logo}
                     />
                   </div>
@@ -266,7 +266,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/tryhards.png"
+                      src="/images/tokens/tryhards.png"
                       className={classes.logo}
                     />
                   </div>
@@ -278,7 +278,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/playmon.png"
+                      src="/images/tokens/playmon.png"
                       className={classes.logo}
                     />
                   </div>
@@ -290,7 +290,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/shoefy.png"
+                      src="/images/tokens/shoefy.png"
                       className={classes.logo}
                     />
                   </div>
@@ -311,7 +311,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/byn.png"
+                      src="/images/tokens/byn.png"
                       className={classes.logo}
                     />
                   </div>
@@ -323,7 +323,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/grv.png"
+                      src="/images/tokens/grv.png"
                       className={classes.logo}
                     />
                   </div>
@@ -335,7 +335,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/polkawar.png"
+                      src="/images/tokens/polkawar.png"
                       className={classes.logo}
                     />
                   </div>
@@ -347,7 +347,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/calo.png"
+                      src="/images/tokens/calo.png"
                       className={classes.logo}
                     />
                   </div>
@@ -359,7 +359,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/torekko.png"
+                      src="/images/tokens/torekko.png"
                       className={classes.logo}
                     />
                   </div>
@@ -373,7 +373,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/byn.png"
+                      src="/images/tokens/byn.png"
                       className={classes.logo}
                     />
                   </div>
@@ -385,7 +385,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/grv.png"
+                      src="/images/tokens/grv.png"
                       className={classes.logo}
                     />
                   </div>
@@ -397,7 +397,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/polkawar.png"
+                      src="/images/tokens/polkawar.png"
                       className={classes.logo}
                     />
                   </div>
@@ -409,7 +409,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/calo.png"
+                      src="/images/tokens/calo.png"
                       className={classes.logo}
                     />
                   </div>
@@ -421,7 +421,7 @@ export default function LaunchpadATH() {
                 <div className={classes.itemWrapper}>
                   <div>
                     <img
-                      src="https://launchpad.polkabridge.org/img/tokens/torekko.png"
+                      src="/images/tokens/torekko.png"
                       className={classes.logo}
                     />
                   </div>
