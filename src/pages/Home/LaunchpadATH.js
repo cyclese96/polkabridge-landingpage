@@ -531,6 +531,12 @@ export default function LaunchpadATH() {
             </div>
           </div>
         </div>
+
+        <div className="text-center mt-3">
+          <a href="https://launchpad.polkabridge.org" target="_blank">
+            Explore our launchapd
+          </a>
+        </div>
       </div>
     </div>
   );
