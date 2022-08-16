@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     color: "white",
     textAlign: "center",
-    fontSize: 54,
+    fontSize: 50,
     fontWeight: 700,
     verticalAlign: "middle",
     wordSpacing: "0px",
@@ -193,6 +193,10 @@ const useStyles = makeStyles((theme) => ({
   listingsWrapper: {
     maxWidth: 700,
   },
+  listingsWrapper2: {
+    paddingTop: 5,
+    paddingBottom: 5,
+  },
   listingsWrappe2: {
     maxWidth: 900,
   },
@@ -286,12 +290,86 @@ export default function Partnerships() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <p className={classes.heading}> Partners</p>
+      <p className={classes.heading}> VCs Partners</p>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://unitycapitalvc.com/">
+                <img
+                  src="https://unitycapitalvc.com/assets/theme-assets/images-3d-animation/uniticapitial.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://oddiyana.ventures/">
+              <img
+                src="images/oddiyana.jpeg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+                style={{ borderRadius: 20 }}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.v2blabs.com/">
+                <img
+                  src="https://www.v2blabs.com/_nuxt/img/Logo.6837bc2.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <img
+                src="images/bmwcapital.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://zephyruscapital.com/">
+                <img
+                  src="https://zephyruscapital.com/wp-content/uploads/2021/12/logowhite.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://ucapital.vc/">
+                <img
+                  src="https://static.tildacdn.com/tild3834-3661-4463-b238-393837653962/UnrealCapital_logo_v.svg"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ marginTop: 80, marginBottom: 80 }}></div>
+      <p className={classes.heading}> Tech & Community Partners </p>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2" align="center">
             <div className={classes.celerWrapper}>
-              <a href="http://chinapolka.com/">
+              <a href="https://cbridge.celer.network/137/56/ANML">
                 <img
                   src="images/celer.png"
                   alt="logo"
@@ -355,6 +433,17 @@ export default function Partnerships() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.certik.com/">
+                <img
+                  src="https://movenetwork.io/wp-content/uploads/2021/11/Certik-logo-300x300-01.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="col-6 col-md-2" align="center">
             <div className={classes.imageWrapper}>
               <a href="https://tomochain.com/">
                 <img
@@ -365,15 +454,7 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <img
-                src="images/bmwcapital.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </div>
-          </div>
+
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://deeper.network/">
@@ -410,17 +491,18 @@ export default function Partnerships() {
               />
             </a>
           </div>
-
-          <div className="col-6 col-md-2">
-            <a href="https://oddiyana.ventures/">
-              <img
-                src="images/oddiyana.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-                style={{ borderRadius: 20 }}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://www.koistarter.io/">
+                <img
+                  src="https://www.koistarter.io/images/logo.svg"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
           </div>
+
           <div className="col-6 col-md-2">
             <a href="https://harmonylauncher.io/">
               <img
@@ -544,55 +626,7 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://www.certik.com/">
-                <img
-                  src="https://movenetwork.io/wp-content/uploads/2021/11/Certik-logo-300x300-01.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
 
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://unitycapitalvc.com/">
-                <img
-                  src="https://unitycapitalvc.com/assets/theme-assets/images-3d-animation/uniticapitial.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://www.v2blabs.com/">
-                <img
-                  src="https://www.v2blabs.com/_nuxt/img/Logo.6837bc2.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapperCard}>
-              <a href="https://www.koistarter.io/">
-                <img
-                  src="https://www.koistarter.io/images/logo.svg"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2" align="center">
