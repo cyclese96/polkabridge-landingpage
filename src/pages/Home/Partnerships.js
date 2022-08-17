@@ -361,6 +361,18 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://www.unicornventures.co.in/">
+                <img
+                  src="./images/unicornvent.jpeg"
+                  alt="logo"
+                  className={classes.logoMainHacken}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div style={{ marginTop: 80, marginBottom: 80 }}></div>
@@ -382,17 +394,7 @@ export default function Partnerships() {
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="http://chinapolka.com/">
-                <img
-                  src="images/chinapolka.png"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
+
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://polygon.technology/">
@@ -404,18 +406,18 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-
           <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://quickswap.exchange/">
+            <div className={classes.imageWrapper}>
+              <a href="https://tomochain.com/">
                 <img
-                  src="images/quickswap.png"
+                  src="images/tmochain.svg"
                   alt="logo"
-                  className={classes.imageWrapper}
+                  className={classes.imageWrapperNewTomo}
                 />
               </a>
             </div>
           </div>
+
 
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
@@ -427,6 +429,17 @@ export default function Partnerships() {
                 />
               </a>
             </div>
+          </div>
+
+          <div className="col-6 col-md-2">
+            <a href="https://pinknode.io/">
+              <img
+                src="images/pinknode.jpeg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+                style={{ borderRadius: 20 }}
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -444,12 +457,12 @@ export default function Partnerships() {
             </div>
           </div>
           <div className="col-6 col-md-2" align="center">
-            <div className={classes.imageWrapper}>
-              <a href="https://tomochain.com/">
+            <div className={classes.logoWrapper}>
+              <a href="https://hacken.io/">
                 <img
-                  src="images/tmochain.svg"
+                  src="https://s2.coinmarketcap.com/static/img/coins/200x200/5583.png"
                   alt="logo"
-                  className={classes.imageWrapperNewTomo}
+                  className={classes.logoMainHacken}
                 />
               </a>
             </div>
@@ -482,15 +495,7 @@ export default function Partnerships() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row flex-row justify-content-center text-center ">
-          <div className="col-6 col-md-2">
-            <a href="https://www.lunapad.co/">
-              <img
-                src="images/lunapad.png"
-                alt="lunapad"
-                className={classes.imageWrapperNew}
-              />
-            </a>
-          </div>
+
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapperCard}>
               <a href="https://www.koistarter.io/">
@@ -513,15 +518,28 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-2">
-            <a href="https://pinknode.io/">
-              <img
-                src="images/pinknode.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-                style={{ borderRadius: 20 }}
-              />
-            </a>
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapperCard}>
+              <a href="https://kommunitas.net/">
+                <img
+                  src="images/kommunitas.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="col-6 col-md-2" align="center">
+            <div className={classes.logoWrapper}>
+              <a href="https://fantomlive.finance/">
+                <img
+                  src="images/fantomlive.png"
+                  alt="logo"
+                  className={classes.imageWrapperCardBlack}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -591,17 +609,7 @@ export default function Partnerships() {
             </div>
           </div>
 
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://getsafle.com/">
-                <img
-                  src="images/safle.svg"
-                  alt="logo"
-                  className={classes.logoMain}
-                />
-              </a>
-            </div>
-          </div>
+
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://bitkeep.com/">
@@ -614,10 +622,10 @@ export default function Partnerships() {
             </div>
           </div>
           <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapperCard}>
-              <a href="https://kommunitas.net/">
+            <div className={classes.logoWrapper}>
+              <a href="https://getsafle.com/">
                 <img
-                  src="images/kommunitas.png"
+                  src="images/safle.svg"
                   alt="logo"
                   className={classes.logoMain}
                 />
@@ -627,33 +635,7 @@ export default function Partnerships() {
         </div>
       </div>
 
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-4 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://www.unicornventures.co.in/">
-                <img
-                  src="./images/unicornvent.jpeg"
-                  alt="logo"
-                  className={classes.logoMainHacken}
-                />
-              </a>
-            </div>
-          </div>
 
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://hacken.io/">
-                <img
-                  src="https://s2.coinmarketcap.com/static/img/coins/200x200/5583.png"
-                  alt="logo"
-                  className={classes.logoMainHacken}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <LaunchpadATH />
     </div>

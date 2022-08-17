@@ -184,6 +184,10 @@ export default function SocialLinks() {
               <a href="mailto:support@polkabridge.org" target="_blank">
                 <h5 className={classes.link}>Contact Us</h5>
               </a>
+
+              <a href="https://polkabridge.medium.com/polkabridge-ventures-venture-capital-fund-brings-richness-to-the-polkabridge-ecosystem-584cc4530a76" target="_blank">
+                <h5 className={classes.link}>PolkaBridge Ventures</h5>
+              </a>
             </div>
           </div>
           <div className="col-6 col-md-3 d-flex justify-content-start mt-3">

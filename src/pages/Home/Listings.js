@@ -88,6 +88,15 @@ export default function Listings() {
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade left>
             <div className="col-6 col-md-3 my-2">
+              <a href="https://swap.polkabridge.org/">
+                <img
+                  src="images/pbramm.png"
+                  alt="logo"
+                  className={classes.imageWrapper}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-3 my-2">
               <a href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
                 <img
                   src="images/uniswap.png"
