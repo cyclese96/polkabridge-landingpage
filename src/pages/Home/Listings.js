@@ -51,7 +51,14 @@ const useStyles = makeStyles((theme) => ({
       height: "50px",
     },
   },
-
+  imageWrapperPBR: {
+    padding: 7,
+    height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 2,
+      height: "50px",
+    },
+  },
   highlight: {
     color: theme.palette.pbr.primary,
   },
@@ -87,12 +94,12 @@ export default function Listings() {
       <div className={classes.listingsWrapper}>
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade left>
-            <div className="col-6 col-md-3 my-2">
+            <div className="col-6 col-md-2 my-2">
               <a href="https://swap.polkabridge.org/">
                 <img
-                  src="images/pbramm.png"
+                  src="./polkabridge.png"
                   alt="logo"
-                  className={classes.imageWrapper}
+                  className={classes.imageWrapperPBR}
                 />
               </a>
             </div>
@@ -122,7 +129,7 @@ export default function Listings() {
                 />
               </a>
             </div>
-            <div className="col-6 col-md-2 my-2">
+            <div className="col-6 col-md-3 my-2">
               <a href="https://www.gate.io/trade/PBR_USDT">
                 <img
                   src="images/gate.png"
