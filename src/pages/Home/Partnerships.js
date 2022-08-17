@@ -327,11 +327,13 @@ export default function Partnerships() {
           </div>
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
-              <img
-                src="images/bmwcapital.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
+              <a href="http://www.bmw-vc.com/">
+                <img
+                  src="images/bmwcapital.png"
+                  alt="logo"
+                  className={classes.logoMain}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -394,7 +396,15 @@ export default function Partnerships() {
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-
+          <div className="col-6 col-md-2">
+            <a href="http://chinapolka.com/#/">
+              <img
+                src="images/chinapolka.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
+          </div>
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://polygon.technology/">
@@ -431,16 +441,7 @@ export default function Partnerships() {
             </div>
           </div>
 
-          <div className="col-6 col-md-2">
-            <a href="https://pinknode.io/">
-              <img
-                src="images/pinknode.jpeg"
-                alt="logo"
-                className={classes.imageWrapperNew}
-                style={{ borderRadius: 20 }}
-              />
-            </a>
-          </div>
+
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
@@ -631,6 +632,16 @@ export default function Partnerships() {
                 />
               </a>
             </div>
+          </div>
+          <div className="col-6 col-md-2">
+            <a href="https://pinknode.io/">
+              <img
+                src="images/pinknode.jpeg"
+                alt="logo"
+                className={classes.imageWrapperNew}
+                style={{ borderRadius: 20 }}
+              />
+            </a>
           </div>
         </div>
       </div>
