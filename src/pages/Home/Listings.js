@@ -59,6 +59,22 @@ const useStyles = makeStyles((theme) => ({
       height: "50px",
     },
   },
+  imageWrapperHuobi: {
+    padding: 7,
+    height: "55px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 2,
+      height: "40px",
+    },
+  },
+  imageWrapperUni: {
+    padding: 18,
+    height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 5,
+      height: "45px",
+    },
+  },
   highlight: {
     color: theme.palette.pbr.primary,
   },
@@ -95,6 +111,15 @@ export default function Listings() {
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade left>
             <div className="col-6 col-md-2 my-2">
+              <a href="https://www.huobi.com/en-us/exchange/pbr_usdt">
+                <img
+                  src="https://s.yimg.com/ny/api/res/1.2/TwIMeiFdaMM5IAjRFut0yQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTE5Mg--/https://s.yimg.com/uu/api/res/1.2/lsn1OA_MEEHgrpl1DZMP9g--~B/aD0xNDQ7dz00Nzk7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/news_direct/1f4fe887ff10441ce7b2f2ae3db0f395"
+                  alt="logo"
+                  className={classes.imageWrapperHuobi}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-2 my-2">
               <a href="https://swap.polkabridge.org/">
                 <img
                   src="./polkabridge.png"
@@ -103,12 +128,12 @@ export default function Listings() {
                 />
               </a>
             </div>
-            <div className="col-6 col-md-3 my-2">
+            <div className="col-6 col-md-2 my-2">
               <a href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
                 <img
                   src="images/uniswap.png"
                   alt="logo"
-                  className={classes.imageWrapper}
+                  className={classes.imageWrapperUni}
                 />
               </a>
             </div>
@@ -129,7 +154,7 @@ export default function Listings() {
                 />
               </a>
             </div>
-            <div className="col-6 col-md-3 my-2">
+            <div className="col-6 col-md-2 my-2">
               <a href="https://www.gate.io/trade/PBR_USDT">
                 <img
                   src="images/gate.png"
