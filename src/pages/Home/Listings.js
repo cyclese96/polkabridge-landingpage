@@ -59,6 +59,14 @@ const useStyles = makeStyles((theme) => ({
       height: "50px",
     },
   },
+  imageWrapperGate: {
+    padding: 17,
+    height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      padding: 5,
+      height: "50px",
+    },
+  },
   imageWrapperHuobi: {
     padding: 7,
     height: "55px",
@@ -111,7 +119,10 @@ export default function Listings() {
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade left>
             <div className="col-6 col-md-2 my-2">
-              <a href="https://www.huobi.com/en-us/exchange/pbr_usdt">
+              <a
+                href="https://www.huobi.com/en-us/exchange/pbr_usdt"
+                target="_blank"
+              >
                 <img
                   src="https://s.yimg.com/ny/api/res/1.2/TwIMeiFdaMM5IAjRFut0yQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTE5Mg--/https://s.yimg.com/uu/api/res/1.2/lsn1OA_MEEHgrpl1DZMP9g--~B/aD0xNDQ7dz00Nzk7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/news_direct/1f4fe887ff10441ce7b2f2ae3db0f395"
                   alt="logo"
@@ -120,33 +131,7 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-2 my-2">
-              <a href="https://swap.polkabridge.org/">
-                <img
-                  src="./polkabridge.png"
-                  alt="logo"
-                  className={classes.imageWrapperPBR}
-                />
-              </a>
-            </div>
-            <div className="col-6 col-md-2 my-2">
-              <a href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695">
-                <img
-                  src="images/uniswap.png"
-                  alt="logo"
-                  className={classes.imageWrapperUni}
-                />
-              </a>
-            </div>
-            <div className="col-6 col-md-2 my-2">
-              <a href="https://quickswap.exchange/#/swap?inputCurrency=0x0d6ae2a429df13e44a07cd2969e085e4833f64a0&outputCurrency=0xc2132d05d31c914a87c6611c10748aeb04b58e8f">
-                <img
-                  src="images/quickswap.png"
-                  className={classes.imageWrapper}
-                />
-              </a>
-            </div>
-            <div className="col-6 col-md-2 my-2">
-              <a href="https://trade.kucoin.com/trade/PBR-USDT">
+              <a href="https://trade.kucoin.com/trade/PBR-USDT" target="_blank">
                 <img
                   src="images/kucoin.png"
                   alt="kucoin"
@@ -159,6 +144,38 @@ export default function Listings() {
                 <img
                   src="images/gate.png"
                   alt="logo"
+                  className={classes.imageWrapperGate}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-2 my-2">
+              <a href="https://swap.polkabridge.org/" target="_blank">
+                <img
+                  src="./polkabridge.png"
+                  alt="logo"
+                  className={classes.imageWrapperPBR}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-2 my-2">
+              <a
+                href="https://app.uniswap.org/#/swap?inputCurrency=0x298d492e8c1d909d3f63bc4a36c66c64acb3d695"
+                target="_blank"
+              >
+                <img
+                  src="images/uniswap.png"
+                  alt="logo"
+                  className={classes.imageWrapperUni}
+                />
+              </a>
+            </div>
+            <div className="col-6 col-md-2 my-2">
+              <a
+                href="https://quickswap.exchange/#/swap?inputCurrency=0x0d6ae2a429df13e44a07cd2969e085e4833f64a0&outputCurrency=0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+                target="_blank"
+              >
+                <img
+                  src="images/quickswap.png"
                   className={classes.imageWrapper}
                 />
               </a>
@@ -167,10 +184,10 @@ export default function Listings() {
         </div>
         <div className="mt-3 row flex-row justify-content-center g-0 text-center">
           <Fade right>
-            <div className="col-6 col-md-2 my-2">
+            <div className="col-6 col-md-3 my-2">
               <a href="https://www.mexc.com/exchange/PBR_USDT">
                 <img
-                  src="images/mxc-logo.png"
+                  src="https://i.pinimg.com/originals/76/2f/e8/762fe8bcce8e0d3b987abec290885d1e.png"
                   alt="logo"
                   style={{ padding: 12 }}
                   className={classes.cmcLogo}
@@ -182,7 +199,7 @@ export default function Listings() {
                 <img src="images/bibox.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-3 my-2">
+            <div className="col-6 col-md-2 my-2">
               <a href="https://www.bitmart.com/trade/en?symbol=PBR_USDT&layout=pro">
                 <img src="images/bitmart.svg" className={classes.cmcLogo} />
               </a>
