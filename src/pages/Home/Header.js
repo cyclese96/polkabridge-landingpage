@@ -10,6 +10,8 @@ import {
 } from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
 import { getPbrStats } from "./../../actions/apiActions";
+import Lottie from "lottie-react";
+import headerImage from "./../../common/header-lottie.json";
 
 const useStyles = makeStyles((theme) => ({
   spacing: {
@@ -337,11 +339,7 @@ export default function Header() {
               </div>
               <div className="col-md-5 d-flex align-items-center">
                 <Hidden xsDown>
-                  {" "}
-                  <img
-                    src="/images/multichain.png"
-                    className={classes.demoImage}
-                  />
+                  <Lottie animationData={headerImage} loop={true} />
                 </Hidden>
               </div>
             </div>
