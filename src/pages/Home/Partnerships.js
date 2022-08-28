@@ -428,7 +428,6 @@ export default function Partnerships() {
             </div>
           </div>
 
-
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://casperlabs.io/">
@@ -440,8 +439,6 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-
-
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
@@ -496,7 +493,6 @@ export default function Partnerships() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row flex-row justify-content-center text-center ">
-
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapperCard}>
               <a href="https://www.koistarter.io/">
@@ -610,7 +606,6 @@ export default function Partnerships() {
             </div>
           </div>
 
-
           <div className="col-6 col-md-2" align="center">
             <div className={classes.logoWrapper}>
               <a href="https://bitkeep.com/">
@@ -645,10 +640,6 @@ export default function Partnerships() {
           </div>
         </div>
       </div>
-
-
-
-      <LaunchpadATH />
     </div>
   );
 }

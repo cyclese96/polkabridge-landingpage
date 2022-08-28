@@ -1,31 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Partnerships from "./Partnerships";
-import About from "./About";
-import Features from "./Features";
-import HowItWorks from "./HowItWorks";
-import PBRToken from "./PBRToken";
 // import Team from './Team';
 import Roadmap from "./Roadmap";
 import SocialLinks from "./SocialLinks";
-import Footer from "../../common/Footer";
-import Listings from "./Listings";
-import Tokenomics from "./Tokenomics";
-import ReleaseSchedule from "./UpcomingProduct";
-import Ecosystem from "./Who";
 import Header from "./Header";
 import { readCache, addDataIntoCache } from "../../actions/cacheActions";
 import { Dialog, Slide, Backdrop } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import DexPopupContent from "../../components/DexPopup";
-import Team from "./Team";
-import Achievements from "./Achievements";
-import RoadmapNew from "./RoadmapNew";
-import UpcomingProduct from "./UpcomingProduct";
 import Who from "./Who";
-import VCPartners from "./VCPartners";
 import Portfolio from "./Portfolio";
 import GetInTouch from "./GetInTouch";
 import AppbarVentures from "../../common/AppbarVentures";
+import Partnerships from "../Home/Partnerships";
+import About from "./About";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -85,18 +72,16 @@ export default function Ventures() {
         <section id="partnerships">
           <Partnerships />
         </section>
-        <section id="partnerships">
-          <VCPartners />
-        </section>
+
         <section id="partnerships">
           <Portfolio />
         </section>
         <section id="partnerships">
           <About />
         </section>
-        <section id="partnerships">
+        {/* <section id="partnerships">
           <GetInTouch />
-        </section>
+        </section> */}
         <section>
           <SocialLinks />
         </section>
