@@ -13,6 +13,7 @@ import GetInTouch from "./GetInTouch";
 import AppbarVentures from "../../common/AppbarVentures";
 import Partnerships from "../Home/Partnerships";
 import About from "./About";
+import TechPartners from "../Home/TechPartners";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -69,19 +70,18 @@ export default function Ventures() {
           <Who />
         </section>
 
-        <section id="partnerships">
+        <section id="partners">
           <Partnerships />
         </section>
 
-        <section id="partnerships">
+        <section id="portfolio">
           <Portfolio />
         </section>
-        <section id="partnerships">
+        <section id="about">
           <About />
         </section>
-        {/* <section id="partnerships">
-          <GetInTouch />
-        </section> */}
+        <GetInTouch />
+
         <section>
           <SocialLinks />
         </section>

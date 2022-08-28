@@ -13,7 +13,7 @@ import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -180,55 +180,45 @@ export default function AppbarVentures() {
         position="fixed"
         style={{ background: "black", boxShadow: "none" }}
       >
-        <Toolbar className="d-flex justify-content-evenly">
+        <Toolbar className="d-flex justify-content-around">
           <Link to="/">
             {" "}
             <Typography className={classes.title} variant="h6" noWrap>
-              <img src="./polkabridge.png" alt="logo" height="60px" />
+              <img src="./PBR_VENTURES.png" alt="logo" height="60px" />
             </Typography>
           </Link>
           <div className="d-flex justify-content-end">
-            <Link to="/">
-              <Typography className={classes.tabs} variant="body1" noWrap>
-                Our Products <DotCircle />
-              </Typography>
-            </Link>
-            <Link to="/">
+            <a href="https://polkabridge.org">
               <Typography className={classes.tabs} variant="body1">
-                Ecosystem
-                <DotCircle />
+                PolkaBridge Finance <DotCircle />
               </Typography>
-            </Link>
-            <Link to="/">
-              <Typography className={classes.tabs} variant="body1" noWrap>
-                Achievements <DotCircle />
-              </Typography>
-            </Link>
-            <Link to="/">
+            </a>
+            <Link
+              activeClass="active"
+              to="partners"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
               <Typography className={classes.tabs} variant="body1">
-                $PBR Token <DotCircle />
+                Partners <DotCircle />
               </Typography>
             </Link>
-            <Link to="/">
+            <Link
+              activeClass="active"
+              to="portfolio"
+              smooth={true}
+              offset={0}
+              duration={500}
+              delay={0}
+            >
               <Typography className={classes.tabs} variant="body1">
-                Roadmap <DotCircle />
+                Portfolio <DotCircle />
               </Typography>
             </Link>
-            <Link to="/">
-              <Typography className={classes.tabs} variant="body1">
-                Team <DotCircle />
-              </Typography>
-            </Link>
-            <Typography className={classes.tabs} variant="body1">
-              Ventures <DotCircle />
-            </Typography>
-            <div className={classes.sectionDesktop}>
-              <CustomButton
-                title={"Launch App"}
-                link={"https://swap.polkabridge.org"}
-              ></CustomButton>
-            </div>
           </div>
+
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
               <img src="./polkabridge.png" alt="logo" height="50px" />

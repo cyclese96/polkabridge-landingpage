@@ -170,123 +170,10 @@ export default function SocialLinks() {
 
   return (
     <div className={classes.background}>
-      <div className="container">
-        <div className="row d-flex flex-row justify-content-center">
-          <div className="col-6 col-md-3  d-flex justify-content-start mt-3">
-            <div>
-              <a href="https://polkabridge.org">
-                <h5 className={classes.link}>Home </h5>
-              </a>
-              <a href="https://polkabridge.medium.com/" target="_blank">
-                <h5 className={classes.link}>Blog</h5>
-              </a>
-
-              <a href="mailto:support@polkabridge.org" target="_blank">
-                <h5 className={classes.link}>Contact Us</h5>
-              </a>
-
-              <a href="https://polkabridge.medium.com/polkabridge-ventures-venture-capital-fund-brings-richness-to-the-polkabridge-ecosystem-584cc4530a76" target="_blank">
-                <h5 className={classes.link}>PolkaBridge Ventures</h5>
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-3 d-flex justify-content-start mt-3">
-            <div>
-              <a href="https://farm.polkabridge.org" target="_blank">
-                <h5 className={classes.link}>Farming</h5>
-              </a>
-              <a href="https://stake.polkabridge.org" target="_blank">
-                <h5 className={classes.link}>Staking</h5>
-              </a>
-              <a href="https://launchpad.polkabridge.org" target="_blank">
-                <h5 className={classes.link}>Launchpad</h5>
-              </a>
-              <a href="https://ino.polkabridge.org" target="_blank">
-                <h5 className={classes.link}>INO</h5>
-              </a>
-              <a href="https://swap.polkabridge.org" target="_blank">
-                <h5 className={classes.link}>Swap</h5>
-              </a>
-              <a href="https://t.me/polkabridge/1221" target="_blank">
-                <h5 className={classes.link}>P2P</h5>
-              </a>
-              <a
-                href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Insights</h5>
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-3  d-flex justify-content-start mt-3">
-            <div>
-              <a
-                href="https://etherscan.io/token/0x298d492e8c1d909d3f63bc4a36c66c64acb3d695"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Ethereum Contract</h5>
-              </a>
-              <a
-                href="https://bscscan.com/token/0x1d1cb8997570e73949930c01fe5796c88d7336c6"
-                target="_blank"
-              >
-                <h5 className={classes.link}>BSC Contract</h5>
-              </a>
-              <a
-                href="https://polygonscan.com/token/0x0d6ae2a429df13e44a07cd2969e085e4833f64a0"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Polygon Contract</h5>
-              </a>
-              <a
-                href="https://wallet.polygon.technology/bridge"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Polygon Bridge</h5>
-              </a>
-              <a
-                href="https://cbridge.celer.network/#/transfer"
-                target="_blank"
-              >
-                <h5 className={classes.link}>BSC Bridge</h5>
-              </a>
-            </div>
-          </div>
-          <div className="col-6 col-md-3  d-flex justify-content-start mt-3">
-            <div>
-              <a
-                href="https://polkabridge.org/docs/whitepaper.pdf"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Whitepaper</h5>
-              </a>
-
-              <a
-                href="https://docs.google.com/forms/u/0/d/1ceBZIL8xDNBJWYzZ4j11lhU9MMke8usrNgnPEoSIMf0/viewform?edit_requested=true"
-                target="_blank"
-              >
-                <h5 className={classes.link}>Apply for IDO</h5>
-              </a>
-
-              <Link
-                activeClass="active"
-                to="team"
-                smooth={true}
-                offset={0}
-                duration={500}
-                delay={0}
-              >
-                <h5 className={classes.link}>Team & Partners</h5>
-              </Link>
-
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={classes.socialContainer}>
         <div className="container text-center" style={{ paddingTop: 30 }}>
           <div>
-            <img src="./polkabridge.png" alt="logo" height="40px" />
+            <img src="./PBR_VENTURES.png" alt="logo" height="40px" />
           </div>
           <div className="row flex-row justify-content-center mt-4">
             <div className="col-3 col-md-1 col-sm-3">
@@ -404,45 +291,6 @@ export default function SocialLinks() {
           </p>
         </div>
       </div>
-
-      {/* <div className={classes.newsletterCard}>
-        <div className="text-center">
-          <h6 className={classes.heading}>Get in touch Now!</h6>
-        </div>
-        <div className="d-flex justify-content-center">
-          <div className={classes.subscribeCard}>
-            <p className={classes.subheading}>Need more updates?</p>
-            <div className="px-5 py-3">
-              <div
-                className="d-flex justify-content-between align-items-center"
-                style={{
-                  backgroundColor: "white",
-                  borderRadius: 10,
-                  height: 45,
-                  paddingLeft: 10,
-                }}
-              >
-                {" "}
-                <Input
-                  disableUnderline={true}
-                  placeholder="Type your email here"
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: 10,
-                    height: 45,
-                    paddingLeft: 10,
-                  }}
-                  fullWidth
-                />
-                <Button className={classes.button}>Subscribe</Button>
-              </div>
-            </div>
-            <p className={classes.para}>
-              We will send you development updates right into your inbox!
-            </p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }
