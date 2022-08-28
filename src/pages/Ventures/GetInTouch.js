@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -134,6 +135,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     maxWidth: 100,
     filter: "brightness(0) invert(1)",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 80,
+    },
+  },
+  logoMainNoFilter: {
+    width: "100%",
+    maxWidth: 100,
+    filter: " invert(1)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       maxWidth: 80,
@@ -286,52 +296,73 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
     },
   },
+  button: {
+    borderRadius: "10px",
+    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    lineHeight: "24px",
+    verticalAlign: "baseline",
+    letterSpacing: "-1px",
+    margin: 0,
+    marginTop: 5,
+    color: "#ffffff",
+    padding: "8px 16px 8px 16px",
+    fontWeight: 600,
+    fontSize: "1.02vw",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+    },
+  },
 }));
-export default function VCPartners() {
+export default function GetInTouch() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <p className={classes.heading}> VC'S PARTNERS</p>
+      <p className={classes.heading}> GET IN TOUCH NOW!</p>
 
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
+      <div class="row container mt-4">
+        <div class="col">
+          <div className="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              style={{
+                height: "50px",
+                backgroundColor: "#161F30",
+                border: "none",
+              }}
+            />
+          </div>{" "}
+          <div className="mt-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              style={{
+                height: "50px",
+                backgroundColor: "#161F30",
+                border: "none",
+              }}
+            />
           </div>
         </div>
+        <div class="col">
+          <textarea
+            type="text"
+            class="form-control"
+            placeholder="Message"
+            style={{
+              height: "100%",
+              backgroundColor: "#161F30",
+              border: "none",
+            }}
+          />
+        </div>
+      </div>
+      <div className="text-center mt-3">
+        <Button variant="contained" color="primary" className={classes.button}>
+          Submit Message
+        </Button>
       </div>
     </div>
   );

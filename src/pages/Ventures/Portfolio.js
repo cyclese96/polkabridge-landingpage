@@ -139,6 +139,14 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 80,
     },
   },
+  logoMainNoFilter: {
+    width: "100%",
+    maxWidth: 100,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 80,
+    },
+  },
   logoMainHacken: {
     width: "100%",
     maxWidth: 55,
@@ -296,11 +304,30 @@ export default function Portfolio() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
+            <a href="https://www.aethergames.io/">
               <img
-                src="images/chinapolka.png"
+                src="https://www.aethergames.io/static/media/Logo.6d355d0b397d1925df34.png"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainNoFilter}
+              />
+            </a>
+          </div>
+          <div className="col-4 col-md-2">
+            <a href="https://www.playzap.games/">
+              <img
+                src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
+                alt="logo"
+                className={classes.logoMainNoFilter}
+              />
+            </a>
+          </div>
+
+          <div className="col-4 col-md-2">
+            <a href="https://mirrorworld.fun/">
+              <img
+                src="https://d39gv0w0je0u4w.cloudfront.net/ui/v1_0_0/mirror_world_logo_withtext.svg"
+                alt="logo"
+                className={classes.logoMainNoFilter}
               />
             </a>
           </div>
@@ -309,56 +336,7 @@ export default function Portfolio() {
               <img
                 src="images/chinapolka.png"
                 alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainNoFilter}
               />
             </a>
           </div>

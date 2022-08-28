@@ -21,6 +21,7 @@ import Team from "./Team";
 import Achievements from "./Achievements";
 import RoadmapNew from "./RoadmapNew";
 import UpcomingProduct from "./UpcomingProduct";
+import PrimarySearchAppBar from "../../common/Appbar";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -66,46 +67,48 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={classes.background}>
-      <section id="header">
-        <Header />
-      </section>
-      <section id="products">
-        <Features />
-      </section>
-      <section id="ecosystem">
-        <Ecosystem />
-      </section>
-      <section id="achievements">
-        <Achievements />
-      </section>
+    <div>
+      <PrimarySearchAppBar />
+      <div className={classes.background}>
+        <section id="header">
+          <Header />
+        </section>
+        <section id="products">
+          <Features />
+        </section>
+        <section id="ecosystem">
+          <Ecosystem />
+        </section>
+        <section id="achievements">
+          <Achievements />
+        </section>
 
-      <section id="achievements">
-        <UpcomingProduct />
-      </section>
+        <section id="achievements">
+          <UpcomingProduct />
+        </section>
 
-      <section id="token">
-        <Tokenomics />
-      </section>
+        <section id="token">
+          <Tokenomics />
+        </section>
 
-      <section id="roadmap">
-        <RoadmapNew />
-      </section>
-      <section id="team">
-        <Team />
-      </section>
+        <section id="roadmap">
+          <RoadmapNew />
+        </section>
+        <section id="team">
+          <Team />
+        </section>
 
-      <section id="partnerships">
-        <Partnerships />
-      </section>
-      <section id="exchange">
-        <Listings />
-      </section>
-      <section>
-        <SocialLinks />
-      </section>
+        <section id="partnerships">
+          <Partnerships />
+        </section>
+        <section id="exchange">
+          <Listings />
+        </section>
+        <section>
+          <SocialLinks />
+        </section>
 
-      {/* 
+        {/* 
     
       <hr style={{ color: "#e9e9e9" }} />
       <section id="about">
@@ -152,6 +155,7 @@ export default function Home() {
       >
         <DexPopupContent closePopup={() => setClaimPopup(false)} />
       </Dialog>{" "} */}
+      </div>
     </div>
   );
 }

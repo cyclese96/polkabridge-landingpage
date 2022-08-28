@@ -333,77 +333,10 @@ export default function Partnerships() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
           <div className="col-4 col-md-2">
             <a href="http://chinapolka.com/#/">
               <img

@@ -11,7 +11,6 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Appbar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/ventures" element={<Ventures />}></Route>

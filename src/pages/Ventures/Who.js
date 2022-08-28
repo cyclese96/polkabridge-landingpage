@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     fontWeight: 400,
     color: "#e5e5e5",
+    letterSpacing: "-0.2px",
   },
 
   container: { paddingTop: 50, paddingBottom: 50 },

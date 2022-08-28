@@ -13,7 +13,7 @@ import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function AppbarVentures() {
   const classes = useStyles();
 
   const [state, setState] = React.useState({
@@ -188,84 +188,40 @@ export default function PrimarySearchAppBar() {
             </Typography>
           </Link>
           <div className="d-flex justify-content-end">
-            <Link
-              activeClass="active"
-              to="products"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1" noWrap>
                 Our Products <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="ecosystem"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1">
                 Ecosystem
                 <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="achievements"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1" noWrap>
                 Achievements <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="token"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1">
                 $PBR Token <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="roadmap"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1">
                 Roadmap <DotCircle />
               </Typography>
             </Link>
-            <Link
-              activeClass="active"
-              to="team"
-              smooth={true}
-              offset={0}
-              duration={500}
-              delay={0}
-            >
+            <Link to="/">
               <Typography className={classes.tabs} variant="body1">
                 Team <DotCircle />
               </Typography>
             </Link>
-            <a href="/ventures">
-              <Typography className={classes.tabs} variant="body1">
-                Ventures <DotCircle />
-              </Typography>
-            </a>
+            <Typography className={classes.tabs} variant="body1">
+              Ventures <DotCircle />
+            </Typography>
             <div className={classes.sectionDesktop}>
               <CustomButton
                 title={"Launch App"}

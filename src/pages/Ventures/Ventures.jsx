@@ -24,6 +24,8 @@ import UpcomingProduct from "./UpcomingProduct";
 import Who from "./Who";
 import VCPartners from "./VCPartners";
 import Portfolio from "./Portfolio";
+import GetInTouch from "./GetInTouch";
+import AppbarVentures from "../../common/AppbarVentures";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -69,30 +71,36 @@ export default function Ventures() {
   }, []);
 
   return (
-    <div className={classes.background}>
-      <section id="header">
-        <Header />
-      </section>
+    <div>
+      <div className={classes.background}>
+        <AppbarVentures />
+        <section id="header">
+          <Header />
+        </section>
 
-      <section id="ecosystem">
-        <Who />
-      </section>
+        <section id="ecosystem">
+          <Who />
+        </section>
 
-      <section id="partnerships">
-        <Partnerships />
-      </section>
-      <section id="partnerships">
-        <VCPartners />
-      </section>
-      <section id="partnerships">
-        <Portfolio />
-      </section>
-      <section id="partnerships">
-        <About />
-      </section>
-      <section>
-        <SocialLinks />
-      </section>
+        <section id="partnerships">
+          <Partnerships />
+        </section>
+        <section id="partnerships">
+          <VCPartners />
+        </section>
+        <section id="partnerships">
+          <Portfolio />
+        </section>
+        <section id="partnerships">
+          <About />
+        </section>
+        <section id="partnerships">
+          <GetInTouch />
+        </section>
+        <section>
+          <SocialLinks />
+        </section>
+      </div>
     </div>
   );
 }

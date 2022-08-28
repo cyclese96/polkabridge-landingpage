@@ -70,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
     wordSpacing: "0px",
     margin: "0px 0px 12px",
     fontFamily: "Fira Sans",
+    letterSpacing: "-1.9px",
     [theme.breakpoints.down("sm")]: {
       fontSize: "32px",
     },
