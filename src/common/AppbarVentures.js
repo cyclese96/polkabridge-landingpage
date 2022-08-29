@@ -173,8 +173,6 @@ export default function AppbarVentures() {
           ></CustomButton>
         </ListItem>
       </List>
-
-      <List></List>
     </div>
   );
 
@@ -221,10 +219,12 @@ export default function AppbarVentures() {
                 Portfolio <DotCircle />
               </Typography>
             </Link>
-            <CustomButton
-              title={"Follow Our Twitter"}
-              link={"https://twitter.com/polkabridge_vt"}
-            ></CustomButton>
+            <Typography className={classes.tabs} variant="body1">
+              <CustomButton
+                title={"Follow Our Twitter"}
+                link={"https://twitter.com/polkabridge_vt"}
+              ></CustomButton>
+            </Typography>
           </div>
 
           <div className={classes.sectionMobile}>

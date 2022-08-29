@@ -1,22 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Card, Hidden, IconButton } from "@material-ui/core";
-import {
-  CallToAction,
-  Group,
-  MonetizationOn,
-  ShutterSpeed,
-  TrendingUp,
-} from "@material-ui/icons";
 import Pulse from "react-reveal/Pulse";
 import { getPbrStats } from "../../actions/apiActions";
-import Lottie from "lottie-react";
-import headerImage from "../../common/header-lottie.json";
 
 const useStyles = makeStyles((theme) => ({
   spacing: {
     paddingTop: 130,
-    paddingLeft: "5%",
+    paddingLeft: "3%",
+    paddingRight: "3%",
     background: `linear-gradient(
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1)
@@ -26,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     minHeight: "700px",
     [theme.breakpoints.down("sm")]: {
-      paddingTop: 50,
+      paddingTop: 80,
       textAlign: "center",
+      minHeight: "670px",
     },
   },
   circle: {
