@@ -14,8 +14,25 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { Link } from "react-scroll";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  mainButton: {
+    borderRadius: "50px",
+    background: `linear-gradient(to bottom,#D9047C, #BF1088)`,
+    lineHeight: "24px",
+    verticalAlign: "baseline",
+    letterSpacing: "-1px",
+    margin: 0,
+    marginTop: 5,
+    color: "#ffffff",
+    padding: "8px 16px 8px 16px",
+    fontWeight: 600,
+    fontSize: "1.02vw",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 14,
+    },
+  },
   grow: {
     flexGrow: 1,
   },
@@ -43,6 +60,12 @@ const useStyles = makeStyles((theme) => ({
     padding: "9px 14px 0px",
     cursor: "pointer",
     fontSize: "1.2vw",
+  },
+  tabsDesktop: {
+    display: "none",
+    [theme.breakpoints.up("md")]: {
+      display: "block",
+    },
   },
   inputRoot: {
     color: "inherit",
@@ -183,12 +206,10 @@ export default function AppbarVentures() {
         style={{ background: "black", boxShadow: "none" }}
       >
         <Toolbar className="d-flex justify-content-around">
-          <Link to="/">
-            {" "}
-            <Typography className={classes.title} variant="h6" noWrap>
-              <img src="./PBR_VENTURES.png" alt="logo" height="60px" />
-            </Typography>
-          </Link>
+          {" "}
+          <Typography className={classes.title} variant="h6" noWrap>
+            <img src="./PBR_VENTURES.png" alt="logo" height="60px" />
+          </Typography>
           <div className="d-flex justify-content-end">
             <a href="https://polkabridge.org">
               <Typography className={classes.tabs} variant="body1">
@@ -219,17 +240,19 @@ export default function AppbarVentures() {
                 Portfolio <DotCircle />
               </Typography>
             </Link>
-            <Typography className={classes.tabs} variant="body1">
-              <CustomButton
+            <div className={classes.tabsDesktop}>
+              <Button
+                className={classes.mainButton}
                 title={"Follow Our Twitter"}
                 link={"https://twitter.com/polkabridge_vt"}
-              ></CustomButton>
-            </Typography>
+              >
+                Follow Our Twitter
+              </Button>
+            </div>
           </div>
-
           <div className={classes.sectionMobile}>
             <div className="d-flex align-items-center">
-              <img src="./polkabridge.png" alt="logo" height="50px" />
+              <img src="./PBR_VENTURES.png" alt="logo" height="50px" />
             </div>
 
             <div>

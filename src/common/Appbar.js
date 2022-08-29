@@ -158,19 +158,22 @@ export default function PrimarySearchAppBar() {
             </ListItem>
           </Link>
         ))}{" "}
-        {[{ name: "Launch App", id: "https://swap.polkabridge.org/" }].map(
-          (tab, index) => (
-            <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
-              <CustomButton
-                title={"Launch App"}
-                link={"https://swap.polkabridge.org"}
-              ></CustomButton>
+        <List>
+          <a href="https://polkabridge.org/ventures">
+            <ListItem button key="Ventures">
+              <ListItemText primary="Ventures" className={classes.menuTitle} />
             </ListItem>
-          )
-        )}
+          </a>
+        </List>
+        {[{ name: "Ventures", id: "/ventures" }].map((tab, index) => (
+          <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
+            <CustomButton
+              title={"Launch App"}
+              link={"https://swap.polkabridge.org"}
+            ></CustomButton>
+          </ListItem>
+        ))}
       </List>
-
-      <List></List>
     </div>
   );
 
