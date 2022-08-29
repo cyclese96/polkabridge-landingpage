@@ -134,12 +134,8 @@ export default function AppbarVentures() {
     >
       <List style={{ paddingTop: 30 }}>
         {[
-          { name: "Our Products", id: "products" },
-          { name: "Ecosystem", id: "ecosystem" },
-          { name: "Achievements", id: "achievements" },
-          { name: "$PBR Token", id: "token" },
-          { name: "Roadmap", id: "roadmap" },
-          { name: "Team", id: "team" },
+          { name: "Partners", id: "partners" },
+          { name: "Portfolio", id: "portfolio" },
         ].map((tab, index) => (
           <Link
             activeClass="active"
@@ -158,16 +154,24 @@ export default function AppbarVentures() {
             </ListItem>
           </Link>
         ))}{" "}
-        {[{ name: "Launch App", id: "https://swap.polkabridge.org/" }].map(
-          (tab, index) => (
-            <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
-              <CustomButton
-                title={"Launch App"}
-                link={"https://swap.polkabridge.org"}
-              ></CustomButton>
-            </ListItem>
-          )
-        )}
+        <a href="https://polkabridge.org">
+          <ListItem
+            button
+            key="PolkaBridge Finance"
+            onClick={toggleDrawer(anchor, false)}
+          >
+            <ListItemText
+              primary="PolkaBridge Finance"
+              className={classes.menuTitle}
+            />
+          </ListItem>
+        </a>
+        <ListItem button key={32} style={{ paddingLeft: 30 }}>
+          <CustomButton
+            title={"Follow Our Twitter"}
+            link={"https://twitter.com/polkabridge_vt"}
+          ></CustomButton>
+        </ListItem>
       </List>
 
       <List></List>
@@ -217,6 +221,10 @@ export default function AppbarVentures() {
                 Portfolio <DotCircle />
               </Typography>
             </Link>
+            <CustomButton
+              title={"Follow Our Twitter"}
+              link={"https://twitter.com/polkabridge_vt"}
+            ></CustomButton>
           </div>
 
           <div className={classes.sectionMobile}>
