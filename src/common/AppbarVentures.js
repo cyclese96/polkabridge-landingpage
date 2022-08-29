@@ -241,13 +241,11 @@ export default function AppbarVentures() {
               </Typography>
             </Link>
             <div className={classes.tabsDesktop}>
-              <Button
-                className={classes.mainButton}
-                title={"Follow Our Twitter"}
-                link={"https://twitter.com/polkabridge_vt"}
-              >
-                Follow Our Twitter
-              </Button>
+              <a href="https://twitter.com/polkabridge_vt">
+                <Button className={classes.mainButton}>
+                  Follow Our Twitter
+                </Button>
+              </a>
             </div>
           </div>
           <div className={classes.sectionMobile}>
