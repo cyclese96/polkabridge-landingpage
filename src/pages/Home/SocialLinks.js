@@ -186,7 +186,7 @@ export default function SocialLinks() {
               </a>
 
               <a href="https://polkabridge.medium.com/polkabridge-ventures-venture-capital-fund-brings-richness-to-the-polkabridge-ecosystem-584cc4530a76" target="_blank">
-                <h5 className={classes.link}>PolkaBridge Ventures</h5>
+                <h5 className={classes.link} style={{ color: "#c80c81" }}>PolkaBridge Ventures</h5>
               </a>
             </div>
           </div>
