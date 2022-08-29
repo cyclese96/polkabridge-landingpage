@@ -321,25 +321,6 @@ export default function Portfolio() {
               />
             </a>
           </div>
-
-          <div className="col-4 col-md-2">
-            <a href="https://mirrorworld.fun/">
-              <img
-                src="https://d39gv0w0je0u4w.cloudfront.net/ui/v1_0_0/mirror_world_logo_withtext.svg"
-                alt="logo"
-                className={classes.logoMainNoFilter}
-              />
-            </a>
-          </div>
-          <div className="col-4 col-md-2">
-            <a href="http://chinapolka.com/#/">
-              <img
-                src="images/chinapolka.png"
-                alt="logo"
-                className={classes.logoMainNoFilter}
-              />
-            </a>
-          </div>
         </div>
       </div>
     </div>

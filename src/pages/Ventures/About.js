@@ -39,10 +39,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Fira Sans",
     textAlign: "center",
     width: "60%",
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 400,
     color: "#e5e5e5",
     letterSpacing: "-0.2px",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      fontSize: 18,
+    },
   },
 
   container: { paddingTop: 50, paddingBottom: 50 },

@@ -23,10 +23,10 @@ const useStyles = makeStyles((theme) => ({
   background: {
     overflowX: "hidden",
     background: `linear-gradient(
-      rgba(0, 0, 0, 0.95),
-      rgba(0, 0, 0, 0.71)
+      rgba(0, 0, 0, 0.01),
+      rgba(0, 0, 0, 0.01)
     ),
-    url("images/bg.webp")
+    url("BG.jpg")
       no-repeat center center fixed`,
     backgroundSize: "cover",
     minHeight: "100vh",

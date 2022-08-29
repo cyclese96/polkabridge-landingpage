@@ -39,12 +39,25 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Fira Sans",
     textAlign: "center",
     width: "70%",
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 400,
     color: "#e5e5e5",
     letterSpacing: "-0.2px",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      fontSize: 18,
+    },
   },
-
+  features: {
+    paddingTop: 30,
+    color: "#E0077D",
+    fontSize: 30,
+    lineHeight: 1.5,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 22,
+      lineHeight: 1.3,
+    },
+  },
   container: { paddingTop: 50, paddingBottom: 50 },
 }));
 
@@ -73,6 +86,13 @@ export default function Who() {
             Marketing & Development. <br />
             <div style={{ marginTop: 20 }}>
               Here are some of the Exclusive Services we provide:-
+            </div>
+            <div>
+              <h3 className={classes.features}>
+                PRIVATE & STRATEGIC INVESTMENTS ⁃ ADVISORY ⁃ DEVELOPMENT ⁃ IDO &
+                INO ⁃ STRATEGIC PARTNERSHIPS ⁃ LAUNCHPAD CONNECT ⁃ MARKETING ⁃
+                INFLUENCER NETWORKING
+              </h3>
             </div>
           </p>
         </div>

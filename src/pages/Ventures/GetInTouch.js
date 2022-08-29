@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import emailjs from "@emailjs/browser";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -74,8 +76,8 @@ const useStyles = makeStyles((theme) => ({
   },
   para: {
     textAlign: "center",
-    width: "70%",
-    fontSize: 14,
+    width: "100%",
+    fontSize: 16,
     fontWeight: 400,
     color: "#e5e5e5",
   },
@@ -315,14 +317,49 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function GetInTouch() {
   const classes = useStyles();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = () => {
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "hj", "YOUR_PUBLIC_KEY")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className={classes.background}>
       <p className={classes.heading}> GET IN TOUCH NOW!</p>
+
+      <p className={classes.para}>
+        Looking for support from us? mail us your proposal at
+      </p>
+      <div className="text-center mt-3">
+        <a href="mailto:support@polkabridge.org">
+          <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+          >
+            support@polkabaridge.org
+          </Button>
+        </a>
+      </div>
+      {/* 
 
       <div class="row container mt-4">
         <div class="col">
           <div className="mb-3">
             <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               type="text"
               class="form-control"
               placeholder="Name"
@@ -337,7 +374,9 @@ export default function GetInTouch() {
             <input
               type="text"
               class="form-control"
-              placeholder="Last Name"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               style={{
                 height: "50px",
                 backgroundColor: "#161F30",
@@ -351,6 +390,8 @@ export default function GetInTouch() {
             type="text"
             class="form-control"
             placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             style={{
               height: "100%",
               backgroundColor: "#161F30",
@@ -360,10 +401,15 @@ export default function GetInTouch() {
         </div>
       </div>
       <div className="text-center mt-3">
-        <Button variant="contained" color="primary" className={classes.button}>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={onSubmit}
+        >
           Submit Message
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 }
