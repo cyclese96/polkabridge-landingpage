@@ -265,6 +265,15 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="col-4 col-md-2">
+            <a href="https://www.playzap.games/">
+              <img
+                src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
+                alt="logo"
+                className={classes.logoMainNoFilter}
+              />
+            </a>
+          </div>
+          <div className="col-4 col-md-2">
             <a href="https://www.magpiefi.xyz/">
               <img
                 src="https://uploads-ssl.webflow.com/629b39872d72ff02443a529f/629b4145d174c694099716c5_Logo.svg"
@@ -291,15 +300,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          {/* <div className="col-4 col-md-2">
-            <a href="https://www.playzap.games/">
-              <img
-                src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
-                alt="logo"
-                className={classes.logoMainNoFilter}
-              />
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
