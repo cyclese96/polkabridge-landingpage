@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 80,
     },
   },
-  logoMain: {
+  logoMainFilter: {
     width: "100%",
     maxWidth: 100,
     filter: "brightness(0) invert(1)",
@@ -145,6 +145,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       maxWidth: 80,
+    },
+  },
+  logoMainWeb3Port: {
+    width: "100%",
+    maxWidth: 150,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 100,
+    },
+  },
+  logoMainAstra: {
+    width: "100%",
+    maxWidth: 40,
+    height: 50,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 40,
     },
   },
   logoMainHacken: {
@@ -229,71 +246,6 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
     },
   },
-  imageWrapperCard: {
-    borderRadius: 10,
-    padding: 10,
-    height: "60px",
-
-    backgroundColor: "#f9f9f9",
-    border: "3px solid #121212",
-    filter: "drop-shadow(0 0 0.5rem #111111)",
-    [theme.breakpoints.down("sm")]: {
-      height: "64px",
-      padding: 10,
-    },
-  },
-  imageWrapperCardUnilend: {
-    borderRadius: 10,
-    padding: 10,
-    height: "50px",
-
-    backgroundColor: "#f9f9f9",
-    border: "3px solid #121212",
-    filter: "drop-shadow(0 0 0.5rem #111111)",
-    [theme.breakpoints.down("md")]: {
-      marginTop: 6,
-      height: "50px",
-      maxWidth: 120,
-      padding: 5,
-    },
-  },
-  imageWrapperNewSafle: {
-    padding: 10,
-    height: "50px",
-
-    [theme.breakpoints.down("sm")]: {
-      height: "50px",
-      padding: 10,
-    },
-  },
-  imageWrapperCardDfyn: {
-    borderRadius: 10,
-    padding: 10,
-    height: "50px",
-
-    backgroundColor: "#f9f9f9",
-    border: "3px solid #121212",
-    filter: "drop-shadow(0 0 0.5rem #111111)",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: 6,
-      height: "50px",
-      width: "fit-content",
-      padding: 5,
-    },
-  },
-  imageWrapperCardBlack: {
-    borderRadius: 10,
-    padding: 10,
-    height: "50px",
-
-    backgroundColor: "#121212",
-    border: "3px solid #121212",
-    filter: "drop-shadow(0 0 0.5rem #111111)",
-    [theme.breakpoints.down("sm")]: {
-      height: "50px",
-      padding: 10,
-    },
-  },
 }));
 export default function Portfolio() {
   const classes = useStyles();
@@ -313,6 +265,33 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="col-4 col-md-2">
+            <a href="https://www.magpiefi.xyz/">
+              <img
+                src="https://uploads-ssl.webflow.com/629b39872d72ff02443a529f/629b4145d174c694099716c5_Logo.svg"
+                alt="logo"
+                className={classes.logoMainFilter}
+              />
+            </a>
+          </div>
+          <div className="col-4 col-md-2">
+            <a href="https://www.web3port.us/">
+              <img
+                src="images/web3port.png"
+                alt="logo"
+                className={classes.logoMainWeb3Port}
+              />
+            </a>
+          </div>
+          <div className="col-4 col-md-2">
+            <a href="https://astraprotocol.com/">
+              <img
+                src="https://astraprotocol.com/wp-content/themes/astra_wp/assets/images/logo.svg"
+                alt="logo"
+                className={classes.logoMainAstra}
+              />
+            </a>
+          </div>
+          {/* <div className="col-4 col-md-2">
             <a href="https://www.playzap.games/">
               <img
                 src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
