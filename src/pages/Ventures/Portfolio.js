@@ -312,7 +312,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          {/* <div className="col-4 col-md-2">
+          <div className="col-4 col-md-2">
             <a href="https://www.playzap.games/">
               <img
                 src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
@@ -320,7 +320,7 @@ export default function Portfolio() {
                 className={classes.logoMainNoFilter}
               />
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
