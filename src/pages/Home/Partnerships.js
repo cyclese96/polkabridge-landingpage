@@ -146,6 +146,14 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 45,
     },
   },
+  logoMainUnicorn: {
+    width: "100%",
+    maxWidth: 100,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 65,
+    },
+  },
   ecologoMain: {
     width: "100%",
     maxWidth: 65,
@@ -367,9 +375,9 @@ export default function Partnerships() {
             <div className={classes.logoWrapper}>
               <a href="https://www.unicornventures.co.in/">
                 <img
-                  src="./images/unicornvent.jpeg"
+                  src="./images/unicorn_vent.png"
                   alt="logo"
-                  className={classes.logoMainHacken}
+                  className={classes.logoMainUnicorn}
                 />
               </a>
             </div>
