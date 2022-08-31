@@ -58,6 +58,32 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: 1.3,
     },
   },
+  itemWrapper: {
+    marginLeft: 10,
+    paddingLeft: 10,
+
+    marginBottom: 15,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundImage:
+      "linear-gradient(rgb(23, 29, 42) 0%, rgba(23, 29, 42, 0) 100%)",
+    padding: "15px 20px 15px 20px",
+    borderRadius: 20,
+    backgroundColor: "initial",
+    color: "white",
+    boxShadow: `rgb(0 0 0 / 2%) 0px 1px 1px, rgb(0 0 0 / 2%) 0px 2px 2px, rgb(0 0 0 / 2%) 0px 4px 4px, rgb(0 0 0 / 2%) 0px 6px 8px, rgb(0 0 0 / 2%) 0px 8px 16px`,
+  },
+  logo: {
+    height: 20,
+    width: 20,
+  },
+  title: {
+    marginLeft: 8,
+    fontSize: 20,
+    fontWeight: 600,
+    color: "#E0077D",
+  },
   container: { paddingTop: 50, paddingBottom: 50 },
 }));
 
@@ -88,11 +114,64 @@ export default function Who() {
               Here are some of the Exclusive Services we provide:-
             </div>
             <div>
-              <h3 className={classes.features}>
+              {/* <h3 className={classes.features}>
                 PRIVATE & STRATEGIC INVESTMENTS ⁃ ADVISORY ⁃ DEVELOPMENT ⁃ IDO &
                 INO ⁃ STRATEGIC PARTNERSHIPS ⁃ LAUNCHPAD CONNECT ⁃ MARKETING ⁃
                 INFLUENCER NETWORKING
-              </h3>
+              </h3> */}
+
+              <div className="mt-5">
+                <Pulse>
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>
+                          PRIVATE & STRATEGIC INVESTMENTS
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>ADVISORY</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>DEVELOPMENT</div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>IDO & INO</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>
+                          STRATEGIC PARTNERSHIPS
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className={classes.itemWrapper}>
+                        <div className={classes.title}>LAUNCHPAD CONNECT</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={classes.itemWrapper}>
+                    <div className={classes.title}>
+                      MARKETING & INFLUENCER NETWORKING
+                    </div>
+                  </div>
+                </Pulse>
+              </div>
             </div>
           </p>
         </div>
