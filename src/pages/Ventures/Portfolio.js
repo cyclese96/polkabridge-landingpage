@@ -155,6 +155,27 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 100,
     },
   },
+
+  logoMainHeight: {
+    width: "100%",
+
+    height: 60,
+    filter: "brightness(0) invert(1)",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: 40,
+    },
+  },
+  logoMain: {
+    width: "100%",
+
+    height: 60,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: 40,
+    },
+  },
   logoMainAstra: {
     width: "100%",
     maxWidth: 40,
@@ -291,6 +312,10 @@ export default function Portfolio() {
               />
             </a>
           </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-4 col-md-2">
             <a href="https://astraprotocol.com/">
               <img
@@ -300,7 +325,24 @@ export default function Portfolio() {
               />
             </a>
           </div>
-
+          <div className="col-4 col-md-2">
+            <a href="https://tatsumeeko.com/">
+              <img
+                src="./images/tatsumeeko.png"
+                alt="logo"
+                className={classes.logoMainHeight}
+              />
+            </a>
+          </div>
+          <div className="col-4 col-md-2">
+            <a href="https://bitscrunch.com/">
+              <img
+                src="https://bitscrunch.com/wp-content/themes/bitscrunch/img/logo.svg"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

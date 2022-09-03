@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <clipPath id="clip-logo-1080">
+      <rect width="1080" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="logo-1080" clip-path="url(#clip-logo-1080)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-810.864 -333.192)">
+      <g id="Group_76" data-name="Group 76" transform="translate(1097.031 464.192)">
+        <path id="Path_328" data-name="Path 328" d="M3695.647,2186.747h322.29l89.214,156.474s-78.937,149.584-207.387,232.727c-.935.466-107.9-71.931-165.817-152.738.935-.467,69.13,0,69.13,0s82.206,82.208,96.687,83.609c.129-.142,112.152-94.023,142.6-163.6.7.075-53.549-95.911-53.549-95.911l-293.169-1.4Z" transform="translate(-3643.702 -2066.293)" fill="#006acf"/>
+        <g id="Group_75" data-name="Group 75" transform="translate(0)">
+          <path id="Path_327" data-name="Path 327" d="M4163.017,2356.09s25.49-80.915,20.747-213.106c0,.593-506.979,0-506.979,0s-2.222,228.667,58.241,311.063h151.753V2391H3768.221s-33.2-61.735-33.2-188.887c.593-.889,391.238,0,391.238,0l-4.149,82.694Z" transform="translate(-3676.774 -2142.983)" fill="#0082ff"/>
+          <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(190.535 211.977)" fill="none" stroke="#0082ff" stroke-width="26">
+            <circle cx="66.056" cy="66.056" r="66.056" stroke="none"/>
+            <circle cx="66.056" cy="66.056" r="53.056" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_168" data-name="Group 168" transform="translate(1030.864 994.493)">
+        <text id="bitsCrunch" transform="translate(42.895 134)" fill="#006acf" font-size="118" font-family="TitilliumWeb-Bold, Titillium Web" font-weight="700"><tspan x="0" y="0">bits</tspan><tspan y="0" fill="#0082ff" font-family="TitilliumWeb-SemiBold, Titillium Web" font-weight="600">Crunch</tspan></text>
+        <text id="The_Ecosystem_Guardians_" data-name="The Ecosystem Guardians " transform="translate(317.192 265.75)" fill="#c3c3c3" font-size="55" font-family="TitilliumWeb-SemiBold, Titillium Web" font-weight="600"><tspan x="-307.862" y="0">The Ecosystem Guardians </tspan></text>
+        <g id="Group_169" data-name="Group 169" transform="translate(0 177.707)" opacity="0.89">
+          <g id="Group_166" data-name="Group 166" transform="translate(0 6.255)">
+            <path id="Subtraction_37" data-name="Subtraction 37" d="M304.609,19.772,0,13.048,304.052,0a18.506,18.506,0,0,0,.556,19.769Zm30.744-.082v0h0A18.513,18.513,0,0,0,335.917.1L639.911,13.048Z" fill="#e3e3e3"/>
+          </g>
+          <circle id="Ellipse_10" data-name="Ellipse 10" cx="15.32" cy="15.32" r="15.32" transform="translate(304.859)" fill="#e3e3e3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
