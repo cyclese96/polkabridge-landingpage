@@ -343,6 +343,15 @@ export default function Portfolio() {
               />
             </a>
           </div>
+          <div className="col-4 col-md-2">
+            <a href="https://www.peaq.network/">
+              <img
+                src="./images/peaq.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
