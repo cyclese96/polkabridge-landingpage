@@ -147,6 +147,18 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 80,
     },
   },
+  logoMainPeaq: {
+    height: 40,
+    [theme.breakpoints.down("sm")]: {
+      height: 40,
+    },
+  },
+  logoMainZKX: {
+    height: 40,
+    [theme.breakpoints.down("sm")]: {
+      height: 30,
+    },
+  },
   logoMainWeb3Port: {
     width: "100%",
     maxWidth: 150,
@@ -240,10 +252,7 @@ const useStyles = makeStyles((theme) => ({
   listingsWrapper: {
     maxWidth: 700,
   },
-  listingsWrapper2: {
-    paddingTop: 20,
-    paddingBottom: 20,
-  },
+  listingsWrapper2: {},
   listingsWrappe2: {
     maxWidth: 900,
   },
@@ -276,7 +285,7 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://www.aethergames.io/">
               <img
                 src="https://www.aethergames.io/static/media/Logo.6d355d0b397d1925df34.png"
@@ -285,7 +294,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://www.playzap.games/">
               <img
                 src="https://uploads-ssl.webflow.com/622b71d5703c41011dd1c3ac/623294d6f64369568f797a85_footer-logo.png"
@@ -294,7 +303,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://www.magpiefi.xyz/">
               <img
                 src="https://uploads-ssl.webflow.com/629b39872d72ff02443a529f/629b4145d174c694099716c5_Logo.svg"
@@ -303,7 +312,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://www.web3port.us/">
               <img
                 src="images/web3port.png"
@@ -316,7 +325,7 @@ export default function Portfolio() {
       </div>
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://astraprotocol.com/">
               <img
                 src="https://astraprotocol.com/wp-content/themes/astra_wp/assets/images/logo.svg"
@@ -325,7 +334,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://tatsumeeko.com/">
               <img
                 src="./images/tatsumeeko.png"
@@ -334,7 +343,7 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://bitscrunch.com/">
               <img
                 src="https://bitscrunch.com/wp-content/themes/bitscrunch/img/logo.svg"
@@ -343,12 +352,26 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-4 col-md-2">
+          <div className="col-6 col-md-2 my-3">
             <a href="https://www.peaq.network/">
               <img
                 src="./images/peaq.png"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainPeaq}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2 my-3">
+            <a href="https://zkx.fi/">
+              <img
+                src="https://zkx.fi/assets/img/logo.png"
+                alt="logo"
+                className={classes.logoMainZKX}
               />
             </a>
           </div>
