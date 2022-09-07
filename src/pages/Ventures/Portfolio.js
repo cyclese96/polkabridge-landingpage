@@ -162,7 +162,7 @@ const useStyles = makeStyles((theme) => ({
   logoMainHuman: {
     width: "100%",
     maxWidth: 120,
-    filter: "brightness(0) invert(1)",
+    filter: "brightness(0.7) invert(1)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       maxWidth: 100,
@@ -178,12 +178,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   logoMainHeight: {
-    width: "100%",
-
-    height: 60,
+    height: 50,
     filter: "brightness(0) invert(1)",
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
       height: 40,
     },
   },
@@ -195,6 +192,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       height: 40,
+    },
+  },
+  logoMainMagic: {
+    width: "100%",
+
+    height: 110,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: 80,
     },
   },
   logoMainAstra: {
@@ -390,6 +397,15 @@ export default function Portfolio() {
                 src="images/Humannode.png"
                 alt="logo"
                 className={classes.logoMainHuman}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 my-3">
+            <a href="https://magicsquare.io/">
+              <img
+                src="https://magicsquare.io/wp-content/uploads/2022/09/MSQ-Logo-color.svg"
+                alt="logo"
+                className={classes.logoMainMagic}
               />
             </a>
           </div>
