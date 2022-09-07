@@ -364,7 +364,7 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className={classes.listingsWrapper2}>
+      {/* <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2 my-3">
             <a href="https://zkx.fi/">
@@ -376,7 +376,7 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
