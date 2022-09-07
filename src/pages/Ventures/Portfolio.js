@@ -156,7 +156,16 @@ const useStyles = makeStyles((theme) => ({
   logoMainZKX: {
     height: 40,
     [theme.breakpoints.down("sm")]: {
-      height: 30,
+      height: 25,
+    },
+  },
+  logoMainHuman: {
+    width: "100%",
+    maxWidth: 120,
+    filter: "brightness(0) invert(1)",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 100,
     },
   },
   logoMainWeb3Port: {
@@ -372,6 +381,15 @@ export default function Portfolio() {
                 src="https://zkx.fi/assets/img/logo.png"
                 alt="logo"
                 className={classes.logoMainZKX}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 my-3">
+            <a href="https://humanode.io/">
+              <img
+                src="images/Humannode.png"
+                alt="logo"
+                className={classes.logoMainHuman}
               />
             </a>
           </div>
