@@ -14,6 +14,7 @@ import AppbarVentures from "../../common/AppbarVentures";
 import Partnerships from "../Home/Partnerships";
 import About from "./About";
 import TechPartners from "../Home/TechPartners";
+import { Helmet } from "react-helmet";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -60,6 +61,16 @@ export default function Ventures() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>PolkaBridge Ventures - Investing In Top Web3 Projects</title>
+        <meta
+          name="description"
+          content="PolkaBridge Ventures | PolkaBridge Investment Capital"
+        />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="http://polkabridge.org/ventures" />
+      </Helmet>
       <div className={classes.background}>
         <AppbarVentures />
         <section id="header">
