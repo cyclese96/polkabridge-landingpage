@@ -383,7 +383,7 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2 my-3">
+          {/* <div className="col-6 col-md-2 my-3">
             <a href="https://zkx.fi/">
               <img
                 src="https://zkx.fi/assets/img/logo.png"
@@ -391,7 +391,7 @@ export default function Portfolio() {
                 className={classes.logoMainZKX}
               />
             </a>
-          </div>
+          </div> */}
           <div className="col-6 col-md-2 my-3">
             <a href="https://humanode.io/">
               <img
