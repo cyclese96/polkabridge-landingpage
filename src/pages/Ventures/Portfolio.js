@@ -161,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logoMainHuman: {
     width: "100%",
-    maxWidth: 120,
+    maxWidth: 110,
     filter: "brightness(0.7) invert(1)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
@@ -197,13 +197,14 @@ const useStyles = makeStyles((theme) => ({
   logoMainMagic: {
     width: "100%",
 
-    height: 110,
+    height: 100,
 
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       height: 80,
     },
   },
+
   logoMainAstra: {
     width: "100%",
     maxWidth: 40,
@@ -406,6 +407,15 @@ export default function Portfolio() {
                 src="https://magicsquare.io/wp-content/uploads/2022/09/MSQ-Logo-color.svg"
                 alt="logo"
                 className={classes.logoMainMagic}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 my-3">
+            <a href="https://entangle.fi/">
+              <img
+                src="./images/entangle.png"
+                alt="logo"
+                className={classes.logoMain}
               />
             </a>
           </div>
