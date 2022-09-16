@@ -197,13 +197,22 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
     },
   },
+  logoMain: {
+    width: "100%",
 
+    height: 60,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: 40,
+    },
+  },
   listingsWrapper: {
     maxWidth: 700,
   },
   listingsWrapper2: {
-    paddingTop: 5,
-    paddingBottom: 5,
+    paddingTop: 15,
+    paddingBottom: 15,
   },
   listingsWrappe2: {
     maxWidth: 900,
@@ -381,6 +390,29 @@ export default function Partnerships() {
                 />
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-2 ">
+            <a href="https://twitter.com/NextCapitaI">
+              <img
+                src="./images/NEXTWHTWIDE.svg"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
+          </div>
+
+          <div className="col-6 col-md-2 ">
+            <a href="https://cogitent.ventures/">
+              <img
+                src="./images/congitent.png"
+                alt="logo"
+                className={classes.logoMain}
+              />
+            </a>
           </div>
         </div>
       </div>
