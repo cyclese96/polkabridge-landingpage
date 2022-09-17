@@ -159,6 +159,13 @@ const useStyles = makeStyles((theme) => ({
       height: 25,
     },
   },
+  logoMainZKYC: {
+    maxWidth: 100,
+    height: 60,
+    [theme.breakpoints.down("sm")]: {
+      height: 50,
+    },
+  },
   logoMainHuman: {
     width: "100%",
     maxWidth: 110,
@@ -383,15 +390,15 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          {/* <div className="col-6 col-md-2 my-3">
-            <a href="https://zkx.fi/">
+          <div className="col-6 col-md-2 my-3">
+            <a>
               <img
-                src="https://zkx.fi/assets/img/logo.png"
+                src="images/zkyc.png"
                 alt="logo"
-                className={classes.logoMainZKX}
+                className={classes.logoMainZKYC}
               />
             </a>
-          </div> */}
+          </div>
           <div className="col-6 col-md-2 my-3">
             <a href="https://humanode.io/">
               <img
