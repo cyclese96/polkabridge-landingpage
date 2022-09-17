@@ -391,7 +391,7 @@ export default function Portfolio() {
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
           <div className="col-6 col-md-2 my-3">
-            <a>
+            <a href="https://www.zkcross.org/">
               <img
                 src="images/zkyc.png"
                 alt="logo"
