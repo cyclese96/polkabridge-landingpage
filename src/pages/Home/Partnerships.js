@@ -151,7 +151,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 100,
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      maxWidth: 65,
+      maxWidth: 85,
+      marginTop: 25,
     },
   },
   ecologoMain: {
@@ -391,6 +392,15 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
+          <div className="col-6 col-md-2 ">
+            <a href="https://cogitent.ventures/">
+              <img
+                src="./images/congitent.png"
+                alt="logo"
+                className={classes.logoMainUnicorn}
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
@@ -399,16 +409,6 @@ export default function Partnerships() {
             <a href="https://twitter.com/NextCapitaI">
               <img
                 src="./images/NEXTWHTWIDE.svg"
-                alt="logo"
-                className={classes.logoMain}
-              />
-            </a>
-          </div>
-
-          <div className="col-6 col-md-2 ">
-            <a href="https://cogitent.ventures/">
-              <img
-                src="./images/congitent.png"
                 alt="logo"
                 className={classes.logoMain}
               />
