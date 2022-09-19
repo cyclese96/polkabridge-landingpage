@@ -79,7 +79,7 @@ export default function Ventures() {
       property="og:description"
       content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialise in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and  advisory to post-launch Marketing and Development."
     />
-       
+       <meta name="google-site-verification" content="sWNp3334UB2Xeb4keFPeDuEjA95qh178HYCP9RChhRM" />
        <meta property="og:url" content="https://polkabridge.org/ventures" />
     <meta property="og:site_name" content="PolkaBridge" />
     <meta property="og:image" content="https://polkabridge.org/images/venturefull.jpg" />
