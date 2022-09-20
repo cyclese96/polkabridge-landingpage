@@ -423,7 +423,7 @@ export default function Partnerships() {
             </a>
           </div>
           <div className="col-6 col-md-2 ">
-            <a href="https://alphabraincapital.io/">
+            <a href="https://www.alphacapital.financial/">
               <img
                 src="./images/Alpha_Capital.png"
                 alt="logo"
