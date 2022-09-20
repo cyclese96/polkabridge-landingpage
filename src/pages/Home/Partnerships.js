@@ -208,6 +208,14 @@ const useStyles = makeStyles((theme) => ({
       height: 40,
     },
   },
+  logoMainAlpha: {
+    height: 55,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: 40,
+    },
+  },
   listingsWrapper: {
     maxWidth: 700,
   },
@@ -411,6 +419,15 @@ export default function Partnerships() {
                 src="./images/NEXTWHTWIDE.svg"
                 alt="logo"
                 className={classes.logoMain}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 ">
+            <a href="https://alphabraincapital.io/">
+              <img
+                src="./images/Alpha_Capital.png"
+                alt="logo"
+                className={classes.logoMainAlpha}
               />
             </a>
           </div>
