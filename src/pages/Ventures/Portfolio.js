@@ -201,6 +201,12 @@ const useStyles = makeStyles((theme) => ({
       height: 20,
     },
   },
+  logoMainEntangle: {
+    height: 35,
+    [theme.breakpoints.down("sm")]: {
+      height: 16,
+    },
+  },
   logoMainBits: {
     height: 60,
 
@@ -438,7 +444,7 @@ export default function Portfolio() {
               <img
                 src="./images/entangle.png"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainEntangle}
               />
             </a>
           </div>
