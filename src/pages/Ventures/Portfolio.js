@@ -150,7 +150,7 @@ const useStyles = makeStyles((theme) => ({
   logoMainPeaq: {
     height: 40,
     [theme.breakpoints.down("sm")]: {
-      height: 40,
+      height: 30,
     },
   },
   logoMainZKX: {
@@ -163,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 100,
     height: 60,
     [theme.breakpoints.down("sm")]: {
-      height: 50,
+      height: 40,
     },
   },
   logoMainHuman: {
@@ -188,27 +188,43 @@ const useStyles = makeStyles((theme) => ({
     height: 50,
     filter: "brightness(0) invert(1)",
     [theme.breakpoints.down("sm")]: {
-      height: 40,
+      height: 30,
     },
   },
   logoMain: {
-    width: "100%",
+    width: "auto",
+    height: 40,
 
+    [theme.breakpoints.down("sm")]: {
+      width: "fit-content",
+      objectFit: "contain",
+      height: 20,
+    },
+  },
+  logoMainBits: {
     height: 60,
 
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
+      width: "fit-content",
+      objectFit: "contain",
       height: 40,
+    },
+  },
+  logoMainGuild: {
+    height: 60,
+
+    [theme.breakpoints.down("sm")]: {
+      width: "auto",
+      height: 50,
     },
   },
   logoMainMagic: {
     width: "100%",
-
     height: 100,
-
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
-      height: 80,
+      width: "fit-content",
+      objectFit: "contain",
+      height: 60,
     },
   },
 
@@ -372,7 +388,7 @@ export default function Portfolio() {
               <img
                 src="https://bitscrunch.com/wp-content/themes/bitscrunch/img/logo.svg"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainBits}
               />
             </a>
           </div>
@@ -431,12 +447,12 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2 my-3">
+          <div className="col-6 col-md-2 ">
             <a href="https://cosmicguild.io/">
               <img
                 src="./images/Cosmic.png"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainGuild}
               />
             </a>
           </div>

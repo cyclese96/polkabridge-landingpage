@@ -212,8 +212,16 @@ const useStyles = makeStyles((theme) => ({
     height: 55,
 
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
       height: 40,
+    },
+  },
+  logoMainNext: {
+    width: "100%",
+
+    height: 60,
+
+    [theme.breakpoints.down("sm")]: {
+      height: 13,
     },
   },
   listingsWrapper: {
@@ -418,7 +426,7 @@ export default function Partnerships() {
               <img
                 src="./images/NEXTWHTWIDE.svg"
                 alt="logo"
-                className={classes.logoMain}
+                className={classes.logoMainNext}
               />
             </a>
           </div>
