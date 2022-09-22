@@ -270,6 +270,14 @@ const useStyles = makeStyles((theme) => ({
       padding: 15,
     },
   },
+  logoMainMover: {
+    padding: 15,
+    height: "60px",
+    [theme.breakpoints.down("sm")]: {
+      height: "54px",
+      padding: 15,
+    },
+  },
   imageWrapper: {
     padding: 15,
     height: "64px",
@@ -439,12 +447,13 @@ export default function Portfolio() {
               />
             </a>
           </div>
-          <div className="col-6 col-md-2 my-3">
-            <a href="https://entangle.fi/">
+
+          <div className="col-6 col-md-2 ">
+            <a href="https://cosmicguild.io/">
               <img
-                src="./images/entangle.png"
+                src="./images/Cosmic.png"
                 alt="logo"
-                className={classes.logoMainEntangle}
+                className={classes.logoMainGuild}
               />
             </a>
           </div>
@@ -453,12 +462,30 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2 ">
-            <a href="https://cosmicguild.io/">
+          <div className="col-6 col-md-3 my-3">
+            <a href="https://entangle.fi/">
               <img
-                src="./images/Cosmic.png"
+                src="./images/entangle.png"
                 alt="logo"
-                className={classes.logoMainGuild}
+                className={classes.logoMainEntangle}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 ">
+            <a href="https://bluemove.net/">
+              <img
+                src="https://bluemove.net/static/media/logo-light.9e42d613ce273b89f8bd87d58adee26a.svg"
+                alt="logo"
+                className={classes.logoMainMover}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 ">
+            <a href="https://mov3r.xyz/">
+              <img
+                src="./images/Mover.png"
+                alt="logo"
+                className={classes.logoMainMover}
               />
             </a>
           </div>
