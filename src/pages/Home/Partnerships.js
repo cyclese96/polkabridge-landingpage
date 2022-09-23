@@ -397,16 +397,17 @@ export default function Partnerships() {
             </div>
           </div>
 
-          <div className="col-6 col-md-2" align="center">
-            <div className={classes.logoWrapper}>
-              <a href="https://www.unicornventures.co.in/">
+          <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+            <div className="col-6 col-md-2 ">
+              <a href="https://twitter.com/NextCapitaI">
                 <img
-                  src="./images/unicorn_vent.png"
+                  src="./images/NEXTWHTWIDE.svg"
                   alt="logo"
-                  className={classes.logoMainUnicorn}
+                  className={classes.logoMainNext}
                 />
               </a>
             </div>
+
           </div>
           <div className="col-6 col-md-2 ">
             <a href="https://cogitent.ventures/">
@@ -420,26 +421,7 @@ export default function Partnerships() {
         </div>
       </div>
       <div className={classes.listingsWrapper2}>
-        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-2 ">
-            <a href="https://twitter.com/NextCapitaI">
-              <img
-                src="./images/NEXTWHTWIDE.svg"
-                alt="logo"
-                className={classes.logoMainNext}
-              />
-            </a>
-          </div>
-          <div className="col-6 col-md-2 ">
-            <a href="https://www.alphacapital.financial/">
-              <img
-                src="./images/Alpha_Capital.png"
-                alt="logo"
-                className={classes.logoMainAlpha}
-              />
-            </a>
-          </div>
-        </div>
+
       </div>
     </div>
   );
