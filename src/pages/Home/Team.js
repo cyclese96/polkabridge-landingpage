@@ -117,7 +117,7 @@ export default function Team() {
           <Hidden smDown>
             <div className="col-md-1"></div>
           </Hidden>
-          <div className="col-6  col-md-2 " align="center">
+          <div className="col-6 col-md-2" align="center">
             <Fade left>
               <div className={classes.people}>
                 <img
@@ -199,7 +199,6 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
@@ -228,9 +227,6 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <Hidden smDown>
-            <div className="col-md-1"></div>
-          </Hidden>
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
@@ -259,6 +255,10 @@ export default function Team() {
               </div>
             </Fade>
           </div>
+          <Hidden smDown>
+            <div className="col-md-1"></div>
+          </Hidden>
+
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>

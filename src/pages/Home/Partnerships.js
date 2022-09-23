@@ -138,6 +138,14 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 80,
     },
   },
+  logoMainZephy: {
+    width: "100%",
+    maxWidth: 95,
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      maxWidth: 90,
+    },
+  },
   logoMainHacken: {
     width: "100%",
     maxWidth: 55,
@@ -380,7 +388,7 @@ export default function Partnerships() {
                 <img
                   src="https://zephyruscapital.com/wp-content/uploads/2021/12/logowhite.png"
                   alt="logo"
-                  className={classes.logoMain}
+                  className={classes.logoMainZephy}
                 />
               </a>
             </div>
@@ -396,18 +404,14 @@ export default function Partnerships() {
               </a>
             </div>
           </div>
-
-          <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-            <div className="col-6 col-md-2 ">
-              <a href="https://twitter.com/NextCapitaI">
-                <img
-                  src="./images/NEXTWHTWIDE.svg"
-                  alt="logo"
-                  className={classes.logoMainNext}
-                />
-              </a>
-            </div>
-
+          <div className="col-6 col-md-2 ">
+            <a href="https://twitter.com/NextCapitaI">
+              <img
+                src="./images/NEXTWHTWIDE.svg"
+                alt="logo"
+                className={classes.logoMainNext}
+              />
+            </a>
           </div>
           <div className="col-6 col-md-2 ">
             <a href="https://cogitent.ventures/">
@@ -419,9 +423,6 @@ export default function Partnerships() {
             </a>
           </div>
         </div>
-      </div>
-      <div className={classes.listingsWrapper2}>
-
       </div>
     </div>
   );
