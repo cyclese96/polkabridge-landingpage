@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { AccountTree, ChevronLeft, ChevronRight } from "@material-ui/icons";
 import { Fade } from "react-reveal";
 import Pulse from "react-reveal/Pulse";
+import Lottie from "lottie-react";
+import headerImage from "./../../common/P2P.json";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -199,12 +201,9 @@ export default function UpcomingProducts() {
         </Pulse>
 
         <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
-          <div className="col-md-6">
-            <div className="d-flex justify-content-between mb-3">
-              <img
-                src="images/p2p-image.png"
-                className={classes.imageContainer}
-              />
+          <div className="col-md-5">
+            <div className="d-flex justify-content-between p-3">
+              <Lottie animationData={headerImage} loop={true} />
             </div>
             <h5 className={classes.featureTitle}>Progress (60%)</h5>
             <div class="containered">
