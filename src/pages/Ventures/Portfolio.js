@@ -489,6 +489,15 @@ export default function Portfolio() {
               />
             </a>
           </div>
+          <div className="col-6 col-md-2 ">
+            <a href="https://exorde.network/">
+              <img
+                src="https://uploads-ssl.webflow.com/620398f412d5829aa28fbb86/622625f35016cd6a5613f833_landscape-logo-color-white.png"
+                alt="logo"
+                className={classes.logoMainMover}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
