@@ -202,7 +202,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logoMainEntangle: {
-    height: 35,
+    height: 32,
+    [theme.breakpoints.down("sm")]: {
+      height: 16,
+    },
+  },
+  logoMainAlterverse: {
+    height: 28,
     [theme.breakpoints.down("sm")]: {
       height: 16,
     },
@@ -462,15 +468,6 @@ export default function Portfolio() {
 
       <div className={classes.listingsWrapper2}>
         <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
-          <div className="col-6 col-md-3 my-3">
-            <a href="https://entangle.fi/">
-              <img
-                src="./images/entangle.png"
-                alt="logo"
-                className={classes.logoMainEntangle}
-              />
-            </a>
-          </div>
           <div className="col-6 col-md-2 ">
             <a href="https://bluemove.net/">
               <img
@@ -495,6 +492,28 @@ export default function Portfolio() {
                 src="https://uploads-ssl.webflow.com/620398f412d5829aa28fbb86/622625f35016cd6a5613f833_landscape-logo-color-white.png"
                 alt="logo"
                 className={classes.logoMainMover}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper2}>
+        <div className="mt-3 row  d-flex justify-content-center align-items-center text-center">
+          <div className="col-6 col-md-3 my-3">
+            <a href="https://alterverse.com/">
+              <img
+                src="https://alterverse.com/wp-content/uploads/2021/01/AlterVerseLogo_Lg_White_NoStroke_400.png"
+                alt="logo"
+                className={classes.logoMainAlterverse}
+              />
+            </a>
+          </div>
+          <div className="col-6 col-md-2 my-3">
+            <a href="https://entangle.fi/">
+              <img
+                src="./images/entangle.png"
+                alt="logo"
+                className={classes.logoMainEntangle}
               />
             </a>
           </div>
