@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     transformStyle: "preserve-3d",
 
     "&:hover": {
-      boxShadow: "0 .25rem 1rem rgb(186, 45, 125, 0.8)",
+      boxShadow: "0 0 1rem rgb(186, 45, 125, 0.8)",
       border: "0.5px solid rgb(186, 45, 125)",
     },
     "&:hover $cardBody": {
