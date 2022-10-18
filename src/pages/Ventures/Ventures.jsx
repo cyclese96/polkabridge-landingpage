@@ -66,7 +66,7 @@ export default function Ventures() {
         <title>PolkaBridge Ventures - Venture Capital Fund Brings Richness To The PolkaBridge Ecosystem | Support GameFi, NFT,  Defi, Web3, Infrastructure, Protocol, Fintech startup</title>
         <meta
           name="description"
-          content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialise in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and  advisory to post-launch Marketing and Development."
+          content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialize  in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and  advisory to post-launch Marketing and Development."
         />
          <meta
       name="keywords"
@@ -74,10 +74,10 @@ export default function Ventures() {
     />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en" />
-        <meta property="og:title" content="PolkaBridge Ventures - Venture Capital Fund Brings Richness To The PolkaBridge Ecosystem| Founded in 2022, PolkaBridge Ventures is a corporate VC firm of PolkaBridge, a decentralised all-in-one DeFi Application Platform. The firm seeks to Invest, Incubate and Accelerate early stage projects operating in Cryptocurrency and Blockchain Sectors." />
+        <meta property="og:title" content="PolkaBridge Ventures - Venture Capital Fund Brings Richness To The PolkaBridge Ecosystem| Founded in 2022, PolkaBridge Ventures is a corporate VC firm of PolkaBridge, a decentralized all-in-one DeFi Application Platform. The firm seeks to Invest, Incubate and Accelerate early stage projects operating in Cryptocurrency and Blockchain Sectors." />
         <meta
       property="og:description"
-      content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialise in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and  advisory to post-launch Marketing and Development."
+      content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialize  in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and  advisory to post-launch Marketing and Development."
     />
        <meta name="google-site-verification" content="sWNp3334UB2Xeb4keFPeDuEjA95qh178HYCP9RChhRM" />
        <meta property="og:url" content="https://polkabridge.org/ventures" />
@@ -89,7 +89,7 @@ export default function Ventures() {
     <meta property="og:image:width" content="900" />
     <meta property="og:image:height" content="900" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialise in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and advisory to post-launch Marketing and Development." />
+    <meta name="twitter:description" content="PolkaBridge Ventures, a firm of PolkaBridge | PolkaBridge Investment Capital| At PolkaBridge Ventures, we specialize  in “driving Ideas towards implementation”, using our expertise and support in every aspect of establishing your project, from Finance and advisory to post-launch Marketing and Development." />
     <meta name="twitter:title" content="PolkaBridge Ventures - Venture Capital Fund Brings Richness To The PolkaBridge Ecosystem | Support GameFi, NFT,  Defi, Web3, Infrastructure, Protocol, Fintech startup" />
     <meta name="robots" content="noodp,index,follow" />
 

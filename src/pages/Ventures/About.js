@@ -60,7 +60,7 @@ export default function About() {
         <h5 className={classes.featureTitle}>ABOUT POLKABRIDGE</h5>
         <div className="d-flex justify-content-center my-3">
           <p className={classes.para}>
-            PolkaBridge is a decentralised all-in-one financial application
+            PolkaBridge is a decentralized all-in-one financial application
             platform. The PolkaBridge ecosystem includes Multichain &
             Cross-Chain AMM, Farming, Staking, Lending, Launchpad, P2P Exchange,
             INO NFT, and more. All products will be developed with Polkadot in

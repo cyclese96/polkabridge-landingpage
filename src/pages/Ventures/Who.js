@@ -96,7 +96,7 @@ export default function Who() {
         <div className="d-flex justify-content-center my-3">
           <p className={classes.para}>
             Founded in 2022, PolkaBridge Ventures is a corporate VC firm of
-            PolkaBridge, a decentralised all-in-one DeFi Application Platform.
+            PolkaBridge, a decentralized all-in-one DeFi Application Platform.
             The firm seeks to Invest, Incubate & Accelerate early stage projects
             operating in Cryptocurrency & Blockchain Sectors.
           </p>
@@ -106,7 +106,7 @@ export default function Who() {
         <h5 className={classes.featureTitle}>WHAT WE DO?</h5>
         <div className="d-flex justify-content-center my-3">
           <p className={classes.para}>
-            At PolkaBridge Ventures, we specialise in “driving Ideas towards
+            At PolkaBridge Ventures, we specialize  in “driving Ideas towards
             implementation”, using our expertise & support in every aspect of
             establishing your project, from Finance & Advisory to post-launch
             Marketing & Development. <br />

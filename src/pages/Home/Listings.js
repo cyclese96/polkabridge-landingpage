@@ -210,7 +210,7 @@ export default function Listings() {
               </a>
             </div>
             <div className="col-6 col-md-3 my-2">
-              <a href="https://www.coingecko.com/en/coins/polkabridge">
+              <a href="https://coinmarketcap.com/currencies/polkabridge/">
                 <img
                   src="https://www.usebraintrust.com/hubfs/CoinMarketCap%20logo.png"
                   className={classes.cmcLogo}

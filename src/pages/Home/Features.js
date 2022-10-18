@@ -476,7 +476,7 @@ export default function Features() {
                       <h5 className={classes.cardTitle}>P2P Exchange</h5>
                       <p className={classes.cardValue}>
                         Trade tokens with your non-custodial wallet with our
-                        decentralised P2P Exchange.
+                        decentralized P2P Exchange.
                       </p>
                       <div className="text-center">
                         <a>
