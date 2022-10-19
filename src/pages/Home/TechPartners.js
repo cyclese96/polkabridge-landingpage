@@ -46,7 +46,7 @@ export default function TechPartners() {
 
   return (
     <div className={classes.wrapper}>
-      <p className={classes.heading}> VCs Partners</p>
+      <p className={classes.heading}> Tech & Community Partners</p>
       <div className={classes.container}>
         <div className={classes.cardsGrid}>
           {partnerDetails.map((company, index) => {

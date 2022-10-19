@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import {
   Facebook,
-  Instagram,
+  ChildCare,
   Language,
   Telegram,
   Twitter,
@@ -143,7 +143,7 @@ const CompanyCard = ({ name, description, logo, socials }) => {
       case "facebook":
         return <Facebook fontSize="small" color="white" />;
       case "instagram":
-        return <Instagram fontSize="small" color="white" />;
+        return <ChildCare fontSize="small" color="white" />;
       case "telegram":
         return <Telegram fontSize="small" color="white" />;
       default:
