@@ -312,6 +312,18 @@ export const portfolioDetails = [
       telegram: "https://t.me/taker_protocol",
     },
   },
+  {
+    name: "Aptin Finance",
+    logo: "images/aptin.png",
+    description: "Advanced Lending Protocol On Aptos",
+    socials: {
+      website: "https://aptin.io/",
+      twitter: "https://twitter.com/aptinlabsl",
+      facebook: "",
+      instagram: "https://discord.gg/fMVkQNumzb",
+      telegram: "https://t.me/aptinlabs",
+    },
+  },
 ];
 
 export const partnerDetails = [
