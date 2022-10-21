@@ -318,7 +318,7 @@ export const portfolioDetails = [
     description: "Advanced Lending Protocol On Aptos",
     socials: {
       website: "https://aptin.io/",
-      twitter: "https://twitter.com/aptinlabsl",
+      twitter: "https://twitter.com/aptinlabs",
       facebook: "",
       instagram: "https://discord.gg/fMVkQNumzb",
       telegram: "https://t.me/aptinlabs",
