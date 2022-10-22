@@ -243,7 +243,7 @@ export default function Header() {
                       </div>
                       <div className="d-flex flex-row justify-content-start ">
                         <div className={classes.tagTitle}>Current Supply:</div>
-                        <div className={classes.tagValue}>46.83M Tokens</div>
+                        <div className={classes.tagValue}>65M Tokens</div>
                       </div>
                     </div>
                   )}

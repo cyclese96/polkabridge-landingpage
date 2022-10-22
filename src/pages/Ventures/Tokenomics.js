@@ -206,7 +206,7 @@ export default function Tokenomics() {
                     <div>
                       <h5 className={classes.usecaseTitle}>Monthly Burn</h5>
                       <p className={classes.usecasePara}>
-                        We burn 1M $PBR tokens with Buyback and burn strategy.
+                        We burn 500k $PBR tokens with Buyback and burn strategy.
                       </p>
                     </div>
                     <div>

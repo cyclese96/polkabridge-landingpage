@@ -14,7 +14,7 @@ export const ventureDetails = [
   },
   {
     name: "V2B Labs",
-    logo: "https://www.v2blabs.com/_nuxt/img/Logo.6837bc2.png",
+    logo: "images/v2b.png",
     description:
       "A visionary R&D firm engaged in blockchain services aiming to form alliances with established businesses as well as top tier labs in the emerging industry",
     socials: {
@@ -340,15 +340,15 @@ export const partnerDetails = [
     },
   },
   {
-    name: "China Polka",
-    logo: "images/chinapolka.png",
-    description: "Unofficial non-profit Chinese Polka Community Alliance organized independently",
+    name: "Ankr",
+    logo: "images/ankr.png",
+    description: "The fastest, most reliable Web3 infrastructure",
     socials: {
-      website: "http://chinapolka.com/",
-      twitter: "",
+      website: "https://ankr.com/",
+      twitter: "https://twitter.com/ankr",
       facebook: "",
-      instagram: "",
-      telegram: "",
+      instagram: "https://discord.gg/ankr",
+      telegram: "https://t.me/ankrnetwork",
     },
   },
   {
@@ -412,27 +412,27 @@ export const partnerDetails = [
     },
   },
   {
+    name: "China Polka",
+    logo: "images/chinapolka.png",
+    description: "Unofficial non-profit Chinese Polka Community Alliance organized independently",
+    socials: {
+      website: "http://chinapolka.com/",
+      twitter: "",
+      facebook: "",
+      instagram: "",
+      telegram: "",
+    },
+  },
+  {
     name: "Koi Starter",
     logo: "images/koistarter.svg",
     description: "A cutting-edge and secure launchpad powered by Creator Platform",
     socials: {
       website: "https://koistarter.io/",
-      twitter: "https://discord.gg/VYJXut8huR",
+      twitter: "https://twitter.com/koistarter",
       facebook: "",
-      instagram: "",
+      instagram: "https://discord.gg/VYJXut8huR",
       telegram: "https://t.me/KoiStarterlaunchpad",
-    },
-  },
-  {
-    name: "Harmony Launcher",
-    logo: "images/harmony-launcher.jpg",
-    description: "the first Decentralized IGO + IDO Incubation Launchpad on Harmony Blockchain",
-    socials: {
-      website: "https://harmonylauncher.io/",
-      twitter: "https://twitter.com/harmonylauncher",
-      facebook: "",
-      instagram: "",
-      telegram: "https://t.me/harmonylauncher",
     },
   },
   {
@@ -445,18 +445,6 @@ export const partnerDetails = [
       facebook: "",
       instagram: "https://discord.com/invite/hasFnzJbfp",
       telegram: "https://t.me/Kommunitas_Ann",
-    },
-  },
-  {
-    name: "Fantom Live",
-    logo: "images/fantomlive.png",
-    description: "The First Web 3.0 Livestream- Metaverse & Launchpad",
-    socials: {
-      website: "https://fantomlive.finance/",
-      twitter: "https://twitter.com/FantomLiveS",
-      facebook: "",
-      instagram: "",
-      telegram: "http://t.me/FantomLive_Chat ",
     },
   },
   {
@@ -483,18 +471,7 @@ export const partnerDetails = [
       telegram: "https://t.me/UniLendFinance",
     },
   },
-  {
-    name: "Ankr",
-    logo: "images/ankr.png",
-    description: "The fastest, most reliable Web3 infrastructure",
-    socials: {
-      website: "https://ankr.com/",
-      twitter: "https://twitter.com/ankr",
-      facebook: "",
-      instagram: "https://discord.gg/ankr",
-      telegram: "https://t.me/ankrnetwork",
-    },
-  },
+
   {
     name: "Dfyn Network",
     logo: "images/dfyn.png",
