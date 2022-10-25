@@ -324,6 +324,18 @@ export const portfolioDetails = [
       telegram: "https://t.me/aptinlabs",
     },
   },
+  {
+    name: "World Spark Studio",
+    logo: "images/spark.png",
+    description: "Gaming Studio",
+    socials: {
+      website: "https://www.sparkadia.gg/",
+      twitter: "https://twitter.com/SparkadiaGG",
+      facebook: "",
+      instagram: "https://discord.gg/SparkadiaGG",
+      telegram: "https://t.me/SparkadiaGG",
+    },
+  },
 ];
 
 export const partnerDetails = [
