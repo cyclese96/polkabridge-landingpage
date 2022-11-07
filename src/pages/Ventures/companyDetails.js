@@ -336,6 +336,30 @@ export const portfolioDetails = [
       telegram: "https://t.me/SparkadiaGG",
     },
   },
+  {
+    name: "Exverse",
+    logo: "images/exverse.png",
+    description: "First ever battle metaverse",
+    socials: {
+      website: "https://exverse.io/",
+      twitter: "https://twitter.com/exverse_io",
+      facebook: "",
+      instagram: "https://discord.gg/exverse",
+      telegram: "https://t.me/exverse",
+    },
+  },
+  {
+    name: "Connect3",
+    logo: "images/connect3.png",
+    description: "Social Gateway to the Fabulous Web3",
+    socials: {
+      website: "https://connect3.world/",
+      twitter: "https://twitter.com/connect3world",
+      facebook: "",
+      instagram: "https://discord.gg/uBMruvxdNa",
+      telegram: "",
+    },
+  },
 ];
 
 export const partnerDetails = [
