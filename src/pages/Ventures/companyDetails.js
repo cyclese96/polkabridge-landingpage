@@ -244,7 +244,7 @@ export const portfolioDetails = [
     description: "The leading NFT Marketplace on blockchain Aptos",
     socials: {
       website: "https://bluemove.net/",
-      twitter: "https://twitter.com/BlueMoveNFT",
+      twitter: "https://twitter.com/BlueMove_OA",
       facebook: "https://www.facebook.com/bluemove.net/",
       instagram: "https://discord.gg/PcRGces7WM",
       telegram: "https://t.me/bluemovenft",

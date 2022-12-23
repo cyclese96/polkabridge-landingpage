@@ -303,6 +303,48 @@ export default function RoadmapNew() {
         <div className="sliderNew">
           {[
             <div className={classes.cardWrapper}>
+              <h5 className={classes.quarterTitle}>Q1 - 2021</h5>
+              <div
+                className="d-flex justify-content-center mt-2 mb-2"
+                style={{ color: "#454545" }}
+              >
+                ------------{" "}
+                <div
+                  style={{
+                    backgroundColor: "green",
+                    borderRadius: 50,
+                    height: 20,
+                    width: 20,
+
+                    border: "2px solid #f9f9f9",
+                  }}
+                ></div>
+                ------------
+              </div>
+              <Card className={classes.card}>
+                <div
+                  className="d-flex justify-content-center align-items-center"
+                  style={{ height: 120 }}
+                >
+                  <img
+                    src="images/listing.png"
+                    height="80px"
+                  />
+                </div>
+                <h5 className={classes.cardTitle}>Listing & Farming</h5>
+                <div className="mt-3">
+                  <li className={classes.li}>Develop smart contract and web</li>
+                  <li className={classes.li}>Whitepaper</li>
+                  <li className={classes.li}>PBR Token IDO</li>
+                  <li className={classes.li}>Listing PBR on Uniswap</li>
+                  <li className={classes.li}>Listing PolkaBridge on PolkaProject</li>
+                  <li className={classes.li}>Deflationary Farming</li>
+                  <li className={classes.li}>Listing on tier-2 CEXs</li>
+
+                </div>
+              </Card>{" "}
+            </div>,
+            <div className={classes.cardWrapper}>
               <h5 className={classes.quarterTitle}>Q2 - 2021</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
@@ -418,50 +460,9 @@ export default function RoadmapNew() {
                 </div>
               </Card>{" "}
             </div>,
-            <div className={classes.cardWrapper}>
-              <h5 className={classes.quarterTitle}>Q1 - 2022</h5>
-              <div
-                className="d-flex justify-content-center mt-2 mb-2"
-                style={{ color: "#454545" }}
-              >
-                ------------{" "}
-                <div
-                  style={{
-                    backgroundColor: "green",
-                    borderRadius: 50,
-                    height: 20,
-                    width: 20,
 
-                    border: "2px solid #f9f9f9",
-                  }}
-                ></div>
-                ------------
-              </div>
-              <Card className={classes.card}>
-                <div
-                  className="d-flex justify-content-center align-items-center"
-                  style={{ height: 120 }}
-                >
-                  <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/finance-4996087-4159684.png"
-                    height="80px"
-                  />
-                </div>
-                <h5 className={classes.cardTitle}>DeFi 2.0</h5>
-                <div className="mt-3">
-                  <li className={classes.li}>
-                    Integrate more chains into Multichain AMM (BSC, Polygon,
-                    MoonBeam...)
-                  </li>
-                  <li className={classes.li}>
-                    Launching INO - Initial NFT Offering Platform
-                  </li>
-                  <li className={classes.li}>Defi 2.0 - New area</li>\
-                </div>
-              </Card>{" "}
-            </div>,
             <div className={classes.ActiveCardWrapper}>
-              <h5 className={classes.quarterTitle}>Q2, Q3, Q4 - 2022</h5>
+              <h5 className={classes.quarterTitle}>2022</h5>
               <div
                 className="d-flex justify-content-center mt-2 mb-2"
                 style={{ color: "#454545" }}
@@ -484,30 +485,48 @@ export default function RoadmapNew() {
                   className="d-flex justify-content-center align-items-center"
                   style={{ height: 120 }}
                 >
+                  <img
+                    src="images/expand.png"
+                    height="80px"
+                  />
+                </div>
+                <h5 className={classes.cardTitle}>Expansion</h5>
+
+                <div
+                  className="d-flex justify-content-center align-items-center"
+                  style={{ height: 120 }}
+                >
                   <img src="images/multi.png" height="80px" />
                 </div>
-                <h5 className={classes.cardTitle}>
-                  Deeper into Multichain Dapps and Top Exchanges Listing
-                </h5>
+
                 <div className="mt-3">
-                  <li className={classes.liActive}>Launch new product: <a href="https://t.me/polkabridge/1221" target="_blank">Decentralized P2P Exchange</a>. Testnet expected in August, 2022</li>
-                  <li className={classes.liActive}>Launch new product: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a> . Testnet expected in September, 2022</li>
-
-
-                  <li className={classes.liActive}>
+                  <li className={classes.li}>
                     Integrate more chains into Multichain AMM (BSC, Polygon,
                     MoonBeam...)
                   </li>
-                  <li className={classes.liActive}>
+                  <li className={classes.li}>
+                    Launching INO - Initial NFT Offering Platform
+                  </li>
+
+
+                  <li className={classes.li}>
+                    Integrate more chains into Multichain AMM (BSC, Polygon,
+                    MoonBeam...)
+                  </li>
+                  <li className={classes.li}>
                     Integrate more chains into INO platform (BSC, Polygon,
                     MoonBeam...)
                   </li>
 
-                  <li className={classes.liActive}>
+                  <li className={classes.li}>
                     Top exchange listing (Huobi, Binance...)
                   </li>
-                  <li className={classes.liActive}>Metaverse - New Approach</li>
-                  <li className={classes.liActive}>Launch PBR token on Binance Smart Chain and bridge</li>
+
+                  <li className={classes.li}>Launch PBR token on Binance Smart Chain and bridge</li>
+
+                  <li className={classes.li}>Testnet Phase: <a href="https://p2p.polkabridge.org/" target="_blank">Decentralized P2P Exchange</a></li>
+                  <li className={classes.li}>Idea Phase: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a></li>
+
                 </div>
               </Card>{" "}
             </div>,
@@ -536,14 +555,20 @@ export default function RoadmapNew() {
                   style={{ height: 120 }}
                 >
                   <img
-                    src="https://cdn3d.iconscout.com/3d/premium/thumb/metaverse-logo-4787843-3986055.png"
+                    src="images/grow.png"
                     height="80px"
                   />
                 </div>
-                <h5 className={classes.cardTitle}>New Features</h5>
+                <h5 className={classes.cardTitle}>Keep Building 🔥</h5>
                 <div className="mt-3">
-                  <li className={classes.li}>Lending Platform</li>
-                  <li className={classes.li}>Cross-chain AMM</li>
+                  <li className={classes.liActive}>Mainnet Phase: <a href="https://p2p.polkabridge.org/" target="_blank">Decentralized P2P Exchange</a></li>
+                  <li className={classes.liActive}>Launchnet Phase: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a> </li>
+                  <li className={classes.liActive}>Launchnet Phase: PolkaBridge Wallet</li>
+
+                  <li className={classes.liActive}>Launchnet Phase: Lending Platform</li>
+                  <li className={classes.liActive}>Launchnet Phase: Cross-chain AMM</li>
+
+                  <li className={classes.liActive}>Target to Binance exchange</li>
                 </div>
               </Card>{" "}
             </div>,
