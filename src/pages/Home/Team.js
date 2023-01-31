@@ -145,33 +145,7 @@ export default function Team() {
               </div>
             </Fade>{" "}
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="./images/team/tahir.jpg"
-                  alt="Tahir"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Tahir Ahmad</h6>
-                <p className={classes.para}>Tech Lead</p>
-                <Tooltip title="Twitter">
-                  <a href="https://twitter.com/tahirahmadin">
-                    <IconButton aria-label="Twitter">
-                      <Twitter className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-                <Tooltip title="Github">
-                  <a href="https://github.com/tahirahmadin">
-                    <IconButton aria-label="Github">
-                      <GitHub className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
+         
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
@@ -255,9 +229,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <Hidden smDown>
-            <div className="col-md-1"></div>
-          </Hidden>
+        
 
           <div className="col-6 col-md-2" align="center">
             <Fade right>

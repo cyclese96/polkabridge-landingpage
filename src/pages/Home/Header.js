@@ -308,7 +308,7 @@ export default function Header() {
                 </p>
                 <div className="d-flex ">
                   <a
-                    href="https://swap.polkabridge.org/"
+                    href="https://p2p.polkabridge.org/"
                     style={{ textDecoration: "none", padding: 5 }}
                   >
                     <Button

@@ -191,6 +191,18 @@ export const portfolioDetails = [
     },
   },
   {
+    name: "SubQuery",
+    logo: "images/subquery.svg",
+    description: "Query Decentralised Data Faster",
+    socials: {
+      website: "https://www.subquery.network/",
+      twitter: "https://twitter.com/subquerynetwork",
+      facebook: "",
+      instagram: "https://discord.com/invite/subquery",
+      telegram: "https://t.me/subquerynetwork",
+    },
+  },
+  {
     name: "ZKCross",
     logo: "images/zkcr.png",
     description: "The first multichain zkRollup utilizing zkWASM",
@@ -358,6 +370,18 @@ export const portfolioDetails = [
       facebook: "",
       instagram: "https://discord.gg/uBMruvxdNa",
       telegram: "",
+    },
+  },
+  {
+    name: "GameStar+",
+    logo: "images/gamestarplus.png",
+    description: "Netflix of Game Night",
+    socials: {
+      website: "https://www.blockchain.gamestarplus.com/",
+      twitter: "https://twitter.com/gamestarplus",
+      facebook: "https://www.facebook.com/OfficialGamestar",
+      instagram: "https://discord.gg/gamestarplus",
+      telegram: "https://t.me/GamestarPlusOfficial",
     },
   },
 ];

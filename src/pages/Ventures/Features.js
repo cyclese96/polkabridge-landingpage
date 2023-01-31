@@ -338,6 +338,32 @@ export default function Features() {
             <div className="col-md-9 ">
               <div className="sliderFeature">
                 {[
+                   <div className="slideFeature">
+                   <Card className={classes.featureCardFull}>
+                     <div
+                       className="d-flex justify-content-center align-items-center"
+                       style={{ height: 200 }}
+                     >
+                       <img
+                         src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-to-dollar-swap-5152761-4312550.png"
+                         height="120px"
+                       />
+                     </div>
+                     <h5 className={classes.cardTitle}>P2P Exchange</h5>
+                     <p className={classes.cardValue}>
+                       Trade tokens with your non-custodial wallet with our
+                       decentralized P2P Exchange.
+                     </p>
+                     <div className="text-center">
+                        <a href="https://p2p.polkabridge.org" target="_blank">
+                          <Button className={classes.buttonOutlined}>
+                            Visit Now
+                          </Button>
+                        </a>
+                      </div>
+                   </Card>
+                 </div>,
+
                   <div className="slideFeature">
                     <Card className={classes.featureCardFull}>
                       <div
@@ -462,31 +488,7 @@ export default function Features() {
                     </Card>
                   </div>,
 
-                  <div className="slideFeature">
-                    <Card className={classes.featureCardFull}>
-                      <div
-                        className="d-flex justify-content-center align-items-center"
-                        style={{ height: 200 }}
-                      >
-                        <img
-                          src="https://cdn3d.iconscout.com/3d/premium/thumb/bitcoin-to-dollar-swap-5152761-4312550.png"
-                          height="120px"
-                        />
-                      </div>
-                      <h5 className={classes.cardTitle}>P2P Exchange</h5>
-                      <p className={classes.cardValue}>
-                        Trade tokens with your non-custodial wallet with our
-                        decentralized P2P Exchange.
-                      </p>
-                      <div className="text-center">
-                        <a>
-                          <Button className={classes.buttonOutlined}>
-                            Coming soon
-                          </Button>
-                        </a>
-                      </div>
-                    </Card>
-                  </div>,
+                 
                   <div className="slideFeature">
                     <Card className={classes.featureCardFull}>
                       <div

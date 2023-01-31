@@ -169,7 +169,7 @@ export default function PrimarySearchAppBar() {
           <ListItem button key={tab.name} style={{ paddingLeft: 30 }}>
             <CustomButton
               title={"Launch App"}
-              link={"https://swap.polkabridge.org"}
+              link={"https://p2p.polkabridge.org"}
             ></CustomButton>
           </ListItem>
         ))}
@@ -272,7 +272,7 @@ export default function PrimarySearchAppBar() {
             <div className={classes.sectionDesktop}>
               <CustomButton
                 title={"Launch App"}
-                link={"https://swap.polkabridge.org"}
+                link={"https://p2p.polkabridge.org"}
               ></CustomButton>
             </div>
           </div>
