@@ -207,7 +207,7 @@ export default function SocialLinks() {
               <a href="https://swap.polkabridge.org" target="_blank">
                 <h5 className={classes.link}>Swap</h5>
               </a>
-              <a href="https://t.me/polkabridge/1221" target="_blank">
+              <a href="https://p2p.polkabridge.org" target="_blank">
                 <h5 className={classes.link}>P2P</h5>
               </a>
               <a
@@ -398,7 +398,7 @@ export default function SocialLinks() {
             </div>
           </div>
           <p className={classes.para}>
-            Copyright 2022{" "}
+            Copyright 2023{" "}
             <span className={classes.highlight}>PolkaBridge</span>. All Rights
             Reserved.
           </p>

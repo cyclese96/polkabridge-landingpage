@@ -199,11 +199,7 @@ export default function Listings() {
                 <img src="images/bibox.webp" className={classes.cmcLogo} />
               </a>
             </div>
-            <div className="col-6 col-md-2 my-2">
-              <a href="https://www.bitmart.com/trade/en?symbol=PBR_USDT&layout=pro">
-                <img src="images/bitmart.svg" className={classes.cmcLogo} />
-              </a>
-            </div>
+           
             <div className="col-6 col-md-2 my-2">
               <a href="https://www.coingecko.com/en/coins/polkabridge">
                 <img src="images/coingecko.webp" className={classes.cmcLogo} />

@@ -189,7 +189,7 @@ export default function UpcomingProducts() {
     <div className={classes.background}>
       <div className={classes.container}>
         <Pulse>
-          <h1 className={classes.heading}>Upcoming Product</h1>
+          <h1 className={classes.heading}>New Product</h1>
         </Pulse>
         <Pulse>
           <div className="d-flex justify-content-center">
@@ -205,8 +205,8 @@ export default function UpcomingProducts() {
             <div className="d-flex justify-content-between p-3">
               <Lottie animationData={headerImage} loop={true} />
             </div>
-            <h5 className={classes.featureTitle}>- Progress (90%)</h5>
-            <h5 className={classes.featureTitle}>- Testnet now live <a href="https://p2p.polkabridge.org/" target="_blank">Vist P2P</a></h5>
+            <h5 className={classes.featureTitle}>- Progress (100%)</h5>
+            <h5 className={classes.featureTitle}>- Mainnet live <a href="https://p2p.polkabridge.org/" target="_blank">Vist P2P</a></h5>
             <div class="containered">
               <div class="progress2 progress-moved">
                 <div class="progress-bar2"></div>

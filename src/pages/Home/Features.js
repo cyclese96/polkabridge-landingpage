@@ -244,7 +244,7 @@ export default function Features() {
   };
   return (
     <div style={{}}>
-      <div
+      {/* <div
         style={{
           backgroundColor: "transaparent",
           minHeight: window.innerWidth > 400 ? 60 : 120,
@@ -278,7 +278,7 @@ export default function Features() {
             </div>
           </div>
         </Card>
-      </div>
+      </div> */}
       <div className="d-flex justify-content-center mt-5">
         <div className={classes.videoCard}>
           <iframe

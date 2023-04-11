@@ -285,7 +285,7 @@ export default function SocialLinks() {
             </div>
           </div>
           <p className={classes.para}>
-            Copyright 2022{" "}
+            Copyright 2023{" "}
             <span className={classes.highlight}>PolkaBridge</span>. All Rights
             Reserved.
           </p>

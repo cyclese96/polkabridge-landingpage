@@ -316,10 +316,10 @@ export default function Header() {
                       color="primary"
                       className={classes.button}
                     >
-                      <ShutterSpeed className={classes.icon} /> Launch APP
+                      <ShutterSpeed className={classes.icon} /> Launch P2P
                     </Button>
                   </a>
-                  <a
+                  {/* <a
                     href="https://swap.polkabridge.org/charts"
                     style={{ textDecoration: "none", padding: 5 }}
                   >
@@ -334,7 +334,7 @@ export default function Header() {
                       />{" "}
                       View Analytics
                     </Button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="col-md-5 d-flex align-items-center">

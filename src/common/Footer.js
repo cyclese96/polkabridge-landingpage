@@ -49,7 +49,7 @@ export default function Footer() {
           />
         </div>
         <p className={classes.para}>
-          Copyright 2022 <span className={classes.highlight}>PolkaBridge</span>.
+          Copyright 2023 <span className={classes.highlight}>PolkaBridge</span>.
           All Rights Reserved.
         </p>
       </div>
