@@ -173,34 +173,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="images/team/tanishq.png"
-                  alt="Tanishq"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Tanishq Dhawan</h6>
-                <p className={classes.para}>Business Development Manager</p>
-
-                <Tooltip title="LinkedIn">
-                  <a href="https://twitter.com/ace_tanishq">
-                    <IconButton aria-label="Twitter">
-                      <Twitter className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-                <Tooltip title="LinkedIn">
-                  <a href="https://www.linkedin.com/in/tanishq-dhawan-20ba19166">
-                    <IconButton aria-label="LinkedIn">
-                      <LinkedIn className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
+         
           <div className="col-6 col-md-2" align="center">
             <Fade right>
               <div className={classes.people}>
@@ -252,27 +225,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="./images/team/taha.jpg"
-                  alt="Swas"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Taha Zafar </h6>
-                <p className={classes.para}>Content Manager</p>
-
-                <Tooltip title="LinkedIn">
-                  <a href="https://www.linkedin.com/in/taha-zafar-aa983bb6">
-                    <IconButton aria-label="LinkedIn">
-                      <LinkedIn className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
+          
 
           <div className="col-6 col-md-2" align="center">
             <Fade right>
@@ -295,27 +248,7 @@ export default function Team() {
               </div>
             </Fade>
           </div>
-          <div className="col-6 col-md-2" align="center">
-            <Fade right>
-              <div className={classes.people}>
-                <img
-                  src="images/team/qi.jpeg"
-                  alt="Quynh"
-                  className={classes.avatar}
-                />
-                <h6 className={classes.title}>Quynh Mi</h6>
-                <p className={classes.para}>HR Manager</p>
-
-                <Tooltip title="LinkedIn">
-                  <a href="https://twitter.com/imquynhmi">
-                    <IconButton aria-label="Twitter">
-                      <Twitter className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-              </div>
-            </Fade>
-          </div>
+          
         </div>
         <div className="row  justify-content-center"> </div>
       </div>

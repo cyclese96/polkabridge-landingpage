@@ -276,7 +276,7 @@ export const portfolioDetails = [
   },
   {
     name: "Exorde Network",
-    logo: "https://uploads-ssl.webflow.com/620398f412d5829aa28fbb86/622625f35016cd6a5613f833_landscape-logo-color-white.png",
+    logo: "images/exorde.png",
     description: "Empowers developers to crawl and link all public data",
     socials: {
       website: "https://exorde.network/",
@@ -289,7 +289,7 @@ export const portfolioDetails = [
 
   {
     name: "Alterverse",
-    logo: "https://alterverse.com/wp-content/uploads/2021/01/AlterVerseLogo_Lg_White_NoStroke_400.png",
+    logo: "images/alterverse.png",
     description: "An expansive Metaverse game experience",
     socials: {
       website: "https://alterverse.com/",
