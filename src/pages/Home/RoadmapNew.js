@@ -563,15 +563,52 @@ export default function RoadmapNew() {
                 <div className="mt-3">
                   <li className={classes.liActive}>Mainnet Phase: <a href="https://p2p.polkabridge.org/" target="_blank">Decentralized P2P Exchange</a></li>
                   <li className={classes.liActive}>Launchnet Phase: <a href="https://polkabridge.medium.com/polkabridge-insights-platform-an-introduction-2e4bd82238c" target="_blank">PolkaBridge Insights Platform</a> </li>
-                  <li className={classes.liActive}>Launchnet Phase: PolkaBridge Wallet</li>
-
+                 
                   <li className={classes.liActive}>Launchnet Phase: Lending Platform</li>
-                  <li className={classes.liActive}>Launchnet Phase: Cross-chain AMM</li>
+                  <li className={classes.liActive}>Launchnet Phase: Cross-Chain AMM</li>
 
-                  <li className={classes.liActive}>Target to Binance exchange</li>
+                  
                 </div>
               </Card>{" "}
             </div>,
+            <div className={classes.cardWrapper}>
+            <h5 className={classes.quarterTitle}>2024</h5>
+            <div
+              className="d-flex justify-content-center mt-2 mb-2"
+              style={{ color: "#454545" }}
+            >
+              ------------{" "}
+              <div
+                style={{
+                  backgroundColor: "#161F30",
+                  borderRadius: 50,
+                  height: 20,
+                  width: 20,
+
+                  border: "2px solid #e5e5e5",
+                }}
+              ></div>
+              ------------
+            </div>
+            <Card className={classes.card}>
+              <div
+                className="d-flex justify-content-center align-items-center"
+                style={{ height: 120 }}
+              >
+                <img
+                  src="images/layer2ai.webp"
+                  height="80px"
+                />
+              </div>
+              <h5 className={classes.cardTitle}>Mainnet & Layer-2 AI</h5>
+              <div className="mt-3">
+                <li className={classes.liActive}>Mainnet Phase: Cross-Chain AMM</li>
+                <li className={classes.liActive}>Mainnet Phase: Lending Platform</li>
+                <li className={classes.liActive}>Launch PolkaBridge AI Blockchain Platform, Layer-2 Blockchain for AI Dapps</li>
+                <li className={classes.liActive}>Target to Binance exchange</li>
+              </div>
+            </Card>{" "}
+          </div>,
           ].map((item, index) => {
             return (
               <div
