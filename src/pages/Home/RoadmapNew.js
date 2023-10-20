@@ -259,14 +259,14 @@ export default function RoadmapNew() {
   const [x, setX] = useState(window.innerWidth > 950 ? -300 : -400);
 
   const goRight = () => {
-    x === -100 * ([1, 2, 3, 4, 5, 6].length - 3) ? setX(0) : setX(x - 100);
+    x === -100 * ([1, 2, 3, 4, 5, 6,7].length - 3) ? setX(0) : setX(x - 100);
   };
   const goLeft = () => {
     x === 0 ? setX(0) : setX(x + 100);
   };
 
   const goRightMob = () => {
-    x === -100 * [1, 2, 3, 4, 5].length ? setX(0) : setX(x - 100);
+    x === -100 * [1, 2, 3, 4, 5,6].length ? setX(0) : setX(x - 100);
   };
   const goLeftMob = () => {
     x === 0 ? setX(0) : setX(x + 100);

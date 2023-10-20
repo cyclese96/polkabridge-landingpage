@@ -95,7 +95,7 @@ export const ventureDetails = [
 export const portfolioDetails = [
   {
     name: "Aether Games",
-    logo: "https://www.aethergames.io/static/media/Logo.6d355d0b397d1925df34.png",
+    logo: "images/aether.webp",
     description: "Game Development studio",
     socials: {
       website: "https://www.aethergames.io/",
@@ -168,7 +168,7 @@ export const portfolioDetails = [
   },
   {
     name: "BitsCrunch",
-    logo: "https://bitscrunch.com/wp-content/themes/bitscrunch/img/logo.svg",
+    logo: "images/bitsc.jpg",
     description: "The Guardian of the NFT ecosystem.",
     socials: {
       website: "https://bitscrunch.com/",
@@ -184,7 +184,7 @@ export const portfolioDetails = [
     description: "Build, launch and scale decentralized platforms and solutions",
     socials: {
       website: "https://www.peaq.network/",
-      twitter: "https://twitter.com/peaqenterprise",
+      twitter: "https://twitter.com/peaqnetwork",
       facebook: "",
       instagram: "https://discord.gg/XhJwuFKAAD",
       telegram: "https://t.me/peaqnetwork",
