@@ -143,18 +143,6 @@ export const portfolioDetails = [
     },
   },
   {
-    name: "Astra Protocol",
-    logo: "https://astraprotocol.com/wp-content/themes/astra_wp/assets/images/logo.svg",
-    description: "Decentralized KYC Platform for Web3",
-    socials: {
-      website: "https://astraprotocol.com/",
-      twitter: "https://twitter.com/AstraProtocol",
-      facebook: "",
-      instagram: "",
-      telegram: "https://t.me/Astra_Protocol",
-    },
-  },
-  {
     name: "Tatsumeeko",
     logo: "images/tatsumeeko.png",
     description: "Immersive modern fantasy MMORPG-lite game",
@@ -236,18 +224,6 @@ export const portfolioDetails = [
       facebook: "https://www.facebook.com/MagicSquareio",
       instagram: "https://discord.com/invite/Pmep3WZTyB",
       telegram: "https://t.me/magicsquare_official",
-    },
-  },
-  {
-    name: "Cosmic Guild",
-    logo: "images/Cosmic.png",
-    description: "The First Community Gaming Guild",
-    socials: {
-      website: "https://cosmicguild.io/",
-      twitter: "https://twitter.com/Cosmic_Guild",
-      facebook: "https://www.facebook.com/Axie-Infinity-Scholarship-Cosmic-Gaming-Guild-111363661352549",
-      instagram: "https://discord.gg/cggdao",
-      telegram: "http://t.me/Cosmic_guild",
     },
   },
   {
@@ -336,18 +312,7 @@ export const portfolioDetails = [
       telegram: "https://t.me/aptinlabs",
     },
   },
-  {
-    name: "World Spark Studio",
-    logo: "images/spark.png",
-    description: "Gaming Studio",
-    socials: {
-      website: "https://www.sparkadia.gg/",
-      twitter: "https://twitter.com/SparkadiaGG",
-      facebook: "",
-      instagram: "https://discord.gg/SparkadiaGG",
-      telegram: "https://t.me/SparkadiaGG",
-    },
-  },
+ 
   {
     name: "Exverse",
     logo: "images/exverse.png",
@@ -371,19 +336,48 @@ export const portfolioDetails = [
       instagram: "https://discord.gg/uBMruvxdNa",
       telegram: "",
     },
+    
   },
   {
-    name: "GameStar+",
-    logo: "images/gamestarplus.png",
-    description: "Netflix of Game Night",
+    name: "ZKSync",
+    logo: "images/zksync.jpg",
+    description: "Hyperscaling Ethereum with ZK tech",
     socials: {
-      website: "https://www.blockchain.gamestarplus.com/",
-      twitter: "https://twitter.com/gamestarplus",
-      facebook: "https://www.facebook.com/OfficialGamestar",
-      instagram: "https://discord.gg/gamestarplus",
-      telegram: "https://t.me/GamestarPlusOfficial",
+      website: "https://zksync.io/",
+      twitter: "https://twitter.com/zksync",
+      facebook: "",
+      instagram: "",
+      telegram: "",
     },
+    
   },
+  {
+    name: "Layer Zero",
+    logo: "images/layerzero.jpg",
+    description: "An omnichain interoperability protocol",
+    socials: {
+      website: "https://layerzero.network/",
+      twitter: "https://x.com/LayerZero_Labs",
+      facebook: "",
+      instagram: "",
+      telegram: "",
+    },
+    
+  },
+  {
+    name: "Bitfinity Network",
+    logo: "images/bitifinity.jpg",
+    description: "EVM for Bitcoin",
+    socials: {
+      website: "https://bitfinity.network/",
+      twitter: "https://x.com/bitfinitynet",
+      facebook: "",
+      instagram: "",
+      telegram: "",
+    },
+    
+  }
+ 
 ];
 
 export const partnerDetails = [
