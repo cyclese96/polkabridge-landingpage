@@ -216,7 +216,7 @@ export const portfolioDetails = [
   },
   {
     name: "Magic Square",
-    logo: "https://magicsquare.io/wp-content/uploads/2022/09/MSQ-Logo-color.svg",
+    logo: "images/magicsquare.svg",
     description: "The 1st Community Driven Crypto App Store",
     socials: {
       website: "https://magicsquare.io/",
@@ -228,7 +228,7 @@ export const portfolioDetails = [
   },
   {
     name: "BlueMove",
-    logo: "https://bluemove.net/static/media/logo-light.9e42d613ce273b89f8bd87d58adee26a.svg",
+    logo: "images/bluemove.svg",
     description: "The leading NFT Marketplace on blockchain Aptos",
     socials: {
       website: "https://bluemove.net/",
@@ -238,18 +238,7 @@ export const portfolioDetails = [
       telegram: "https://t.me/bluemovenft",
     },
   },
-  {
-    name: "Mover",
-    logo: "images/Mover.png",
-    description: "The first bridge between EVM networks and Aptos",
-    socials: {
-      website: "https://mov3r.xyz/",
-      twitter: "https://twitter.com/moverxyz",
-      facebook: "",
-      instagram: "https://discord.gg/45us2C3NBw",
-      telegram: "",
-    },
-  },
+
   {
     name: "Exorde Network",
     logo: "images/exorde.png",
