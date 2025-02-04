@@ -150,26 +150,14 @@ export default function Team() {
             <Fade right>
               <div className={classes.people}>
                 <img
-                  src="./images/team/aamir.png"
-                  alt="Aamir"
+                  src="./images/team/rathee.jpg"
+                  alt="Rathee"
                   className={classes.avatar}
                 />
-                <h6 className={classes.title}>Aamir Alam</h6>
-                <p className={classes.para}>Core Developer</p>
-                <Tooltip title="LinkedIn">
-                  <a href="https://www.linkedin.com/in/aamir-alam/">
-                    <IconButton aria-label="LinkedIn">
-                      <LinkedIn className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
-                <Tooltip title="GitHub">
-                  <a href="https://github.com/AamirAlam">
-                    <IconButton aria-label="GitHub">
-                      <GitHub className={classes.icon} />
-                    </IconButton>
-                  </a>
-                </Tooltip>
+                <h6 className={classes.title}>Rathee</h6>
+                <p className={classes.para}>Developer</p>
+             
+               
               </div>
             </Fade>
           </div>

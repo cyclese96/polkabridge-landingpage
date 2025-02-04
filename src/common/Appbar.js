@@ -134,7 +134,7 @@ export default function PrimarySearchAppBar() {
     >
       <List style={{ paddingTop: 30 }}>
         {[
-          { name: "Our Products", id: "products" },
+          { name: "Products", id: "products" },
           { name: "Ecosystem", id: "ecosystem" },
           { name: "Achievements", id: "achievements" },
           { name: "$PBR Token", id: "token" },
@@ -200,7 +200,7 @@ export default function PrimarySearchAppBar() {
               delay={0}
             >
               <Typography className={classes.tabs} variant="body1" noWrap>
-                Our Products <DotCircle />
+                 Products <DotCircle />
               </Typography>
             </Link>
             <Link
